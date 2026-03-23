@@ -41,12 +41,18 @@ Your AI agents have no memory. Your knowledge is trapped in platform silos. Ever
 - [[mcp-server-setup]] — MCP server tiers, tools, and remote access
 - [[ai-features-and-api-keys]] — configure AI for summarize, auto-tag, and chat
 
-## Learn more
+## The platform
 
-- [[design-principles]] — architecture and design philosophy
+- [[web-ui-features]] — dashboard, entries, graph, editor, keyboard shortcuts
 - [[understanding-entry-types]] — how knowledge is structured
 - [[search-modes]] — keyword, semantic, and hybrid search
 - [[knowledge-graph]] — connections and backlinks
 - [[plugins-and-extensions]] — extend Pyrite for your domain
+
+## Deeper
+
+- [[design-principles]] — architecture and design philosophy
+- [[vision-and-roadmap]] — where Pyrite is headed
 - [[use-cases]] — journalism, software teams, research, PKM
 - [[self-hosting]] — run your own instance
+- [[for-developers]] — CLI, REST API, MCP, Python API

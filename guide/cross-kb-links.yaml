@@ -1,0 +1,78 @@
+# Cross-KB links from guide to pyrite project KB
+
+# Architecture decisions referenced in the guide
+- source: design-principles
+  target: adr-0001
+  target_kb: pyrite
+  relation: references
+  note: "ADR-0001: Git-Native Markdown Storage — the foundational architecture decision"
+
+- source: design-principles
+  target: adr-0003
+  target_kb: pyrite
+  relation: references
+  note: "ADR-0003: Two-Tier Data Durability Model — git for content, SQLite for index"
+
+- source: design-principles
+  target: adr-0006
+  target_kb: pyrite
+  relation: references
+  note: "ADR-0006: MCP Three-Tier Tool Model — read/write/admin access control"
+
+- source: design-principles
+  target: adr-0007
+  target_kb: pyrite
+  relation: references
+  note: "ADR-0007: AI Integration Architecture — BYOK, three surfaces"
+
+- source: design-principles
+  target: founding-design-principles-why-markdown-yaml-in-git
+  target_kb: pyrite
+  relation: summarizes
+  note: "Full founding design principles document in the pyrite project KB"
+
+# Plugin system references
+- source: plugins-and-extensions
+  target: plugin-protocol
+  target_kb: pyrite
+  relation: references
+  note: "Detailed plugin protocol design document"
+
+- source: plugins-and-extensions
+  target: adr-0002
+  target_kb: pyrite
+  relation: references
+  note: "ADR-0002: Plugin System via Python Entry Points"
+
+# MCP references
+- source: mcp-server-setup
+  target: adr-0006
+  target_kb: pyrite
+  relation: references
+  note: "ADR-0006 defines the three-tier MCP tool model"
+
+- source: connecting-via-mcp
+  target: mcp-server
+  target_kb: pyrite
+  relation: references
+  note: "MCP server component documentation in pyrite KB"
+
+# Schema references
+- source: understanding-entry-types
+  target: adr-0008
+  target_kb: pyrite
+  relation: references
+  note: "ADR-0008: Structured Data and Schema-as-Config"
+
+# Vision references
+- source: vision-and-roadmap
+  target: roadmap
+  target_kb: pyrite
+  relation: summarizes
+  note: "Full release roadmap with milestone definitions and dependency graph"
+
+- source: vision-and-roadmap
+  target: bhag-self-configuring-knowledge-infrastructure
+  target_kb: pyrite
+  relation: summarizes
+  note: "Full BHAG vision document"
