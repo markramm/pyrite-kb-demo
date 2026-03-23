@@ -1,0 +1,16 @@
+name: guide
+description: >
+  Pyrite user guide — how to install, connect your AI, search knowledge bases,
+  and use Pyrite for research, journalism, and team knowledge management.
+
+kb_type: guide
+
+guidelines:
+  contributing: |
+    This KB contains the official Pyrite user documentation. Entries should be
+    clear, concise, and actionable. Use concrete examples. Link between entries
+    with [[wikilinks]]. Keep each entry focused on one topic.
+  quality: |
+    Every entry should answer "what is this" and "how do I use it" within the
+    first two paragraphs. Include CLI and MCP examples where relevant. Avoid
+    jargon without explanation.
