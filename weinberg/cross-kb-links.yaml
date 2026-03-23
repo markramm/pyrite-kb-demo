@@ -1,0 +1,342 @@
+# Cross-KB links from weinberg to other KBs
+
+# === deming ===
+
+- source: general-systems-thinking
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: related_to
+  note: "Both treat systems thinking as foundational to understanding quality and organizations. Weinberg's general systems thinking (von Bertalanffy tradition) and Deming's appreciation for a system (Shewhart tradition) converge on the same insight: you cannot manage what you do not understand as a system."
+
+- source: quality-software-management-framework
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: influenced_by
+  note: "QSM's four volumes parallel Deming's SoPK structure — systems thinking, measurement, human behavior, and change management. Weinberg translated Deming's quality philosophy into software-specific terms."
+
+- source: quality-software-management-framework
+  target: management-responsibility-for-quality
+  target_kb: deming
+  relation: related_to
+  note: "Both argue that quality is a management systems problem, not an individual worker problem. Weinberg's cultural patterns framework and Deming's 94% rule point at the same truth: the system determines outcomes."
+
+- source: cultural-patterns-of-software-organizations
+  target: the-14-points-for-management
+  target_kb: deming
+  relation: influenced_by
+  note: "Weinberg's organizational patterns parallel Deming's 14 Points. Both describe the management culture required for quality — Deming as prescriptive principles, Weinberg as a diagnostic maturity taxonomy."
+
+- source: qsm-vol2-first-order-measurement-1993
+  target: statistical-process-control-and-variation-theory
+  target_kb: deming
+  relation: influenced_by
+  note: "QSM Vol. 2's treatment of first-order measurement draws on Deming's variation theory. Weinberg shares Deming's insistence that measurement without understanding variation produces management tampering."
+
+- source: programming-as-human-activity
+  target: psychology-of-management
+  target_kb: deming
+  relation: related_to
+  note: "Weinberg's foundational claim that programming is a human activity parallels Deming's psychology pillar in SoPK. Both insist that understanding human motivation and behavior is not optional for managers — it is a technical requirement."
+
+- source: congruent-behavior
+  target: common-cause-vs-special-cause-variation
+  target_kb: deming
+  relation: related_to
+  note: "Incongruent communication (blaming, placating) in software organizations often involves misattributing common-cause variation to individuals. A manager in a blaming stance attributes systemic failures to specific people — precisely the error Deming identified as the most pervasive management mistake."
+
+- source: satir-change-model
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: related_to
+  note: "Both are iterative learning models. PDSA focuses on systematic experimentation; Satir's model describes the emotional and organizational dynamics that accompany the learning process. Weinberg's contribution was showing that PDSA-style improvement cannot succeed without navigating Satir's chaos stage."
+
+# === senge ===
+
+- source: general-systems-thinking
+  target: systems-thinking-fifth-discipline
+  target_kb: senge
+  relation: related_to
+  note: "Convergent approaches to systems thinking from different traditions. Weinberg drew on von Bertalanffy's general systems theory; Senge drew on Forrester's system dynamics. Both arrived at the same practical insight: feedback loops and mental models determine organizational behavior."
+
+- source: cultural-patterns-of-software-organizations
+  target: learning-organization
+  target_kb: senge
+  relation: related_to
+  note: "Weinberg's Pattern 4 (Anticipating) organization is functionally a learning organization in Senge's sense — one that builds capacity to recognize and adapt to change. Both frameworks describe the organizational capability for generative learning, though Weinberg's is specific to software."
+
+- source: egoless-programming
+  target: team-learning
+  target_kb: senge
+  relation: related_to
+  note: "Both require ego suspension to enable collective intelligence. Egoless programming creates conditions for honest code review; team learning requires surfacing and examining assumptions without defensiveness. The psychological prerequisite is the same."
+
+- source: general-systems-thinking
+  target: mental-models
+  target_kb: senge
+  relation: related_to
+  note: "Weinberg's systems thinking is fundamentally about improving mental models — holding them lightly, updating them when they fail, never mistaking the map for the territory. Senge's mental models discipline formalizes the same epistemological stance."
+
+- source: satir-change-model
+  target: creative-tension
+  target_kb: senge
+  relation: related_to
+  note: "Both address the dynamic between current reality and desired state. Senge's creative tension is the gap that drives learning; Satir's model describes how organizations navigate the disruption required to close that gap. Weinberg applied both."
+
+- source: congruent-behavior
+  target: dialogue-practice
+  target_kb: senge
+  relation: related_to
+  note: "Weinberg's congruence (attending to self, other, and context simultaneously) and Senge's dialogue practice (suspending assumptions, listening generatively) describe the same communication quality from different theoretical traditions — Satir's family therapy and Bohm's physics-derived dialogue."
+
+# === demarco ===
+
+- source: programming-as-human-activity
+  target: peopleware-thesis
+  target_kb: demarco
+  relation: influenced
+  note: "Weinberg's 1971 thesis that programming is a human activity opened the conceptual space that DeMarco and Lister's Peopleware occupied in 1987. DeMarco provided the empirical evidence (Coding War Games) for what Weinberg had argued by observation and example."
+
+- source: egoless-programming
+  target: team-jell
+  target_kb: demarco
+  relation: related_to
+  note: "Egoless programming addresses individual ego-code separation as the precondition for honest review. Team jell describes what happens at the group level when ego-free collaboration produces collective capability greater than the sum of individual contributions."
+
+- source: psychology-of-computer-programming-1971
+  target: peopleware
+  target_kb: demarco
+  relation: influenced
+  note: "Psychology of Computer Programming (1971) is the intellectual ancestor of Peopleware (1987). Both argue that software problems are sociological, not technical. DeMarco and Lister acknowledged Weinberg as a predecessor."
+
+- source: quality-software-management-framework
+  target: organizational-learning-disability
+  target_kb: demarco
+  relation: related_to
+  note: "Weinberg's cultural patterns (Pattern 0 Oblivious through Pattern 4 Anticipating) diagnose the same organizational dysfunctions that DeMarco identifies as learning disabilities. A Pattern 0 or 1 organization is by definition learning-disabled in DeMarco's sense."
+
+- source: law-of-raspberry-jam
+  target: slack-concept
+  target_kb: demarco
+  relation: related_to
+  note: "The wider you spread it, the thinner it gets. Weinberg's consulting heuristic about concentrated influence anticipates DeMarco's slack argument: organizations optimized for 100% utilization spread attention too thin for any serious work to take hold."
+
+# === flow ===
+
+- source: programming-as-human-activity
+  target: flow-state
+  target_kb: flow
+  relation: related_to
+  note: "Weinberg's thesis that programming is a human activity implies that psychological states — including flow — are determinants of code quality. Flow research provides the scientific framework for understanding why the conditions Weinberg advocated (uninterrupted focus, meaningful work, appropriate challenge) produce better software."
+
+- source: egoless-programming
+  target: group-flow
+  target_kb: flow
+  relation: related_to
+  note: "Egoless programming creates the interpersonal conditions for group flow in software teams. Sawyer's group flow requires 'blending egos' — the same ego suspension that Weinberg prescribed for productive code review and collaborative development."
+
+- source: egoless-programming
+  target: psychological-safety
+  target_kb: flow
+  relation: related_to
+  note: "Egoless programming is psychological safety applied specifically to code review. Both describe the interpersonal condition where people can take risks (submitting code, admitting errors) without fear of personal attack. Weinberg articulated this for software in 1971; Edmondson formalized it for organizations in 1999."
+
+- source: moi-model
+  target: intrinsic-motivation
+  target_kb: flow
+  relation: related_to
+  note: "The Motivation dimension of Weinberg's MOI model concerns intrinsic motivation — creating conditions where people want to do good work. Flow research provides the psychological mechanism: intrinsically motivated engagement produces the optimal experience states that drive sustained high performance."
+
+- source: congruent-behavior
+  target: ten-conditions-for-group-flow
+  target_kb: flow
+  relation: related_to
+  note: "Congruent communication (attending to self, other, and context) enables several of Sawyer's ten conditions for group flow: equal participation, close listening, and moving it forward. Incongruent stances (blaming, placating) directly block group flow."
+
+# === poppendiecks ===
+
+- source: programming-as-human-activity
+  target: learning-not-results
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Weinberg's thesis that programming is a human activity aligns with the Poppendiecks' argument that learning, not results, is the fundamental output of software development. Both reframe software work as a cognitive and social process rather than a manufacturing process."
+
+- source: egoless-programming
+  target: empower-the-team
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Egoless programming's trust in collective code ownership prefigures lean empowerment of teams. Both argue that quality emerges from teams with trust and shared responsibility, not from individual heroics or management control."
+
+- source: technical-reviews-and-walkthroughs
+  target: build-integrity-in
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Weinberg's structured reviews are a practice for building integrity into software through collaborative quality assurance. The Poppendiecks' build-integrity-in principle provides the lean framing for why this practice matters at the system level."
+
+- source: quality-software-management-framework
+  target: optimize-the-whole
+  target_kb: poppendiecks
+  relation: related_to
+  note: "QSM's systems-thinking foundation argues for whole-system optimization rather than local optimization of individual components. The Poppendiecks' optimize-the-whole principle is the lean equivalent of the same argument."
+
+- source: quality-software-management-framework
+  target: amplify-learning
+  target_kb: poppendiecks
+  relation: related_to
+  note: "QSM treats organizational learning — through feedback loops, measurement, and congruent action — as the primary mechanism for quality improvement. The Poppendiecks' amplify-learning principle is the lean reformulation of the same insight."
+
+# === meadows ===
+
+- source: general-systems-thinking
+  target: feedback-loops
+  target_kb: meadows
+  relation: related_to
+  note: "Weinberg's general systems thinking and Meadows's systems dynamics share the same intellectual ancestor (Forrester at MIT) and the same core insight: feedback loops determine system behavior. Weinberg made feedback accessible to software practitioners; Meadows made it accessible to policy thinkers."
+
+- source: general-systems-thinking
+  target: leverage-points
+  target_kb: meadows
+  relation: related_to
+  note: "Both Weinberg and Meadows are concerned with where to intervene in complex systems. Meadows's twelve leverage points provide a formal taxonomy; Weinberg's consulting heuristics (law of raspberry jam, etc.) are informal but functionally equivalent tools for identifying high-leverage interventions."
+
+- source: introduction-to-general-systems-thinking-1975
+  target: thinking-in-systems-2008
+  target_kb: meadows
+  relation: related_to
+  note: "Both are accessible introductions to systems thinking for non-specialist audiences. Weinberg's 1975 book targets software professionals; Meadows's 2008 book targets general audiences. Both translate academic systems theory into practical heuristics and examples."
+
+- source: cultural-patterns-of-software-organizations
+  target: resilience
+  target_kb: meadows
+  relation: related_to
+  note: "Higher-pattern organizations in Weinberg's framework are more resilient to perturbation — they maintain their feedback mechanisms under stress. Meadows's resilience concept provides the systems-dynamic explanation: resilient systems maintain their structure and function through adaptive capacity."
+
+# === boyd ===
+
+- source: general-systems-thinking
+  target: destruction-and-creation-concept
+  target_kb: boyd
+  relation: related_to
+  note: "Both address how mental models are built and revised. Weinberg advocates holding models lightly and updating them when they fail; Boyd's destruction-and-creation describes the epistemological cycle of breaking down old models to synthesize new ones."
+
+- source: satir-change-model
+  target: destruction-and-creation-concept
+  target_kb: boyd
+  relation: related_to
+  note: "Satir's change model (old status quo, chaos, new status quo) parallels Boyd's destruction-and-creation of mental models. Both describe the necessary passage through disorder en route to a new, more adequate understanding."
+
+- source: general-systems-thinking
+  target: orientation
+  target_kb: boyd
+  relation: related_to
+  note: "Weinberg's systems thinking and Boyd's orientation both concern how observers construct models of reality. Both argue that the quality of your model determines the quality of your response — and that most failures are failures of perception, not execution."
+
+- source: congruent-behavior
+  target: implicit-guidance-and-control
+  target_kb: boyd
+  relation: related_to
+  note: "Congruent communication enables implicit guidance and control — teams that communicate congruently can coordinate without explicit direction because they share accurate mental models. Boyd's implicit G&C depends on the same shared understanding that Weinberg's congruence makes possible."
+
+# === schneier ===
+
+- source: general-systems-thinking
+  target: security-mindset
+  target_kb: schneier
+  relation: related_to
+  note: "Schneier's security mindset — thinking about how systems can be made to fail — is a specialized application of Weinberg's general systems thinking to adversarial contexts. Both require systematic attention to feedback loops, failure modes, and the gap between intended and actual system behavior."
+
+- source: general-systems-thinking
+  target: hacking-as-systems-subversion
+  target_kb: schneier
+  relation: related_to
+  note: "Weinberg's systems thinking trains practitioners to see how systems actually behave versus how they are designed to behave. Schneier's hacking-as-systems-subversion is the adversarial exploitation of exactly this gap — the difference between the system's model of itself and reality."
+
+- source: congruent-behavior
+  target: trust-framework
+  target_kb: schneier
+  relation: related_to
+  note: "Weinberg's congruent behavior builds organizational trust through honest communication. Schneier's trust framework analyzes when and why trust breaks down in systems. Both recognize that trust is not assumed but constructed through observable patterns of honest behavior."
+
+# === goldratt ===
+
+- source: general-systems-thinking
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "Both apply systems thinking to organizational dynamics. Weinberg identifies feedback loops and cultural patterns as the key system structures; Goldratt identifies the constraint as the key leverage point. Convergent approaches: the constraint is the feedback loop with the most leverage."
+
+- source: quality-software-management-framework
+  target: thinking-processes
+  target_kb: goldratt
+  relation: related_to
+  note: "Both provide structured approaches to diagnosing organizational problems through systems analysis. QSM's cultural pattern diagnosis and Goldratt's current reality trees are complementary tools for mapping causal structure."
+
+- source: problem-definition
+  target: evaporating-cloud
+  target_kb: goldratt
+  relation: related_to
+  note: "Weinberg's problem definition discipline (asking 'what is the real problem?') and Goldratt's evaporating cloud (surfacing hidden assumptions behind apparent dilemmas) both insist that the stated problem is usually not the real problem. Both are techniques for reframing."
+
+- source: cultural-patterns-of-software-organizations
+  target: policy-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "Weinberg's lower-pattern organizations are often constrained by their own policies and cultural norms rather than by technical limitations. Goldratt's policy constraints concept names this phenomenon: the binding constraint is often a management decision, not a physical bottleneck."
+
+# === reinertsen ===
+
+- source: quality-software-management-framework
+  target: managing-variability
+  target_kb: reinertsen
+  relation: related_to
+  note: "QSM's treatment of software project variation (why projects behave unpredictably and what to do about it) is complemented by Reinertsen's economic framework for managing variability. Weinberg approaches variation through human dynamics; Reinertsen approaches it through queueing theory."
+
+- source: quality-software-management-framework
+  target: fast-feedback
+  target_kb: reinertsen
+  relation: related_to
+  note: "QSM's central argument is that feedback loops distinguish healthy from unhealthy organizations. Reinertsen provides the economic argument for the same principle: faster feedback reduces the cost of correction and accelerates learning. Both agree that feedback speed is the critical organizational variable."
+
+- source: cultural-patterns-of-software-organizations
+  target: decentralized-control
+  target_kb: reinertsen
+  relation: related_to
+  note: "Higher-pattern organizations in Weinberg's framework push decision-making authority to those with the best information. Reinertsen's decentralized control principle provides the economic justification: local decision-makers with faster OODA loops outperform centralized optimization."
+
+# === agile ===
+
+- source: egoless-programming
+  target: pair-programming
+  target_kb: agile
+  relation: influenced
+  note: "Egoless programming (1971) is the psychological foundation that pair programming operationalizes. Sitting together at one machine forces the ego-detachment from code that Weinberg prescribed; criticism becomes immediate and structural rather than personal."
+
+- source: programming-as-human-activity
+  target: individuals-and-interactions
+  target_kb: agile
+  relation: influenced
+  note: "Weinberg's foundational insight that programming is a human activity is the intellectual ground from which the Agile Manifesto's first value grows. 'Individuals and interactions over processes and tools' is pure Weinberg, though rarely attributed."
+
+- source: quality-software-management-framework
+  target: retrospective
+  target_kb: agile
+  relation: related_to
+  note: "QSM's organizational capability framework describes how feedback loops enable organizational learning. Agile retrospectives are the primary mechanism for operationalizing this — surfacing and changing the patterns that QSM diagnoses."
+
+- source: technical-reviews-and-walkthroughs
+  target: definition-of-done
+  target_kb: agile
+  relation: related_to
+  note: "Weinberg's technical reviews anticipated the Agile definition of done: both establish shared quality standards and make completion a social agreement rather than an individual claim."
+
+- source: egoless-programming
+  target: collective-code-ownership
+  target_kb: agile
+  relation: influenced
+  note: "Egoless programming — the discipline of detaching ego from code — is the psychological prerequisite for collective code ownership. XP's practice makes institutional what Weinberg described as a personal discipline."
+
+- source: satir-change-model
+  target: dark-agile
+  target_kb: agile
+  relation: related_to
+  note: "Satir's change model explains why agile adoptions fail: organizations that try to skip the chaos stage of genuine change produce dark agile — adopting ceremonies without the underlying cultural transformation. The Satir model predicts that superficial adoption without working through chaos is the default outcome."
+

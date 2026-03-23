@@ -1,0 +1,207 @@
+# flow → boyd
+
+- source: flow-state
+  target: implicit-guidance-and-control
+  target_kb: boyd
+  relation: related_to
+  note: "Both describe the bypass of conscious deliberation. Flow's 'merging of action and awareness' and Boyd's implicit guidance and control are the same phenomenon described from different directions: the psychologist observing absorption, the strategist observing decision-free action. Transient hypofrontality provides a neurological account of why both occur together."
+
+- source: transient-hypofrontality
+  target: implicit-guidance-and-control
+  target_kb: boyd
+  relation: related_to
+  note: "Transient hypofrontality (reduced prefrontal activity during peak engagement) is the neurological mechanism that explains why expert practitioners can bypass the explicit Decide phase. Boyd described implicit guidance and control as the product of deep experience; Dietrich's hypothesis explains the brain state that makes it possible."
+
+- source: flow-state
+  target: fingerspitzengefuehl
+  target_kb: boyd
+  relation: related_to
+  note: "Fingerspitzengefühl — the intuitive 'fingertip feel' of the expert combat pilot — describes the same state as flow's action-awareness merger from a military-tactical perspective."
+
+- source: challenge-skill-balance
+  target: destruction-and-creation-concept
+  target_kb: boyd
+  relation: related_to
+  note: "Both concepts address how mental models must be continuously rebuilt as competence grows. Flow's challenge-skill balance requires recalibration as skill rises; Boyd's destruction and creation is the epistemological mechanism for that recalibration."
+
+- source: autotelic-experience
+  target: grand-ideal
+  target_kb: boyd
+  relation: related_to
+  note: "Boyd's grand ideal — a purpose larger than self-interest that gives coherence to organizational orientation — functions analogously to the 'purpose' dimension that sustains autotelic engagement over time."
+
+# flow → deming
+
+- source: challenge-skill-balance
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: related_to
+  note: "PDSA is an iterative learning cycle that operates precisely in the challenge-skill calibration zone: each cycle tests current understanding (skill) against reality (challenge) and updates the theory."
+
+- source: psychological-safety
+  target: the-14-points-for-management
+  target_kb: deming
+  relation: related_to
+  note: "Deming's Point 8 ('drive out fear') is the organizational policy equivalent of Edmondson's psychological safety construct. Both identify fear as the primary barrier to learning and adaptive performance."
+
+- source: flow-state
+  target: common-cause-vs-special-cause-variation
+  target_kb: deming
+  relation: related_to
+  note: "Common-cause variation provides a systems-level explanation for why flow-suppressing environments are so difficult to fix. Interruptions and context-switching are common-cause suppressors built into system design, not individual failures."
+
+- source: flow-as-mechanism-behind-lean-agile
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: related_to
+  note: "Flow research is the psychological component that Deming's System of Profound Knowledge omitted. SoPK's psychology dimension was underdeveloped; flow research specifies the psychological conditions under which knowledge workers produce their best output within systems."
+
+# flow → tps
+
+- source: flow-state
+  target: gemba
+  target_kb: tps
+  relation: related_to
+  note: "Ohno's gemba practice — direct observation at the actual workplace — requires and instantiates the same present-moment absorption that flow describes. Standing in the chalk circle demands the complete concentration and action-awareness merger of flow."
+
+- source: flow-as-mechanism-behind-lean-agile
+  target: one-piece-flow
+  target_kb: tps
+  relation: related_to
+  note: "TPS one-piece flow and Csikszentmihalyi's flow state share more than a name. One-piece flow eliminates the switching costs and attention fragmentation that destroy throughput — the manufacturing equivalent of single-task focus."
+
+- source: flow-state
+  target: kanban
+  target_kb: tps
+  relation: related_to
+  note: "Kanban WIP limits create the system-level conditions for individual and team flow by preventing cognitive overload. The kanban card is an environmental structure that enforces the single-task focus that flow requires."
+
+- source: challenge-skill-balance
+  target: kaizen
+  target_kb: tps
+  relation: related_to
+  note: "Kaizen's expectation of continuous incremental improvement maps directly onto the dynamic recalibration that challenge-skill balance requires. Standard work is never permanent — kaizen is institutionalized challenge-skill recalibration."
+
+- source: deliberate-practice
+  target: standard-work
+  target_kb: tps
+  relation: related_to
+  note: "Standard work in TPS parallels the structure of deliberate practice: clear specification of the current skill level, systematic feedback on deviation, and planned incremental improvement."
+
+# flow → reinertsen
+
+- source: flow-as-mechanism-behind-lean-agile
+  target: wip-constraints
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen's queueing theory explains mathematically why WIP limits improve throughput; flow research explains why they improve it at the individual cognitive level. Mathematical and psychological accounts are complementary."
+
+- source: flow-state
+  target: queueing-theory-applied
+  target_kb: reinertsen
+  relation: related_to
+  note: "Queueing theory (why overloaded systems fail) and flow research (why overloaded individuals fail) are parallel explanations at different levels of analysis. The M/M/1 queue explosion at high utilization mirrors the cognitive cost of context-switching that destroys flow."
+
+- source: slack-demarco
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: related_to
+  note: "DeMarco's slack argument and Reinertsen's cost of delay converge on the same organizational prescription from different directions. DeMarco argues for slack to enable flow; Reinertsen argues that eliminating slack imposes hidden delay costs."
+
+- source: flow-state
+  target: fast-feedback
+  target_kb: reinertsen
+  relation: related_to
+  note: "Immediate feedback is one of Csikszentmihalyi's nine core flow dimensions. Reinertsen's fast feedback principle provides the economic complement: the same delay that costs flow its quality also costs the organization its learning speed."
+
+# flow → goldratt
+
+- source: flow-as-mechanism-behind-lean-agile
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "TOC: overloading the constraint destroys throughput. Flow: overloading the knowledge worker destroys the psychological state of peak performance. Complementary descriptions of the same phenomenon at different levels of analysis."
+
+- source: flow-state
+  target: throughput-world-vs-cost-world
+  target_kb: goldratt
+  relation: related_to
+  note: "The cost-world mindset (maximize local efficiency) produces the high-WIP, context-switching environment that destroys flow. The throughput-world mindset (protect the constraint) produces the single-focus, WIP-limited environment that enables it."
+
+- source: challenge-skill-balance
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: related_to
+  note: "In knowledge work teams, the constraint is often not a machine but the flow conditions of key contributors. When challenge systematically exceeds the team's skill at the constraint, throughput degrades."
+
+- source: flow-state
+  target: critical-chain-project-management
+  target_kb: goldratt
+  relation: related_to
+  note: "CCPM's Parkinson's Law and student-syndrome analysis maps onto flow-state disruption patterns. The multi-project context switch that CCPM diagnoses as a major throughput destroyer is the interruption pattern that flow research shows costs 15-25 minutes per switch."
+
+# flow → blank
+
+- source: autotelic-experience
+  target: customer-development
+  target_kb: blank
+  relation: related_to
+  note: "Effective customer discovery requires the deep, intrinsically motivated engagement that autotelic experience describes. The founder who approaches discovery as a chore rather than an intrinsically interesting investigation will systematically miss what matters."
+
+- source: flow-state
+  target: lean-startup
+  target_kb: blank
+  relation: related_to
+  note: "The Build-Measure-Learn loop creates the feedback conditions that enable flow: clear goal (build this MVP), immediate feedback (measure customer response), next challenge (learn and decide)."
+
+- source: deliberate-practice
+  target: customer-development
+  target_kb: blank
+  relation: related_to
+  note: "Customer development is a form of deliberate practice for market understanding. It operates at the edge of current knowledge, requires immediate feedback, and builds expertise through structured repetition."
+
+- source: flow-triggers
+  target: get-out-of-the-building
+  target_kb: blank
+  relation: related_to
+  note: "Blank's 'get out of the building' creates the environmental conditions — high consequence, rich environment, clear goal — that Kotler identifies as reliable flow triggers."
+
+# flow → wardley
+
+- source: autonomy-mastery-purpose
+  target: doctrine
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley's doctrine explicitly includes 'provide purpose/mastery/autonomy' as a universal organizational principle — Pink's framework embedded verbatim in Wardley's doctrine categories."
+
+- source: slack-demarco
+  target: inertia
+  target_kb: wardley
+  relation: related_to
+  note: "DeMarco's slack argument and Wardley's inertia address the same organizational failure from different directions. A fully optimized system has no capacity for the reflection that would allow reorientation. Slack is the prerequisite for escaping inertia."
+
+- source: flow-triggers
+  target: appropriate-methods
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley's appropriate-methods doctrine maps onto distinct flow-trigger requirements. Pioneer/genesis work requires novelty, consequence, and autonomy triggers; town-planner/commodity work produces flow through mastery and rhythm."
+
+- source: psychological-safety
+  target: pioneer-settler-town-planner
+  target_kb: wardley
+  relation: related_to
+  note: "Pioneer work in the genesis stage requires psychological safety as a necessary condition. Without safety to fail, pioneer teams will not attempt genuine exploration. The PST model implies different psychological safety regimes for each stage."
+
+# flow → red-rock-eater
+
+- source: dark-side-of-flow
+  target: capture-model
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Agre's capture model describes how institutions impose formal activity grammars for behavioral tracking; the dark side of flow documents how the same flow-triggering conditions are deliberately engineered by attention-economy systems for commercial extraction."
+
+- source: flow-in-games
+  target: capture-model
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Chen's flow-in-games framework describes the same design logic that attention-economy systems use for behavioral capture. Chen intended it for player flourishing; commercial design applies the same techniques for monetization. The capture model explains the institutional mechanism; flow-in-games provides the psychological blueprint."

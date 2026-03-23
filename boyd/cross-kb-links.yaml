@@ -1,0 +1,380 @@
+# Cross-KB links from boyd to other KBs
+# Expanded to reflect Boyd's role as a major hub thinker
+
+# ============================================================
+# boyd → deming (6 links)
+# ============================================================
+
+- source: ooda-loop
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: related_to
+  note: "Parallel iterative learning cycles from different domains. OODA emphasizes competitive tempo and orientation; PDSA emphasizes epistemic rigor and prediction. Both treat the cognitive step (Orient/Study) as the critical element that determines the quality of subsequent action."
+
+- source: orientation
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: related_to
+  note: "Boyd's orientation — the lens of mental models, cultural traditions, and previous experience through which all observation is filtered — parallels Deming's SoPK insistence that theory precedes observation. Both frameworks argue that how you see determines what you see and what you do."
+
+- source: orientation
+  target: theory-of-knowledge
+  target_kb: deming
+  relation: related_to
+  note: "Deming's theory of knowledge — derived from C.I. Lewis's pragmatic epistemology — provides the philosophical grounding for what Boyd captures operationally in orientation. Both recognize that observation without theory is meaningless; the quality of one's conceptual framework determines the quality of one's perception."
+
+- source: tempo
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: related_to
+  note: "Boyd's tempo concept — operating at a faster rhythm than one's environment or adversary — finds its quality-management implementation in Deming's PDSA cycle. Faster, better-calibrated PDSA cycles compound into competitive advantage through superior learning rate."
+
+- source: einheit
+  target: the-14-points-for-management
+  target_kb: deming
+  relation: related_to
+  note: "Boyd's Einheit (mutual trust) maps directly to Deming's Points 8 (drive out fear), 9 (break down barriers between departments), and 12 (remove barriers to pride of workmanship). Both frameworks recognize that organizational trust is a prerequisite for effective adaptation."
+
+- source: implicit-guidance-and-control
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: related_to
+  note: "Boyd's implicit guidance and control — the organizational capacity to act coherently without explicit commands — requires what Deming calls appreciation for a system. Without shared understanding of how the whole system works, implicit coordination degenerates into local optimization."
+
+# ============================================================
+# boyd → richards (8 links)
+# ============================================================
+
+- source: ooda-loop
+  target: ooda-based-competition
+  target_kb: richards
+  relation: translated_by
+  note: "Richards translated Boyd's OODA loop from a military decision-making framework into a general theory of competitive advantage applicable to business and software organizations."
+
+- source: orientation
+  target: boyds-real-ooda-loop
+  target_kb: richards
+  relation: translated_by
+  note: "Richards' essay corrects the common misreading of OODA as a simple speed-of-decision cycle, restoring Boyd's emphasis on orientation as the dominant element that shapes and is shaped by the entire loop."
+
+- source: patterns-of-conflict
+  target: certain-to-win
+  target_kb: richards
+  relation: translated_by
+  note: "Certain to Win translates the strategic principles from Patterns of Conflict — Boyd's sprawling military strategy briefing — into business strategy language, making the maneuver warfare framework accessible to non-military audiences."
+
+- source: tempo
+  target: boyd-toyota-connection
+  target_kb: richards
+  relation: related_to
+  note: "Richards argues Toyota's sustained competitive advantage comes from operating inside competitors' decision cycles — applying Boyd's tempo concept to manufacturing. Toyota's OODA-loop learning rate, embedded in its organizational climate, explains what Deming's quality philosophy helped create."
+
+- source: schwerpunkt
+  target: schwerpunkt-as-focus
+  target_kb: richards
+  relation: translated_by
+  note: "Richards translated Boyd's Schwerpunkt — the German military concept of focal point of effort — into business terms: sprint goals, product vision, and team alignment mechanisms that enable autonomous action with strategic coherence."
+
+- source: fingerspitzengefuehl
+  target: fingerspitzengefuehl-as-expertise
+  target_kb: richards
+  relation: translated_by
+  note: "Richards translated Boyd's Fingerspitzengefuehl — the intuitive 'fingertip feel' of experienced commanders — into the tacit practitioner knowledge and expert judgment that business and software teams need to operate without comprehensive procedural guidance."
+
+- source: maneuver-warfare
+  target: agile-as-maneuver-warfare
+  target_kb: richards
+  relation: translated_by
+  note: "Richards' structural parallel between Agile software development and maneuver warfare doctrine argues that Agile practices are effective for the same structural reasons as maneuver warfare: both instantiate Boyd's organizational climate and OODA loop principles."
+
+- source: auftragstaktik
+  target: organizational-climate-for-business
+  target_kb: richards
+  relation: translated_by
+  note: "Richards translated Boyd's Auftragstaktik — mission-type orders that push decision authority to the lowest competent level — into the organizational climate principles that enable business agility: trust, expertise, and shared focus."
+
+# ============================================================
+# boyd → rao (7 links)
+# ============================================================
+
+- source: ooda-loop
+  target: tempo
+  target_kb: rao
+  relation: influenced
+  note: "Rao's Tempo framework reinterprets Boyd's OODA loop through narrative theory, arguing that decision-making tempo is fundamentally about imposing narrative structure on unfolding events rather than cycling through discrete observe-orient-decide-act steps."
+
+- source: orientation
+  target: narrative-driven-decision-making
+  target_kb: rao
+  relation: influenced
+  note: "Rao's narrative-driven decision-making extends Boyd's orientation concept by arguing that narratives — not just mental models — are the primary mechanism through which orientation shapes observation and action."
+
+- source: destruction-and-creation-concept
+  target: the-boydian-dialectic
+  target_kb: rao
+  relation: related_to
+  note: "Rao's Boydian Dialectic essay engages directly with Boyd's Destruction and Creation thesis, reframing the entropy-cognition argument as a dialectical process of narrative construction and dissolution."
+
+- source: tempo
+  target: tempo-book
+  target_kb: rao
+  relation: influenced
+  note: "Rao's Tempo book generalizes Boyd's concept of operating tempo from military contexts to a universal theory of narrative-driven timing across all decision domains."
+
+- source: orientation
+  target: refactored-perception
+  target_kb: rao
+  relation: influenced
+  note: "Rao's refactored perception names the specific cognitive mechanism of orientation update — the discontinuous reframe that Boyd's framework implies but does not name. It is the individual cognitive analogue of Boyd's destruction-and-creation epistemology."
+
+- source: discourse-on-winning-and-losing
+  target: boyd-and-beyond-2012
+  target_kb: rao
+  relation: related_to
+  note: "Rao presented at the Boyd and Beyond conference at Quantico in 2012, testing his narrative-OODA synthesis against the military community that takes Boyd's Discourse most seriously. The conference validated Rao's reading of Boyd as a narrative theorist."
+
+- source: mismatch
+  target: legibility
+  target_kb: rao
+  relation: related_to
+  note: "Boyd's mismatch — the divergence between an actor's orientation and reality — connects to Rao's legibility analysis. Legibility creates rigid orientation that resists refactored perception; illegibility creates the conditions for mismatch that Boyd identified as the central weapon of competitive strategy."
+
+# ============================================================
+# boyd → wardley (6 links)
+# ============================================================
+
+- source: ooda-loop
+  target: strategy-cycle
+  target_kb: wardley
+  relation: influenced
+  note: "Wardley's Strategy Cycle (Purpose, Landscape, Climate, Doctrine, Leadership) is explicitly modeled on Boyd's OODA loop. Wardley describes it as the 'outer cycle' of his framework — the insistence that strategy is a continuous process of observation, orientation, decision, and action."
+
+- source: orientation
+  target: situational-awareness
+  target_kb: wardley
+  relation: related_to
+  note: "Boyd's emphasis on orientation as the critical OODA element parallels Wardley's insistence on situational awareness as the foundation of strategy. Both argue that most organizations fail not from bad decisions but from bad understanding of their situation."
+
+- source: schwerpunkt
+  target: doctrine
+  target_kb: wardley
+  relation: related_to
+  note: "Boyd's Schwerpunkt — the unifying focus that enables decentralized coherence — parallels Wardley's doctrine: universal organizational principles that, once internalized, enable faster action without central deliberation. Both solve the same coordination problem."
+
+- source: orientation
+  target: inertia
+  target_kb: wardley
+  relation: related_to
+  note: "Boyd's concept of failed orientation — mental models that no longer match reality — maps directly to Wardley's concept of inertia. Both describe how past success creates rigidity that prevents adaptation to changed circumstances."
+
+- source: maneuver-warfare
+  target: gameplay
+  target_kb: wardley
+  relation: related_to
+  note: "Boyd's maneuver warfare — defeating adversaries through tempo, surprise, and focus rather than attrition — parallels Wardley's gameplay: context-dependent strategic moves that exploit landscape position. Both emphasize indirect, adaptive action over brute-force competition."
+
+- source: auftragstaktik
+  target: pioneer-settler-town-planner
+  target_kb: wardley
+  relation: related_to
+  note: "Boyd's Auftragstaktik (mission-type orders enabling decentralized execution) and Wardley's Pioneer-Settler-Town Planner model both argue for decentralized execution enabled by shared intent — different organizational cultures operating autonomously but coherently toward a common purpose."
+
+# ============================================================
+# boyd → senge (5 links)
+# ============================================================
+
+- source: destruction-and-creation-concept
+  target: mental-models
+  target_kb: senge
+  relation: related_to
+  note: "Boyd's destruction-and-creation of mental models directly parallels Senge's mental models discipline. Both argue that implicit cognitive frameworks shape perception and action, and that organizations must systematically surface and rebuild these frameworks. Boyd frames it as competitive epistemology; Senge frames it as organizational learning."
+
+- source: orientation
+  target: systems-thinking-fifth-discipline
+  target_kb: senge
+  relation: related_to
+  note: "Both concern how observers construct and update models of reality — Boyd through orientation, Senge through systems thinking. Both warn that linear, event-focused mental models produce systematically wrong responses to complex situations."
+
+- source: schwerpunkt
+  target: shared-vision
+  target_kb: senge
+  relation: related_to
+  note: "Boyd's Schwerpunkt and Senge's shared vision solve the same organizational problem: how to enable decentralized action with strategic coherence. Schwerpunkt provides the operational focus; shared vision provides the collective alignment. Both are prerequisites for distributed initiative without fragmentation."
+
+- source: einheit
+  target: team-learning
+  target_kb: senge
+  relation: related_to
+  note: "Boyd's Einheit (mutual trust as organizational foundation) maps to Senge's team learning discipline. Both recognize that organizational effectiveness requires a level of collective trust and cognitive alignment that goes beyond formal coordination — shared orientation that enables implicit collaboration."
+
+- source: ooda-loop
+  target: learning-organization
+  target_kb: senge
+  relation: related_to
+  note: "Boyd's OODA loop and Senge's learning organization both describe entities that maintain competitive advantage through superior learning rate. The OODA loop specifies the mechanism (faster observation-orientation-decision-action cycling); the learning organization specifies the organizational form (five disciplines enabling collective learning)."
+
+# ============================================================
+# boyd → meadows (4 links)
+# ============================================================
+
+- source: ooda-loop
+  target: feedback-loops
+  target_kb: meadows
+  relation: related_to
+  note: "The OODA loop is fundamentally a feedback loop: observe-orient-decide-act feeds results back into observation. Meadows's taxonomy of feedback mechanisms provides the systems-theoretic framework for understanding what Boyd described operationally as competitive cycling."
+
+- source: destruction-and-creation-concept
+  target: leverage-points
+  target_kb: meadows
+  relation: related_to
+  note: "Boyd's destruction and creation of mental models directly parallels Meadows's highest leverage points: #2 (the mindset or paradigm out of which the system arises) and #1 (the power to transcend paradigms). Both describe the cognitive operation of breaking and rebuilding the framework through which one sees the world."
+
+- source: implicit-guidance-and-control
+  target: self-organization
+  target_kb: meadows
+  relation: related_to
+  note: "Boyd's implicit guidance and control — organizations acting coherently without centralized command — is a form of self-organization in Meadows's taxonomy. Both describe the system property of generating adaptive behavior from distributed interaction rather than centralized direction."
+
+- source: tempo
+  target: delays-in-systems
+  target_kb: meadows
+  relation: related_to
+  note: "Boyd's tempo advantage — acting faster than the adversary can reorient — connects to Meadows's analysis of delays in feedback systems. Delays degrade system responsiveness; reducing them increases adaptive capacity. Boyd optimizes for cycle speed in competitive contexts; Meadows analyzes how delay length shapes oscillation and overshoot in all systems."
+
+# ============================================================
+# boyd → reinertsen (5 links)
+# ============================================================
+
+- source: tempo
+  target: fast-feedback
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen's fast feedback principle parallels Boyd's tempo concept — both argue that the rate of cycling through observe-decide-act (or build-measure-learn) is the critical competitive variable. Reinertsen quantifies what Boyd stated qualitatively: each increment of feedback delay has a measurable economic cost."
+
+- source: auftragstaktik
+  target: decentralized-control
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen's decentralized control draws directly on Boyd's Auftragstaktik — mission-type orders that push decision authority to the lowest competent level. Both argue that centralized control is too slow for fast-changing, information-rich environments. Reinertsen adds the queueing argument: centralized decision-makers are bottlenecks with high utilization."
+
+- source: tempo
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen's batch-size reduction is the operational mechanism for accelerating Boyd's tempo in product development. Smaller batches complete faster, enabling more rapid OODA cycling. Reinertsen provides the economic theory (U-curve optimization) that explains why smaller batches compound into competitive advantage."
+
+- source: tempo
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen's cost-of-delay framework quantifies what Boyd expressed qualitatively: the economic value of operating at superior tempo. Every unit of time saved in feedback cycles has a measurable dollar value. Boyd argued tempo wins wars; Reinertsen proved tempo creates profit."
+
+- source: maneuver-warfare
+  target: blitzkrieg-product-development
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen's 1985 'Blitzkrieg Product Development' article explicitly borrows Boyd's military terminology to argue that development speed has quantifiable economic value. The article transferred the maneuver warfare emphasis on tempo and rapid decisive action into product development management."
+
+# ============================================================
+# boyd → tps (3 links)
+# ============================================================
+
+- source: ooda-loop
+  target: kaizen
+  target_kb: tps
+  relation: related_to
+  note: "Boyd's OODA loop and Toyota's kaizen are parallel continuous-improvement cycles from different traditions. Both insist on iterative learning through rapid cycling: observe the current state, orient to the gap, decide on improvement, act and re-observe. Boyd himself studied Toyota and recognized TPS as a manifestation of OODA-loop thinking."
+
+- source: tempo
+  target: just-in-time
+  target_kb: tps
+  relation: related_to
+  note: "Boyd's tempo concept — operating at a faster rhythm than competitors — finds its manufacturing expression in Toyota's just-in-time system. JIT eliminates batch-and-queue delays, producing faster material and information flow. Richards explicitly connected Boyd's tempo to Toyota's competitive advantage through speed of organizational learning."
+
+- source: auftragstaktik
+  target: andon
+  target_kb: tps
+  relation: related_to
+  note: "Boyd's Auftragstaktik — pushing decision authority to the point of contact — parallels the andon system's empowerment of line workers to stop production when they detect problems. Both require a trust-based culture (Einheit) where people at the lowest level are expected to exercise judgment without waiting for hierarchical approval."
+
+# ============================================================
+# boyd → blank (3 links)
+# ============================================================
+
+- source: ooda-loop
+  target: customer-development
+  target_kb: blank
+  relation: related_to
+  note: "Customer Development's iterative cycle of discovery-validation-creation-building parallels the OODA loop's observe-orient-decide-act. Blank independently developed an OODA-like framework for startups; a student later pointed out the parallel, and Blank incorporated OODA diagrams into his teaching materials."
+
+- source: orientation
+  target: get-out-of-the-building
+  target_kb: blank
+  relation: related_to
+  note: "Blank's 'get out of the building' is the startup equivalent of Boyd's insistence on continuous observation and reorientation. Both argue that mental models not updated against external reality become liabilities — closed-system orientation lock in Boyd's terms, building products nobody wants in Blank's."
+
+- source: destruction-and-creation-concept
+  target: pivot
+  target_kb: blank
+  relation: related_to
+  note: "Blank's pivot — the structured hypothesis revision when customer feedback invalidates a business model assumption — is Boyd's destruction-and-creation applied to startup strategy. Both describe the psychologically difficult but strategically essential act of destroying an existing mental model and creating a new one from the same observations."
+
+# ============================================================
+# boyd → schneier (3 links)
+# ============================================================
+
+- source: orientation
+  target: security-mindset
+  target_kb: schneier
+  relation: related_to
+  note: "Schneier's security mindset — the cognitive orientation trained to see failure modes rather than intended functions — is a specific type of Boyd's orientation. Both are frameworks for how trained perception shapes what an actor notices. Boyd orients to competitive advantage; Schneier orients to adversarial vulnerability."
+
+- source: ooda-loop
+  target: threat-modeling
+  target_kb: schneier
+  relation: related_to
+  note: "Threat modeling structures adversarial observation and orientation — how do attackers observe a system, orient to its vulnerabilities, decide on attack vectors, and act? Boyd's OODA loop provides the complementary framework for understanding attacker decision cycles and for defense-side cycling to stay ahead of adaptive adversaries."
+
+- source: mismatch
+  target: security-mindset
+  target_kb: schneier
+  relation: related_to
+  note: "Boyd's mismatch — creating divergence between an adversary's mental models and reality — is the attacker's strategy that Schneier's security mindset is designed to counter. The security mindset anticipates how attackers will create mismatch between a system's intended behavior and actual exploitable behavior."
+
+# ============================================================
+# boyd → goldratt (3 links)
+# ============================================================
+
+- source: tempo
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "Boyd's tempo optimization and Goldratt's constraint management both focus on throughput rather than local efficiency. Boyd argues that competitive advantage comes from faster cycling; Goldratt argues that system performance is governed by its binding constraint. Both reject the cost-world paradigm of optimizing every component in favor of optimizing the system's rate of goal achievement."
+
+- source: schwerpunkt
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: related_to
+  note: "Boyd's Schwerpunkt — concentrating effort at the decisive point — parallels Goldratt's five focusing steps, which direct all organizational attention to the binding constraint. Both argue that scattered effort is worse than no effort at all: the key is identifying where focused action produces maximum leverage."
+
+- source: destruction-and-creation-concept
+  target: throughput-world-vs-cost-world
+  target_kb: goldratt
+  relation: related_to
+  note: "Boyd's destruction-and-creation of mental models parallels Goldratt's paradigm shift from cost-world to throughput-world thinking. Both describe the psychologically difficult act of abandoning a familiar cognitive framework — local optimization thinking — and replacing it with a systems-level perspective that produces superior results."
+
+# ============================================================
+# boyd → demarco (2 links)
+# ============================================================
+
+- source: harmony
+  target: slack-concept
+  target_kb: demarco
+  relation: related_to
+  note: "Boyd's harmony — maintaining internal coherence and adaptive capacity — requires what DeMarco calls slack: uncommitted organizational capacity that enables response to the unexpected. An organization running at full utilization has no capacity for the rapid reorientation that Boyd's framework demands."
+
+- source: einheit
+  target: team-jell
+  target_kb: demarco
+  relation: related_to
+  note: "Boyd's Einheit (mutual trust as organizational foundation) maps to DeMarco's concept of team jell — the emergent property of a team that has bonded into a cohesive unit. Both describe the precondition for high-performance distributed action: trust deep enough that coordination becomes implicit rather than managed."

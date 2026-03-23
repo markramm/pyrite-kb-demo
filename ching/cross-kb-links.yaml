@@ -1,0 +1,229 @@
+# Cross-KB links from ching to other KBs
+
+# === goldratt ===
+# Ching's PRIMARY intellectual source. TOC, Five Focusing Steps, business-novel pedagogy, Critical Chain.
+
+- source: eliyahu-goldratt
+  target: eliyahu-goldratt
+  target_kb: goldratt
+  relation: same-subject
+  note: "Ching's entry on Goldratt as intellectual mentor; Goldratt KB has the full biography"
+
+- source: toc-for-software-development
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: adaptation
+  note: "Ching's central framework adapts Goldratt's TOC for software delivery contexts"
+
+- source: focccus-formula
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: adaptation
+  note: "FOCCCUS is Ching's repackaging of the Five Focusing Steps for general audiences, splitting Subordinate into Coordinate and Collaborate"
+
+- source: rolling-rocks-downhill
+  target: socratic-novel-pedagogy
+  target_kb: goldratt
+  relation: follows-tradition
+  note: "Rolling Rocks Downhill is a direct methodological descendant of The Goal's novel-as-teaching format"
+
+- source: rolling-rocks-downhill
+  target: the-goal
+  target_kb: goldratt
+  relation: derivative-work
+  note: "Rolling Rocks applies The Goal's TOC-via-fiction formula to a software project crisis, transposing the factory setting to a software delivery team"
+
+- source: bottleneck-thinking
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: simplification
+  note: "Bottleneck thinking is Ching's accessible rebranding of TOC's core principle, choosing 'bottleneck' over 'constraint' for intuitive resonance"
+
+- source: upthinking
+  target: evaporating-cloud
+  target_kb: goldratt
+  relation: adaptation
+  note: "Upthinking is Ching's narrative-accessible version of Goldratt's Evaporating Cloud conflict resolution tool"
+
+- source: goldratt-masterclass-interview
+  target: eliyahu-goldratt
+  target_kb: goldratt
+  relation: primary-source
+  note: "2009 interview -- one of the last extended recorded conversations with Goldratt before his death in 2011"
+
+- source: six-lessons-with-eli-goldratt
+  target: isnt-it-obvious
+  target_kb: goldratt
+  relation: primary-source
+  note: "Ching's published transcript of Goldratt explaining six lessons embedded in Isn't It Obvious? that readers were missing"
+
+- source: dollarize-the-prize
+  target: throughput-accounting
+  target_kb: goldratt
+  relation: adaptation
+  note: "Dollarize the Prize simplifies throughput accounting into a practical prioritization tool -- rough dollar estimates over precise cost accounting"
+
+- source: the-goal-retold
+  target: publication-of-the-goal
+  target_kb: goldratt
+  relation: derivative-work
+  note: "Ching's condensed retelling of The Goal for modern readers who find the 1984 original dated or too long"
+
+- source: software-project-rescue
+  target: critical-chain-project-management
+  target_kb: goldratt
+  relation: adaptation
+  note: "Ching's project rescue methodology draws on Critical Chain's insight that buffers should protect the whole project rather than individual tasks"
+
+- source: business-novel-as-pedagogy
+  target: socratic-novel-pedagogy
+  target_kb: goldratt
+  relation: parallel-concept
+  note: "Ching theorizes the same pedagogical approach Goldratt pioneered -- teaching through fiction with a Socratic mentor figure"
+
+- source: constraint-identification-in-knowledge-work
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: extends
+  note: "Ching's work on finding invisible constraints in knowledge work extends Step 1 (Identify) into domains where bottlenecks don't queue visibly"
+
+- source: cash-cows-make-the-best-burgers
+  target: throughput-world-vs-cost-world
+  target_kb: goldratt
+  relation: adaptation
+  note: "Reframes IT from cost center to throughput engine for CFOs, applying Goldratt's throughput-world thinking to software investment decisions"
+
+- source: goldratt-to-software-transmission-chain
+  target: post-goldratt-continuation
+  target_kb: goldratt
+  relation: contextualizes
+  note: "Ching's transmission chain note maps how TOC traveled from Goldratt's manufacturing context to software through four parallel paths including Ching's own"
+
+# === anderson ===
+# Both applied constraint/flow thinking to software. Parallel TOC-to-software translators.
+
+- source: david-anderson
+  target: kanban-method
+  target_kb: anderson
+  relation: contextualizes
+  note: "Ching's entry on Anderson situates him as a parallel TOC-to-software translator; Anderson's primary contribution is the Kanban Method"
+
+- source: toc-for-software-development
+  target: agile-management-for-software-engineering
+  target_kb: anderson
+  relation: parallel-work
+  note: "Both Ching and Anderson independently applied TOC to software -- Anderson's 2003 book preceded Ching's published work but addressed different layers (workflow management vs. project rescue)"
+
+- source: goldratt-to-software-transmission-chain
+  target: kanban-method
+  target_kb: anderson
+  relation: contextualizes
+  note: "Ching's transmission chain traces Anderson's Kanban path as the most methodologically rigorous of four Goldratt-to-software routes"
+
+- source: constraint-identification-in-knowledge-work
+  target: wip-limits
+  target_kb: anderson
+  relation: complementary
+  note: "Ching's approach finds the constraint through diagnostic investigation; Anderson's WIP limits expose constraints structurally by making queue buildup visible"
+
+- source: lean-agile-scotland-keynote-2018
+  target: kanban-book
+  target_kb: anderson
+  relation: shared-context
+  note: "Both Ching and Anderson spoke at Lean Agile Scotland events; the Scottish Agile community recognized both TOC-to-software approaches"
+
+# === poppendiecks ===
+# Lean software development context. Both translate manufacturing ideas to software.
+
+- source: toc-for-software-development
+  target: lean-software-development-agile-toolkit-2003
+  target_kb: poppendiecks
+  relation: parallel-work
+  note: "Ching's TOC-for-software and the Poppendiecks' lean-for-software both translated manufacturing frameworks to software in the same era, arriving at complementary recommendations"
+
+- source: bottleneck-thinking
+  target: optimize-the-whole
+  target_kb: poppendiecks
+  relation: complementary
+  note: "Both reject local optimization: Ching argues improvement must target the bottleneck; the Poppendiecks argue optimization must serve the whole system, not subsystems"
+
+- source: rolling-rocks-downhill
+  target: eliminate-waste
+  target_kb: poppendiecks
+  relation: complementary
+  note: "Rolling Rocks dramatizes that improving non-bottleneck steps is waste -- the same insight the Poppendiecks formalize as 'eliminate waste' in lean software"
+
+- source: the-speed-book
+  target: deliver-as-fast-as-possible
+  target_kb: poppendiecks
+  relation: parallel-concept
+  note: "Both address how to go faster in software -- Ching through constraint removal ('reduce drag'), the Poppendiecks through lean flow and queue reduction"
+
+# === reinertsen ===
+# Flow optimization, WIP limits, batch size economics.
+
+- source: dollarize-the-prize
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: parallel-concept
+  note: "Both quantify the economic cost of delay to drive prioritization -- Ching's Dollarize the Prize is a practitioner-accessible version of Reinertsen's cost-of-delay framework"
+
+- source: toc-for-software-development
+  target: flow-control
+  target_kb: reinertsen
+  relation: complementary
+  note: "Ching's TOC-for-software focuses on constraint identification and exploitation; Reinertsen's flow control provides the queueing theory mechanics for managing flow through the constraint"
+
+- source: the-motorcade-method
+  target: weighted-shortest-job-first
+  target_kb: reinertsen
+  relation: parallel-concept
+  note: "Both address project prioritization economics -- Ching's motorcade metaphor (treat the most valuable project as a VIP) and Reinertsen's WSJF both use economic value to sequence work"
+
+- source: constraint-identification-in-knowledge-work
+  target: queueing-theory-applied
+  target_kb: reinertsen
+  relation: complementary
+  note: "Ching's heuristics for finding hidden constraints (look for queues, find where people wait) are the practitioner version of Reinertsen's queueing theory analysis"
+
+# === deming ===
+# Quality and continuous improvement foundation.
+
+- source: focccus-formula
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: parallel-concept
+  note: "Both are iterative improvement cycles: FOCCCUS ends with 'Start again' as the constraint shifts; PDSA cycles through plan-do-study-act continuously. Different roots, convergent structure"
+
+- source: toc-for-software-development
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: shares-foundation
+  note: "Both insist organizations are systems where local optimization harms the whole -- Ching from Goldratt's throughput logic, Deming from statistical systems thinking"
+
+- source: goldratt-to-software-transmission-chain
+  target: deming-s-place-in-the-lean-lineage
+  target_kb: deming
+  relation: parallel-narrative
+  note: "Ching's transmission chain (Goldratt to software) runs parallel to the Deming transmission (Deming to Toyota to Lean to Agile) -- different roots, convergent destination"
+
+# === demarco ===
+# Both address software team dynamics and organizational dysfunction.
+
+- source: rolling-rocks-downhill
+  target: the-deadline
+  target_kb: demarco
+  relation: parallel-work
+  note: "Both are business novels dramatizing software project management crises -- DeMarco via peopleware principles, Ching via TOC constraint thinking"
+
+- source: business-novel-as-pedagogy
+  target: the-deadline
+  target_kb: demarco
+  relation: shared-tradition
+  note: "Both Ching and DeMarco adopted Goldratt's business-novel-as-teaching-vehicle format for software management audiences"
+
+- source: software-project-rescue
+  target: slack-concept
+  target_kb: demarco
+  relation: complementary
+  note: "Ching's project rescue works by finding and relieving the constraint; DeMarco's slack argument explains why projects get into crisis -- organizations eliminate the capacity buffers needed to absorb variability"

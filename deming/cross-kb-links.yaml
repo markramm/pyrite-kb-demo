@@ -1,0 +1,389 @@
+# deming → boyd
+
+- source: pdsa-cycle-plan-do-study-act
+  target: ooda-loop
+  target_kb: boyd
+  relation: parallel_to
+  note: "Parallel iterative learning cycles that emerged independently. Both treat the cognitive step (Study in PDSA, Orient in OODA) as critical. Deming's cycle is epistemic — about prediction and knowledge generation; Boyd's is competitive — about adaptation rate relative to an adversary."
+
+- source: system-of-profound-knowledge
+  target: orientation
+  target_kb: boyd
+  relation: parallel_to
+  note: "Both frameworks center on how the quality of mental models determines the quality of action. SoPK's theory-of-knowledge component insists that there is no action without theory; Boyd's orientation is the lens through which all observation is filtered."
+
+- source: appreciation-for-a-system
+  target: destruction-and-creation-concept
+  target_kb: boyd
+  relation: parallel_to
+  note: "Both address how to understand complex wholes. Deming emphasizes seeing interdependencies; Boyd emphasizes continuously decomposing and resynthesizing mental models of systems."
+
+- source: common-cause-vs-special-cause-variation
+  target: orientation
+  target_kb: boyd
+  relation: parallel_to
+  note: "Deming's distinction between common-cause and special-cause variation is a framework for correct orientation. Misidentifying common cause as special cause — treating system noise as signal — is an orientation failure Boyd would recognize as a mental model mismatch."
+
+- source: system-of-profound-knowledge
+  target: patterns-of-conflict
+  target_kb: boyd
+  relation: parallel_to
+  note: "Both are grand syntheses providing unified frameworks for complex adaptive situations. Deming's domain is organizational management; Boyd's is strategic conflict. Both insist on systemic, not reductionist, thinking."
+
+- source: pdsa-ooda-parallel-iterative-learning-cycles-across-domains
+  target: ooda-loop
+  target_kb: boyd
+  relation: parallel_to
+  note: "The deming KB's explicit PDSA-OODA parallel analysis note connects directly to Boyd's OODA loop entry."
+
+# deming → richards
+
+- source: toyota-production-system
+  target: boyd-toyota-connection
+  target_kb: richards
+  relation: related_to
+  note: "Richards argues that TPS demonstrates Boyd's organizational climate and tempo framework. Toyota's sustained advantage is explained by its OODA-loop learning rate — the environment Deming's quality philosophy helped create."
+
+- source: pdsa-cycle-plan-do-study-act
+  target: ooda-based-competition
+  target_kb: richards
+  relation: related_to
+  note: "Deming's PDSA is the quality-management implementation of what Richards calls OODA-based competition. Both describe competitive advantage through superior learning and adaptation rate."
+
+- source: taiichi-ohno
+  target: boyd-toyota-connection
+  target_kb: richards
+  relation: related_to
+  note: "Ohno is the bridge figure: he received Deming's quality philosophy through JUSE and transformed it into TPS, which Richards reads through Boyd's framework as decades-long OODA-based competition."
+
+- source: lean-manufacturing
+  target: boyd-toyota-connection
+  target_kb: richards
+  relation: related_to
+  note: "The global lean movement propagated TPS practices without necessarily propagating the organizational climate that made them effective — exactly the limitation Richards' Boyd-Toyota analysis explains."
+
+# deming → rao
+
+- source: pdsa-cycle-plan-do-study-act
+  target: tempo
+  target_kb: rao
+  relation: related_to
+  note: "Both identify iterative learning rate as a fundamental competitive variable. Deming's PDSA operationalizes tempo in the quality domain. Rao generalizes this into a theory of narrative timing across all decision domains."
+
+# deming → tps
+
+- source: juse-lectures-to-japanese-executives
+  target: toyota-wins-deming-prize-1965
+  target_kb: tps
+  relation: influenced
+  note: "Deming's 1950 JUSE lectures were the seed that Toyota cultivated for 15 years, culminating in winning the Deming Prize in 1965."
+
+- source: juse-lectures-to-japanese-executives
+  target: postwar-tps-foundations-1950-1965
+  target_kb: tps
+  relation: influenced
+  note: "Deming's 1950 lectures on statistical quality control directly shaped the postwar era in which TPS foundations were laid."
+
+- source: pdsa-cycle-plan-do-study-act
+  target: kaizen
+  target_kb: tps
+  relation: influenced
+  note: "Deming's PDSA cycle was transmitted to Japan through JUSE lectures and became the foundation for kaizen. The Japanese adaptation (often rendered as PDCA) became embedded in Toyota's daily improvement practices."
+
+- source: statistical-process-control-and-variation-theory
+  target: jidoka
+  target_kb: tps
+  relation: influenced
+  note: "Deming's SPC methods — detecting abnormal variation and stopping to investigate — provided the statistical foundation for jidoka (autonomation). Stopping production when quality deviates is a direct application of Shewhart-Deming control chart thinking."
+
+- source: the-14-points-for-management
+  target: kaizen
+  target_kb: tps
+  relation: influenced
+  note: "Deming's Point 5 ('improve constantly and forever the system') is the philosophical foundation for kaizen — continuous improvement as a permanent organizational commitment."
+
+- source: toyota-production-system
+  target: toyota-production-system-beyond-large-scale-production
+  target_kb: tps
+  relation: related_to
+  note: "Deming KB's TPS concept entry connects to Ohno's foundational text describing the system from the inside."
+
+- source: taiichi-ohno
+  target: taiichi-ohno
+  target_kb: tps
+  relation: related_to
+  note: "Cross-reference for the same person. The deming KB covers Ohno as a recipient of Deming's influence; the tps KB covers Ohno as the system's architect."
+
+- source: lean-manufacturing
+  target: the-machine-that-changed-the-world
+  target_kb: tps
+  relation: related_to
+  note: "Deming's lean manufacturing concept connects to the Womack/Jones book that coined 'lean production' and brought TPS principles to Western awareness."
+
+# deming → poppendiecks
+
+- source: system-of-profound-knowledge
+  target: optimize-the-whole
+  target_kb: poppendiecks
+  relation: influenced
+  note: "Deming's SoPK — especially 'appreciation for a system' — is the intellectual foundation for the Poppendiecks' 'optimize the whole' principle."
+
+- source: the-14-points-for-management
+  target: seven-lean-principles
+  target_kb: poppendiecks
+  relation: influenced
+  note: "The Poppendiecks' seven lean principles are a software-era reformulation of Deming's 14 Points, translated through TPS."
+
+- source: pdsa-cycle-plan-do-study-act
+  target: amplify-learning
+  target_kb: poppendiecks
+  relation: influenced
+  note: "Deming's PDSA cycle underpins the Poppendiecks' 'amplify learning' principle — development as a learning process, not a production process."
+
+- source: management-responsibility-for-quality
+  target: empower-the-team
+  target_kb: poppendiecks
+  relation: influenced
+  note: "Deming's insistence that management is responsible for the system connects to 'empower the team' — push decision authority to where information lives."
+
+- source: common-cause-vs-special-cause-variation
+  target: seven-wastes-of-software
+  target_kb: poppendiecks
+  relation: influenced
+  note: "Deming's variation theory informed the Poppendiecks' waste framework — waste is systemic, not the fault of individual developers."
+
+- source: out-of-the-crisis
+  target: lean-software-development-agile-toolkit-2003
+  target_kb: poppendiecks
+  relation: influenced
+  note: "Out of the Crisis is explicitly cited in the Poppendiecks' Lean Software Development as a foundational text."
+
+# deming → reinertsen
+
+- source: statistical-process-control-and-variation-theory
+  target: queueing-theory-applied
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen's applied queueing theory builds on Deming's statistical foundation. Both use mathematical models of variation to explain why managing variability is the key to flow."
+
+- source: pdsa-cycle-plan-do-study-act
+  target: fast-feedback
+  target_kb: reinertsen
+  relation: related_to
+  note: "Deming's PDSA cycle and Reinertsen's fast feedback principle share the core insight: the rate of learning cycles determines competitive advantage."
+
+- source: statistical-process-control-and-variation-theory
+  target: managing-variability
+  target_kb: reinertsen
+  relation: related_to
+  note: "Both address variation but differently: Deming seeks to reduce it in stable processes; Reinertsen argues some variability in product development is value-creating and must be managed."
+
+- source: chain-reaction-diagram
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: related_to
+  note: "Both provide economic arguments for why speed and quality are not in tension. Reinertsen quantifies what Deming argued qualitatively."
+
+- source: the-14-points-for-management
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: related_to
+  note: "Deming's Point 5 implies small incremental changes. Reinertsen provides mathematical proof for why smaller batches enable faster learning."
+
+- source: management-by-objectives-deming-s-critique
+  target: economic-framework-for-prioritization
+  target_kb: reinertsen
+  relation: related_to
+  note: "Deming attacked MBO for arbitrary targets. Reinertsen's economic framework provides the alternative: prioritize based on cost of delay, not arbitrary goals."
+
+# deming → goldratt
+
+- source: appreciation-for-a-system
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "Both insist organizations are systems where local optimization harms the whole. They diverge: Deming focuses on reducing variation; Goldratt on exploiting the binding constraint."
+
+- source: chain-reaction-diagram
+  target: throughput-accounting
+  target_kb: goldratt
+  relation: related_to
+  note: "Deming's chain reaction parallels Goldratt's throughput accounting — both reject cost-world thinking in favor of systemic improvement."
+
+- source: the-14-points-for-management
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: contrasts_with
+  note: "Deming's 14 Points prescribe broad systemic transformation simultaneously. Goldratt's Five Focusing Steps prescribe sequential attention to the current constraint."
+
+- source: management-by-objectives-deming-s-critique
+  target: throughput-world-vs-cost-world
+  target_kb: goldratt
+  relation: related_to
+  note: "Deming's MBO critique (numerical targets distort systems) aligns with Goldratt's cost-world critique (local optima destroy global throughput)."
+
+- source: statistical-process-control-and-variation-theory
+  target: drum-buffer-rope
+  target_kb: goldratt
+  relation: contrasts_with
+  note: "Deming's SPC manages processes by reducing variation; Goldratt's DBR manages flow by subordinating everything to the constraint's pace."
+
+- source: seven-deadly-diseases
+  target: cost-accounting-public-enemy
+  target_kb: goldratt
+  relation: related_to
+  note: "Deming's 'deadly diseases' and Goldratt's 'cost accounting is public enemy #1' both attack conventional management accounting as systemically destructive."
+
+# deming → senge
+
+- source: appreciation-for-a-system
+  target: systems-thinking-fifth-discipline
+  target_kb: senge
+  relation: influenced
+  note: "Deming's 'appreciation for a system' directly influenced Senge's systems thinking as the 'fifth discipline.' Senge acknowledged Deming."
+
+- source: system-of-profound-knowledge
+  target: five-disciplines
+  target_kb: senge
+  relation: influenced
+  note: "Deming's four-part SoPK influenced Senge's five disciplines. Both are integrative frameworks requiring simultaneous attention to systems, psychology, knowledge, and learning."
+
+- source: psychology-of-management
+  target: mental-models
+  target_kb: senge
+  relation: influenced
+  note: "Deming's psychology component connects to Senge's 'mental models' — the deeply held assumptions that shape organizational behavior."
+
+- source: the-14-points-for-management
+  target: learning-organization
+  target_kb: senge
+  relation: influenced
+  note: "Deming's 14 Points describe preconditions for what Senge formalized as the 'learning organization.' Deming prescribed management actions; Senge provided organizational theory."
+
+- source: pdsa-cycle-plan-do-study-act
+  target: team-learning
+  target_kb: senge
+  relation: influenced
+  note: "Deming's PDSA cycle is the operational mechanism for Senge's 'team learning' — the discipline of collective inquiry and dialogue."
+
+- source: the-funnel-experiment
+  target: beer-game
+  target_kb: senge
+  relation: parallel_to
+  note: "Both are pedagogical simulations demonstrating systemic principles. The funnel shows tampering amplifies variation; the beer game shows rational local decisions produce irrational systemic outcomes."
+
+# deming → weinberg
+
+- source: system-of-profound-knowledge
+  target: quality-software-management-framework
+  target_kb: weinberg
+  relation: influenced
+  note: "Weinberg's Quality Software Management series applies systems thinking and quality management to software, drawing on the same tradition as Deming's SoPK."
+
+- source: appreciation-for-a-system
+  target: general-systems-thinking
+  target_kb: weinberg
+  relation: related_to
+  note: "Both apply systems theory to understanding organizations. Weinberg explicitly used system models to analyze software project dynamics."
+
+- source: psychology-of-management
+  target: programming-as-human-activity
+  target_kb: weinberg
+  relation: related_to
+  note: "Deming's insistence on understanding psychology parallels Weinberg's foundational claim that programming is a human activity understood through psychology, not just logic."
+
+- source: management-responsibility-for-quality
+  target: cultural-patterns-of-software-organizations
+  target_kb: weinberg
+  relation: related_to
+  note: "Deming's principle that management is responsible for the system connects to Weinberg's cultural patterns taxonomy — organizational maturity echoing Deming's critique."
+
+- source: the-14-points-for-management
+  target: egoless-programming
+  target_kb: weinberg
+  relation: related_to
+  note: "Deming's Points 8 and 9 ('drive out fear,' 'break down barriers') resonate with egoless programming — defensive behavior is systemic, caused by management, not character."
+
+# deming → meadows
+
+- source: appreciation-for-a-system
+  target: stocks-and-flows
+  target_kb: meadows
+  relation: related_to
+  note: "Deming focused on organizational systems; Meadows provided the formal modeling language (stocks, flows, feedback) for any system."
+
+- source: appreciation-for-a-system
+  target: feedback-loops
+  target_kb: meadows
+  relation: related_to
+  note: "Deming's systems thinking implicitly relies on feedback dynamics. Meadows made feedback loops explicit as the fundamental mechanism of system behavior."
+
+- source: the-funnel-experiment
+  target: delays-in-systems
+  target_kb: meadows
+  relation: parallel_to
+  note: "The funnel experiment demonstrates how overreacting to feedback amplifies variation — caused by ignoring delays, which Meadows identifies as a key source of oscillation."
+
+- source: system-of-profound-knowledge
+  target: leverage-points
+  target_kb: meadows
+  relation: related_to
+  note: "Both identify deep structures for transformation. Deming's SoPK targets organizational paradigms; Meadows' leverage points identify where to intervene for greatest effect."
+
+- source: institutional-incentives
+  target: bounded-rationality-in-systems
+  target_kb: meadows
+  relation: related_to
+  note: "Deming's analysis of how institutional incentives produce dysfunction connects to Meadows' bounded rationality — actors rational locally but producing irrational system outcomes."
+
+# deming → womack-jones
+
+- source: system-of-profound-knowledge
+  target: five-lean-principles
+  target_kb: womack-jones
+  relation: influenced
+  note: "Deming's systems thinking and customer focus philosophically underpin Womack/Jones's five lean principles, especially Value and Perfection."
+
+- source: pdsa-cycle-plan-do-study-act
+  target: perfection-principle
+  target_kb: womack-jones
+  relation: influenced
+  note: "The Perfection principle's continuous improvement aspiration traces through kaizen back to Deming's PDSA cycle."
+
+- source: appreciation-for-a-system
+  target: value-principle
+  target_kb: womack-jones
+  relation: influenced
+  note: "Defining value from the customer's perspective reflects Deming's systems thinking — the customer is part of the system."
+
+- source: lean-manufacturing
+  target: lean-production
+  target_kb: womack-jones
+  relation: related_to
+  note: "Same concept from different angles — Deming KB covers it in the quality revolution context; womack-jones KB covers its codification."
+
+- source: taiichi-ohno
+  target: taiichi-ohno
+  target_kb: womack-jones
+  relation: related_to
+  note: "Same person — Deming KB covers Ohno as influenced by Deming; womack-jones KB covers him as the practitioner Womack/Jones documented."
+
+# deming → blank
+
+- source: pdsa-cycle-plan-do-study-act
+  target: four-steps-to-the-epiphany-published
+  target_kb: blank
+  relation: influenced
+  note: "Deming's PDSA is the deep ancestor of Build-Measure-Learn. Blank's Customer Development — iterative hypothesis testing against customer reality — is PDSA applied to market discovery."
+
+- source: lean-manufacturing
+  target: eric-ries
+  target_kb: blank
+  relation: influenced
+  note: "Deming-influenced lean manufacturing principles were explicitly adopted by Ries as the foundation for the Lean Startup methodology."
+
+- source: system-of-profound-knowledge
+  target: nsf-i-corps-program-launched
+  target_kb: blank
+  relation: influenced
+  note: "I-Corps' insistence on testing hypotheses against reality echoes Deming's SoPK. The lineage runs through lean manufacturing and lean startup."

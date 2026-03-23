@@ -1,0 +1,341 @@
+name: poppendiecks
+description: >
+  Intellectual biography of Mary Poppendieck and Tom Poppendieck — the founders
+  of Lean Software Development. Covers their translation of Toyota Production System
+  principles into software, the seven lean principles, the "learning not results" insight,
+  their four major books (2003, 2006, 2009, 2013), their influence on Kanban, DevOps, and
+  continuous delivery, and their role in the broader Agile movement.
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    The Poppendiecks are a collaborative pair — Mary brought lean manufacturing experience
+    from 3M and Tom brought physics and IT. Entries should distinguish which Poppendieck
+    contributed which insight where possible, though they published jointly. Their work is
+    explicitly translational — they mapped TPS concepts to software equivalents. Entries
+    should trace both the manufacturing source concept and its software translation.
+    Their books build on each other: the 2003 book introduced the framework, 2006 showed
+    implementation, 2009 addressed organizational leadership. Distinguish which book
+    introduced which idea.
+  quality: |
+    Entries should go beyond summarizing lean principles to explain WHY each principle
+    matters for software specifically. The Poppendiecks' distinctive contribution is not
+    just "apply lean to software" but their specific insight that learning, not output,
+    is the primary value stream in software development. This reframes waste, flow,
+    and optimization in ways that differ from naive efficiency metrics. Entries should
+    engage with this intellectual core, not just list practices.
+  voice: |
+    Practical and analytical. The Poppendiecks are practitioners who ground theory in
+    concrete examples — entries should reflect this balance of rigor and applicability.
+    Respect the manufacturing lineage without treating software as merely derivative.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of Mary and Tom Poppendieck covering their
+    backgrounds, the three lean software development books, the seven principles, their
+    translation methodology (TPS concept → software equivalent), the "amplify learning"
+    insight, their professional network, and their influence on Kanban, DevOps,
+    continuous delivery, and the broader lean-Agile ecosystem.
+  success_criteria: |
+    A reader can trace the full translation chain from TPS to lean software: how each
+    manufacturing concept was mapped to a software equivalent, what was preserved, what
+    was adapted, and what was original. Cross-references to Deming (PDCA), Ohno/Shingo
+    (TPS), Reinertsen (queueing theory), and the Agile/DevOps movements are explicit.
+    The "learning not results" insight is contextualized within the broader lineage
+    (Deming → Boyd → Blank → Ries).
+
+evaluation_rubric:
+  - "Entry traces the TPS-to-software translation for relevant concepts"
+  - "Claims about the Poppendiecks' views reference a specific book or presentation"
+  - "Concepts distinguish between what the Poppendiecks originated and what they translated"
+  - "People entries describe the specific intellectual relationship and influence direction"
+  - "Cross-KB connections to Deming, TPS, Reinertsen, and Agile lineage are noted where relevant"
+  - "Importance scores are calibrated — the seven principles and major books rate highest"
+
+types:
+  concept:
+    description: "A key idea, principle, or framework from Lean Software Development"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, tps_source, key_writings, related_concepts, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Book or presentation where this concept first appears in the Poppendiecks' work"
+      tps_source:
+        type: string
+        description: "The TPS or manufacturing concept this translates from, if applicable"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, principle, or framework from the Poppendiecks' lean software development
+      work. Includes the seven lean principles (eliminate waste, amplify learning, decide
+      as late as possible, deliver as fast as possible, empower the team, build integrity
+      in, optimize the whole), supporting concepts (set-based design, pull systems, value
+      stream mapping for software), and their distinctive insights (learning as primary
+      value stream, last responsible moment). For each concept, trace the TPS source
+      (if translational) and explain what changes in the software translation. The body
+      should explain why the concept matters for software specifically.
+    evaluation_rubric:
+      - "Concept explains what it is and why it matters for software"
+      - "TPS source concept is identified if the concept is translational"
+      - "First appearance in the Poppendiecks' work is documented"
+      - "Links to related concepts within the KB"
+    display:
+      icon: lightbulb
+      layout: document
+
+  writing:
+    description: "A work by Mary and/or Tom Poppendieck — book, article, talk, or tutorial"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publication, url, abstract, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, article, paper, talk, tutorial, foreword, interview, column, video]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors or co-presenters"
+      publication:
+        type: string
+        description: "Venue, journal, conference, or publisher"
+      url:
+        type: string
+        description: "URL to full text or recording if available"
+      abstract:
+        type: text
+        description: "Abstract or brief description of the work"
+      key_concepts:
+        type: list
+        description: "Concepts developed or discussed (entry IDs from concepts/)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored by Mary and/or Tom Poppendieck. Their four major books are:
+      "Lean Software Development: An Agile Toolkit" (2003, Addison-Wesley),
+      "Implementing Lean Software Development: From Concept to Cash" (2006, Addison-Wesley),
+      "Leading Lean Software Development: Results Are Not the Point" (2009, Addison-Wesley),
+      "The Lean Mindset: Ask the Right Questions" (2013, Addison-Wesley Professional).
+      They also gave numerous conference talks (Agile Alliance, JAOO, QCon, etc.),
+      wrote articles for IEEE Software and other venues, and produced tutorials.
+      Always include date and writing_type. For talks, note the conference.
+    evaluation_rubric:
+      - "Writing has a date"
+      - "Writing has a writing_type classification"
+      - "Body describes the work's significance, not just its contents"
+    display:
+      icon: file-text
+      layout: document
+
+  era:
+    description: "A period in the Poppendiecks' intellectual or professional development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '1990-2003'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations during this period"
+    ai_instructions: >
+      A period in the Poppendiecks' intellectual or professional development. Key eras
+      include: Mary's early career and 3M lean manufacturing experience, Tom's physics
+      and IT career, the synthesis period leading to their first book (late 1990s-2003),
+      the Lean Software Development trilogy period (2003-2009), and their later conference
+      teaching and advisory work. Each era should explain what intellectual development
+      occurred and how it connected to the next phase.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in the Poppendiecks' intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_poppendiecks, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_poppendiecks:
+        type: string
+        description: "Nature of professional/intellectual relationship"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in the Poppendiecks' professional and intellectual network. Includes
+      upstream influences (Taiichi Ohno, Shigeo Shingo, W. Edwards Deming, Donald
+      Reinertsen), peers in the Agile community (Kent Beck, Martin Fowler, Jim Highsmith,
+      Alistair Cockburn), downstream practitioners and extenders (David Anderson, Gene Kim,
+      Jez Humble), and manufacturing lineage figures (James Womack, Daniel Jones).
+      Describe the specific intellectual relationship and influence direction.
+    evaluation_rubric:
+      - "Person has a role described"
+      - "Relationship to the Poppendiecks is explicitly stated"
+      - "Person's own contributions are described, not just their connection"
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to the Poppendiecks' career or influence"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location]
+    fields:
+      org_type:
+        type: select
+        values: [company, university, publisher, conference, professional-society, nonprofit, consulting, government]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+    ai_instructions: >
+      An institution relevant to the Poppendiecks' career, thought, or influence.
+      Includes 3M (Mary's lean manufacturing experience), Addison-Wesley (publisher),
+      the Agile Alliance, conferences where they presented (Agile, JAOO, QCon),
+      Poppendieck LLC (their consulting practice), and organizations that adopted
+      lean software development.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A biographical or intellectual milestone"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in the Poppendiecks' career or intellectual context.
+      Includes publication milestones, keynote talks, conference appearances,
+      and pivotal moments in the lean software development movement.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about the Poppendiecks or lean software development"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, profile, review, dissertation, video, podcast, blog-post]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about the Poppendiecks, their work, or lean software development.
+      These are references ABOUT the Poppendiecks, not BY them. Includes reviews of their
+      books, interviews, profiles, conference proceedings, and scholarly analyses of lean
+      software development. For works by the Poppendiecks, use the 'writing' type.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, observations, or commentary. Use for thinking about
+      the Poppendiecks' work, the TPS-to-software translation methodology, connections
+      to other frameworks (Deming's PDCA, Boyd's OODA, Reinertsen's queueing theory),
+      the "learning not results" thesis, and editorial notes.
+    evaluation_rubric:
+      - "Note has a clear analytical thesis, not just a collection of facts"
+      - "Claims and comparisons are sourced where possible"
+      - "Cross-KB connections are explicit and specific"
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  develops: "Develops or elaborates (concept in writing)"
+  builds_on: "Builds on earlier work"
+  critiques: "Critiques or argues against"
+  translates: "Translates concept from another domain"
+  translated_by: "Concept translated into another domain by"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  collaborates_with: "Collaborates with"
+
+  # Institutional
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  employed_by: "Employed by"
+  member_of: "Member of"
+  published_by: "Published by"
+  presented_at: "Presented at"
+
+  # Structural
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

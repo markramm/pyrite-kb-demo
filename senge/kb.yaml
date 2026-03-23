@@ -1,0 +1,334 @@
+name: senge
+description: >
+  Intellectual biography of Peter Senge (b. 1947) — MIT Sloan faculty, systems thinker,
+  and author of "The Fifth Discipline" (1990), which popularized the concept of the
+  learning organization. Covers the five disciplines (systems thinking, personal mastery,
+  mental models, shared vision, team learning), system dynamics lineage from Jay Forrester,
+  systems archetypes, the Beer Game, organizational learning theory, and Senge's influence
+  on management thinking, education, sustainability, and the broader systems thinking tradition.
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Senge's career has two distinct phases: the MIT system dynamics researcher (1970s-1990)
+    and the global management thought leader / sustainability advocate (1990-present). The
+    Fifth Discipline (1990) is the hinge point. Many concepts attributed to Senge originate
+    with his intellectual predecessors — Jay Forrester (system dynamics), Chris Argyris
+    (double-loop learning, defensive routines), Donald Schon (reflective practice), David
+    Bohm (dialogue). Entries must carefully distinguish what Senge originated, what he
+    synthesized, and what he popularized. His fieldbook series (1994, 1999, 2000, 2004)
+    involved extensive collaboration — track co-authors precisely.
+  quality: |
+    Entries should engage analytically with Senge's frameworks, not just describe them.
+    The five disciplines are not a checklist — they are an integrated system where systems
+    thinking is the "fifth discipline" that makes the other four cohere. Entries should
+    explain HOW the disciplines interact, not just WHAT each one says. The systems archetypes
+    are Senge's most practical contribution — treat them as analytical tools, not just
+    taxonomy. His critics (who argue the learning organization is aspirational but hard to
+    implement) deserve fair treatment. Trace the actual transmission chains for influence
+    claims — Senge's impact on Agile, lean, and DevOps is often indirect.
+  voice: |
+    Intellectually rigorous but accessible. Senge writes for practitioners, not academics,
+    and the KB should match that tone — clear explanations of complex systems concepts
+    without dumbing them down. Respect the philosophical depth of his work (the Bohm
+    dialogue material, the later sustainability and consciousness work) without losing
+    sight of its practical applications.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of Peter Senge covering the five disciplines,
+    systems archetypes, the learning organization concept, his intellectual lineage (Forrester,
+    Argyris, Schon, Bohm, Deming), his professional network (SoL, MIT), his major works and
+    their evolution, and his influence on management, education, and sustainability thinking.
+    Cross-references to Deming (systems thinking, quality), Boyd (mental models, orientation),
+    Weinberg (general systems thinking), and the Poppendiecks (learning not results) are explicit.
+  success_criteria: |
+    A reader can understand how Senge synthesized system dynamics, organizational learning theory,
+    and dialogue practice into the five disciplines framework; trace the intellectual lineage
+    from Forrester through Senge to contemporary practice; and see the connections between the
+    learning organization and lean/agile/DevOps movements. The Beer Game, systems archetypes,
+    and causal loop diagrams are explained as practical tools, not just concepts.
+
+evaluation_rubric:
+  - "Entry cites a specific Senge book or article where possible"
+  - "Claims about Senge's views specify which work or period they come from"
+  - "Concepts trace both Senge's formulation and upstream intellectual origins"
+  - "People entries describe the specific intellectual relationship and influence direction"
+  - "Cross-KB connections to Deming, Boyd, Weinberg, and Forrester are noted"
+  - "Importance scores are calibrated — The Fifth Discipline and core disciplines rate highest"
+
+types:
+  concept:
+    description: "A key idea, framework, or intellectual contribution from Senge's work"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, source_tradition, key_writings, related_concepts, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Book or approximate date where this concept first appears in Senge's work"
+      source_tradition:
+        type: string
+        description: "Intellectual tradition this draws from (e.g., system dynamics, Argyris, Bohm, Deming)"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, framework, or intellectual contribution from Senge's work. Includes the
+      five disciplines (systems thinking, personal mastery, mental models, shared vision,
+      team learning), systems archetypes (shifting the burden, limits to growth, fixes that
+      fail, etc.), the learning organization, creative tension, the Beer Game, causal loop
+      diagrams, leverage points, and dialogue practice. For each concept, trace both Senge's
+      formulation and any upstream sources (Forrester, Argyris, Schon, Bohm, Deming). The
+      body should explain why the concept matters for organizations, not just define it.
+    evaluation_rubric:
+      - "Concept explains what it is and why it matters"
+      - "Origin or first_appeared is documented"
+      - "Source tradition is identified if applicable"
+      - "Links to related concepts within the KB"
+    display:
+      icon: lightbulb
+      layout: document
+
+  writing:
+    description: "A work by or substantially involving Peter Senge"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publication, url, abstract, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, article, paper, talk, interview, chapter, foreword, fieldbook, video]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors or collaborators"
+      publication:
+        type: string
+        description: "Publisher or venue"
+      url:
+        type: string
+        description: "URL if available"
+      abstract:
+        type: text
+        description: "Brief description"
+      key_concepts:
+        type: list
+        description: "Concepts developed (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored or co-authored by Peter Senge. Major works include "The Fifth Discipline"
+      (1990, revised 2006), "The Fifth Discipline Fieldbook" (1994), "The Dance of Change"
+      (1999), "Schools That Learn" (2000, revised 2012), "Presence" (2004), and "The Necessary
+      Revolution" (2008). Senge also published in Sloan Management Review, Harvard Business
+      Review, and academic journals. His fieldbooks are collaborative works with multiple
+      co-authors — track collaborators carefully. Writing_type "fieldbook" is for the distinctive
+      Senge format of practical exercises and tools derived from a conceptual framework.
+    evaluation_rubric:
+      - "Writing has a date"
+      - "Writing has a writing_type classification"
+      - "Body describes the work's significance, not just its contents"
+    display:
+      icon: file-text
+      layout: document
+
+  era:
+    description: "A period in Senge's intellectual or professional development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations]
+    fields:
+      date_range:
+        type: string
+        description: "Time span"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+    ai_instructions: >
+      A period in Senge's intellectual or professional development. Key eras include:
+      doctoral work under Forrester at MIT (1970s), early system dynamics research and
+      teaching (1980s), the Fifth Discipline breakthrough and global fame (1990-1999),
+      the fieldbook/application period (1994-2004), the sustainability turn (2005-present),
+      and the education focus. Each era represents a distinct intellectual phase.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Senge's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_senge, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_senge:
+        type: string
+        description: "Nature of intellectual/professional relationship"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Senge's professional and intellectual network. Key figures include Jay
+      Forrester (doctoral advisor, system dynamics founder), Chris Argyris (organizational
+      learning theorist), Donald Schon (reflective practice), David Bohm (dialogue and
+      physics), W. Edwards Deming (quality and systems), Arie de Geus (Shell scenario
+      planning, "The Living Company"), Otto Scharmer (Theory U, presencing), Art Kleiner
+      (co-author, journalist), Charlotte Roberts (fieldbook co-author), Bryan Smith
+      (fieldbook co-author), and various SoL members and MIT colleagues.
+    evaluation_rubric:
+      - "Person has a role described"
+      - "Relationship to Senge is explicitly stated"
+      - "Person's own contributions are described"
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Senge's career or influence"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location]
+    fields:
+      org_type:
+        type: select
+        values: [company, university, publisher, conference, professional-society, nonprofit, research-center, consulting]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+    ai_instructions: >
+      An institution relevant to Senge's career, including MIT Sloan School, the MIT
+      System Dynamics Group, the Society for Organizational Learning (SoL), Innovation
+      Associates (early consulting firm), Doubleday/Currency (publisher), the Academy
+      for Systemic Change, and organizations that adopted learning organization practices.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A biographical or intellectual milestone"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in Senge's career or intellectual context — publication milestones,
+      conference presentations, organizational foundings, and key biographical moments.
+      The Fifth Discipline publication (1990), SoL founding (1997), and key shifts in his
+      intellectual focus are high-priority events.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Senge or his work"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, profile, review, podcast, blog-post, academic-paper, documentary]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about Senge or his work. For works BY Senge, use the 'writing'
+      type. Sources include academic analyses of his theories, critical reviews, interviews,
+      profiles, and comparative studies placing him in the systems thinking or management
+      thinking traditions.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, or commentary about Senge's work, intellectual connections,
+      or influence on later movements.
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  develops: "Develops or elaborates (concept in writing)"
+  builds_on: "Builds on earlier work"
+  critiques: "Critiques or argues against"
+  synthesizes: "Synthesizes from multiple traditions"
+  applies: "Applies concepts from another domain"
+  applied_by: "Concepts applied by"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  collaborates_with: "Collaborates with"
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  employed_by: "Employed by"
+  member_of: "Member of"
+  published_by: "Published by"
+  presented_at: "Presented at"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

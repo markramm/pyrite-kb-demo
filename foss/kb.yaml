@@ -1,0 +1,516 @@
+name: foss
+description: >
+  The free and open source software (FOSS) movement — from Stallman's GNU Manifesto
+  (1983) through the open source schism (1998) to modern distributed development,
+  licensing ecosystems, and governance models. A movement KB tracking how free software
+  principles reshaped how software is built, distributed, and governed, complementing
+  the Stallman KB (which covers Stallman's individual philosophy and works) with the
+  broader movement history, institutions, and practices.
+
+kb_type: movement
+
+guidelines:
+  contributing: |
+    This KB covers the FOSS movement as a whole, not any single thinker. The Stallman KB
+    covers Stallman's individual philosophy, writings, and career in depth — this KB should
+    reference Stallman entries via cross-KB links rather than duplicating them. The same
+    applies to figures covered in the Doctorow KB (digital rights), Agile KB (development
+    practices), and Wardley KB (evolution/commoditization).
+
+    Primary sources include the foundational texts (GNU Manifesto, Cathedral and the Bazaar,
+    Debian Social Contract, Open Source Definition), license texts, project governance
+    documents, and mailing list archives. Secondary sources include histories of the movement,
+    empirical studies of open source development, and the substantial journalism covering
+    FOSS controversies and business models.
+
+    Key pitfalls: (1) conflating "free software" and "open source" — the philosophical split
+    is central to the movement's history and must be maintained; (2) treating FOSS as a
+    monolith when it encompasses radically different governance, licensing, and community
+    models; (3) tech hagiography — many FOSS origin stories are mythologized and need
+    critical treatment.
+  quality: |
+    Entries should distinguish between: (1) the free software movement rooted in ethical
+    principles about user freedom, (2) the open source movement rooted in pragmatic claims
+    about development methodology, (3) the licensing innovations that gave both legal force,
+    (4) the distributed development practices that emerged from FOSS projects, (5) the
+    governance models that evolved to manage large-scale collaboration, and (6) the modern
+    ecosystem where FOSS is critical infrastructure but sustainability is precarious.
+
+    The KB should capture both the genuine achievement (a global collaborative model that
+    produced Linux, Apache, Git, Python, and most of modern infrastructure) and the real
+    tensions (maintainer burnout, corporate free-riding, license proliferation, the gap
+    between FOSS ideology and FOSS economics).
+  voice: |
+    Analytical and historically grounded. Respectful of the movement's achievements but
+    honest about its tensions and failures. Neither advocacy nor cynicism — the goal is to
+    help a reader understand why FOSS emerged, how it works, where it succeeded, and where
+    it struggles. Write for practitioners and students of software development who want to
+    understand the movement's intellectual roots, institutional structures, and ongoing
+    evolution.
+
+goals:
+  primary: |
+    Build a connected history of the FOSS movement that traces the free software / open
+    source split, documents the licensing and governance innovations, connects distributed
+    development practices to their origins, maps the institutional ecosystem, and links
+    to every relevant KB (Stallman, Doctorow, Agile, Wardley, Deming). The KB should
+    make the movement's internal tensions legible — freedom vs. pragmatism, community vs.
+    corporate, sustainability vs. openness — rather than flattening them.
+  success_criteria: |
+    A reader can: (1) trace the free software → open source divergence and understand the
+    philosophical stakes, (2) explain the major license families and their strategic
+    implications, (3) describe how FOSS projects actually coordinate at scale, (4) identify
+    the governance models and their trade-offs, (5) understand the modern sustainability
+    crisis and its structural causes, (6) navigate cross-KB links to Stallman, Doctorow,
+    Agile, and Wardley KBs with understanding of the actual relationships.
+
+evaluation_rubric:
+  - "Entry distinguishes between free software and open source perspectives where relevant"
+  - "Licensing entries explain strategic implications, not just legal terms"
+  - "Person entries explain specific contribution to the movement, not just biography"
+  - "Writing entries explain significance and impact, not just contents"
+  - "Governance and practice entries draw on actual project examples"
+  - "Connections to Stallman, Doctorow, Agile, and Wardley KBs are explicit where relevant"
+
+types:
+  concept:
+    description: "A key idea, principle, or framework in the FOSS movement"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, concept_type, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing, event, or approximate date where this concept first appears"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      concept_type:
+        type: select
+        values: [principle, philosophy, development-model, governance-model, economic-model, legal-innovation, anti-pattern, critique]
+        description: "Category of concept"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea in the FOSS movement — the four freedoms, copyleft, the bazaar model,
+      Linus's Law, forking as governance, the commons, open core, enshittification of
+      platforms. Always identify where the concept originated and trace its development.
+      Distinguish between concepts original to the free software tradition (ethical,
+      freedom-centered) and concepts from the open source tradition (pragmatic,
+      methodology-centered). For concepts that exist in both traditions, explain how
+      each tradition frames them differently.
+    evaluation_rubric:
+      - "Concept identifies origin and first appearance"
+      - "Free software vs. open source framing is distinguished where relevant"
+      - "Relationship to movement history is explicit"
+    display:
+      icon: lightbulb
+      layout: document
+
+  license:
+    description: "A specific software license or license family"
+    subdirectory: licenses
+    required: [title, license_type]
+    optional: [author, date, spdx_id, key_provisions, related_licenses, research_status]
+    fields:
+      license_type:
+        type: select
+        values: [copyleft-strong, copyleft-weak, permissive, source-available, public-domain, meta-license]
+        description: "License category"
+      author:
+        type: string
+        description: "Author or sponsoring organization"
+      date:
+        type: date
+        description: "Date of first publication or current version"
+      spdx_id:
+        type: string
+        description: "SPDX license identifier (e.g., GPL-3.0-only, MIT, Apache-2.0)"
+      key_provisions:
+        type: list
+        description: "Key distinguishing provisions"
+      related_licenses:
+        type: list
+        description: "Related licenses (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A specific software license or license family. Licensing is central to the FOSS
+      movement — the GPL made copyleft legally enforceable, permissive licenses enabled
+      corporate adoption, and the tension between copyleft and permissive licenses
+      reflects the free software vs. open source split. Entries should explain the
+      license's strategic significance to the movement, not just its legal terms.
+      Cover: what problem the license solves, who created it and why, how it has been
+      adopted, and what controversies surround it. For license families (GPL v2 → v3),
+      explain what changed and why.
+    evaluation_rubric:
+      - "License type (copyleft/permissive/etc.) is specified"
+      - "Strategic significance to the movement is explained"
+      - "Key provisions are described in plain language"
+    display:
+      icon: shield
+      layout: document
+
+  practice:
+    description: "A development, governance, or community practice characteristic of FOSS"
+    subdirectory: practices
+    required: [title, practice_type]
+    optional: [originated_in, key_projects, related_practices, status, research_status]
+    fields:
+      practice_type:
+        type: select
+        values: [development, governance, community, legal, release-management, quality, collaboration]
+        description: "Category of practice"
+      originated_in:
+        type: string
+        description: "Project or context where this practice originated"
+      key_projects:
+        type: list
+        description: "Projects that exemplify this practice (entry IDs)"
+      related_practices:
+        type: list
+        description: "Related practices (entry IDs)"
+      status:
+        type: select
+        values: [active, evolved, deprecated, contested]
+        description: "Current status in the movement"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A practice characteristic of FOSS development — code review, patch-based workflow,
+      release management, forking, mailing list governance, CLA/DCO processes, mentorship
+      programs (Google Summer of Code), bug triage, RFC processes. Always specify which
+      project(s) originated or exemplify the practice. Distinguish between practices that
+      emerged organically from FOSS communities and practices borrowed from other traditions.
+      Note how practices evolved (e.g., patch emails → pull requests → CI/CD pipelines).
+    evaluation_rubric:
+      - "Practice identifies originating project or context"
+      - "Current status is specified"
+      - "Evolution over time is described where relevant"
+    display:
+      icon: tool
+      layout: document
+
+  writing:
+    description: "A foundational text, book, essay, or talk in the FOSS movement"
+    subdirectory: writings
+    required: [title, writing_type, date, author]
+    optional: [coauthors, publisher, url, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, paper, essay, talk, blog-post, manifesto, report, article, letter]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      author:
+        type: string
+        description: "Primary author (entry ID where possible)"
+      coauthors:
+        type: list
+        description: "Co-authors"
+      publisher:
+        type: string
+        description: "Publisher or venue"
+      url:
+        type: string
+        description: "URL if available"
+      key_concepts:
+        type: list
+        description: "Concepts developed or advanced (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A foundational or significant text in the FOSS movement — the GNU Manifesto,
+      Cathedral and the Bazaar, Free Software Free Society, Producing Open Source Software,
+      The Art of Community, and key talks, essays, and blog posts. For texts already
+      covered in the Stallman KB (e.g., GNU Manifesto, Free Software Free Society),
+      create a brief entry here focused on the text's role IN THE MOVEMENT rather than
+      its contents, and cross-link to the Stallman KB entry for depth. Always explain
+      what the writing contributed to the movement's development, not just what it says.
+    evaluation_rubric:
+      - "Writing has author, date, and writing_type"
+      - "Body explains significance to the movement"
+      - "Key concepts are linked"
+    display:
+      icon: file-text
+      layout: document
+
+  person:
+    description: "A key figure in the FOSS movement"
+    subdirectory: people
+    required: [title, role]
+    optional: [dates, affiliations, key_works, movement_role, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role (e.g., 'kernel developer', 'license author', 'foundation leader')"
+      dates:
+        type: string
+        description: "Birth-death or active years"
+      affiliations:
+        type: list
+        description: "Institutional affiliations (entry IDs where possible)"
+      key_works:
+        type: list
+        description: "Major works or projects (entry IDs)"
+      movement_role:
+        type: select
+        values: [founder, project-leader, license-author, institution-builder, evangelist, theorist, critic, corporate-champion, community-builder]
+        description: "Role in the FOSS movement"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in the FOSS movement. For figures already covered in depth in other KBs
+      (Stallman in the Stallman KB, Doctorow in the Doctorow KB), create a brief entry
+      here focused on their role in the FOSS movement specifically, and cross-link to the
+      other KB for their full intellectual profile. Always specify movement_role and explain
+      the person's specific contribution — what did they build, write, argue, or organize
+      that shaped the movement? Avoid hagiography; note controversies where relevant to
+      understanding the movement's dynamics.
+    evaluation_rubric:
+      - "Person has role and movement_role"
+      - "Body explains specific contribution to the movement"
+      - "Cross-KB links used for figures covered in other KBs"
+    display:
+      icon: user
+      layout: record
+
+  era:
+    description: "A period in the FOSS movement's development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_figures, key_writings, key_concepts, key_events]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '1983-1998'"
+      key_figures:
+        type: list
+        description: "Central figures during this period (entry IDs)"
+      key_writings:
+        type: list
+        description: "Important writings from this period (entry IDs)"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period (entry IDs)"
+      key_events:
+        type: list
+        description: "Key events during this period (entry IDs)"
+    ai_instructions: >
+      A period in the FOSS movement's development. Suggested eras: hacker culture
+      prehistory (1960s-1983), GNU and the free software movement (1983-1997), the open
+      source schism and dot-com era (1998-2004), mainstream adoption and corporate embrace
+      (2005-2014), modern FOSS ecosystem and sustainability crisis (2015-present).
+      Describe what characterized the period, what shifted between eras, and what the key
+      intellectual, institutional, and technical developments were.
+    display:
+      icon: clock
+      layout: document
+
+  event:
+    description: "A significant moment in the FOSS movement"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, significance, research_status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved (entry IDs)"
+      significance:
+        type: text
+        description: "Why this event matters to the movement"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A specific event in the FOSS movement — publication of the GNU Manifesto, founding
+      of the FSF, the Netscape source release, the Foresight Institute meeting where
+      "open source" was coined, major license releases (GPL v2, v3), SCO lawsuits,
+      Oracle v. Google, the xz backdoor incident. Always explain significance to the
+      movement's trajectory. Include the date as precisely as possible.
+    display:
+      icon: calendar
+      layout: record
+
+  organization:
+    description: "An institution involved in the FOSS movement"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location, key_figures, url, research_status]
+    fields:
+      org_type:
+        type: select
+        values: [foundation, advocacy-org, standards-body, project, corporate-sponsor, distribution, hosting-platform, conference-series]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+      key_figures:
+        type: list
+        description: "Key people (entry IDs)"
+      url:
+        type: string
+        description: "URL if available"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      An institution in the FOSS ecosystem — the Free Software Foundation, Open Source
+      Initiative, Apache Software Foundation, Linux Foundation, Software Freedom
+      Conservancy, GNOME Foundation, Mozilla Foundation, major Linux distributions
+      (Debian, Red Hat, Ubuntu), hosting platforms (SourceForge, GitHub, GitLab),
+      conference series (FOSDEM, OSCON, LinuxCon). Explain the organization's role
+      in the movement — does it advance free software principles, open source pragmatism,
+      corporate adoption, or community governance? Note governance structure where
+      relevant.
+    display:
+      icon: building
+      layout: record
+
+  source:
+    description: "A secondary source about the FOSS movement"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication, about_subjects, research_status]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, paper, interview, documentary, report, academic-study, blog-post, oral-history]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+      about_subjects:
+        type: list
+        description: "Subjects this source covers (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A secondary source ABOUT the FOSS movement — histories (Moody's "Rebel Code",
+      Weber's "The Success of Open Source", Williams' "Free as in Freedom"), academic
+      studies of open source development, documentaries ("Revolution OS"), empirical
+      research on FOSS economics and sustainability. For works BY movement participants
+      that are themselves part of the movement's intellectual history, use 'writing'.
+      Sources are valuable when they provide historical perspective, empirical evidence,
+      or critical assessment that the movement literature itself lacks.
+    evaluation_rubric:
+      - "Source has author, date, and source_type"
+      - "Body explains what this source uniquely contributes"
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes, analysis, and editorial commentary"
+    subdirectory: notes
+    required: [title]
+    optional: [research_status]
+    fields:
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the note is"
+    ai_instructions: >
+      Research notes, analytical essays, and cross-KB connection observations. Use for
+      material that doesn't fit other types — e.g., "the free software vs. open source
+      split as a case study in movement politics," "how FOSS practices influenced Agile,"
+      "the sustainability crisis as a commons problem," "corporate open source as
+      enclosure of the commons."
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  develops: "Develops or elaborates"
+  builds_on: "Builds on earlier work"
+  critiques: "Critiques or argues against"
+  adapts: "Adapts from another tradition"
+  adapted_by: "Adapted by"
+
+  # Movement-specific
+  forked_from: "Forked from (project or philosophical split)"
+  licensed_under: "Licensed under"
+  authored_license: "Authored the license"
+  governed_by: "Governed by (organization or model)"
+  maintains: "Maintains (project)"
+  sponsored_by: "Sponsored or funded by"
+  competed_with: "Competed with"
+
+  # Standard
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  member_of: "Member of"
+  founded: "Founded"
+  founded_by: "Founded by"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true
+
+validation:
+  enforce: true
+  rules:
+  - field: writing_type
+    enum: [book, paper, essay, talk, blog-post, manifesto, report, article, letter]
+  - field: source_type
+    enum: [book, article, paper, interview, documentary, report, academic-study, blog-post, oral-history]
+  - field: org_type
+    enum: [foundation, advocacy-org, standards-body, project, corporate-sponsor, distribution, hosting-platform, conference-series]
+  - field: license_type
+    enum: [copyleft-strong, copyleft-weak, permissive, source-available, public-domain, meta-license]
+  - field: practice_type
+    enum: [development, governance, community, legal, release-management, quality, collaboration]
+  - field: concept_type
+    enum: [principle, philosophy, development-model, governance-model, economic-model, legal-innovation, anti-pattern, critique]
+  - field: status
+    enum: [active, evolved, deprecated, contested]
+  - field: movement_role
+    enum: [founder, project-leader, license-author, institution-builder, evangelist, theorist, critic, corporate-champion, community-builder]
+  - field: research_status
+    enum: [stub, partial, draft, complete]

@@ -1,0 +1,312 @@
+# Cross-KB links from goldratt to other KBs
+# Goldratt KB: Theory of Constraints, Thinking Processes, and management philosophy
+
+# === Deming ===
+- source: theory-of-constraints
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: parallel_to
+  note: "Both frame organizations as systems where local optimization harms the whole. TOC's constraint focus and Deming's systems appreciation arrive at the same conclusion from different directions — Goldratt from throughput analysis, Deming from variation and interdependence."
+
+- source: throughput-world-vs-cost-world
+  target: management-by-objectives-deming-s-critique
+  target_kb: deming
+  relation: parallel_to
+  note: "Goldratt's cost-world critique (local optima destroy global throughput) and Deming's MBO critique (numerical targets distort systems) attack the same pathology from different angles."
+
+- source: policy-constraints
+  target: seven-deadly-diseases
+  target_kb: deming
+  relation: parallel_to
+  note: "Goldratt's policy constraints and Deming's seven deadly diseases both identify management-imposed systemic barriers as the true root of organizational dysfunction, not worker performance or physical limitations."
+
+- source: five-focusing-steps
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: parallel_to
+  note: "Both are iterative improvement cycles: TOC's identify-exploit-subordinate-elevate-repeat and Deming's plan-do-study-act. Both reject one-time optimization in favor of ongoing learning and adjustment."
+
+# === TPS ===
+- source: drum-buffer-rope
+  target: kanban
+  target_kb: tps
+  relation: parallel_to
+  note: "Both are pull-based production scheduling mechanisms that limit WIP. DBR paces the system to the constraint via rope; kanban paces via card signals. Different mechanisms, convergent flow control."
+
+- source: drum-buffer-rope
+  target: pull-production
+  target_kb: tps
+  relation: parallel_to
+  note: "DBR's rope mechanism limits material release to the constraint's consumption rate, implementing pull logic. Both prevent push-based overproduction that creates excess inventory."
+
+- source: throughput-world-vs-cost-world
+  target: seven-wastes-muda
+  target_kb: tps
+  relation: related_to
+  note: "Both frameworks identify overproduction as the most damaging waste. Cost-world thinking drives overproduction by rewarding machine utilization; Ohno's muda framework identifies it as the root waste from which others flow."
+
+- source: buffer-management
+  target: heijunka
+  target_kb: tps
+  relation: related_to
+  note: "Both address production variability. Buffer management absorbs variability through time buffers protecting the constraint; heijunka smooths variability through production leveling. Different strategies for the same flow problem."
+
+- source: the-goal
+  target: toyota-production-system-beyond-large-scale-production
+  target_kb: tps
+  relation: parallel_to
+  note: "Both foundational texts appeared in the same era (Goal 1984, Ohno's book English 1988) and revolutionized thinking about flow and production systems, though they developed independently."
+
+# === Reinertsen ===
+- source: drum-buffer-rope
+  target: queueing-theory-applied
+  target_kb: reinertsen
+  relation: explained_by
+  note: "Reinertsen's queueing theory provides the mathematical foundation explaining why Goldratt's DBR works — high utilization causes exponential queue growth, and WIP limits prevent systems from operating in the dangerous nonlinear region."
+
+- source: drum-buffer-rope
+  target: flow-control
+  target_kb: reinertsen
+  relation: related_to
+  note: "DBR is a WIP-constraining flow mechanism; Reinertsen's flow control derives similar logic from queueing theory. Both limit WIP to prevent queue explosion at bottlenecks."
+
+- source: throughput-accounting
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: related_to
+  note: "Both reject traditional cost accounting in favor of flow-based economic metrics. Throughput accounting focuses on constraint leverage; cost of delay quantifies the time value of delivery speed."
+
+- source: buffer-management
+  target: managing-variability
+  target_kb: reinertsen
+  relation: related_to
+  note: "Both address how to absorb variability in a flow system without blocking throughput. Buffer management uses time buffers with zone-based monitoring; Reinertsen uses capacity margin and variability pooling."
+
+- source: critical-chain-project-management
+  target: wip-constraints
+  target_kb: reinertsen
+  relation: related_to
+  note: "Critical chain addresses project multitasking and buffers in ways that parallel Reinertsen's WIP constraints for product development flow. Both identify excessive concurrent work as the primary throughput killer."
+
+- source: critical-chain-project-management
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: related_to
+  note: "Critical chain's staggered project starts reduce the batch of concurrent projects, paralleling Reinertsen's batch size reduction principle. Both show that starting fewer things simultaneously improves completion speed."
+
+- source: five-focusing-steps
+  target: economic-framework-for-prioritization
+  target_kb: reinertsen
+  relation: related_to
+  note: "TOC's five focusing steps prioritize improvement at the constraint; Reinertsen's economic framework prioritizes work by cost of delay. Both replace intuition-based prioritization with systematic economic logic."
+
+# === Poppendiecks ===
+- source: five-focusing-steps
+  target: optimize-the-whole
+  target_kb: poppendiecks
+  relation: related_to
+  note: "TOC's five focusing steps (subordinate everything to the constraint) directly maps to the Poppendiecks' optimize-the-whole principle. Both argue that improving non-constraint resources beyond what the constraint can absorb adds no value."
+
+- source: throughput-world-vs-cost-world
+  target: optimize-the-whole
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Both frameworks argue against local cost optimization. Goldratt's cost-world vs. throughput-world distinction and the Poppendiecks' suboptimization critique attack the same management pathology."
+
+- source: drum-buffer-rope
+  target: deliver-as-fast-as-possible
+  target_kb: poppendiecks
+  relation: related_to
+  note: "DBR's pacing mechanism accelerates flow through the system by preventing WIP buildup, directly supporting the lean principle of fast delivery through flow rather than through working harder."
+
+- source: drum-buffer-rope
+  target: pull-systems-in-software
+  target_kb: poppendiecks
+  relation: influenced
+  note: "DBR's rope mechanism — limiting material release to the constraint's consumption rate — is a pull system that influenced the Poppendiecks' translation of pull production into software delivery."
+
+- source: current-reality-tree
+  target: value-stream-mapping-for-software
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Both are diagnostic tools for system analysis. CRT maps cause-effect logic to find root causes; value stream mapping maps material and information flow to find waste. Complementary lenses on the same system."
+
+- source: the-goal
+  target: lean-software-development-agile-toolkit-2003
+  target_kb: poppendiecks
+  relation: influenced
+  note: "The Goal's throughput-focused thinking influenced the Poppendiecks' lean software development framework. Their seven lean principles draw on both TPS and TOC's systems perspective."
+
+# === Anderson ===
+- source: drum-buffer-rope
+  target: wip-limits
+  target_kb: anderson
+  relation: influenced
+  note: "Anderson's initial Microsoft XIT implementation was directly inspired by TOC's Drum-Buffer-Rope. WIP limits are the knowledge-work adaptation of DBR's production pacing mechanism."
+
+- source: theory-of-constraints
+  target: agile-management-for-software-engineering
+  target_kb: anderson
+  relation: influenced
+  note: "Anderson's first book explicitly applied TOC to software engineering — the intellectual precursor to the Kanban Method. The entire economic framing came from Goldratt's throughput-world thinking."
+
+- source: throughput-accounting
+  target: manage-flow
+  target_kb: anderson
+  relation: influenced
+  note: "Anderson's flow management optimizes for throughput, directly aligning with Goldratt's throughput accounting over traditional cost accounting. The Kanban Method's focus on lead time and throughput echoes TOC's financial lens."
+
+- source: five-focusing-steps
+  target: kanban-method
+  target_kb: anderson
+  relation: influenced
+  note: "Anderson's first book applied the Five Focusing Steps to software engineering. The Kanban Method's concern with bottleneck identification and exploitation traces directly to TOC's constraint logic."
+
+- source: eliyahu-goldratt
+  target: eliyahu-goldratt
+  target_kb: anderson
+  relation: same-subject
+  note: "Anderson's perspective on Goldratt as the first theoretical lens through which he analyzed knowledge work flow, before Reinertsen provided the more rigorous second framework."
+
+# === Ching ===
+- source: five-focusing-steps
+  target: focccus-formula
+  target_kb: ching
+  relation: adapted_by
+  note: "Ching repackages the Five Focusing Steps as the FOCCCUS formula for practitioner audiences, splitting 'subordinate' into coordinate and collaborate for actionability."
+
+- source: socratic-novel-pedagogy
+  target: business-novel-as-pedagogy
+  target_kb: ching
+  relation: continued_by
+  note: "Ching continues Goldratt's tradition of teaching through business novels, applying the format to software delivery scenarios."
+
+- source: theory-of-constraints
+  target: toc-for-software-development
+  target_kb: ching
+  relation: extended_by
+  note: "Ching's overarching framework translates TOC from manufacturing into software delivery, identifying invisible knowledge-work constraints that differ fundamentally from factory bottlenecks."
+
+- source: the-goal
+  target: rolling-rocks-downhill
+  target_kb: ching
+  relation: influenced
+  note: "Rolling Rocks Downhill is a direct structural descendant of The Goal, applying TOC to a software project crisis using the same Socratic novel format Goldratt pioneered."
+
+- source: throughput-accounting
+  target: dollarize-the-prize
+  target_kb: ching
+  relation: simplified_by
+  note: "Ching simplifies throughput accounting into the 'Dollarize the Prize' framework, making the economic case for constraint focus accessible without accounting background."
+
+- source: thinking-processes
+  target: upthinking
+  target_kb: ching
+  relation: adapted_by
+  note: "Ching adapts the Thinking Processes into 'Upthinking' for practitioners, preserving the cause-and-effect logic while stripping the formal TP nomenclature."
+
+- source: eliyahu-goldratt
+  target: eliyahu-goldratt
+  target_kb: ching
+  relation: same-subject
+  note: "Ching's perspective on Goldratt as intellectual mentor and direct influence on his entire body of work."
+
+- source: gene-kim
+  target: gene-kim
+  target_kb: ching
+  relation: shared-entry
+  note: "Kim appears in both KBs as a parallel transmitter of TOC to software and DevOps audiences."
+
+# === Meadows ===
+- source: theory-of-constraints
+  target: leverage-points
+  target_kb: meadows
+  relation: parallel_to
+  note: "TOC's constraint is a leverage point in Meadows's hierarchy (levels 5-6: rules and information flows). Both seek maximum effect from focused intervention rather than dispersed improvement."
+
+- source: throughput-world-vs-cost-world
+  target: leverage-points
+  target_kb: meadows
+  relation: parallel_to
+  note: "Switching from cost-world to throughput-world is a paradigm shift — Meadows's leverage point #2 (mindset change). Goldratt's most powerful intervention is changing how managers think, not changing processes."
+
+- source: current-reality-tree
+  target: feedback-loops
+  target_kb: meadows
+  relation: related_to
+  note: "CRTs map cause-and-effect chains that often reveal feedback dynamics. Meadows's formal feedback loop analysis provides the systems dynamics foundation for the causal structures Goldratt's TP tools surface."
+
+- source: buffer-management
+  target: stocks-and-flows
+  target_kb: meadows
+  relation: related_to
+  note: "TOC's buffers are stocks (inventory accumulations) that protect flow through the constraint. Meadows's stocks-and-flows framework provides the formal modeling language for the accumulation dynamics Goldratt manages intuitively."
+
+# === Senge ===
+- source: current-reality-tree
+  target: causal-loop-diagrams
+  target_kb: senge
+  relation: parallel_to
+  note: "Both are tools for mapping cause-and-effect relationships in complex systems. CRTs use linear if-then logic converging on root causes; CLDs use circular feedback notation. Different visual grammars for systems diagnosis."
+
+- source: thinking-processes
+  target: systems-thinking-fifth-discipline
+  target_kb: senge
+  relation: parallel_to
+  note: "Both are structured frameworks for diagnosing systemic problems. Goldratt's TP suite and Senge's systems thinking fifth discipline address the same challenge: helping practitioners see structure behind events."
+
+- source: five-focusing-steps
+  target: leverage-points
+  target_kb: senge
+  relation: parallel_to
+  note: "Finding the constraint parallels finding leverage points — both seek the single point of maximum systemic impact. Goldratt operationalizes this for throughput; Senge for organizational learning."
+
+- source: evaporating-cloud
+  target: mental-models
+  target_kb: senge
+  relation: parallel_to
+  note: "Both tools surface hidden assumptions that drive dysfunctional behavior. The evaporating cloud exposes assumptions sustaining persistent conflicts; Senge's mental models discipline exposes tacit beliefs that limit organizational learning."
+
+- source: policy-constraints
+  target: growth-and-underinvestment
+  target_kb: senge
+  relation: related_to
+  note: "TOC's policy constraints (rules that become the binding limit) map to the growth-and-underinvestment archetype where management policies prevent investment in the capacity constraint, normalizing declining performance."
+
+# === Boyd ===
+- source: thinking-processes
+  target: ooda-loop
+  target_kb: boyd
+  relation: parallel_to
+  note: "Both are structured frameworks for diagnosing and acting on complex situations. Goldratt's TP logic trees share Boyd's emphasis on orientation before action — understanding the system before intervening."
+
+- source: five-focusing-steps
+  target: schwerpunkt
+  target_kb: boyd
+  relation: parallel_to
+  note: "Both concepts focus effort on the decisive point. TOC's constraint is the system's schwerpunkt — the point where concentrated effort produces disproportionate results."
+
+- source: drum-buffer-rope
+  target: tempo
+  target_kb: boyd
+  relation: related_to
+  note: "Both optimize for throughput speed. DBR paces the system to maximize flow through the constraint; Boyd's tempo concept seeks to cycle faster than the adversary. Both recognize that system speed is governed by the binding limit."
+
+# === Wardley ===
+- source: theory-of-constraints
+  target: situational-awareness
+  target_kb: wardley
+  relation: related_to
+  note: "Both insist on understanding the system before acting. TOC's identify-the-constraint step and Wardley's situational awareness both argue that most organizations act without knowing where their binding limit or competitive position actually is."
+
+- source: policy-constraints
+  target: inertia
+  target_kb: wardley
+  relation: related_to
+  note: "TOC's policy constraints (rules that outlive their usefulness) parallel Wardley's inertia (organizational resistance to evolutionary change). Both identify past success as the source of current dysfunction."
+
+- source: five-focusing-steps
+  target: value-chain
+  target_kb: wardley
+  relation: related_to
+  note: "TOC's constraint identification within a production system parallels Wardley's value chain analysis — both map dependencies to find where intervention matters most for delivering value."

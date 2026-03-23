@@ -1,0 +1,23 @@
+---
+id: exploring-requirements-1989
+title: "Exploring Requirements: Quality Before Design"
+type: writing
+importance: 7
+tags: [requirements, problem-definition, communication, software-development]
+writing_type: book
+date: 1989-01-01
+coauthors: [donald-gause]
+publication: "Dorset House"
+key_concepts: [problem-definition]
+research_status: draft
+---
+
+"Exploring Requirements: Quality Before Design" is the systematic extension of the problem definition work that Weinberg and [[donald-gause]] had begun in [[are-your-lights-on-1982]]. Where the earlier book was aphoristic and illustrative — establishing the importance of problem definition through stories and paradoxes — this 1989 volume works out a practical methodology for requirements elicitation, organized around the insight that requirements work is fundamentally a process of collaborative discovery rather than documentation. The subtitle "Quality Before Design" is a deliberate provocation: the dominant software engineering tradition of the era treated requirements as the input to design, something to be captured and frozen before design began. Weinberg and Gause argued that this sequence was backwards — or at least that the requirements phase required its own quality discipline before design could responsibly proceed.
+
+The book's methodological core is built around several techniques that Weinberg and Gause developed from practice. Context-free questions — questions that do not presuppose a particular solution or system shape — are central to the elicitation approach. Where a conventional analyst might ask "what should the system do when X happens?", a context-free question asks "what is the problem you're trying to solve?" or "what would it mean for this situation to be better?" The distinction matters because solution-presupposing questions constrain the solution space before it has been examined, while context-free questions keep the space open until the actual need is understood. The approach connects directly to the [[problem-definition]] discipline: stated requirements typically describe a proposed solution, not the underlying need, and the requirements analyst's first job is to work backward to the need.
+
+Weinberg and Gause also address the problem of ambiguity in requirements, arguing that ambiguity is almost always a symptom of unresolved problem definition rather than imprecise writing. When a requirement statement can be read in multiple ways, the multiple readings typically correspond to multiple different problems that different stakeholders are trying to solve — a coalition of incompatible needs that has not yet been surfaced and negotiated. The elicitation methodology includes techniques for making these latent conflicts visible before they become embedded in design decisions, where resolving them becomes far more expensive. This concern with the economics of early problem discovery connects to Weinberg's later work on organizational patterns in the [[quality-software-management-framework]], which treats information flow as a quality variable.
+
+Within the development of requirements engineering as a field, "Exploring Requirements" occupied an unusual position. The mainstream requirements engineering literature of the late 1980s was oriented toward formal specification methods — structured analysis, entity-relationship models, state machines — that assumed the requirements could be made precise if the right notation was applied. Weinberg and Gause were skeptical of this assumption, not because they opposed rigor, but because they believed that the imprecision in most requirements reflected genuine uncertainty about what was needed, not merely sloppy expression. Formal notation applied to a poorly defined problem produces a well-specified solution to the wrong problem. Their human-centered approach to requirements anticipated the turn in the 1990s toward use-case methods, participatory design, and eventually agile practices, all of which share the assumption that requirements must be discovered through dialogue rather than extracted through documentation.
+
+The book's relationship to [[are-your-lights-on-1982]] is that of methodology to philosophy. The earlier book established the importance of asking "what is the problem?" The later book provides the tools for conducting that inquiry systematically across a project with multiple stakeholders, competing needs, and organizational dynamics that resist honest problem definition. Read together, the two books represent Weinberg and Gause's complete argument about the front end of software development — an argument that the quality of any system is largely determined before design begins, by the quality of the thinking that precedes design.

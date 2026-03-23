@@ -1,0 +1,253 @@
+# Cross-KB links from senge to other KBs
+# Generated during Phase 5 of KB lifecycle
+
+# === Deming ===
+- source: systems-thinking-fifth-discipline
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: builds_on
+  note: "Senge explicitly cites Deming's appreciation for a system as foundational to his own systems thinking; both argue that structure, not individuals, drives organizational behavior."
+
+- source: systems-thinking-fifth-discipline
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: builds_on
+  note: "Deming's System of Profound Knowledge provides the epistemological foundation Senge builds on — appreciation for a system, theory of knowledge, psychology, and variation theory all undergird the five disciplines."
+
+- source: learning-organization
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: builds_on
+  note: "Deming's PDSA cycle is the operational learning mechanism that the learning organization concept scales to the collective level — iterative hypothesis-testing applied to organizational strategy."
+
+- source: systems-archetypes
+  target: common-cause-vs-special-cause-variation
+  target_kb: deming
+  relation: related_to
+  note: "Systems archetypes diagnose systemic (common cause) problems that managers misattribute to individuals (special cause) — the same diagnostic error Deming documented statistically."
+
+- source: shifting-the-burden
+  target: management-by-objectives-deming-s-critique
+  target_kb: deming
+  relation: related_to
+  note: "MBO is a shifting-the-burden archetype: managing by results (the symptomatic solution) atrophies the capacity to understand and improve the system (the fundamental solution)."
+
+- source: mental-models
+  target: theory-of-knowledge
+  target_kb: deming
+  relation: related_to
+  note: "Both address how implicit theories shape action — Senge through surfacing and testing mental models, Deming through requiring operational definitions and theory before measurement."
+
+# === Meadows ===
+- source: leverage-points
+  target: leverage-points
+  target_kb: meadows
+  relation: same-subject
+  note: "Both Senge and Meadows address leverage points from the shared Forrester lineage; Meadows's twelve-point taxonomy provides the systematic ranking that Senge's archetype-based approach lacks."
+
+- source: systems-archetypes
+  target: systems-archetypes
+  target_kb: meadows
+  relation: same-subject
+  note: "Both inherit systems archetypes from the Forrester system dynamics tradition; Meadows develops them in the context of ecological and global systems while Senge applies them to organizations."
+
+- source: causal-loop-diagrams
+  target: feedback-loops
+  target_kb: meadows
+  relation: same-subject
+  note: "Senge's causal loop diagrams and Meadows's feedback loop analysis are the same system dynamics methodology applied to different domains — organizational vs. ecological and global."
+
+- source: systems-thinking-fifth-discipline
+  target: thinking-in-systems-2008
+  target_kb: meadows
+  relation: parallel-development
+  note: "Both are accessible translations of Forrester's system dynamics for non-specialist audiences; Senge aimed at managers (1990), Meadows at citizens and policymakers (2008, posthumous)."
+
+- source: leverage-points
+  target: leverage-points-paper-1999
+  target_kb: meadows
+  relation: extended-by
+  note: "Meadows's 1999 paper provides the systematic twelve-level taxonomy of leverage points that extends Senge's archetype-based approach into a comprehensive hierarchy of intervention effectiveness."
+
+# === Boyd ===
+- source: mental-models
+  target: destruction-and-creation-concept
+  target_kb: boyd
+  relation: related_to
+  note: "Senge's mental models discipline directly parallels Boyd's destruction-and-creation: both require breaking apart existing conceptual frameworks and rebuilding them to match reality."
+
+- source: shared-vision
+  target: schwerpunkt
+  target_kb: boyd
+  relation: related_to
+  note: "Shared vision enables decentralized coherent action without constant coordination, paralleling Boyd's Schwerpunkt — a shared focal point that aligns autonomous actors across an organization."
+
+- source: systems-thinking-fifth-discipline
+  target: orientation
+  target_kb: boyd
+  relation: related_to
+  note: "Both concern how observers construct and update models of reality — Senge through systems thinking and causal loop diagrams, Boyd through the orientation phase of the OODA loop."
+
+# === Weinberg ===
+- source: systems-thinking-fifth-discipline
+  target: general-systems-thinking
+  target_kb: weinberg
+  relation: parallel-development
+  note: "Convergent approaches to systems thinking from different traditions — Senge from Forrester's system dynamics, Weinberg from Boulding and Bertalanffy's general systems theory — arriving at structurally similar conclusions about systemic behavior."
+
+- source: mental-models
+  target: programming-as-human-activity
+  target_kb: weinberg
+  relation: related_to
+  note: "Both argue that human cognition and implicit assumptions are central to organizational and technical performance — surfacing these assumptions is prerequisite to improvement."
+
+- source: team-learning
+  target: egoless-programming
+  target_kb: weinberg
+  relation: related_to
+  note: "Team learning requires the suspension of ego and defensive routines that Weinberg identified as egoless programming — both enable collective intelligence by removing status-protection barriers to genuine inquiry."
+
+- source: learning-organization
+  target: quality-software-management-framework
+  target_kb: weinberg
+  relation: related_to
+  note: "Weinberg's QSM framework describes organizational maturity levels that parallel Senge's learning organization trajectory — from oblivious through anticipating, with systems thinking as the distinguishing capability."
+
+# === DeMarco ===
+- source: learning-organization
+  target: organizational-learning-disability
+  target_kb: demarco
+  relation: related_to
+  note: "DeMarco and Lister document in Peopleware the specific organizational learning disabilities that Senge diagnoses systemically — organizations that cannot learn because they are structured for control rather than learning."
+
+- source: team-learning
+  target: team-jell
+  target_kb: demarco
+  relation: related_to
+  note: "DeMarco's 'jelled team' describes the emergent state that Senge's team learning discipline aims to produce through dialogue practice and shared mental models — a team whose collective capability exceeds the sum of its parts."
+
+- source: shifting-the-burden
+  target: slack-concept
+  target_kb: demarco
+  relation: related_to
+  note: "Eliminating organizational slack is a shifting-the-burden pattern: maximizing utilization (symptomatic solution) destroys the capacity for learning and adaptation (fundamental solution) that slack provides."
+
+# === Blank ===
+- source: learning-organization
+  target: customer-development
+  target_kb: blank
+  relation: related_to
+  note: "A startup doing customer development is a learning organization in practice — validated learning through iterative hypothesis testing is organizational learning applied to market uncertainty."
+
+- source: mental-models
+  target: get-out-of-the-building
+  target_kb: blank
+  relation: related_to
+  note: "Blank's core injunction to test assumptions through customer contact is the entrepreneurial equivalent of Senge's mental models discipline — surfacing and testing implicit theories rather than defending them."
+
+# === Wardley ===
+- source: systems-thinking-fifth-discipline
+  target: situational-awareness
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley's situational awareness is organizational learning applied to competitive strategy — the capacity to see the landscape clearly parallels Senge's systems thinking as the discipline of seeing wholes."
+
+- source: mental-models
+  target: wardley-map
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley maps externalize strategic mental models the way causal loop diagrams externalize systemic mental models — both make implicit assumptions visible, testable, and shareable across teams."
+
+- source: shared-vision
+  target: doctrine
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley's doctrine provides organizational principles that enable coherent decentralized action, functioning as the strategic equivalent of Senge's shared vision — alignment without micromanagement."
+
+# === Goldratt ===
+- source: systems-thinking-fifth-discipline
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: parallel-development
+  note: "Both provide frameworks for understanding systemic behavior — Senge through feedback archetypes, Goldratt through constraint identification — arriving independently at the insight that local optimization damages system performance."
+
+- source: leverage-points
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: related_to
+  note: "Finding leverage points parallels Goldratt's five focusing steps — both seek the point of maximum systemic impact rather than distributing effort uniformly across the system."
+
+- source: causal-loop-diagrams
+  target: current-reality-tree
+  target_kb: goldratt
+  relation: related_to
+  note: "Both are formal tools for mapping systemic causality — Senge's CLDs map feedback loops while Goldratt's CRTs map root-cause chains — complementary visual languages for understanding why systems behave as they do."
+
+- source: shifting-the-burden
+  target: policy-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "Many shifting-the-burden patterns are maintained by policy constraints — organizational rules that lock in symptomatic solutions and prevent investment in fundamental solutions."
+
+# === Reinertsen ===
+- source: systems-thinking-fifth-discipline
+  target: queueing-theory-applied
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen provides the quantitative mathematical framework (queueing theory) for dynamics that Senge describes qualitatively through systems archetypes — overloaded systems producing counterintuitive delays and oscillation."
+
+- source: leverage-points
+  target: wip-constraints
+  target_kb: reinertsen
+  relation: related_to
+  note: "WIP constraints are a concrete implementation of leverage-point thinking: limiting work-in-process is a small structural change with outsized impact on system throughput and learning speed."
+
+- source: shared-vision
+  target: decentralized-control
+  target_kb: reinertsen
+  relation: related_to
+  note: "Senge's shared vision enables decentralized decision-making by providing alignment without coordination overhead — the same organizational principle Reinertsen advocates for product development flow."
+
+# === Flow ===
+- source: team-learning
+  target: group-flow
+  target_kb: flow
+  relation: related_to
+  note: "Senge's team learning — genuine collective inquiry that transcends individual capability — describes the organizational conditions that flow research identifies as prerequisites for Sawyer's group flow."
+
+- source: dialogue-practice
+  target: collaborative-emergence
+  target_kb: flow
+  relation: related_to
+  note: "Bohm-style dialogue practice creates the conditions for collaborative emergence — the unpredictable collective insight that arises when participants suspend assumptions and engage in genuine inquiry."
+
+- source: personal-mastery
+  target: intrinsic-motivation
+  target_kb: flow
+  relation: related_to
+  note: "Personal mastery — approaching life as creative work in service of one's highest aspirations — is sustained by the intrinsic motivation that flow research identifies as the engine of deep engagement and continued growth."
+
+- source: team-learning
+  target: psychological-safety
+  target_kb: flow
+  relation: related_to
+  note: "Team learning requires surfacing and examining defensive routines, which is only possible with the psychological safety Edmondson describes — safety to challenge assumptions without career risk."
+
+# === Poppendiecks ===
+- source: systems-thinking-fifth-discipline
+  target: optimize-the-whole
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Systems thinking provides the theoretical foundation for the Poppendiecks' optimize-the-whole principle — understanding feedback structure is prerequisite to knowing what 'the whole' is and how local optimization damages it."
+
+- source: learning-organization
+  target: learning-not-results
+  target_kb: poppendiecks
+  relation: related_to
+  note: "The learning organization is the organizational form that embodies the Poppendiecks' learning-not-results thesis — prioritizing learning speed over short-term output produces superior long-term results."
+
+- source: team-learning
+  target: empower-the-team
+  target_kb: poppendiecks
+  relation: related_to
+  note: "The Poppendiecks' empower-the-team principle operationalizes Senge's team learning in software contexts — genuine team autonomy and collective decision-making rather than command-and-control management."

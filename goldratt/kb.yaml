@@ -1,0 +1,358 @@
+name: goldratt
+description: >
+  Intellectual biography of Eliyahu M. Goldratt (1947-2011) — Israeli physicist
+  turned management theorist, creator of the Theory of Constraints (TOC), and
+  author of "The Goal" (1984). Covers TOC's five focusing steps, the Thinking
+  Processes, Throughput Accounting, Drum-Buffer-Rope, Critical Chain Project
+  Management, and the transmission path from manufacturing optimization through
+  supply chain management into software development. Traces Goldratt's intellectual
+  network including the Goldratt Institute, the Jonah program, and key descendants
+  (Schragenheim, Ching, Dettmer, Lepore). Documents the parallel and intersection
+  with lean manufacturing (Ohno/Deming) and the adoption of TOC in Agile/DevOps
+  (Gene Kim's "The Phoenix Project").
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Goldratt wrote primarily through Socratic novels — "The Goal," "It's Not Luck,"
+    "Critical Chain," "Necessary but Not Sufficient," "The Choice," "Isn't It Obvious?"
+    These are both entertainment and pedagogy; entries should extract the underlying
+    methodology without losing the narrative context that makes Goldratt's approach
+    distinctive. His non-fiction ("The Haystack Syndrome," TOC Handbook chapters) is
+    more systematic but less widely read. Primary sources include Goldratt's own books,
+    his "Satellite Program" lectures, AGI/TOCICO conference proceedings, and the Goldratt
+    Institute's publications. For TOC implementation, cite Schragenheim, Dettmer, and
+    the TOCICO body of knowledge. Distinguish between Goldratt's original formulations
+    and later extensions by his students.
+  quality: |
+    TOC is often reduced to "find the bottleneck" — entries should capture the full
+    sophistication of the framework, especially the Thinking Processes (which Goldratt
+    considered his most important contribution), the distinction between physical and
+    policy constraints, and the evolution from production scheduling (OPT) to general
+    management philosophy. Goldratt was controversial — he clashed with the accounting
+    profession, criticized lean manufacturing as incomplete, and made bold claims about
+    TOC's scope. Entries should document these tensions without taking sides. Date all
+    claims where possible; TOC evolved significantly from 1979 (OPT) through 2011.
+  voice: |
+    Direct and concrete, mirroring Goldratt's own style. He was a physicist who
+    insisted on logical rigor — the Thinking Processes are essentially formal logic
+    applied to management. Avoid management-speak and buzzwords. Goldratt despised
+    jargon that obscured rather than clarified.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of Eliyahu Goldratt covering TOC's
+    development from OPT scheduling software through the five focusing steps,
+    Thinking Processes, Throughput Accounting, and domain-specific applications
+    (production, project management, distribution, supply chain). Trace the
+    intellectual network, the Socratic novel pedagogy, and the transmission
+    into software and DevOps.
+  success_criteria: |
+    A reader can trace any TOC concept from its origin through its development
+    to its current application. The relationship between TOC and lean manufacturing
+    is documented with nuance (parallel, complementary, sometimes competing).
+    Cross-references to TPS (lean parallel), Deming (systems thinking ancestor),
+    Boyd (constraint-based strategy), and Blank (lean startup lineage) are explicit.
+
+evaluation_rubric:
+  - "Entry cites at least one primary source (Goldratt's own books, lectures, or articles)"
+  - "Claims about TOC development include approximate dates or periods"
+  - "Concepts explain the problem they solve, not just what they are"
+  - "People entries describe the specific relationship to Goldratt and their contribution to TOC"
+  - "Cross-KB connections to TPS, Deming, Boyd, and DevOps are noted where relevant"
+  - "The distinction between Goldratt's original formulation and later extensions is clear"
+
+types:
+  concept:
+    description: "A core principle, technique, or framework from the Theory of Constraints"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Approximate date or source where this concept first appears"
+      key_writings:
+        type: list
+        description: "Writings where this concept is described (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A core principle, technique, or framework from TOC. Use for concepts like
+      the Five Focusing Steps, Throughput Accounting (T/I/OE), Drum-Buffer-Rope,
+      the Thinking Processes (Current Reality Tree, Evaporating Cloud, Future
+      Reality Tree, Prerequisite Tree, Transition Tree), Critical Chain Project
+      Management, buffer management, constraint identification, policy constraints,
+      physical constraints, throughput world vs cost world, the Viable Vision,
+      Socratic method as pedagogy, Necessary and Sufficient conditions, and the
+      inherent simplicity thesis. The body should explain what problem the concept
+      solves, trace its development, and note how it relates to other TOC components
+      and to parallel frameworks (lean, systems thinking).
+    evaluation_rubric:
+      - "Concept explains the operational or management problem it solves"
+      - "Origin or first_appeared is documented"
+      - "Relationship to the broader TOC framework is explicit"
+      - "Links to related concepts within the KB"
+    display:
+      icon: lightbulb
+      layout: document
+
+  writing:
+    description: "A work by or substantially involving Eliyahu Goldratt"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publication, url, abstract, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, novel, paper, article, lecture, interview, report, video, satellite-program]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors"
+      publication:
+        type: string
+        description: "Publisher or venue"
+      url:
+        type: string
+        description: "URL if available"
+      abstract:
+        type: text
+        description: "Brief description of the work"
+      key_concepts:
+        type: list
+        description: "Concepts developed (entry IDs from concepts/)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work by or substantially involving Goldratt. His distinctive contribution
+      is the Socratic business novel — "The Goal" (1984, with Jeff Cox), "It's Not
+      Luck" (1994), "Critical Chain" (1997), "Necessary but Not Sufficient" (2000),
+      "Isn't It Obvious?" (2009), "The Choice" (2008). Non-fiction includes "The
+      Haystack Syndrome" (1990), "The Race" (1986, with Robert Fox), "Theory of
+      Constraints" (1990), and chapters in the TOC Handbook. Also include the
+      Goldratt Satellite Program (video lectures), TOCICO conference keynotes,
+      and interviews. Always include dates and distinguish editions where relevant.
+    evaluation_rubric:
+      - "Writing has a date"
+      - "Writing has a writing_type classification"
+      - "Body describes the work's significance and pedagogical approach"
+    display:
+      icon: file-text
+      layout: document
+
+  era:
+    description: "A period in Goldratt's career or in TOC's development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '1979-1984'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations during this period"
+    ai_instructions: >
+      A period in Goldratt's career or TOC's development. Key eras include:
+      physics background and OPT software origins (1970s), "The Goal" era and
+      early TOC (1984-1990), Thinking Processes development (1990-1997), domain
+      expansion (Critical Chain, distribution, supply chain, 1997-2005), the
+      Viable Vision and mature TOC (2005-2011), and post-Goldratt continuation.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Goldratt's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_goldratt, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_goldratt:
+        type: string
+        description: "Nature of relationship to Goldratt and TOC"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Goldratt's network — collaborator, student, critic, or
+      intellectual influence. Key figures include Jeff Cox (co-author of The Goal),
+      Robert Fox (early collaborator), Eli Schragenheim (TOC for complex environments),
+      H. William Dettmer (Thinking Processes systematizer), Clark Ching (TOC for
+      software), Gene Kim (Phoenix Project, DevOps), Lisa Scheinkopf, Oded Cohen,
+      Rami Goldratt (son, continued the work), and critics from the lean and
+      traditional management communities. Also include intellectual predecessors
+      whose work Goldratt built on or reacted against.
+    evaluation_rubric:
+      - "Person has a role described"
+      - "Relationship to Goldratt and TOC is explicitly stated"
+      - "Person's own contributions are described"
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to TOC development or transmission"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location]
+    fields:
+      org_type:
+        type: select
+        values: [company, institute, university, publisher, conference, consulting, nonprofit, software]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+    ai_instructions: >
+      An institution relevant to TOC. Includes Creative Output (OPT software),
+      the Goldratt Institute, the Avraham Y. Goldratt Institute (AGI), TOCICO
+      (Theory of Constraints International Certification Organization),
+      the Goldratt Group, publishers (North River Press), companies that adopted
+      TOC, and organizations that transmitted TOC into new domains.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A milestone in TOC development or transmission"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in TOC history. Includes the founding of Creative Output
+      (1979), publication of The Goal (1984), development of the Thinking Processes
+      (early 1990s), launch of the Satellite Program, founding of TOCICO,
+      key conference presentations, and Goldratt's death (2011).
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Goldratt or TOC"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, profile, review, dissertation, documentary, video, case-study]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about Goldratt or TOC. Includes academic analyses of TOC,
+      comparative studies with lean, implementation case studies, biographical profiles,
+      and critiques. For works by Goldratt, use the 'writing' type.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, and commentary. Use for cross-cutting themes:
+      TOC vs lean comparison, the physicist's approach to management, Socratic
+      novels as pedagogy, TOC's reception in academia vs industry, the path
+      from TOC to DevOps via Gene Kim, and connections to other KBs.
+    evaluation_rubric:
+      - "Note has a clear analytical thesis"
+      - "Claims and comparisons are sourced where possible"
+      - "Cross-KB connections are explicit and specific"
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  develops: "Develops or elaborates (concept in writing)"
+  developed_in: "Developed in (writing develops concept)"
+  builds_on: "Builds on earlier work"
+  built_upon_by: "Built upon by later work"
+  collaborates_with: "Collaborates with"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  taught: "Taught or trained"
+  taught_by: "Taught by"
+  adapted_by: "Adapted or modified by"
+  adapts: "Adapts or modifies"
+  responds_to: "Direct response to"
+  responded_to_by: "Responded to by"
+  opposed: "Publicly disagreed with"
+  opposed_by: "Publicly opposed by"
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  employed_by: "Employed by"
+  consulted_for: "Consulted for"
+  member_of: "Member of"
+  published_in: "Published in"
+  published_by: "Published by"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  implements: "Implements or operationalizes"
+  implemented_by: "Implemented by"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

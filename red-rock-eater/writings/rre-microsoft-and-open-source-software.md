@@ -1,0 +1,191 @@
+---
+id: rre-microsoft-and-open-source-software
+title: "[RRE]Microsoft and open source software"
+type: writing
+writing_type: rre-post
+date: 1998-11-05
+url: http://commons.somewhere.com:80/rre/1998/RRE.Microsoft.and.open.s.html
+coauthors: []
+key_concepts: []
+importance: 5
+research_status: partial
+tags:
+  - auto-imported
+  - rre
+  - rre-post
+---
+
+
+
+
+## Source
+
+Automatically imported from: http://commons.somewhere.com:80/rre/1998/RRE.Microsoft.and.open.s.html
+
+## Content
+
+This web service brought to you by
+[Somewhere.Com, LLC.](https://web.archive.org/web/19991003044649/http://www.somewhere.com/)
+
+  
+
+# [RRE]Microsoft and open source software
+
+```
+[I have reformatted this to 60 columns.  Theory A says that Microsoft
+leaked these internal memos on open source software in the midst of its
+antitrust trial in order to demonstrate that they have real competition.
+Theory B says that someone else leaked the memos in order to demonstrate
+that Microsoft plans to use anti-competitive practices to suppress open
+source software.  Theory C, to which I subscribe, says that the spirit
+of Jon Postel is presiding over the whole affair, and that justice will
+be done.  The contrast couldn't be clearer.  Everything that Jon Postel
+stood for, Bill Gates stands for the opposite.  Everything that Jon
+Postel built, Bill Gates is tearing down.  Jon Postel was a hero, and
+Bill Gates fidgets mightily when he is saying things under oath that
+are, let us say, hard to believe.  We can become serfs and pay monopoly
+rents in one market space after another forever, or we can be healthy
+human beings and support the gift economy of the Internet.  We can start
+by nicely asking the Linux people to put a comprehensible user interface
+on the darn thing so that normal people can maintain it themselves.]
+
+---
+
+This message was forwarded through the Red Rock Eater News Service (RRE).
+Send any replies to the original author, listed in the From: field below.
+You are welcome to send the message along to others but please do not use
+the "redirect" command.  For information on RRE, including instructions
+for (un)subscribing, see http://dlis.gseis.ucla.edu/people/pagre/rre.html
+or send a message to requests@lists.gseis.ucla.edu with Subject: info rre
+
+---
+
+Date: Thu, 5 Nov 1998 18:59:25 -0500 (EST)
+From: James Love <love@cptech.org>
+To: Multiple recipients of list INFO-POLICY-NOTES
+     <info-policy-notes@essential.org>
+Subject: Halloween II
+
+---
+
+Info-Policy-Notes | News from Consumer Project on Technology 
+
+---
+
+November 5, 1998
+
+	Halloween II
+
+	On November 2, 1998 Info-Policy-Notes provided a
+link to the so called Halloween document, which detailed
+Microsoft's analysis of Linux and other open source
+software.  (http://www.tuxedo.org/~esr/halloween.html)
+Now Eric Rayond has published a second document which
+he has dubbed Halloween II.  This one is on the web at:
+
+   http://www.opensource.org/halloween2.html
+
+Halloween II is authored by Vinod Valloppillil (VinodV), the
+author of the Halloween I, and Josh Cohen (JoshCo).  It is
+dated Aug 11, 1998 , and is version 1.0.  The heading is:
+
+      Microsoft Confidential
+      Linux Operating System
+      The Next Java VM?
+
+The document is very interesting.  One line that has gotten
+a lot of attention is at the end, where the authors suggest:
+"The effect of patents and copyright in combating Linux
+remains to be investigated."  The Linux community generally
+thinks they can out code Microsoft, so long as they are
+permitted.  But there is a lot of concern over software
+patents, which are often very broad, poorly researched by
+the US government, and expensive to litigate.  Under recent
+court cases, there are few barriers to harassment based upon
+spurious litigation over patents, so this is a cause for
+concern.  On a topic discussed at some length in Halloween
+I, Halloween II says by "folding extended functionality into
+today's commodity [open standards] services and create new
+[proprietary] protocols, we raise the bar & change the rules
+of the game."  (the brackets added by me).
+
+There is also an interesting article in today's Linux Today:
+
+    Who are all these people behind the 
+    Halloween document?
+    Nov 5th, 12:32:47 
+    Here's an in-depth look at the personalities 
+    behind the Halloween documents. 
+    By Dave Whitinger 
+
+    http://linuxtoday.com/stories/638.html
+
+A few other related articles are Tim O'Rielly's Open Letter
+to Microsoft about Halloween I, which is on the web at:
+
+http://www.oreilly.com/oreilly/press/tim_msletter.html
+
+and, news that Microsoft has tried to hire Linux hacker Alan
+Cox.  This last one suggests Microsoft is stepping up their
+campaign to crush the open software movement.  Here are
+some excerpts that Alan Cox posted today about the Halloween
+document.
+  
+http://www.linux.org.uk/
+[snip]
+
+ Its important to realize how fundamental open standards
+ are. Most people are probably sitting at a PC built with
+ mixed cards from mixed vendors on an open standard bus,
+ typing on a keyboard with open standard connectors, using
+ an open standard Qwerty layout, talking an open standard
+ RS232 serial protocol to a modem that talks an open
+ protocol to the ISP. Its all running off a standard
+ electricity specification.  Even your chair is probably
+ held together by open standard nuts and bolts. Computing
+ is becoming a commodity item and like all commodity items
+ it needs to be open, for the consumer and for the long term
+ good of the industry as a whole. Linux is open, if there is
+ anything you didn't get told you can check the source code.
+
+ A couple of other fun things have happened too, the I2O SIG
+ developing the next generation high end I/O interface for
+ PC's have now made their specification open, and Microsoft
+ tried to hire me. I think the I2O SIG have the better
+ chance of success here.
+
+ Alan 
+
+This is Alan Cox's home page: http://www.linux.org.uk/diary/
+ 
+	There is also running commentary, much if it
+entertaining, often rather speculative, but also a very good
+source of breaking news on these issues at:
+	
+	http://www.slashdot.org
+
+	Finally, CPT will be studying the Halloween
+documents, and asking antitrust authorities to determine if
+Microsoft's intended plans to corrupt open standards violate
+antitrust laws.  More on this next week.
+
+   Jamie Love <love@cptech.org> 202.387.8030
+
+---
+
+INFORMATION POLICY NOTES: the Consumer Project on Technology 
+http://www.cptech.org, 202.387.8030, fax 202.234.5127.
+Archives of Info-Policy-Notes are available from
+http://www.essential.org/listproc/info-policy-notes/ 
+Subscription requests to listproc@cptech.org with the message: 
+subscribe info-policy-notes Jane Doe
+To be removed from the list, the message should read,
+unsub info-policy-notes
+
+---
+```
+
+  
+
+This web service brought to you by
+[Somewhere.Com, LLC.](https://web.archive.org/web/19991003044649/http://www.somewhere.com/)

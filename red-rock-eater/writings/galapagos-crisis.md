@@ -1,0 +1,208 @@
+---
+id: galapagos-crisis
+title: Galapagos Crisis
+type: writing
+writing_type: rre-post
+date: 1995-01-23
+url: http://commons.somewhere.com:80/rre/1995/Galapagos.Crisis.html
+coauthors: []
+key_concepts: []
+importance: 6
+research_status: partial
+tags:
+  - education
+  - environment
+  - history
+  - internet-culture
+  - law
+  - libraries
+  - media
+  - social-computing
+---
+
+
+
+
+## Source
+
+Automatically imported from: http://commons.somewhere.com:80/rre/1995/Galapagos.Crisis.html
+
+## Content
+
+|  |  |
+| --- | --- |
+| [**Red Rock Eater Digest**](https://web.archive.org/web/20001026070311/http://commons.somewhere.com/rre/) | **Most Recent Article: Wed, 25 Oct 2000** |
+
+# Galapagos Crisis
+
+```
+[I have enclosed a message from Matt James, plus a second message 
+from him with an update on the situation.]
+
+Galapagos Crisis
+
+Dear Fellow Scientists - Very disturbing news is coming out of the  
+Galapagos Islands in Ecuador. Those of us who care deeply about the  
+islands are trying to bring the ecological crisis described below to  
+the attention of the international scientific community. The  
+information below is retyped from a FAXed letter I recently received  
+from Macarena Green in Quito. She is a biologist who worked on  
+ascidians and is now a naturalist in the islands. She
+can be reached by FAX at Andando Tours in Quito at 593-2-443188.
+
+Please write a letter to the President of Ecuador at the address  
+provided below. I will cross-post this several times (to TAXACOM,  
+MOLLUSCA, and PALEONET) so you might get it more than once, and  
+please feel free to post it to additonal news groups.  I can be  
+reached by e-mail, phone, FAX, & snail mail:
+
+Matthew J. James
+Associate Professor and Chairman
+Department of Geology
+Sonoma State University
+Rohnert Park, California 94928 USA
+matt.james@sonoma.edu
+voice: 707-664-2301 (my office)
+voice: 707-664-2334 (Dept. office)
+FAX: 707-664-2505 or
+FAX: 707-664-3012
+
+The original FAX is retyped below:
+
+---
+
+Quito, 12 de Enero de 1995
+
+Quito, January 23, 1995
+FAX: 707-664-2505
+Attn: Dr. Matt James
+From: Macarena Green
+
+Dear Dr. James,
+
+I received your fax in regards the sea cucumber exploitation in the
+Galapagos. Following you will find some general information as to how  
+things have developed.
+
+As you must know since 15th of October of 1994 the sea cucumber  
+fisheries was legally opened in the Islands. Most of the activities  
+took place in Bolivar Channel (western side of the Archipelago) and  
+principally the west coast of Isabela and all around Fernandina  
+Islands. Until the 15 of December there were over 800 fishermen  
+working on the exploitation of the sea cucumber, Isostichopus fuscus  
+in that area. It was calculated that each of them was
+collecting over 1500 sea cucumbers daily. Besides that these people  
+lived in small boats on which they carried live chickens, as a source  
+of food, unwashed vegetables and other introduced organisms that if  
+they landed by chance on one of the Islands could germinate. It is  
+known that onboard the boats there were rats, mice and introduced  
+insects. They were cleaning their bilges and throwing all their  
+garbage overboard. Most of them were anchored only 20 feet from the  
+shore line of Fernandina Island.
+
+When the cucumber fisheries was opened a limit of 550,000 sea  
+cucumbers, in three month season, was established. However, in two  
+months it had exceeded more than 7 million. By the beginning of  
+December reports on the abuse of the resource went to the different  
+official involved, to the news and to the press. There were reports  
+that the fishermen were not only collecting sea cucumbers, but sea  
+horses, snails, sea urchins and black coral. Also, one fisherman  
+admitted that they had already sent to Japan sea lion penises as a
+try out for a new aphrodisiac. The Japanese buyer paid $50 dollars  
+for each penis. The 15th of December the sea cucumber fisheries was  
+officially closed until technical and scientific studies were done,  
+due to the abuse that had occurred in the first two months.
+
+The people involved in such lucrative, yet devastating, enterprise  
+were not about the accept the new disposition. The first days of  
+January, 1995, they took over the installations of the Park Service  
+and the Darwin Station. They kept all the people inside as hostages,  
+including the wives of many of the workers and children. They  
+threatened to kill all the tortoises in captivity at the Station and  
+they threatened to start fires on little islands like South Plaza and  
+Santa Fe, also they demanded that Chantal Blanton and Arturo Izurieta  
+resign their positions as director of the respective institutions.
+It was quite strange to see the total absence of the police and  
+military help.
+
+In Quito some government officials said that this time they will not  
+let them get their way, and that the fishermen will have to change  
+their attitude, but on Friday, January 6 the director of the National  
+Institute of Fisheries went to Puerto Ayora and offered the fishermen  
+that by the 13th of January they could start catching sea cucumbers  
+again. All the people involved in tourism and science in Puerto Ayora  
+got together and decided to take actions in case this type of  
+activity started again. So in Quito and Guayaquil the minister
+of Fisheries met with the fishermen and the people involved and after  
+getting pressure from all the environmental groups, the association  
+of travel agents, the association of ecotourism, the association of  
+tour operators in Galapagos, and the government of Spain. He felt in  
+the position to close the Pepino (Cucumber) fisheries until October  
+of the present year.
+
+All the groups named above have got together to fight for the same  
+cause. Our aim is to persuade the government to close all types of  
+industrial fisheries in the Galapagos, to stop all type of  
+exportation of any resource that comes from the Islands, to include  
+the marine area within the National Park and be managed by only one  
+institution and to make the law come true. As you know there is a  
+master plan to manage the marine resources reserve, but it is
+completely ignored.
+
+We have strong reason to beleive that there is someone very powerful  
+involved in the exploitation and commercialization of sea cucumbers  
+in the Galapagos waters. It seems the Ecuadorian government is doing  
+very little to fight against this type of exploitation. however we  
+have noticed that when there is international pressure their attitude  
+changes.
+
+If you could get together in the States and write a demanding letter  
+to the President of Ecuador, I think that they may think twice about  
+opening the Pepino or any other type of fisheries in the Galapagos.  
+In fact I think that the same letter should be sent to the Ecuadorian  
+press. The address of the President of Ecuador is:
+
+Arq. Sixto Duran Ballen
+Presidente Constitucional de la Republica de Ecuador
+Palacia de Gobierna
+Quito - ECUADOR
+
+We are sending information in regards all this matter to Jack Grove.  
+Please contact him if you need more detailed information or if you  
+need to coordinate any moves from your side.
+
+It is time that the world demands from the Ecuadorian government the  
+right type of management for the Galapagos Islands as a whole.
+
+We need international pressure and demands in order to save the  
+Galapagos Islands. We appreciate your help very much. Let us know if  
+you need more information.
+
+With best regards,
+
+(Signed) Macarena Green
+FAX: 593-2-443188
+***End of Original FAX***
+
+Date: Fri, 27 Jan 1995 12:35:08 +0800 (U)
+From: Matt James <matt.james@SONOMA.EDU>
+To: Phil Agre <pagre@weber.ucsd.edu>
+Subject: Re: Galapagos
+
+Dear Phil - I have been answering tons of e-mail about Galapagos, and didn't
+recall getting back to you. The original posting was titled Galapagos Crisis.
+If you could post it to your list I would be very appreciative.
+As far as an update is concerned, the situation is stable in the islands,
+Darwin Sation is back to work, a 2 month evaluation period is in effect (not
+sure what will happen after that), the pepino (sea cucumber) fishermen are
+not active right now. Not sure what is happening with killing sea lions,
+hammerhead sharks, Galapagos sharks, and other marine organisms in the
+nearshore waters of the islands.
+Thank you for assisting me in bringing this problem to the attention of the
+international scientific community. With best regards, Matt James.
+```
+
+|  |
+| --- |
+| **[ProcessTree Network](https://web.archive.org/web/20001026070311/http://www.processtree.com/?sponsor=23069)** TM  For-pay Internet distributed processing. |
+| Advertising helps support hosting Red Rock Eater Digest @ The Commons. Advertisers are not associated with the list owner. If you have any comments about the advertising, please direct them to the [Webmaster @ The Commons](https://web.archive.org/web/20001026070311/mailto:webmaster@somewhere.com). |

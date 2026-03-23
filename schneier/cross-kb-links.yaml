@@ -1,0 +1,248 @@
+# Cross-KB links from schneier to other KBs
+# Generated during Phase 5 of KB lifecycle
+
+# === Doctorow ===
+- source: hacking-as-systems-subversion
+  target: enshittification
+  target_kb: doctorow
+  relation: related_to
+  note: "Enshittification is platform capture — hacking in Schneier's generalized sense: using platform lock-in against users' interests"
+
+- source: hacking-as-systems-subversion
+  target: platform-decay-cycle
+  target_kb: doctorow
+  relation: related_to
+  note: "Platform decay is the structural lifecycle that enshittification enacts; Schneier's systems-subversion framework explains why decay is a predictable exploit of power asymmetry"
+
+- source: security-economics
+  target: enshittification
+  target_kb: doctorow
+  relation: related_to
+  note: "Both analyze incentive misalignment: Schneier argues security fails when those who can prevent harm don't bear its cost; Doctorow describes the same dynamic in platform value extraction"
+
+- source: data-and-goliath
+  target: how-to-destroy-surveillance-capitalism
+  target_kb: doctorow
+  relation: related_to
+  note: "Both address surveillance as power asymmetry. Schneier frames it as corporate/state data collection; Doctorow argues monopoly structure, not data, is the root cause"
+
+- source: electronic-frontier-foundation
+  target: electronic-frontier-foundation
+  target_kb: doctorow
+  relation: related_to
+  note: "Shared institutional affiliation: Schneier on EFF board; Doctorow was long-term EFF staff"
+
+- source: trust-framework
+  target: switching-costs
+  target_kb: doctorow
+  relation: related_to
+  note: "Schneier's trust framework identifies how institutional pressures enforce cooperation; Doctorow's switching-costs analysis shows how those pressures are engineered as lock-in"
+
+- source: trust-framework
+  target: chokepoint-capitalism
+  target_kb: doctorow
+  relation: related_to
+  note: "Chokepoint capitalism describes structural market capture; Schneier's trust framework explains how defection from cooperative norms is enabled when accountability mechanisms are absent"
+
+- source: john-perry-barlow
+  target: john-perry-barlow
+  target_kb: doctorow
+  relation: related_to
+  note: "Same person in both KBs: Schneier focuses on cypherpunk/EFF role; Doctorow on Declaration and digital rights legacy"
+
+- source: crypto-wars-export-controls
+  target: adversarial-interoperability
+  target_kb: doctorow
+  relation: related_to
+  note: "Crypto Wars were early adversarial interoperability: cypherpunks using mathematics to make surveillance technically infeasible. Doctorow generalizes the same move to platform competition"
+
+# === Boyd ===
+- source: security-mindset
+  target: ooda-loop
+  target_kb: boyd
+  relation: related_to
+  note: "Both are adversarial cognitive frameworks. OODA models operating inside an adversary's decision cycle; security mindset asks how systems can be made to fail"
+
+- source: security-mindset
+  target: orientation
+  target_kb: boyd
+  relation: related_to
+  note: "Orientation is OODA's central element; Schneier's security mindset is a specific orientation trained to see failure modes rather than intended functions"
+
+- source: threat-modeling
+  target: ooda-loop
+  target_kb: boyd
+  relation: related_to
+  note: "Threat modeling operationalizes adversarial thinking; OODA is the adversary's decision structure that threat modeling attempts to predict and disrupt"
+
+- source: threat-modeling
+  target: destruction-and-creation-concept
+  target_kb: boyd
+  relation: related_to
+  note: "Threat modeling requires destroying and rebuilding models as adversaries adapt — Boyd's destruction-and-creation epistemology applied to security"
+
+- source: security-is-a-process
+  target: ooda-loop
+  target_kb: boyd
+  relation: related_to
+  note: "Both reject static achievement in favor of continuous adaptive cycles. 'Process not a product' is the security version of Boyd's argument that tempo beats position"
+
+- source: hacking-as-systems-subversion
+  target: fast-transients
+  target_kb: boyd
+  relation: related_to
+  note: "Fast transients — winning through rapid unpredictable state changes — formalizes the hacker advantage: exploiting orientation gaps before the adversary can adapt"
+
+# === Deming ===
+- source: security-is-a-process
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: related_to
+  note: "Structural isomorphism: both reject product/achievement framing in favor of continuous cyclic improvement — Deming for quality, Schneier for security"
+
+- source: security-economics
+  target: institutional-incentives
+  target_kb: deming
+  relation: related_to
+  note: "Parallel claims: Deming argues 94% of quality failures are system-caused; Schneier's security economics argues most security failures are incentive failures"
+
+- source: security-economics
+  target: management-responsibility-for-quality
+  target_kb: deming
+  relation: related_to
+  note: "Quality as management responsibility maps onto security economics: insecure software exists because vendors don't bear the cost of insecurity"
+
+- source: security-mindset
+  target: theory-of-knowledge
+  target_kb: deming
+  relation: related_to
+  note: "Both are epistemological frameworks insisting on active model-building. Deming: no knowledge without theory; Schneier: understanding requires constructing adversarial failure theories"
+
+- source: security-is-a-process
+  target: pdsa-ooda-parallel-iterative-learning-cycles-across-domains
+  target_kb: deming
+  relation: related_to
+  note: "The Deming KB identifies the PDSA-OODA parallel; Schneier extends the same iterative-learning-cycle insight into security — a three-way convergence"
+
+- source: trust-framework
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: related_to
+  note: "Deming's systems appreciation and Schneier's trust framework both argue the unit of analysis must be the whole system, not individual components"
+
+# === Wardley ===
+- source: threat-modeling
+  target: situational-awareness
+  target_kb: wardley
+  relation: related_to
+  note: "Both are structured approaches to understanding a landscape before acting. Wardley maps components and evolution; Schneier models assets, adversaries, and capabilities"
+
+- source: security-is-a-process
+  target: strategy-cycle
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley's strategy cycle and Schneier's security-as-process both reject one-time analysis in favor of continuous iterative cycles"
+
+- source: security-economics
+  target: evolution
+  target_kb: wardley
+  relation: related_to
+  note: "Security tools follow Wardley's evolution trajectory (novel → product → commodity); security economics must account for shifting cost structures at each stage"
+
+- source: security-economics
+  target: inertia
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley's inertia maps onto a key security economics failure: organizations treating security as a product when the threat landscape has evolved"
+
+- source: hacking-as-systems-subversion
+  target: gameplay
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley's gameplay — exploiting positional opportunities others don't see — is structurally analogous to Schneier's hacking: seeing gaps between system state and what is possible within its rules"
+
+# === Stallman ===
+- source: applied-cryptography
+  target: four-freedoms
+  target_kb: stallman
+  relation: related_to
+  note: "Stallman's Freedom 1 (to study software) is a prerequisite for cryptographic security. Applied Cryptography embodies this: publishing source code so implementations can be audited"
+
+- source: trust-framework
+  target: can-you-trust-your-computer
+  target_kb: stallman
+  relation: related_to
+  note: "Both make the same definitional move: 'trusted by whom?' Trusted computing that serves content owners rather than users inverts the trust relationship"
+
+- source: trust-framework
+  target: four-freedoms
+  target_kb: stallman
+  relation: related_to
+  note: "The four freedoms are structural prerequisites for user-side trust: you cannot verify software acts as your agent without freedom to study and modify it"
+
+- source: crypto-wars-export-controls
+  target: software-patents-opposition
+  target_kb: stallman
+  relation: related_to
+  note: "Both are instances of legal/regulatory regimes restricting who can implement or distribute technical knowledge"
+
+- source: electronic-frontier-foundation
+  target: founding-of-fsf
+  target_kb: stallman
+  relation: related_to
+  note: "EFF (1990) and FSF (1985) are the two foundational digital rights institutions: civil liberties in digital contexts vs. software freedom as prerequisite"
+
+- source: hacking-as-systems-subversion
+  target: copyleft-as-legal-hack
+  target_kb: stallman
+  relation: related_to
+  note: "Copyleft is the paradigm case of Schneier's hacking: using copyright law against its restrictive purpose to guarantee freedom"
+
+- source: data-and-goliath
+  target: surveillance-vs-democracy
+  target_kb: stallman
+  relation: related_to
+  note: "Both argue mass surveillance is incompatible with democracy. Written in the same Snowden-revelations context"
+
+# === Red Rock Eater (Agre) ===
+- source: hacking-as-systems-subversion
+  target: capture-model
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Agre's capture model — systems imposing grammars of action to generate data — is a specific mechanism of systems subversion"
+
+- source: hacking-as-systems-subversion
+  target: institutional-coevolution
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Technologies and institutions mutually shaping each other is the structural context in which Schneier's hacking operates"
+
+- source: data-and-goliath
+  target: surveillance-vs-capture
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Agre's surveillance-vs-capture distinction enriches Schneier's analysis: capture shows how activities are restructured to generate data as a byproduct"
+
+- source: data-and-goliath
+  target: face-recognition-and-public-space
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Agre's 2001 face recognition analysis anticipates the biometric surveillance issues Schneier addresses in Data and Goliath"
+
+- source: trust-framework
+  target: institutional-legitimacy
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Both analyze legitimacy as a socially constructed property that can be eroded"
+
+- source: security-is-a-process
+  target: security-through-design
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Both converge: security cannot be added by surveillance alone but must be built in through design. Written in the same post-9/11 context"
+
+- source: security-economics
+  target: institutional-analysis
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Both analyze how institutional structures systematically misalign incentives"

@@ -1,0 +1,345 @@
+name: schneier
+description: >
+  Intellectual biography of Bruce Schneier (b. 1963) — cryptographer, security technologist,
+  author, and public intellectual. Covers his evolution from cryptography practitioner to
+  one of the most important thinkers on security, trust, power, and technology's role in
+  society. Traces the arc from Applied Cryptography through the security mindset to the
+  hacking-as-systems-subversion framework of A Hacker's Mind.
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Schneier's output spans books, blog posts, essays, congressional testimony, technical papers,
+    and algorithms. Primary sources include his books and his "Schneier on Security" blog
+    (schneier.com). He is unusually prolific and self-documenting — the blog archives are a
+    major primary source. Distinguish between Schneier's technical contributions (algorithms,
+    protocols) and his public-intellectual work (security analysis, policy advocacy). When
+    citing positions, date them — Schneier has publicly evolved his thinking, most notably in
+    the "Secrets and Lies" repudiation of his own earlier purely-technical framing.
+  quality: |
+    Entries should go beyond summarizing book jackets. For writings, explain what the work
+    contributed that was new — what argument it advanced, what it responded to, and how it
+    fit into Schneier's evolving intellectual trajectory. For concepts, trace the lineage:
+    where did Schneier first articulate this idea, how has he refined it, and how does it
+    connect to the broader security and digital rights discourse? For people, explain the
+    specific intellectual relationship — collaborator, influence, critic, or fellow traveler.
+  voice: |
+    Analytical and precise. Schneier writes clearly and accessibly — entries should match
+    that clarity without being superficial. Respect the technical depth where it exists
+    (cryptography, protocol analysis) while making the policy and societal arguments
+    accessible. Schneier is a pragmatist, not an ideologue — the KB should reflect that
+    nuance.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of Bruce Schneier covering his cryptographic
+    contributions, security writings, key concepts (security mindset, security theater,
+    trust frameworks, hacking as systems subversion), the Crypto Wars context, his
+    professional and intellectual network, and his influence on security thinking, digital
+    rights, and technology policy.
+  success_criteria: |
+    A reader can trace Schneier's intellectual arc from cryptography practitioner to
+    public intellectual on security, trust, and power. Cross-references to other KBs
+    (Doctorow, Agre, Boyd, Deming, Stallman) make the connections between security
+    thinking and adjacent intellectual traditions explicit.
+
+evaluation_rubric:
+  - "Writing entries include date and writing_type classification"
+  - "Concept entries trace origin to a specific work or approximate date"
+  - "Entries distinguish Schneier's technical contributions from his policy/societal arguments"
+  - "People entries describe the specific intellectual relationship to Schneier"
+  - "The Crypto Wars context is documented with dates and specific policy events"
+  - "Cross-KB connections to digital rights, systems thinking, and adversarial reasoning are noted"
+
+types:
+  writing:
+    description: "A work by Bruce Schneier — book, paper, blog post, essay, testimony, algorithm specification, or newsletter"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publisher, url, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, paper, essay, blog-post, testimony, newsletter, algorithm, report, column, talk, foreword, interview]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors (entry IDs or names)"
+      publisher:
+        type: string
+        description: "Publisher or venue"
+      url:
+        type: string
+        description: "URL to full text if available"
+      key_concepts:
+        type: list
+        description: "Concepts developed or discussed (entry IDs from concepts/)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored by Bruce Schneier. Schneier is extremely prolific: 14+ books, hundreds
+      of essays and blog posts, congressional testimony, technical papers, and algorithm
+      specifications. For books, explain the argument and where it fits in his intellectual
+      arc. For blog posts, only create entries for landmark posts that introduced or developed
+      key ideas — do not catalog routine commentary. For papers and algorithms, note the
+      technical contribution and its practical adoption. The "Schneier on Security" blog and
+      the "Crypto-Gram" newsletter are distinct publication venues. Always use writing_type
+      to classify. Importance 10 = Applied Cryptography and Secrets and Lies (the pivot works);
+      8-9 = major books; 6-7 = significant papers/essays; 4-5 = supporting works.
+    evaluation_rubric:
+      - "Writing has a date and writing_type"
+      - "Body explains significance, not just contents"
+      - "Position in Schneier's intellectual arc is noted"
+    display:
+      icon: file-text
+      layout: document
+
+  concept:
+    description: "A key idea, framework, or intellectual contribution from Schneier's work"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing or approximate date where this concept first appears"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea or framework from Schneier's work. Major concepts include: the security
+      mindset, security theater, attack trees, threat modeling, "security is a process not
+      a product," trust as societal infrastructure, hacking as systems subversion, and
+      the distinction between feeling safe and being safe. Trace each concept to its
+      first appearance in Schneier's writing. Show how the concept evolved — many of
+      Schneier's ideas started as technical security concepts and broadened into societal
+      frameworks. Connect to related concepts within the KB and to parallel ideas in other
+      intellectual traditions (Boyd's adversarial thinking, Deming's process thinking,
+      Agre's capture model).
+    evaluation_rubric:
+      - "Concept traces origin to specific work or date"
+      - "Evolution over time is documented"
+      - "Connections to other concepts are explicit via wikilinks"
+    display:
+      icon: lightbulb
+      layout: document
+
+  era:
+    description: "A period in Schneier's intellectual or professional development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '1993-2000'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations during this period"
+    ai_instructions: >
+      A period in Bruce Schneier's intellectual development. The major eras map to his
+      evolving focus: early cryptography work (pre-2000), the security-beyond-crypto pivot
+      (2000-2003), security commentator and blogger (2004-2011), trust and surveillance
+      scholar (2012-2018), and the systems-subversion/power phase (2019-present). Each era
+      should describe what characterized Schneier's thinking, what prompted the shift, and
+      what key works emerged.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Schneier's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_schneier, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_schneier:
+        type: string
+        description: "Nature of professional/intellectual relationship to Schneier"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Bruce Schneier's professional and intellectual network. This includes
+      co-authors (especially on cryptographic papers), fellow cypherpunks, Crypto Wars
+      allies, EFF colleagues, security researchers he has influenced or been influenced by,
+      and policy figures he has engaged with. Schneier's network spans cryptography,
+      security research, digital rights advocacy, and technology policy. Describe the
+      specific intellectual relationship, not just biographical facts.
+    evaluation_rubric:
+      - "Role field accurately describes the person's primary function"
+      - "Relationship to Schneier is specific, not generic"
+      - "Body includes the person's own contributions, not just their connection"
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Schneier's career or thought"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location, url]
+    fields:
+      org_type:
+        type: select
+        values: [company, nonprofit, government-agency, university, standards-body, conference, think-tank, publisher, industry-group]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+      url:
+        type: string
+        description: "URL"
+    ai_instructions: >
+      An institution relevant to Schneier's career, thought, or context. Includes
+      Counterpane Internet Security (his company), BT (acquired Counterpane), the
+      Electronic Frontier Foundation, Harvard Kennedy School, NIST, NSA, and standards
+      bodies like IETF. Also includes publishers (Wiley, Springer) and conferences
+      (RSA, Black Hat, DEF CON). Describe the institution's role in the security
+      ecosystem and its connection to Schneier's work.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A significant event in Schneier's career or in security/crypto history"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in Schneier's career or in the broader security/cryptography/digital
+      rights history that is relevant to his intellectual biography. Includes the Crypto Wars
+      policy events (Clipper Chip, key escrow debates), Snowden revelations, founding of
+      companies, publication milestones, congressional testimony, and major security incidents
+      he has commented on. Always include a date. Explain the significance for Schneier's
+      intellectual development.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Schneier or his work"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, profile, review, dissertation, blog-post, podcast, documentary, academic-paper]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about Bruce Schneier or his work — profiles, interviews,
+      reviews, academic analyses, etc. These are references ABOUT Schneier, not BY him.
+      For works by Schneier, use the 'writing' type. Schneier is widely profiled and
+      interviewed; prioritize sources that provide insight into his intellectual development
+      or contain information not available in his own writings.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, observations, or commentary about Schneier's work
+      and intellectual world. Use for analytical connections, research questions,
+      and editorial notes.
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  develops: "Develops or elaborates (concept in writing)"
+  developed_in: "Developed in (writing develops concept)"
+  builds_on: "Builds on earlier work"
+  built_upon_by: "Built upon by later work"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  responds_to: "Responds to or engages with"
+  collaborates_with: "Collaborates with"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+
+  # Cryptographic / technical
+  codesigned: "Co-designed (algorithm/protocol)"
+  analyzed: "Analyzed or cryptanalyzed"
+  analyzed_by: "Analyzed by"
+
+  # Institutional
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  member_of: "Member of"
+  employed_by: "Employed by"
+  founded: "Founded"
+  testified_before: "Testified before"
+
+  # Structural
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

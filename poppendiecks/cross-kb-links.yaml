@@ -1,0 +1,321 @@
+# Cross-KB links from poppendiecks to other KBs
+# The Poppendiecks are the KEY TRANSLATION LAYER between manufacturing lean (TPS/Deming)
+# and software lean (Anderson/Kanban, DevOps, Lean Startup). Links reflect that role.
+
+# === TPS — Direct source. The Poppendiecks translated TPS to software. ===
+
+- source: seven-wastes-of-software
+  target: seven-wastes-muda
+  target_kb: tps
+  relation: translates
+  note: "Direct translation of Ohno's seven manufacturing wastes into seven software-specific waste categories — the core diagnostic tool of lean software development"
+
+- source: pull-systems-in-software
+  target: pull-production
+  target_kb: tps
+  relation: translates
+  note: "Software pull systems translated from TPS pull production — work pulled by downstream capacity, not pushed by upstream schedule"
+
+- source: deliver-as-fast-as-possible
+  target: just-in-time
+  target_kb: tps
+  relation: translates
+  note: "Fast delivery principle translates JIT from manufacturing to software — produce and deliver only what is needed, when it is needed"
+
+- source: build-integrity-in
+  target: jidoka
+  target_kb: tps
+  relation: translates
+  note: "Built-in quality through TDD, CI, and automated testing translates jidoka — quality designed into the process, not inspected afterward"
+
+- source: build-integrity-in
+  target: poka-yoke
+  target_kb: tps
+  relation: translates
+  note: "Software mistake-proofing (type systems, automated tests, CI) translates Shingo's poka-yoke — preventing defects by design rather than detecting them downstream"
+
+- source: amplify-learning
+  target: kaizen
+  target_kb: tps
+  relation: translates
+  note: "Continuous learning through short feedback cycles translates kaizen — but the Poppendiecks reframed it from improving production to improving knowledge"
+
+- source: value-stream-mapping-for-software
+  target: value-stream
+  target_kb: tps
+  relation: translates
+  note: "Software value stream mapping adapted from TPS material/information flow analysis; reveals that most elapsed time is waiting, not working"
+
+- source: empower-the-team
+  target: andon
+  target_kb: tps
+  relation: translates
+  note: "Team empowerment to stop work and raise quality concerns translates the andon cord — any worker authorized to halt the production line"
+
+- source: lean-software-development-agile-toolkit-2003
+  target: tps-to-lean-software-transmission
+  target_kb: tps
+  relation: related_to
+  note: "The 2003 book is the defining document of the TPS-to-lean-software transmission — the Poppendiecks' systematic translation methodology"
+
+# === Deming — Quality thinking, systems appreciation, PDSA as learning infrastructure ===
+
+- source: amplify-learning
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: influenced_by
+  note: "PDSA is the primary operational mechanism for amplifying learning — form hypothesis, act, study results, adjust. The Poppendiecks' learning loops are Deming cycles"
+
+- source: learning-not-results
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: influenced_by
+  note: "Deming's SoPK — especially theory of knowledge — is the theoretical framework underpinning the learning-not-results thesis: managing by results destroys learning capacity"
+
+- source: learning-not-results
+  target: management-by-objectives-deming-s-critique
+  target_kb: deming
+  relation: builds_on
+  note: "Poppendiecks' 'results are not the point' directly extends Deming's critique of MBO — numerical targets without understanding of the system produce gaming and degradation"
+
+- source: optimize-the-whole
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: influenced_by
+  note: "Optimize-the-whole is the lean software expression of Deming's first SoPK component — the system is the unit of optimization, not individual components"
+
+- source: empower-the-team
+  target: the-14-points-for-management
+  target_kb: deming
+  relation: influenced_by
+  note: "Points 8 (drive out fear) and 12 (remove barriers to pride of workmanship) directly support the Poppendiecks' team empowerment principle"
+
+# === Goldratt — TOC complements lean. Constraint focus alongside waste elimination ===
+
+- source: optimize-the-whole
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "Complementary system optimization frameworks — lean eliminates waste across the system; TOC identifies and elevates the single constraint that limits throughput"
+
+- source: optimize-the-whole
+  target: throughput-world-vs-cost-world
+  target_kb: goldratt
+  relation: related_to
+  note: "Both frameworks argue against local cost optimization — Goldratt's throughput-world framing and the Poppendiecks' anti-suboptimization principle reach the same conclusion"
+
+- source: deliver-as-fast-as-possible
+  target: drum-buffer-rope
+  target_kb: goldratt
+  relation: related_to
+  note: "TOC's pacing mechanism (constrain to the bottleneck's capacity) parallels lean pull — both prevent WIP accumulation by governing flow to actual throughput"
+
+# === Reinertsen — Economic/mathematical framework for product development flow ===
+
+- source: deliver-as-fast-as-possible
+  target: queueing-theory-applied
+  target_kb: reinertsen
+  relation: influenced_by
+  note: "Reinertsen's queueing theory provides the mathematical foundation for why WIP limits improve flow — cited extensively in Implementing Lean Software Development"
+
+- source: deliver-as-fast-as-possible
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: influenced_by
+  note: "Cost of delay makes the economic case for fast delivery explicit — delay has a real, quantifiable cost that transforms speed from a productivity issue to a business value issue"
+
+- source: deliver-as-fast-as-possible
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: influenced_by
+  note: "Reinertsen's batch size economics (transaction costs vs. holding costs) provides the formal argument for small batches that the Poppendiecks applied to software delivery"
+
+- source: pull-systems-in-software
+  target: wip-constraints
+  target_kb: reinertsen
+  relation: influenced_by
+  note: "WIP constraints as the mechanism for implementing pull in software — Reinertsen formalized the queueing theory logic that the Poppendiecks applied"
+
+- source: decide-as-late-as-possible
+  target: u-curve-optimization
+  target_kb: reinertsen
+  relation: influenced_by
+  note: "Reinertsen's U-curve and real options framework provides the economic justification for deferring commitment until the last responsible moment"
+
+# === Anderson — Kanban Method builds on lean principles the Poppendiecks popularized ===
+
+- source: pull-systems-in-software
+  target: kanban-method
+  target_kb: anderson
+  relation: influenced
+  note: "The Poppendiecks' lean software pull principles were a direct influence on Anderson's Kanban Method — the principle-to-practice lineage from TPS through Poppendiecks to Anderson"
+
+- source: pull-systems-in-software
+  target: wip-limits
+  target_kb: anderson
+  relation: influenced
+  note: "Anderson operationalized the Poppendiecks' pull-system logic into explicit WIP limits — the defining mechanism of the Kanban Method"
+
+- source: deliver-as-fast-as-possible
+  target: manage-flow
+  target_kb: anderson
+  relation: influenced
+  note: "Anderson's manage-flow practice operationalizes the Poppendiecks' fast-delivery principle with lead time, throughput, and cycle time metrics"
+
+- source: eliminate-waste
+  target: visualize-workflow
+  target_kb: anderson
+  relation: influenced
+  note: "Kanban board visualization makes the invisible wastes the Poppendiecks identified — WIP, delays, bottlenecks — visible to the entire team"
+
+# === DeMarco — Both advocate for team empowerment, reducing waste, human factors ===
+
+- source: amplify-learning
+  target: slack-concept
+  target_kb: demarco
+  relation: resolves_tension_with
+  note: "The Poppendiecks resolved the slack-vs-lean tension: if learning is the value stream, slack that enables learning is not waste but value-adding time"
+
+- source: empower-the-team
+  target: peopleware-thesis
+  target_kb: demarco
+  relation: related_to
+  note: "Both argue that software success depends on human factors — team autonomy, environment, trust — not process control. The Poppendiecks ground this in TPS respect-for-people"
+
+- source: seven-wastes-of-software
+  target: flow-and-interruption-cost
+  target_kb: demarco
+  relation: related_to
+  note: "Task switching (Poppendieck waste #6) maps directly to DeMarco's measured interruption cost — both identify context-switching as a major productivity destroyer"
+
+# === Senge — Learning organization principles underpin 'amplify learning' ===
+
+- source: amplify-learning
+  target: learning-organization
+  target_kb: senge
+  relation: related_to
+  note: "The Poppendiecks' amplify-learning principle has the same deep structure as Senge's learning organization — both argue that organizational learning capacity is the primary competitive advantage"
+
+- source: learning-not-results
+  target: team-learning
+  target_kb: senge
+  relation: related_to
+  note: "Team learning as a discipline — developing collective inquiry and dialogue skills — parallels the Poppendiecks' argument that team learning capacity matters more than result metrics"
+
+- source: optimize-the-whole
+  target: systems-thinking-fifth-discipline
+  target_kb: senge
+  relation: related_to
+  note: "Both emphasize seeing the system rather than its parts — Senge's systems thinking and the Poppendiecks' optimize-the-whole address the same suboptimization problem"
+
+- source: lean-mindset
+  target: mental-models
+  target_kb: senge
+  relation: related_to
+  note: "The lean mindset as a way of seeing maps to Senge's mental models discipline — surfacing and testing assumptions that shape organizational behavior"
+
+# === Weinberg — Both focus on human dimensions of software development ===
+
+- source: empower-the-team
+  target: programming-as-human-activity
+  target_kb: weinberg
+  relation: related_to
+  note: "Weinberg established that programming is fundamentally a human activity; the Poppendiecks built on this by arguing that empowered teams produce better software because knowledge work requires autonomous judgment"
+
+- source: optimize-the-whole
+  target: general-systems-thinking
+  target_kb: weinberg
+  relation: related_to
+  note: "Both apply systems thinking to software — Weinberg from a general systems theory perspective, the Poppendiecks from lean manufacturing systems thinking"
+
+- source: build-integrity-in
+  target: egoless-programming
+  target_kb: weinberg
+  relation: related_to
+  note: "Both argue for quality through collaborative review rather than individual heroics — egoless programming enables the code review and refactoring practices that build integrity in"
+
+# === Flow — Team flow conditions parallel lean team practices ===
+
+- source: empower-the-team
+  target: autonomy-mastery-purpose
+  target_kb: flow
+  relation: related_to
+  note: "The Poppendiecks explicitly cite Pink's autonomy-mastery-purpose framework as motivation theory supporting team empowerment — lean teams need intrinsic motivation"
+
+- source: seven-wastes-of-software
+  target: deep-work
+  target_kb: flow
+  relation: related_to
+  note: "Task switching (waste #6) destroys the deep work conditions flow requires — eliminating this waste enables the focused cognitive states that produce quality software"
+
+- source: learning-not-results
+  target: intrinsic-motivation
+  target_kb: flow
+  relation: related_to
+  note: "Managing for learning rather than results preserves intrinsic motivation — result pressure destroys the intrinsic engagement that both flow theory and lean development require"
+
+# === Boyd — OODA loop parallels with iterative development ===
+
+- source: learning-not-results
+  target: ooda-loop
+  target_kb: boyd
+  relation: related_to
+  note: "OODA as a learning loop — competitive advantage comes from faster orientation (learning), not faster action. Parallels the Poppendiecks' argument that learning rate is the competitive variable"
+
+- source: deliver-as-fast-as-possible
+  target: tempo
+  target_kb: boyd
+  relation: related_to
+  note: "Boyd's tempo — operating at faster cycle time than the opponent — parallels lean's emphasis on delivery speed as competitive advantage through faster learning cycles"
+
+- source: empower-the-team
+  target: auftragstaktik
+  target_kb: boyd
+  relation: related_to
+  note: "Mission-type tactics — empowering frontline execution within commander's intent — is the military analogue of the Poppendiecks' team empowerment principle"
+
+# === Blank — Lean Startup descends from Lean Software Development ===
+
+- source: learning-not-results
+  target: customer-development
+  target_kb: blank
+  relation: influenced
+  note: "Blank's validated learning (form hypotheses, test with customers, update models) is the startup expression of the Poppendiecks' learning-as-primary-value thesis"
+
+- source: learning-not-results
+  target: lean-startup
+  target_kb: blank
+  relation: influenced
+  note: "Lean Startup's Build-Measure-Learn derives from the Poppendiecks' insight that software development is fundamentally learning, not production — the conceptual bridge to Ries"
+
+- source: amplify-learning
+  target: get-out-of-the-building
+  target_kb: blank
+  relation: related_to
+  note: "Get-out-of-the-building is a concrete learning amplification practice — shortening the feedback loop between hypothesis and customer reality"
+
+- source: decide-as-late-as-possible
+  target: pivot
+  target_kb: blank
+  relation: related_to
+  note: "Pivoting is deciding at the last responsible moment based on validated learning — preserving optionality until evidence dictates direction"
+
+# === Meadows — Systems thinking foundation ===
+
+- source: optimize-the-whole
+  target: leverage-points
+  target_kb: meadows
+  relation: related_to
+  note: "Meadows' leverage points framework identifies where system interventions have greatest effect — the Poppendiecks' optimize-the-whole principle seeks the same system-level insight"
+
+- source: optimize-the-whole
+  target: stocks-and-flows
+  target_kb: meadows
+  relation: related_to
+  note: "Software WIP as stock, delivery rate as flow — Meadows' stocks-and-flows framework provides the systems dynamics vocabulary for understanding lean software value streams"
+
+- source: seven-wastes-of-software
+  target: delays-in-systems
+  target_kb: meadows
+  relation: related_to
+  note: "Delays waste (#5) maps to Meadows' analysis of delays in systems — delays decouple cause from effect, making systems harder to manage and producing oscillation"

@@ -1,0 +1,332 @@
+name: reinertsen
+description: >
+  Intellectual biography of Donald G. Reinertsen — product development theorist,
+  consultant, and author of "Managing the Design Factory" (1997) and "The Principles
+  of Product Development Flow" (2009). Covers his frameworks for applying queueing
+  theory and economics to product development, including cost of delay, batch size
+  optimization, WIP constraints, and decentralized control. Maps his influence on
+  lean software development, Kanban, and modern product management.
+
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Reinertsen's work is grounded in operations research, queueing theory, and
+    microeconomics — cite the specific mathematical or economic reasoning behind
+    each principle where possible. His two books are the primary sources; conference
+    talks and articles extend but rarely contradict them. When covering his 175
+    principles from "Flow," reference the principle number. Distinguish between
+    Reinertsen's own formulations and later practitioners' interpretations (e.g.,
+    SAFe's WSJF is derived from Reinertsen's cost-of-delay but is not identical
+    to his framework).
+  quality: |
+    Entries should explain the economic or mathematical logic behind Reinertsen's
+    ideas, not just state them as assertions. His work is distinctive for providing
+    quantitative foundations where others offer qualitative principles — entries
+    should preserve this rigor. Trace the lineage from operations research and
+    manufacturing to product development to software. The U-curve optimization
+    pattern recurs throughout his work and should be noted wherever it applies.
+  voice: |
+    Analytical, precise, economically literate. Reinertsen writes as an engineer
+    and economist, not a management guru — the KB should reflect that intellectual
+    register. Respectful of the mathematical foundations without being inaccessible.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of Donald Reinertsen covering his
+    writings, core concepts (cost of delay, queueing theory, batch size, WIP
+    constraints, decentralized control), professional network, and influence on
+    lean software development, Kanban, and product management.
+  success_criteria: |
+    A reader can trace the economic and mathematical reasoning behind modern
+    lean/agile practices (WIP limits, batch size reduction, cost-of-delay
+    prioritization) back to their foundations in Reinertsen's work. Cross-KB
+    connections to Goldratt, Boyd, Deming, Blank, and TPS are explicit.
+
+evaluation_rubric:
+  - "Entry explains the economic or mathematical logic, not just the conclusion"
+  - "Concepts trace lineage from operations research/manufacturing to product development"
+  - "Writing entries describe the work's significance, not just its contents"
+  - "People entries describe the specific intellectual relationship to Reinertsen"
+  - "U-curve optimization pattern is identified wherever it applies"
+  - "Cross-KB connections to Goldratt, Boyd, Deming, Blank, TPS are noted where relevant"
+
+types:
+  writing:
+    description: "A work by Donald Reinertsen — book, article, paper, presentation, or foreword"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publication, url, abstract, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, article, paper, presentation, foreword, interview, column, report]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors (entry IDs or names)"
+      publication:
+        type: string
+        description: "Venue, journal, or publication context"
+      url:
+        type: string
+        description: "URL to full text if available"
+      abstract:
+        type: text
+        description: "Brief description of the work"
+      key_concepts:
+        type: list
+        description: "Concepts developed or discussed (entry IDs from concepts/)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored by Donald Reinertsen. His two books are the pillars: "Managing
+      the Design Factory" (1997) and "The Principles of Product Development Flow" (2009).
+      He also writes articles, gives conference presentations, and contributes forewords.
+      Always include publication date. For articles and presentations, note the venue.
+      Link key_concepts to concept entries. Explain what the work contributes to
+      Reinertsen's intellectual trajectory — how does it advance or refine his thinking?
+    evaluation_rubric:
+      - "Writing has a date and writing_type"
+      - "Body explains the work's significance and contribution, not just its contents"
+      - "Key concepts are linked to concept entries"
+    display:
+      icon: file-text
+      layout: document
+
+  concept:
+    description: "A key idea, framework, or principle from Reinertsen's work"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, principle_numbers, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing or approximate date where this concept first appears"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      principle_numbers:
+        type: string
+        description: "Principle numbers from 'Flow' book if applicable (e.g., 'E1-E7')"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, framework, or principle from Reinertsen's work. His concepts often
+      have roots in operations research, queueing theory, or microeconomics — trace
+      these intellectual origins. Many concepts follow the U-curve optimization pattern:
+      both too much and too little is harmful, and the optimum is an economic trade-off.
+      Reference specific principle numbers from "Flow" where applicable. Distinguish
+      between Reinertsen's original formulation and how practitioners (SAFe, Kanban,
+      etc.) have adapted it. Link to the writings where the concept is developed and
+      to related concepts.
+    evaluation_rubric:
+      - "Concept explains the underlying economic or mathematical logic"
+      - "U-curve pattern is identified if applicable"
+      - "Lineage from operations research or economics is traced"
+      - "Distinction between original formulation and practitioner adaptations is noted"
+    display:
+      icon: lightbulb
+      layout: document
+
+  era:
+    description: "A period in Reinertsen's intellectual or professional development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '1975-1997'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations during this period"
+    ai_instructions: >
+      A period in Reinertsen's intellectual or professional development. Use to
+      organize the narrative arc of his career and thinking — from engineering
+      and MBA training through consulting and writing to his mature synthesis in
+      "Flow." Link to key writings and concepts from the period.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Reinertsen's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_reinertsen, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_reinertsen:
+        type: string
+        description: "Nature of professional/intellectual relationship to Reinertsen"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Reinertsen's professional and intellectual network — collaborator,
+      intellectual predecessor, influenced practitioner, or critic. Describe their
+      specific relationship to Reinertsen's work. For intellectual predecessors
+      (queueing theorists, economists), explain what Reinertsen drew from their work.
+      For practitioners influenced by him (Anderson, Poppendiecks), explain which
+      specific ideas they adopted and how they adapted them.
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Reinertsen's career or influence"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location, url]
+    fields:
+      org_type:
+        type: select
+        values: [company, consultancy, university, publisher, conference, professional-body, framework-provider]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+      url:
+        type: string
+        description: "URL if available"
+    ai_instructions: >
+      An institution relevant to Reinertsen's career, consulting practice, or
+      influence. Includes his own consultancy, companies he advised, universities,
+      publishers, conferences where he presented, and organizations that adopted
+      his frameworks (e.g., SAFe).
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A biographical, intellectual, or professional milestone"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in Reinertsen's career or intellectual context — book
+      publication, key conference presentation, founding of consulting practice,
+      or milestone in adoption of his ideas. Use status to indicate certainty level.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Reinertsen or his work"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, review, blog-post, podcast, video, dissertation, profile]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about Reinertsen or his work — reviews, profiles, articles
+      analyzing his frameworks, practitioner accounts of applying his methods. These
+      are references ABOUT Reinertsen's work, not BY him. For works by Reinertsen,
+      use the 'writing' type. Explain what the source uniquely contributes to
+      understanding Reinertsen's ideas or influence.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, observations, or commentary. Use for analytical
+      connections between Reinertsen's work and other frameworks (TOC, OODA,
+      Deming), research questions, and editorial notes.
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  develops: "Develops or elaborates (concept in writing)"
+  developed_in: "Developed in (writing develops concept)"
+  builds_on: "Builds on earlier work"
+  built_upon_by: "Built upon by later work"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  responds_to: "Responds to or engages with"
+  collaborates_with: "Collaborates with"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  applies: "Applies framework from"
+  applied_by: "Applied by"
+
+  # Standard
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  member_of: "Member of"
+  employed_by: "Employed by"
+  published_in: "Published in"
+  presented_at: "Presented at"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

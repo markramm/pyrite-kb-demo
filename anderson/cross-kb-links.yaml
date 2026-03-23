@@ -1,0 +1,188 @@
+# Cross-KB links from anderson to other KBs
+# Generated during Phase 5 of KB lifecycle
+
+# === Reinertsen ===
+- source: wip-limits
+  target: wip-constraints
+  target_kb: reinertsen
+  relation: adapts
+  note: "Anderson adapted Reinertsen's WIP constraints concept as the core mechanism of the Kanban Method; Reinertsen provided the queueing theory justification"
+
+- source: wip-limits
+  target: u-curve-optimization
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen's U-curve (showing optimal utilization below 100%) provides the economic rationale for Anderson's WIP limits"
+
+- source: wip-limits
+  target: queueing-theory-applied
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen's queueing theory framework explains why WIP limits improve flow — high utilization causes exponential queue growth"
+
+- source: manage-flow
+  target: flow-control
+  target_kb: reinertsen
+  relation: adapts
+  note: "Anderson's manage-flow practice operationalizes Reinertsen's flow-control principles for service-delivery organizations"
+
+- source: manage-flow
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: related_to
+  note: "Anderson's flow management aims to minimize lead time, which directly reduces the cost of delay Reinertsen quantifies"
+
+- source: classes-of-service
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: related_to
+  note: "Anderson's classes of service are risk/urgency categories that map onto different cost-of-delay profiles — expedite items have the steepest delay cost curves"
+
+- source: kanban-book
+  target: anderson-kanban-book
+  target_kb: reinertsen
+  relation: related_to
+  note: "The Reinertsen KB already documents the Kanban book as a key work that applied Reinertsen's principles"
+
+- source: don-reinertsen
+  target: david-anderson
+  target_kb: reinertsen
+  relation: related_to
+  note: "Bidirectional relationship: Reinertsen persuaded Anderson to explore kanban systems; Anderson operationalized Reinertsen's theory"
+
+- source: improve-collaboratively
+  target: fast-feedback
+  target_kb: reinertsen
+  relation: related_to
+  note: "Anderson's feedback loops (seven cadences) operationalize Reinertsen's fast-feedback principle for organizational improvement"
+
+- source: fitness-criteria
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: related_to
+  note: "Fitness criteria (lead time, throughput) improve with smaller batch sizes — Reinertsen's batch size economics provides the theoretical foundation"
+
+# === Goldratt ===
+- source: wip-limits
+  target: drum-buffer-rope
+  target_kb: goldratt
+  relation: adapts
+  note: "Anderson's initial Microsoft XIT implementation was directly inspired by TOC's Drum-Buffer-Rope; WIP limits are the knowledge-work adaptation of production pacing"
+
+- source: agile-management-for-software-engineering
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: builds_on
+  note: "Anderson's first book explicitly applied TOC's Five Focusing Steps to software engineering — the intellectual precursor to the Kanban Method"
+
+- source: agile-management-for-software-engineering
+  target: throughput-world-vs-cost-world
+  target_kb: goldratt
+  relation: builds_on
+  note: "Anderson's economic argument for agile methods drew directly on Goldratt's throughput-world framing"
+
+- source: kanban-method
+  target: buffer-management
+  target_kb: goldratt
+  relation: related_to
+  note: "Kanban's WIP limits and classes of service function as buffer management mechanisms adapted from TOC for knowledge work"
+
+- source: manage-flow
+  target: throughput-accounting
+  target_kb: goldratt
+  relation: related_to
+  note: "Anderson's flow management optimizes for throughput — aligning with Goldratt's throughput accounting over traditional cost accounting"
+
+# === Deming ===
+- source: improve-collaboratively
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: adapts
+  note: "Anderson's 'improve collaboratively, evolve experimentally' practice is the Kanban Method's version of Deming's PDSA cycle"
+
+- source: kanban-method
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: related_to
+  note: "The Kanban Method draws on all four components of Deming's System of Profound Knowledge: appreciation for a system, knowledge about variation, theory of knowledge, and psychology"
+
+- source: kanban-method
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: related_to
+  note: "The Kanban Method treats the workflow as a system — WIP limits, feedback loops, and visualization are mechanisms for developing systemic understanding"
+
+- source: evolutionary-change
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: related_to
+  note: "Evolutionary change is PDSA applied indefinitely — each improvement cycle creates the platform for the next, with no predefined end state"
+
+- source: manage-flow
+  target: common-cause-vs-special-cause-variation
+  target_kb: deming
+  relation: related_to
+  note: "Anderson's flow management requires distinguishing systemic (common-cause) variation from special-cause events — the same analytical move Deming's SPC demands"
+
+# === TPS ===
+- source: kanban-method
+  target: kanban
+  target_kb: tps
+  relation: adapts
+  note: "Anderson adapted Toyota's kanban production signaling system into a change management method for knowledge work — same name, fundamentally different application"
+
+- source: visualize-workflow
+  target: andon
+  target_kb: tps
+  relation: related_to
+  note: "Kanban boards make workflow problems visible in real time — the knowledge-work equivalent of Toyota's andon visual management system"
+
+- source: wip-limits
+  target: pull-production
+  target_kb: tps
+  relation: adapts
+  note: "WIP limits implement pull production in knowledge work: work is pulled into a stage only when capacity is available, not pushed by upstream demand"
+
+- source: wip-limits
+  target: just-in-time
+  target_kb: tps
+  relation: related_to
+  note: "WIP limits are the JIT principle applied to knowledge work — reducing inventory (WIP) to expose problems and improve flow"
+
+# === Poppendiecks ===
+- source: kanban-method
+  target: eliminate-waste
+  target_kb: poppendiecks
+  relation: related_to
+  note: "WIP limits reduce work-in-progress inventory — a direct application of the Poppendiecks' lean waste elimination principle to knowledge work queues"
+
+- source: wip-limits
+  target: amplify-learning
+  target_kb: poppendiecks
+  relation: related_to
+  note: "WIP limits amplify learning by shortening feedback cycles — with less work in progress, teams get faster signals about quality and process problems"
+
+- source: evolutionary-change
+  target: empower-the-team
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Kanban's evolutionary change respects team autonomy — the team evolves its own process rather than having a new framework imposed. This aligns with the Poppendiecks' empower-the-team principle"
+
+- source: kanban-method
+  target: seven-wastes-of-software
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Kanban's visualization and WIP limits make several of the seven wastes visible: partially done work (WIP), task switching, waiting, and handoffs"
+
+# === DeMarco (demarco KB) ===
+- source: wip-limits
+  target: slack-concept
+  target_kb: demarco
+  relation: related_to
+  note: "WIP limits create organizational slack: by constraining concurrent work, they preserve capacity for adaptation — connecting Anderson's mechanism to DeMarco's organizational argument"
+
+- source: visualize-workflow
+  target: office-environment-effect
+  target_kb: demarco
+  relation: related_to
+  note: "Both address making invisible dynamics visible: DeMarco showed the invisible cost of poor office environments; Anderson makes invisible workflow problems visible on the board"

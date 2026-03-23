@@ -1,0 +1,323 @@
+name: doctorow
+description: >
+  Intellectual biography of Cory Doctorow (b. 1971) — novelist, journalist, blogger,
+  and digital rights activist. Covers his writings (fiction, nonfiction, blog), key concepts
+  (enshittification, adversarial interoperability, chokepoint capitalism), activist network,
+  and influence on technology policy, antitrust, and digital rights movements.
+
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Doctorow's primary intellectual output is his blog (pluralistic.net, formerly Boing Boing),
+    novels, and nonfiction books. His blog posts are primary sources — they represent his
+    thinking in real time and are often where concepts first appear before being formalized
+    in books or talks. Prioritize blog posts and books as primary sources over secondary
+    commentary. For fiction, treat novels as vehicles for political and technological ideas,
+    not just as literary works.
+  quality: |
+    Entries should trace how Doctorow develops ideas across media — a concept may first
+    appear in a blog post, get developed in talks, and crystallize in a book. The KB should
+    capture this evolution. Distinguish between Doctorow's original contributions (enshittification,
+    adversarial interoperability) and his popularization of others' ideas (antitrust economics,
+    DRM critiques). His co-authored works (especially with Rebecca Giblin) should credit
+    both authors' contributions.
+  voice: |
+    Analytical and engaged. Doctorow is deliberately polemical — the KB should capture his
+    arguments faithfully without either adopting his rhetoric or dismissing his positions.
+    His work bridges activism and analysis; entries should reflect both dimensions.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of Cory Doctorow covering his fiction and
+    nonfiction writing, blog output, key concepts and frameworks, activist network,
+    organizational affiliations, and influence on digital rights, antitrust, and
+    technology policy discourse.
+  success_criteria: |
+    A reader can trace Doctorow's intellectual development from early digital rights
+    activism through the enshittification framework, understand his key arguments and
+    their sources, and see how his ideas connect to broader movements around monopoly
+    power, platform regulation, and digital freedom. Cross-references to Stallman,
+    Agre, and cascade-research KBs make intellectual lineage explicit.
+
+evaluation_rubric:
+  - "Entry places Doctorow's contribution within the broader digital rights or antitrust context"
+  - "Writing entries distinguish between fiction-as-argument and nonfiction analysis"
+  - "Concept entries trace the idea's first appearance and evolution across blog/talks/books"
+  - "People entries describe the specific intellectual or activist relationship to Doctorow"
+  - "Blog posts cited as sources include approximate dates, not just URLs"
+  - "Cross-KB connections to free software, institutional capture, and platform power are noted"
+
+types:
+  writing:
+    description: "A work by or co-authored by Cory Doctorow — novel, nonfiction book, essay, blog post, talk, or story"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publisher, url, key_concepts, series, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [novel, nonfiction-book, short-story, essay, blog-post, talk, column, anthology, novella, screenplay, podcast]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors (entry IDs or names)"
+      publisher:
+        type: string
+        description: "Publisher or venue"
+      url:
+        type: string
+        description: "URL to full text if available"
+      key_concepts:
+        type: list
+        description: "Concepts developed or illustrated (entry IDs from concepts/)"
+      series:
+        type: string
+        description: "Series name if part of a series (e.g., Little Brother series)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored by or co-authored by Cory Doctorow. Doctorow is unusually prolific
+      across formats — novels, nonfiction books, short stories, essays, blog posts, talks,
+      and columns. His fiction often serves as thought experiments for political and
+      technological arguments; note the ideas each novel explores, not just the plot.
+      His blog (pluralistic.net) is a primary intellectual output — major blog posts that
+      introduce or develop key concepts deserve their own entries. Co-authored works
+      (especially with Rebecca Giblin) should credit both authors. Always include date
+      and writing_type. Link key_concepts to concept entries.
+    display:
+      icon: file-text
+      layout: document
+
+  concept:
+    description: "A key idea, framework, or intellectual contribution developed or popularized by Doctorow"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, coined_by, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing, talk, or approximate date where this concept first appears"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      coined_by:
+        type: string
+        description: "Who coined the term — Doctorow or someone else he popularized"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, theoretical framework, or intellectual contribution from Doctorow's work.
+      Use for concepts like 'enshittification', 'adversarial interoperability', 'competitive
+      compatibility', 'chokepoint capitalism', 'the right to repair', 'interoperability
+      mandates', etc. Distinguish between concepts Doctorow coined (enshittification) and
+      concepts he popularized or reframed from others' work. Trace the concept's first
+      appearance (often a blog post), its development across talks and books, and its
+      adoption by others. Link to the writings where the concept is developed.
+    display:
+      icon: lightbulb
+      layout: document
+
+  era:
+    description: "A period in Doctorow's intellectual or biographical development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '2003-2010'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations during this period"
+    ai_instructions: >
+      A period in Doctorow's intellectual or biographical development. Use to organize
+      the narrative arc of his career — from early blogging and Creative Commons advocacy
+      through EFF activism, fiction writing, and the enshittification era. Each era should
+      describe the dominant themes, institutional affiliations, and key outputs. Link to
+      writings and concepts from the period.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Doctorow's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_doctorow, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_doctorow:
+        type: string
+        description: "Nature of professional/intellectual relationship to Doctorow"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Doctorow's professional and intellectual network — co-author, collaborator,
+      ally, critic, or influence. Key figures include Rebecca Giblin (co-author), Lawrence
+      Lessig (Creative Commons), Richard Stallman (free software), Lina Khan (antitrust),
+      Matt Stoller (anti-monopoly), Bruce Schneier (security/privacy), and editors,
+      publishers, and fellow activists. Describe their specific relationship to Doctorow
+      and their own contributions where relevant.
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Doctorow's career or activism"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location, url]
+    fields:
+      org_type:
+        type: select
+        values: [nonprofit, publisher, media-outlet, advocacy-org, government-agency, tech-company, standards-body, conference, university, cooperative]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+      url:
+        type: string
+        description: "URL"
+    ai_instructions: >
+      An institution relevant to Doctorow's career, activism, or intellectual context.
+      Key organizations include the EFF, Creative Commons, Boing Boing, Tor Books,
+      pluralistic.net, and regulatory/policy bodies he engages with. Also includes
+      tech companies whose behavior he analyzes (Google, Amazon, Apple, Meta) and
+      organizations in the broader digital rights ecosystem.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A biographical, intellectual, or policy event"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, significance]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      significance:
+        type: string
+        description: "Why this event matters to the intellectual story"
+    ai_instructions: >
+      A specific event in Doctorow's life, career, or intellectual context. Includes
+      book launches, major talks, policy milestones (DMCA exemptions, antitrust actions),
+      organizational moves (joining/leaving EFF, Boing Boing), awards, and controversies.
+      Focus on events that mark intellectual transitions or have lasting significance
+      for digital rights discourse.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Doctorow or his work"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, profile, review, dissertation, blog-post, podcast, documentary, academic-paper]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about Doctorow or his work — profiles, interviews, reviews,
+      academic analyses, critical responses, etc. These are references ABOUT Doctorow,
+      not BY him. For works by Doctorow, use the 'writing' type instead. Note what
+      unique perspective or information the source provides.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, observations, or commentary. Use for analytical
+      connections between Doctorow's ideas and other thinkers, research questions,
+      editorial notes, and observations about intellectual lineage (e.g., how
+      enshittification relates to institutional capture theories).
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual relationships
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  develops: "Develops or elaborates (concept in writing)"
+  developed_in: "Developed in (writing develops concept)"
+  builds_on: "Builds on earlier work"
+  built_upon_by: "Built upon by later work"
+  responds_to: "Responds to or engages with"
+  responded_to_by: "Responded to by"
+  collaborates_with: "Collaborates with"
+  popularizes: "Popularizes or amplifies"
+  popularized_by: "Popularized or amplified by"
+
+  # Standard relationships
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  member_of: "Member of"
+  employed_by: "Employed by"
+  published_by: "Published by"
+  presented_at: "Presented at"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

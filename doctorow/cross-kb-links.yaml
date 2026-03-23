@@ -1,0 +1,230 @@
+# Cross-KB links from doctorow to other KBs
+# Generated during Phase 5 of KB lifecycle
+
+# === stallman ===
+
+- source: digital-rights-management-critique
+  target: digital-restrictions-management
+  target_kb: stallman
+  relation: same-subject
+  note: "Stallman's 'digital restrictions management' reframing and Doctorow's DRM critique address the same phenomenon from different angles: Stallman from software freedom principles, Doctorow from platform economics and security."
+
+- source: digital-rights-management-critique
+  target: right-to-read-essay
+  target_kb: stallman
+  relation: builds_on
+  note: "Stallman's 1997 dystopia anticipated the DRM/ebook/streaming scenarios Doctorow has analyzed in nonfiction and fiction since the 2000s: the right to read as the first casualty of digital restrictions."
+
+- source: adversarial-interoperability
+  target: four-freedoms
+  target_kb: stallman
+  relation: builds_on
+  note: "Adversarial interoperability defends in practice what the four freedoms specify in principle: the right to study, modify, and redistribute software. Doctorow extends the logic from code to platforms."
+
+- source: adversarial-interoperability
+  target: gpl-v3
+  target_kb: stallman
+  relation: related_to
+  note: "GPLv3's anti-tivoization and anti-DRM clauses are early legal interoperability mandates that structurally parallel what Doctorow advocates through policy."
+
+- source: creative-commons-licensing
+  target: copyleft
+  target_kb: stallman
+  relation: builds_on
+  note: "Creative Commons licensing builds directly on the copyleft mechanism: CC ShareAlike is the copyleft principle applied to cultural works rather than software."
+
+- source: right-to-repair
+  target: tivoization
+  target_kb: stallman
+  relation: same-subject
+  note: "Tivoization (hardware locks preventing modified software) is the exact technical mechanism right-to-repair advocates fight. Stallman named the software freedom threat; Doctorow extends it to physical devices."
+
+- source: self-help-ip
+  target: free-software-definition
+  target_kb: stallman
+  relation: related_to
+  note: "The free software definition asserts user rights that self-help IP systematically undermines. Stallman defined the freedoms; Doctorow describes the legal-technical machinery that forecloses them."
+
+- source: enshittification
+  target: who-does-that-server-really-serve
+  target_kb: stallman
+  relation: builds_on
+  note: "Stallman's 2010 analysis of cloud services serving corporate rather than user interests prefigures the enshittification framework: the same structural betrayal, before Doctorow named it."
+
+- source: how-to-destroy-surveillance-capitalism
+  target: surveillance-vs-democracy
+  target_kb: stallman
+  relation: parallel-development
+  note: "Both argue mass surveillance is incompatible with democracy, but from different starting points: Stallman from software freedom, Doctorow from monopoly economics."
+
+# === schneier ===
+
+- source: little-brother
+  target: security-mindset
+  target_kb: schneier
+  relation: related_to
+  note: "Little Brother dramatizes the security mindset for young readers. Schneier contributed a technical appendix; the novel's pedagogy of adversarial thinking about surveillance systems directly reflects his framework."
+
+- source: digital-rights-management-critique
+  target: schneiers-law
+  target_kb: schneier
+  relation: related_to
+  note: "DRM violates Schneier's law (anyone can build a system they cannot break): DRM designers build systems they believe are unbreakable because they cannot see how their own users will circumvent them."
+
+- source: self-help-ip
+  target: security-theater
+  target_kb: schneier
+  relation: related_to
+  note: "DRM is security theater applied to copyright: it imposes visible costs on legitimate users while failing to stop determined adversaries, with its stated purpose as performative cover for lock-in."
+
+- source: how-to-destroy-surveillance-capitalism
+  target: data-and-goliath
+  target_kb: schneier
+  relation: parallel-development
+  note: "Both diagnose surveillance as a power asymmetry problem. Schneier prescribes data minimization and regulatory reform; Doctorow argues the root cause is monopoly, not data collection per se."
+
+- source: enshittification
+  target: trust-framework
+  target_kb: schneier
+  relation: related_to
+  note: "Schneier's trust framework addresses the same structural concern as enshittification: asymmetric relationships where the powerful party faces few constraints on defection from cooperative norms."
+
+- source: attack-surface
+  target: security-economics
+  target_kb: schneier
+  relation: related_to
+  note: "Attack Surface fictionalizes the security economics Schneier theorizes: the mercenary surveillance industry exists because insecurity is profitable and the costs are externalized to targets."
+
+- source: adversarial-interoperability
+  target: hacking-as-systems-subversion
+  target_kb: schneier
+  relation: related_to
+  note: "Adversarial interoperability is systems subversion applied to platform lock-in: using existing technical affordances to break monopoly control, which is hacking in Schneier's extended sense."
+
+- source: how-to-destroy-surveillance-capitalism
+  target: snowden-revelations
+  target_kb: schneier
+  relation: related_to
+  note: "Snowden confirmed that government and corporate surveillance infrastructure are intertwined, a fact central to both Schneier's post-2013 writing and Doctorow's argument that monopoly enables state surveillance."
+
+- source: the-internet-con
+  target: click-here-to-kill-everybody
+  target_kb: schneier
+  relation: parallel-development
+  note: "Both argue that market failures in technology require regulatory intervention. Schneier focuses on IoT insecurity externalities; Doctorow focuses on platform lock-in and the suppression of competitive interoperability."
+
+# === meadows ===
+
+- source: enshittification
+  target: reinforcing-feedback-loops
+  target_kb: meadows
+  relation: related_to
+  note: "Enshittification is a reinforcing feedback loop: lock-in enables extraction, extraction funds more lock-in mechanisms, which enables further extraction. Meadows's framework names the structural dynamic."
+
+- source: platform-decay-cycle
+  target: overshoot-and-collapse
+  target_kb: meadows
+  relation: related_to
+  note: "The platform decay cycle follows the overshoot-and-collapse pattern: platforms grow beyond the carrying capacity of user goodwill, degrade the resource base (trust, quality), and collapse or face forced correction."
+
+- source: the-internet-con
+  target: leverage-points
+  target_kb: meadows
+  relation: related_to
+  note: "Doctorow's argument that interoperability mandates are the key policy intervention is implicitly a leverage-point argument: changing the rules of the system (Meadows's #5 leverage point) rather than adjusting parameters."
+
+- source: switching-costs
+  target: bounded-rationality-in-systems
+  target_kb: meadows
+  relation: related_to
+  note: "Engineered switching costs exploit bounded rationality: users cannot fully evaluate alternatives or calculate the true cost of staying, which platforms deliberately compound through complexity and opacity."
+
+- source: chokepoint-capitalism
+  target: systems-archetypes
+  target_kb: meadows
+  relation: related_to
+  note: "Chokepoint capitalism exhibits classic system archetype behavior: the intermediary captures a structural position that creates self-reinforcing dominance, analogous to Meadows's 'success to the successful' archetype."
+
+# === senge ===
+
+- source: enshittification
+  target: shifting-the-burden
+  target_kb: senge
+  relation: related_to
+  note: "Platform companies shift the burden from genuine product improvement to lock-in and extraction: the symptomatic solution (extract more from captive users) weakens the fundamental solution (compete on quality)."
+
+- source: platform-decay-cycle
+  target: fixes-that-fail
+  target_kb: senge
+  relation: related_to
+  note: "Platform fixes that fail: each round of extraction (ad insertion, algorithmic manipulation, fee increases) temporarily boosts metrics but degrades user experience, accelerating the decay it was meant to compensate for."
+
+- source: platform-decay-cycle
+  target: growth-and-underinvestment
+  target_kb: senge
+  relation: related_to
+  note: "Platforms exhibit growth-and-underinvestment: as quality declines, they lower their own performance standards rather than investing in product improvement, because monopoly position removes competitive pressure to maintain quality."
+
+- source: how-to-destroy-surveillance-capitalism
+  target: mental-models
+  target_kb: senge
+  relation: related_to
+  note: "Doctorow argues that Zuboff's 'surveillance capitalism' is a flawed mental model: it locates harm in manipulation rather than monopoly, leading to misdiagnosed interventions. The correction is a mental-model shift."
+
+- source: enshittification
+  target: limits-to-growth
+  target_kb: senge
+  relation: related_to
+  note: "Enshittification follows the limits-to-growth archetype: extraction-driven growth encounters user tolerance as the limiting constraint, but platforms push harder on extraction rather than addressing the limit."
+
+# === red-rock-eater ===
+
+- source: enshittification
+  target: capture-model
+  target_kb: red-rock-eater
+  relation: builds_on
+  note: "Agre's capture model (1994) — restructuring activities to generate trackable data — is the theoretical precursor to enshittification's surveillance-extraction engine. Capture is the mechanism; enshittification is the business model."
+
+- source: how-to-destroy-surveillance-capitalism
+  target: surveillance-vs-capture
+  target_kb: red-rock-eater
+  relation: builds_on
+  note: "Agre's surveillance-vs-capture distinction provides the deeper structural analysis behind Doctorow's critique of Zuboff: the problem is capture (restructuring activity for extraction), not surveillance (watching from outside)."
+
+- source: platform-decay-cycle
+  target: institutional-coevolution
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Agre's institutional coevolution — technology and institutions mutually reshaping each other — is the macro framework behind platform decay: platforms reshape law and regulation to entrench their position."
+
+- source: digital-rights-management-critique
+  target: technology-as-inscription
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "DRM is technology-as-inscription: an extractive model of the user relationship encoded into technical machinery, exactly the phenomenon Agre theorized as standards operating as legislation."
+
+# === wardley ===
+
+- source: enshittification
+  target: inertia
+  target_kb: wardley
+  relation: related_to
+  note: "Platform incumbents resist the evolutionary commoditization of their services through enshittification mechanics: lock-in, API closure, and legal barriers are forms of strategic inertia against competitive evolution."
+
+- source: adversarial-interoperability
+  target: open-source-as-gameplay
+  target_kb: wardley
+  relation: related_to
+  note: "Adversarial interoperability and the open-source gameplay pattern both use openness as a competitive weapon against incumbents, but Doctorow frames it as a right while Wardley frames it as a strategy."
+
+- source: platform-decay-cycle
+  target: evolution
+  target_kb: wardley
+  relation: related_to
+  note: "Doctorow's platform decay cycle can be mapped onto Wardley's evolution axis: platforms resist the natural evolution from product to commodity/utility, using lock-in to arrest evolutionary movement."
+
+- source: chokepoint-capitalism
+  target: ilc-innovate-leverage-commoditize
+  target_kb: wardley
+  relation: critique
+  note: "Chokepoint capitalism is the dark side of ILC: platforms commoditize others' value creation to capture it, then use the chokepoint position to extract rent rather than enabling higher-order innovation."

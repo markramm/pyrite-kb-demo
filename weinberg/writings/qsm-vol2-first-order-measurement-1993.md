@@ -1,0 +1,23 @@
+---
+id: qsm-vol2-first-order-measurement-1993
+title: "Quality Software Management, Vol. 2: First-Order Measurement"
+type: writing
+importance: 8
+tags: [quality, software-management, measurement, metrics, systems-thinking]
+writing_type: book
+date: 1993-01-01
+coauthors: []
+publication: "Dorset House"
+key_concepts: [quality-software-management-framework]
+research_status: draft
+---
+
+Published by [[dorset-house-publishing]] in 1993, _Quality Software Management, Vol. 2: First-Order Measurement_ addresses the most fundamental prerequisite for the steering capability that [[qsm-vol1-systems-thinking-1992]] defined as Pattern 3 behavior: accurate feedback. A manager who cannot see what is actually happening in a software project cannot steer it. The volume's argument is that the measurement practices common in software organizations in the early 1990s — lines of code, function points, defect counts in isolation, schedule adherence as a primary indicator — systematically failed to provide the feedback that genuine management required. Worse, poorly designed metrics actively distorted the feedback they were supposed to supply.
+
+The concept of "first-order measurement" is Weinberg's term for measuring the phenomena that directly indicate project and organizational health, as opposed to measuring proxy indicators that may be easier to count but that introduce a layer of indirection. When organizations measure what is easy rather than what is meaningful, they create conditions for Goodhart's Law — the dynamic where a measure becomes a target and ceases to be a good measure. Weinberg observed this pattern repeatedly: when schedule adherence becomes the primary metric, teams learn to report that they are on schedule rather than to actually be on schedule. When defect counts become visible, teams discover they can reduce apparent defect counts by changing the definition of what constitutes a defect. The measurement system itself becomes a source of distorted feedback, actively undermining the feedback loops that effective management requires.
+
+The volume situates measurement problems squarely within the [[general-systems-thinking]] framework established in Vol. 1. Measurement is a feedback mechanism, and a feedback mechanism that carries distorted signals is worse than useless — it is a source of systematic error. Weinberg's treatment is careful to distinguish between the difficulty of measuring complex human systems (which is genuine and irreducible) and the additional difficulty introduced by organizational incentives that encourage gaming. He argues that measuring projects in ways people cannot game requires that the people being measured understand why measurement is happening and trust that the information will be used to support rather than punish. This introduces the congruence dimension that Vol. 3 will develop more fully: honest measurement requires an organizational culture in which honest communication is safe.
+
+The practical guidance in the volume covers how to select measurements that reflect actual project dynamics, how to build measurement systems that remain meaningful as projects evolve, and how to interpret data in the presence of the noise and ambiguity inherent in software projects. Several of the book's tools connect directly to the [[cultural-patterns-of-software-organizations]] model: effective measurement is part of what distinguishes Pattern 3 organizations (which can steer because they can see) from Pattern 2 organizations (which follow processes but lack real feedback). The volume also develops tools for recognizing when an existing measurement system is producing distorted feedback — a prerequisite for improving it. Without this diagnostic capability, organizations tend to respond to bad metrics by adding more metrics, compounding the problem.
+
+The volume's argument about measurement was quietly at odds with the prevailing discourse of the early 1990s software quality movement, which tended to treat measurement as straightforwardly progressive — more measurement equals more capability. Weinberg's point was that measurement is a systems intervention with second-order effects, and that designing a measurement system without understanding those effects is how organizations end up spending enormous effort counting things that mislead them. This argument anticipated by many years the critiques of metric dysfunctionality that became prominent in Agile and DevOps discourse. [[tom-demarco]]'s earlier work on software metrics, which Weinberg respected, emphasized the value of measurement; Weinberg's contribution was to add the systems-thinking caution about what measurement systems do to the organizations that adopt them.

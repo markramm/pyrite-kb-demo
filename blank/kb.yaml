@@ -1,0 +1,320 @@
+name: blank
+description: >
+  Intellectual biography of Steve Blank — serial entrepreneur, educator, and creator
+  of the Customer Development methodology. Covers the development of Customer Development
+  from entrepreneurial experience, the Lean Startup movement it spawned, its adoption
+  in academia (Stanford, Berkeley, Columbia), government (NSF I-Corps, Hacking for Defense),
+  and its intellectual roots and network (Eric Ries, Alexander Osterwalder, Bob Dorf).
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Blank's work is well-documented through steveblank.com (prolific blog), his books,
+    the Computer History Museum oral history, and Wikipedia. Prefer these primary sources.
+    Blank's ideas evolved over time — Customer Development in "Four Steps" (2003) differs
+    from the Lean LaunchPad synthesis (2011). Date-stamp claims about the methodology where
+    possible. When documenting the Blank-Ries relationship, be precise about who originated
+    what — Blank created Customer Development; Ries synthesized it with Agile and lean
+    manufacturing into the Lean Startup.
+  quality: |
+    The intellectual genealogy is central — entries should trace how ideas transmit, adapt,
+    and converge. Document intellectual influences with specificity (e.g., Blank cited
+    Discovery-Driven Planning, not just "planning under uncertainty"). Metrics (I-Corps
+    numbers, book sales, university adoption) should be sourced and dated, as they change.
+    Criticisms should be sourced and attributed, not strawmanned.
+  voice: |
+    Analytical and balanced. Blank is an important figure whose work has genuine limitations —
+    the KB should document both the contributions and the critiques without advocacy.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of Steve Blank covering Customer Development,
+    the Lean Startup movement, his teaching career, government innovation programs, and
+    the intellectual network that extended his ideas.
+  success_criteria: |
+    A product manager or entrepreneur unfamiliar with the history can trace the full lineage
+    from Blank's startup experience through Customer Development to Lean Startup, I-Corps,
+    and Hacking for Defense. Cross-references to Boyd (OODA/CD parallel), Wardley (strategy),
+    and the lean manufacturing lineage are explicit.
+
+evaluation_rubric:
+  - "Entry cites at least one source (steveblank.com, books, CHM, Wikipedia, or named publication)"
+  - "Methodology claims specify which version/era of Customer Development is being described"
+  - "People entries describe the specific relationship to Blank and their own contributions"
+  - "Metrics (adoption numbers, sales figures) include date of measurement"
+  - "Intellectual influences are specific and attributed, not vague"
+  - "Cross-KB connections to Boyd, Wardley, and lean lineage are noted where relevant"
+
+types:
+  writing:
+    description: "A work by or substantially involving Steve Blank — book, paper, blog post, talk, course, or presentation"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publication, url, abstract, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, paper, blog-post, talk, presentation, course, syllabus, report, video, podcast, article]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors or co-developers"
+      publication:
+        type: string
+        description: "Venue, platform, or publication context"
+      url:
+        type: string
+        description: "URL to full text or recording if available"
+      abstract:
+        type: text
+        description: "Abstract or brief description of the work"
+      key_concepts:
+        type: list
+        description: "Concepts developed or discussed (entry IDs from concepts/)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored by or substantially involving Steve Blank. Blank's primary output
+      is "The Four Steps to the Epiphany" (2005, self-published), "The Startup Owner's
+      Manual" (2012, with Bob Dorf), his blog steveblank.com, Harvard Business Review
+      articles (notably "Why the Lean Startup Changes Everything," 2013), and his courses
+      (Lean LaunchPad at Stanford/Berkeley/Columbia). He is a prolific blogger and
+      speaker. Use writing_type to classify.
+    evaluation_rubric:
+      - "Writing has a date"
+      - "Writing has a writing_type classification"
+      - "Body describes the work's significance, not just its contents"
+      - "Co-authors listed where applicable"
+    display:
+      icon: file-text
+      layout: document
+
+  concept:
+    description: "A key idea, framework, or intellectual contribution"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing or approximate date where this concept first appears"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, theoretical framework, or intellectual contribution from Blank's work.
+      Use for concepts like 'Customer Development', 'Customer Discovery', 'pivot',
+      'get out of the building', 'Business Model Canvas (as used by Blank)',
+      'startup vs. established company', etc. The body should explain the concept,
+      its development, and its significance within and beyond the startup world.
+    evaluation_rubric:
+      - "Concept explains what it is, not just that it exists"
+      - "Origin or first_appeared is documented"
+      - "Significance section explains why this concept matters"
+      - "Links to related concepts within the KB"
+    display:
+      icon: lightbulb
+      layout: document
+
+  era:
+    description: "A period in Blank's intellectual or professional development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '1978-1999'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations during this period"
+    ai_instructions: >
+      A period in Steve Blank's intellectual or professional development. Use to
+      organize the narrative arc of his career from Air Force/defense work through
+      Silicon Valley startups to academic teaching and government programs.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Blank's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_blank, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_blank:
+        type: string
+        description: "Nature of professional/intellectual relationship to Blank"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Steve Blank's professional and intellectual network — student,
+      collaborator, co-author, intellectual influence, or someone who extended his work.
+      Blank's network is unusually important because his ideas spread through teaching
+      (Stanford, Berkeley, Columbia), mentoring (Eric Ries), and institutional adoption
+      (NSF I-Corps). Describe their relationship to Blank and their own contributions.
+    evaluation_rubric:
+      - "Person has a role described"
+      - "Relationship to Blank is explicitly stated"
+      - "Person's own contributions are described, not just their connection to Blank"
+      - "Sources cited for biographical claims"
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Blank's career or thought"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location]
+    fields:
+      org_type:
+        type: select
+        values: [startup, company, university, government, accelerator, publisher, conference, program, venture-capital, nonprofit]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+    ai_instructions: >
+      An institution relevant to Blank's career, thought, or context. Includes
+      startups he founded/worked at, universities where he teaches, government
+      programs he created (NSF I-Corps, Hacking for Defense), and organizations
+      in the lean startup ecosystem.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A biographical or intellectual milestone"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in Blank's life, career, or intellectual context.
+      Includes startup milestones, book publications, course launches,
+      program founding, and biographical events.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Blank or his work"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, profile, review, dissertation, blog-post, podcast, video, documentary]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about Steve Blank or his work — profiles, analyses,
+      retrospectives, etc. These are references ABOUT Blank or his framework,
+      not BY him. For works by Blank, use the 'writing' type instead.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, observations, or commentary. Use for thinking about
+      Blank's work, connections between ideas, research questions, comparisons
+      with other frameworks (Boyd, Wardley, etc.), and editorial notes.
+    evaluation_rubric:
+      - "Note has a clear analytical thesis, not just a collection of facts"
+      - "Claims and comparisons are sourced where possible"
+      - "Cross-KB connections are explicit and specific"
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  develops: "Develops or elaborates (concept in writing)"
+  developed_in: "Developed in (writing develops concept)"
+  builds_on: "Builds on earlier work"
+  built_upon_by: "Built upon by later work"
+  responds_to: "Responds to or engages with"
+  responded_to_by: "Responded to by"
+  collaborates_with: "Collaborates with"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  opposed_by: "Opposed or resisted by"
+  opposed: "Opposed or resisted"
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  published_in: "Published in"
+  published_by: "Published by"
+  presented_at: "Presented at"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

@@ -1,0 +1,327 @@
+# Cross-KB links from reinertsen to other KBs
+
+# === deming ===
+# Reinertsen provides the mathematical framework Deming's philosophy calls for.
+# Both reject local optimization; Reinertsen adds queueing economics to Deming's variation theory.
+
+- source: queueing-theory-applied
+  target: statistical-process-control-and-variation-theory
+  target_kb: deming
+  relation: builds_on
+  note: "Reinertsen's queueing theory extends Deming's variation theory into product development economics. Variability in arrivals and service times drives queue formation — the same insight as SPC, now with economic consequences quantified through cost of delay."
+
+- source: managing-variability
+  target: common-cause-vs-special-cause-variation
+  target_kb: deming
+  relation: builds_on
+  note: "Reinertsen's variability management framework extends Deming's common vs. special cause distinction. But Reinertsen adds a critical move Deming did not make: in product development, some variability (the asymmetric, selectable kind) is economically valuable and should not be reduced."
+
+- source: flow-control
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: builds_on
+  note: "Reinertsen's flow-based product development framework builds on Deming's appreciation for a system — both reject local optimization in favor of end-to-end throughput. Reinertsen operationalizes Deming's systems view with queueing mathematics."
+
+- source: fast-feedback
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: related_to
+  note: "PDSA is a feedback loop for learning; Reinertsen's fast feedback principle provides the economic argument for why shorter PDSA cycles are worth the investment — each cycle of delay accumulates rework cost on flawed assumptions."
+
+- source: economic-framework-for-prioritization
+  target: management-by-objectives-deming-s-critique
+  target_kb: deming
+  relation: related_to
+  note: "Both Deming and Reinertsen critique managing by proxy metrics. Deming warned against numerical goals without methods; Reinertsen shows how proxy metrics like utilization and velocity optimize for the wrong thing, hiding the real economic costs of delay."
+
+# === tps ===
+# Reinertsen explains WHY TPS practices work using queueing theory and economics.
+# His 'second generation lean' critique argues against mechanical transplantation of TPS tools.
+
+- source: wip-constraints
+  target: kanban
+  target_kb: tps
+  relation: builds_on
+  note: "Reinertsen's WIP limits for product development are a direct generalization of TPS kanban. But Reinertsen derives them from queueing mathematics rather than manufacturing experience, explaining why they work and under what conditions the optimal WIP level differs from manufacturing's."
+
+- source: batch-size-reduction
+  target: one-piece-flow
+  target_kb: tps
+  relation: builds_on
+  note: "Reinertsen provides the economic theory for why one-piece flow works — his U-curve analysis quantifies the transaction cost vs. holding cost tradeoff and shows that the optimal batch size depends on the ratio, not on ideology."
+
+- source: batch-size-reduction
+  target: smed
+  target_kb: tps
+  relation: related_to
+  note: "Shingo's SMED (setup time reduction) is the manufacturing equivalent of reducing transaction costs in Reinertsen's batch-size U-curve. Both recognize that reducing the fixed cost per batch shifts the optimum toward smaller batches."
+
+- source: flow-control
+  target: pull-production
+  target_kb: tps
+  relation: builds_on
+  note: "Reinertsen's pull-based flow control generalizes TPS pull production to product development. Work enters only when capacity is available downstream — the same logic Ohno applied to manufacturing, now justified by queueing theory rather than inventory cost."
+
+- source: managing-variability
+  target: muri-and-mura
+  target_kb: tps
+  relation: extends
+  note: "TPS treats mura (unevenness/variability) as pure waste. Reinertsen's key departure: in product development, some variability creates value through exploration and learning. The goal is managing variability's consequences, not eliminating variability itself."
+
+- source: cadence-and-synchronization
+  target: heijunka
+  target_kb: tps
+  relation: related_to
+  note: "Heijunka (production leveling) creates smooth, predictable flow in manufacturing. Reinertsen's cadence and synchronization serve the same function in product development — converting bursty, variable work arrivals into more uniform flow."
+
+# === goldratt ===
+# Both address flow and constraints. Reinertsen extends TOC with economic cost-of-delay
+# framework and queueing mathematics.
+
+- source: cost-of-delay
+  target: throughput-accounting
+  target_kb: goldratt
+  relation: related_to
+  note: "Complementary economic lenses on the same problem. Goldratt's throughput accounting measures revenue lost by not shipping; Reinertsen's cost of delay measures the time-weighted opportunity cost. Both reject cost-world thinking in favor of throughput/flow economics."
+
+- source: economic-framework-for-prioritization
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: related_to
+  note: "Both address sequencing work through a constrained system to maximize throughput. Goldratt asks 'what is the constraint?' Reinertsen asks 'what are the economic trade-offs?' — different entry points that often converge on similar operational conclusions."
+
+- source: wip-constraints
+  target: drum-buffer-rope
+  target_kb: goldratt
+  relation: related_to
+  note: "Both WIP constraints and drum-buffer-rope regulate flow through a system with a binding constraint. Reinertsen derives WIP limits from M/M/1 queueing models; Goldratt derives DBR from constraint logic. Different formalisms, convergent prescriptions."
+
+- source: queueing-theory-applied
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "Both frameworks explain why local optimization fails and why systems must be managed holistically. TOC identifies the single constraint; queueing theory shows how utilization across all resources creates nonlinear queue growth. Reinertsen's approach is more general; Goldratt's is more prescriptive."
+
+- source: batch-size-death-spiral
+  target: throughput-world-vs-cost-world
+  target_kb: goldratt
+  relation: related_to
+  note: "The batch-size death spiral is a cost-world pathology: organizations enlarge batches to amortize overhead, not realizing the throughput cost of the resulting queues and delays. Goldratt's throughput-world perspective would immediately flag the throughput destruction."
+
+# === poppendiecks ===
+# Both apply lean to product development. Reinertsen provides the economics
+# that the Poppendiecks translated into software practices.
+
+- source: cost-of-delay
+  target: decide-as-late-as-possible
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Reinertsen's cost of delay quantifies what the Poppendiecks argue qualitatively — delaying decisions has an economic cost that must be weighed against the option value of waiting. The tradeoff is a U-curve, not a monotonic preference."
+
+- source: flow-control
+  target: deliver-as-fast-as-possible
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Reinertsen's flow control principles provide the quantitative mechanics behind the Poppendiecks' 'deliver as fast as possible.' WIP constraints, pull systems, and queue management are the how; fast delivery is the what."
+
+- source: batch-size-reduction
+  target: amplify-learning
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Smaller batches reach validation faster, amplifying learning by shortening feedback cycles. Reinertsen provides the economic calculus; the Poppendiecks provide the software development translation."
+
+- source: economic-framework-for-prioritization
+  target: optimize-the-whole
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Reinertsen's economic framework is the analytical tool for the Poppendiecks' optimize-the-whole principle. Without economic analysis, 'optimize the whole' remains aspirational; with cost-of-delay and U-curve trade-offs, it becomes operational."
+
+- source: wip-constraints
+  target: pull-systems-in-software
+  target_kb: poppendiecks
+  relation: related_to
+  note: "The Poppendiecks translated TPS pull production into software practices; Reinertsen provided the queueing theory justification for why pull (via WIP constraints) works better than push in knowledge work."
+
+- source: managing-variability
+  target: eliminate-waste
+  target_kb: poppendiecks
+  relation: qualifies
+  note: "Reinertsen's variability framework qualifies lean waste elimination for product development. Not all variability is waste — some creates value through exploration. The Poppendiecks adopted this nuance in their later work, moving from manufacturing-derived waste thinking to knowledge-work-appropriate variability management."
+
+# === anderson ===
+# Anderson operationalized Reinertsen's WIP constraints and flow theory in the Kanban Method.
+# Reinertsen wrote the foreword to Anderson's Kanban book.
+
+- source: wip-constraints
+  target: wip-limits
+  target_kb: anderson
+  relation: enables
+  note: "Reinertsen provided the queueing theory foundation; Anderson created the operational method. WIP limits in the Kanban Method are Reinertsen's WIP constraints made actionable — column limits, pull signals, and board visualization that teams can implement without mathematical training."
+
+- source: queueing-theory-applied
+  target: kanban-method
+  target_kb: anderson
+  relation: enables
+  note: "The Kanban Method's theoretical backbone is Reinertsen's queueing analysis. Anderson's winter 2005 conversation with Reinertsen reframed his Microsoft experiment from a TOC application to a queueing-theory-grounded flow method — a decisive intellectual pivot."
+
+- source: flow-control
+  target: manage-flow
+  target_kb: anderson
+  relation: enables
+  note: "Anderson's manage-flow practice operationalizes Reinertsen's flow control principles. Reinertsen's economic analysis of utilization, queues, and cycle time becomes Anderson's cumulative flow diagrams, lead time tracking, and throughput monitoring."
+
+- source: cost-of-delay
+  target: classes-of-service
+  target_kb: anderson
+  relation: enables
+  note: "Anderson's classes of service are operationalized cost-of-delay profiles. Expedite items have steep delay curves, standard items have linear curves, intangible items have slow-accumulating curves. Reinertsen's economic framework became Anderson's workflow policy categories."
+
+- source: principles-of-product-development-flow
+  target: kanban-book
+  target_kb: anderson
+  relation: influenced
+  note: "Reinertsen wrote the foreword to Anderson's Kanban book, explicitly connecting the two bodies of work. The book cites Reinertsen's principles throughout as the theoretical foundation for Kanban Method practices."
+
+- source: batch-size-reduction
+  target: evolutionary-change
+  target_kb: anderson
+  relation: related_to
+  note: "Anderson's evolutionary change principle — start where you are, make small incremental changes — is a batch-size argument applied to organizational improvement. Small batches of process change reduce risk and accelerate feedback on what works."
+
+# === demarco ===
+# Slack connects to Reinertsen's argument against high utilization.
+
+- source: u-curve-optimization
+  target: slack-concept
+  target_kb: demarco
+  relation: related_to
+  note: "Reinertsen's U-curve and DeMarco's slack converge on the same prescription from different directions. Reinertsen shows mathematically that queueing costs explode at high utilization; DeMarco shows organizationally that eliminating slack destroys adaptability. The optimal operating point is well below 100%."
+
+- source: wip-constraints
+  target: slack-concept
+  target_kb: demarco
+  relation: related_to
+  note: "WIP constraints are the operational mechanism for maintaining the slack DeMarco argues is essential. By limiting concurrent work, organizations preserve the uncommitted capacity that enables adaptation, learning, and response to the unexpected."
+
+- source: twelve-cardinal-sins
+  target: flow-and-interruption-cost
+  target_kb: demarco
+  relation: related_to
+  note: "Reinertsen's 'worship of efficiency' cardinal sin (maximizing utilization at the expense of flow) and DeMarco's interruption cost analysis both identify the same organizational pathology: treating busy-ness as productivity and ignoring the system-level costs of overload."
+
+# === boyd ===
+# Both emphasize tempo, fast feedback, and decentralized control.
+# Reinertsen explicitly cites Boyd.
+
+- source: decentralized-control
+  target: auftragstaktik
+  target_kb: boyd
+  relation: builds_on
+  note: "Reinertsen's decentralized control draws directly on Boyd's analysis of Auftragstaktik — mission-type orders that push decision authority to the lowest competent level. Both argue this is not primarily motivational but a speed advantage: local decisions avoid the queueing delay of centralized approval."
+
+- source: decentralized-control
+  target: ooda-loop
+  target_kb: boyd
+  relation: builds_on
+  note: "Reinertsen's argument for decentralized control is grounded in Boyd's OODA loop — faster local decision cycles outperform centralized optimization in fast-changing, information-rich environments. The queueing cost of centralizing decisions is a formalization of Boyd's tempo argument."
+
+- source: fast-feedback
+  target: tempo
+  target_kb: boyd
+  relation: related_to
+  note: "Reinertsen's fast feedback and Boyd's tempo are parallel concepts across domains. Both argue that the rate of cycling through observe-decide-act (or build-measure-learn) is the critical competitive variable. Reinertsen adds the economic quantification: each unit of feedback delay has a calculable cost."
+
+- source: cadence-and-synchronization
+  target: schwerpunkt
+  target_kb: boyd
+  relation: related_to
+  note: "Cadence provides the synchronization mechanism that enables decentralized teams to maintain coherence without centralized control. Schwerpunkt (focal point) similarly enables independent units to act coherently toward a shared objective. Both replace hierarchy with shared context as the coordination mechanism."
+
+- source: blitzkrieg-product-development
+  target: maneuver-warfare
+  target_kb: boyd
+  relation: related_to
+  note: "Reinertsen's 1985 'Blitzkrieg Product Development' article explicitly invokes the military metaphor. Boyd's analysis of maneuver warfare — speed, initiative, and tempo as force multipliers — maps directly onto Reinertsen's argument that development speed has quantifiable economic value."
+
+# === meadows ===
+# Queueing theory is system dynamics applied to product development.
+# Stocks, flows, and feedback loops are the shared conceptual vocabulary.
+
+- source: queueing-theory-applied
+  target: stocks-and-flows
+  target_kb: meadows
+  relation: related_to
+  note: "Queues are stocks; arrival and service rates are flows. Reinertsen's queueing theory is stock-and-flow dynamics applied to product development. Little's Law (L = lambda * W) is a stock-flow identity. WIP is the stock; throughput and cycle time describe the flows."
+
+- source: batch-size-death-spiral
+  target: reinforcing-feedback-loops
+  target_kb: meadows
+  relation: instantiates
+  note: "The batch-size death spiral is a reinforcing feedback loop in Meadows's sense: large batches attract more scope, which makes batches larger, which attracts more scope. Recognizing this systems archetype is the first step to breaking it."
+
+- source: fast-feedback
+  target: delays-in-systems
+  target_kb: meadows
+  relation: related_to
+  note: "Meadows's analysis of delays in feedback loops explains why Reinertsen's fast feedback principle matters. Longer feedback delays produce oscillation and overshoot — in product development, this means rework accumulated on flawed assumptions before the error signal arrives."
+
+- source: cost-of-delay
+  target: leverage-points
+  target_kb: meadows
+  relation: related_to
+  note: "Making cost of delay visible is a leverage-point intervention in Meadows's hierarchy: it changes the information structure of the system, enabling better decisions without changing the physical system. Meadows ranked information-flow changes high among her twelve leverage points."
+
+# === senge ===
+# Systems thinking in product development flow.
+
+- source: economic-framework-for-prioritization
+  target: mental-models
+  target_kb: senge
+  relation: related_to
+  note: "Reinertsen's economic framework is an explicit effort to surface and correct the mental models that drive bad product development decisions — the assumption that utilization equals efficiency, that bigger batches are cheaper, that delay is free. Senge's mental models discipline provides the organizational learning framework for this correction."
+
+- source: batch-size-death-spiral
+  target: fixes-that-fail
+  target_kb: senge
+  relation: instantiates
+  note: "The batch-size death spiral maps onto Senge's fixes-that-fail archetype: enlarging batches to amortize overhead is a 'fix' that creates the very problem (long queues, slow feedback, scope creep) it was intended to solve."
+
+- source: twelve-cardinal-sins
+  target: systems-thinking-fifth-discipline
+  target_kb: senge
+  relation: related_to
+  note: "Reinertsen's twelve cardinal sins are a diagnostic for organizations that lack systems thinking. Each sin — worship of efficiency, blindness to queues, hostility to variability — reflects a failure to see the systemic consequences of local decisions, precisely what Senge's fifth discipline addresses."
+
+- source: batch-size-death-spiral
+  target: limits-to-growth
+  target_kb: senge
+  relation: related_to
+  note: "The batch-size death spiral also maps onto Senge's limits-to-growth archetype: a reinforcing process (adding features to amortize batch cost) encounters a limiting condition (queue explosion, cycle time degradation) that eventually overwhelms the initial benefit."
+
+# === flow ===
+# Product development flow connects to psychological flow through shared emphasis
+# on focus, feedback, and the conditions for optimal performance.
+
+- source: fast-feedback
+  target: flow-state
+  target_kb: flow
+  relation: related_to
+  note: "Immediate feedback is one of Csikszentmihalyi's nine core flow dimensions. Reinertsen's fast feedback principle provides the economic complement: the same delay that costs the organization its learning speed also costs knowledge workers the psychological conditions for flow."
+
+- source: wip-constraints
+  target: flow-state
+  target_kb: flow
+  relation: related_to
+  note: "WIP limits create the system-level conditions for individual flow by preventing cognitive overload and context-switching. Reinertsen's queueing argument (overloaded systems produce long queues) has a psychological parallel: overloaded individuals lose the single-task focus flow requires."
+
+- source: wip-constraints
+  target: deep-work
+  target_kb: flow
+  relation: related_to
+  note: "Reinertsen's WIP constraints are the organizational-level mechanism that enables Newport's deep work at the individual level. By limiting concurrent assignments, WIP limits create the sustained, uninterrupted focus that deep work requires."
+
+- source: decentralized-control
+  target: autonomy-mastery-purpose
+  target_kb: flow
+  relation: related_to
+  note: "Reinertsen's decentralized control pushes decision authority to teams — creating the autonomy that Pink identifies as essential for intrinsic motivation. The economic argument for decentralization (faster decisions) and the psychological argument (autonomy enables flow) are complementary."

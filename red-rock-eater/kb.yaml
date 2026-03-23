@@ -1,0 +1,290 @@
+name: red-rock-eater
+description: >
+  Intellectual biography of Philip Agre — writings catalog, key concepts,
+  biographical context, and intellectual network. Based on his academic papers,
+  the Red Rock Eater News Service newsletter (1993–2003), and secondary sources.
+kb_type: intellectual-biography
+
+types:
+  writing:
+    description: "A work by or substantially involving Philip Agre — paper, RRE post, book chapter, talk, interview"
+    subdirectory: writings
+    required: [title, writing_type]
+    optional: [date, coauthors, publication, url, abstract, key_concepts, importance, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [paper, rre-post, book-chapter, book, talk, interview, dissertation, report, letter, review, edited-volume]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors (entry IDs or names)"
+      publication:
+        type: string
+        description: "Journal, conference, book, or venue"
+      url:
+        type: string
+        description: "URL to full text if available"
+      abstract:
+        type: text
+        description: "Abstract or brief description of the work"
+      key_concepts:
+        type: list
+        description: "Concepts developed or discussed (entry IDs from concepts/)"
+      importance:
+        type: integer
+        description: "Significance to Agre's overall intellectual project, 1-10"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored by or substantially involving Philip Agre. Use writing_type
+      to classify. Always include the date. For RRE posts, use the date the post
+      was sent. Link key_concepts to concept entries. Set importance based on how
+      central the work is to understanding Agre's intellectual trajectory.
+    display:
+      icon: file-text
+      layout: document
+
+  concept:
+    description: "A key idea, framework, or intellectual contribution"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, importance, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing or approximate date where this concept first appears"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      importance:
+        type: integer
+        description: "Centrality to Agre's thought, 1-10"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, theoretical framework, or intellectual contribution from Agre's work.
+      Use for concepts like 'critical technical practice', 'capture model', 'grammars
+      of action', 'deictic representation', etc. Link to the writings where the concept
+      is developed and to related concepts. The body should explain the concept, its
+      development over time, and its significance.
+    display:
+      icon: lightbulb
+      layout: document
+
+  era:
+    description: "A period in Agre's intellectual or biographical development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations, importance]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '1986-1992'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations during this period"
+      importance:
+        type: integer
+        description: "Significance of this period, 1-10"
+    ai_instructions: >
+      A period in Philip Agre's intellectual or biographical development. Use to
+      organize the narrative arc of his career and thinking. Link to key writings
+      and concepts from the period. The body should describe what characterized
+      this period intellectually and biographically.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Agre's intellectual network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_agre, importance, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_agre:
+        type: string
+        description: "Nature of intellectual relationship to Agre"
+      importance:
+        type: integer
+        description: "Relevance to understanding Agre, 1-10"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Philip Agre's intellectual network — collaborator, mentor,
+      interlocutor, student, critic, or influence. Describe their relationship
+      to Agre and their own intellectual contributions where relevant.
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Agre's career or thought"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location, importance]
+    fields:
+      org_type:
+        type: select
+        values: [university, lab, department, publisher, conference, mailing-list, government, ngo, corporation]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+      importance:
+        type: integer
+        description: "Relevance to Agre's story, 1-10"
+    ai_instructions: >
+      An institution relevant to Agre's career, thought, or context. Includes
+      universities, labs, conferences, mailing lists, publishers, etc.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A biographical or intellectual event"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, importance, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      importance:
+        type: integer
+        description: "Significance, 1-10"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in Agre's life, career, or intellectual context.
+      Includes publications, talks, career moves, and biographical events.
+      Use status to indicate certainty level, especially for less documented periods.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Agre or his work"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication, importance]
+    fields:
+      source_type:
+        type: select
+        values: [article, book, chapter, interview, obituary, profile, review, dissertation, blog-post, archive]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+      importance:
+        type: integer
+        description: "Value as a source, 1-10"
+    ai_instructions: >
+      A secondary source about Philip Agre or his work — articles, profiles,
+      reviews, retrospectives, etc. These are references ABOUT Agre, not BY him.
+      For works by Agre, use the 'writing' type instead.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags, importance]
+    ai_instructions: >
+      Research notes, analysis, observations, or commentary. Use for your own
+      thinking about Agre's work, connections between ideas, research questions,
+      and editorial notes for the biography.
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual relationships
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  develops: "Develops or elaborates (concept in writing)"
+  developed_in: "Developed in (writing develops concept)"
+  builds_on: "Builds on earlier work"
+  built_upon_by: "Built upon by later work"
+  responds_to: "Responds to or engages with"
+  responded_to_by: "Responded to by"
+  collaborates_with: "Collaborates with"
+
+  # Standard relationships
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  advised: "Advised (mentor relationship)"
+  advised_by: "Advised by (student relationship)"
+  employed_by: "Employed by"
+  employs: "Employs"
+  member_of: "Member of"
+  has_member: "Has member"
+  affiliated_with: "Affiliated with"
+  published_in: "Published in"
+  published_by: "Published by"
+  presented_at: "Presented at"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+evaluation_rubric:
+  - "Writing entries have a date and writing_type classification"
+  - "Concept entries explain the idea's significance, not just its definition"
+  - "Entry links to at least one related entry (unless auto-imported stub)"
+  - "Key writings (importance >= 8) describe the work's argument and legacy, not just its topic"
+  - "Person entries describe their relationship to Agre's intellectual network"
+  - "Entries distinguish Agre's original arguments from secondary interpretations"
+
+policies:
+  qa_on_write: true

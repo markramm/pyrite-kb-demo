@@ -1,0 +1,23 @@
+---
+id: are-your-lights-on-1982
+title: "Are Your Lights On?"
+type: writing
+importance: 8
+tags: [problem-solving, requirements, consulting, humor]
+writing_type: book
+date: 1982-01-01
+coauthors: [donald-gause]
+publication: "Winthrop Publishers (1982 original; later editions by Dorset House)"
+key_concepts: [problem-definition]
+research_status: draft
+---
+
+Co-authored with [[donald-gause]], this slim book on [[problem-definition]] became one of Weinberg's most enduring works, operating at the intersection of consulting, requirements, and cognitive discipline. Its central claim is that most expensive solution failures are actually problem definition failures: the wrong problem has been solved, often brilliantly. The book's subtitle — "How to Figure Out What the Problem Really Is" — announces a practical ambition, but the treatment is more philosophical than methodological, working through stories and paradoxes rather than processes and checklists.
+
+The title derives from one of the book's illustrative cases: a new office building creates traffic congestion at its entrance at rush hour, and a series of expensive engineering solutions are proposed before someone asks whether the building's tenants could simply be encouraged to stagger their departure times. The original problem statement ("the entrance is congested") obscures the actual situation, which turns out to be more tractable than any of the proposed solutions address. The story encapsulates the book's recurring theme: the problem as stated is rarely the problem as it actually exists. A second famous case involves a new multi-story parking garage where tenants complain about slow elevators; the solution, once the problem is reframed from "slow elevators" to "uncomfortable waiting," turns out to be mirrors in the lobby. Neither of these cases requires new engineering — they require accurate problem definition.
+
+Gause and Weinberg's analytical framework proceeds through several key moves. First, they insist that every problem has an owner — it belongs to someone in a specific situation, which means that "what is the problem?" cannot be answered without asking "whose problem is it?" Different stakeholders frequently have different and sometimes incompatible problems, making the presented requirements a coalition of mismatched needs. Second, they distinguish between the problem as described and the problem as it actually exists, introducing the concept of the "Phantom Problem" — a stated difficulty that dissolves when examined because it is an artifact of framing rather than a genuine feature of the situation. Third, they argue that solutions change the problem: every intervention alters the situation, which alters what the problem is, making problem definition a recurring activity rather than a one-time upstream phase. The book connects here to Weinberg's broader systems thinking commitments in [[introduction-to-general-systems-thinking-1975]].
+
+Within Weinberg's intellectual development, "Are Your Lights On?" represents the first systematic treatment of a concern that runs through all his requirements-related work. The [[psychology-of-computer-programming-1971]] had documented the human factors in coding and review; this book turns the same lens on the earliest and most consequential stage of any project — understanding what is actually needed. The book's skepticism toward stated requirements anticipates the more extensive treatment in [[exploring-requirements-1989]], also written with Gause, which extends the problem definition discipline into detailed elicitation techniques. The pair of books constitutes Weinberg and Gause's major contribution to pre-design thinking in software development.
+
+The book was adopted well beyond software circles. Management consultants, therapists, policy analysts, and educators found the framework applicable to their domains — a reception that reflects the universality of the underlying problem rather than any software-specific argument. [[dorset-house-publishing]] issued later editions after the original Winthrop publication, and the book remained continuously in print through Weinberg's career. Its brevity and accessibility made it a frequent recommendation in consulting and requirements training programs, and it appears regularly in syllabi alongside more technically detailed requirements texts. The [[helpful-model-of-consulting]] articulated in [[secrets-of-consulting-1985]] depends on problem definition discipline in a direct way: a consultant who accepts the client's stated problem and provides the requested solution may be solving the wrong problem efficiently. "Are Your Lights On?" is the earlier book that makes that dependency explicit.

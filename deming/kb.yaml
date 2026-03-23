@@ -1,0 +1,337 @@
+name: deming
+description: >
+  Intellectual biography of W. Edwards Deming (1900-1993) — statistician, management
+  theorist, and the most influential figure in the quality revolution. Covers his
+  statistical foundations (Shewhart, SPC), post-war Japan transformation, the System
+  of Profound Knowledge, the 14 Points, PDSA/PDCA cycle, Ford Motor Company engagement,
+  and his enduring influence on lean manufacturing, TPS, and modern management.
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Deming's ideas evolved over decades — the young statistician at USDA, the post-war
+    Japan consultant, and the elderly management philosopher are recognizably different
+    thinkers. Date-stamp claims about his views where possible. Distinguish between
+    Deming's actual teachings and what was later attributed to him by the TQM/Six Sigma
+    movements. The PDSA cycle (Deming's preferred term) vs PDCA (the Japanese adaptation)
+    distinction matters — document which version is being referenced.
+  quality: |
+    Entries should trace intellectual lineage with precision. Deming's relationship to
+    Shewhart is foundational but often oversimplified — Deming extended Shewhart's ideas
+    significantly, not just transmitted them. The Japan story is well-documented through
+    JUSE records and the Deming Prize history. The Ford story is documented through
+    Petersen's accounts and Deming's own writings. Prefer primary sources (Deming's
+    books, lectures, JUSE records) over secondary accounts.
+  voice: |
+    Analytical and precise. Deming was both a rigorous statistician and a passionate
+    critic of American management — the KB should reflect both the technical depth
+    and the moral urgency of his work without either dry academicism or hagiography.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of W. Edwards Deming covering his statistical
+    foundations, Japan transformation, management philosophy, key concepts (System of
+    Profound Knowledge, 14 Points, PDSA), professional network, and enduring influence
+    on lean manufacturing, TPS, and modern management thinking.
+  success_criteria: |
+    A reader unfamiliar with Deming can navigate from any entry to a coherent understanding
+    of his ideas, their development from statistics through quality to systems thinking,
+    and their transmission into the lean lineage. Cross-references to Boyd (OODA/PDCA
+    parallel), Blank (lean startup lineage), and Ohno (TPS) are explicit.
+
+evaluation_rubric:
+  - "Entry cites at least one source (Deming's books, JUSE records, Petersen, or named publication)"
+  - "Claims about Deming's views specify which era or work they come from"
+  - "Concepts distinguish between Deming's formulation and later TQM/Six Sigma adaptations"
+  - "People entries describe the specific relationship to Deming and their own contributions"
+  - "Cross-KB connections to Boyd, Blank, Ohno, and lean lineage are noted where relevant"
+  - "Statistical concepts include enough context for a non-statistician to understand their significance"
+
+types:
+  concept:
+    description: "A key idea, framework, or intellectual contribution from Deming's work"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing or approximate date where this concept first appears in Deming's work"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, theoretical framework, or intellectual contribution from Deming's work.
+      Use for concepts like 'System of Profound Knowledge', 'PDSA cycle', '14 Points for
+      Management', 'common cause vs special cause variation', 'appreciation for a system',
+      'Red Bead Experiment', 'funnel experiment', etc. The body should explain the concept,
+      trace its development through Deming's career, and document how it was adopted,
+      adapted, or distorted by later movements (TQM, Six Sigma). Deming drew on Shewhart
+      (statistics), C.I. Lewis (epistemology), and systems thinking — trace these influences.
+    evaluation_rubric:
+      - "Concept explains what it is, not just that it exists"
+      - "Origin or first_appeared is documented"
+      - "Distinguishes Deming's formulation from later adaptations"
+      - "Links to related concepts within the KB"
+    display:
+      icon: lightbulb
+      layout: document
+
+  writing:
+    description: "A work by or substantially involving W. Edwards Deming — book, paper, lecture, or seminar"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publication, url, abstract, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, paper, lecture, seminar, article, report, manual, testimony]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors or co-developers"
+      publication:
+        type: string
+        description: "Venue, journal, or publisher"
+      url:
+        type: string
+        description: "URL to full text if available"
+      abstract:
+        type: text
+        description: "Abstract or brief description of the work"
+      key_concepts:
+        type: list
+        description: "Concepts developed or discussed (entry IDs from concepts/)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored by or substantially involving W. Edwards Deming. Deming's major
+      works include "Out of the Crisis" (1982/1986), "The New Economics" (1993), his
+      papers on statistical sampling and quality control, his JUSE lectures in Japan
+      (1950 onward), and his famous four-day management seminars (1980s-1990s). Many
+      of his ideas were first presented in lectures and seminars before appearing in
+      books. Use writing_type to classify. Always include the date.
+    evaluation_rubric:
+      - "Writing has a date"
+      - "Writing has a writing_type classification"
+      - "Body describes the work's significance, not just its contents"
+    display:
+      icon: file-text
+      layout: document
+
+  era:
+    description: "A period in Deming's intellectual or professional development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '1927-1946'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations during this period"
+    ai_instructions: >
+      A period in Deming's intellectual or professional development. Key eras include:
+      education and early career (1900-1927), USDA and Census Bureau statistical work
+      (1927-1946), post-war Japan and the quality transformation (1947-1960s), the
+      forgotten decades in America (1960s-1980), the NBC documentary and American
+      revival (1980-1993). Each era represents a distinct phase in Deming's thinking
+      and influence.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Deming's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_deming, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_deming:
+        type: string
+        description: "Nature of professional/intellectual relationship to Deming"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Deming's professional and intellectual network — mentor, colleague,
+      student, client, or intellectual descendant. Key figures include Walter Shewhart
+      (mentor), Joseph Juran (contemporary/rival), Taiichi Ohno (intellectual descendant
+      via Toyota), Donald Petersen (Ford CEO), Ichiro Ishikawa and Kenichi Koyanagi
+      (JUSE leaders), and the many who extended his ideas into lean manufacturing
+      and software development.
+    evaluation_rubric:
+      - "Person has a role described"
+      - "Relationship to Deming is explicitly stated"
+      - "Person's own contributions are described, not just their connection to Deming"
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Deming's career or influence"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location]
+    fields:
+      org_type:
+        type: select
+        values: [company, university, government, standards-body, professional-society, nonprofit, consulting, military]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+    ai_instructions: >
+      An institution relevant to Deming's career, thought, or influence. Includes
+      USDA, Census Bureau, JUSE (Union of Japanese Scientists and Engineers), Western
+      Electric/Bell Labs, Ford Motor Company, Toyota, MIT, NYU, and the various
+      organizations that adopted or extended his methods.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A biographical or intellectual milestone"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in Deming's life, career, or intellectual context.
+      Includes his JUSE lectures, the NBC documentary "If Japan Can... Why Can't We?"
+      (1980), the founding of the Deming Prize (1951), the Ford engagement (1981),
+      publications, awards, and biographical milestones.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Deming or his work"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, profile, review, dissertation, documentary, video, oral-history]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about Deming or his work — biographies, profiles, analyses,
+      documentaries, etc. These are references ABOUT Deming, not BY him. Key secondary
+      sources include Andrea Gabor's "The Man Who Discovered Quality," the NBC
+      documentary "If Japan Can... Why Can't We?" (1980), and various JUSE historical
+      accounts. For works by Deming, use the 'writing' type.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, observations, or commentary. Use for thinking about
+      Deming's work, connections between his ideas and other frameworks (Boyd's OODA,
+      lean manufacturing, Agile), research questions, and editorial notes.
+    evaluation_rubric:
+      - "Note has a clear analytical thesis, not just a collection of facts"
+      - "Claims and comparisons are sourced where possible"
+      - "Cross-KB connections are explicit and specific"
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual relationships
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  develops: "Develops or elaborates (concept in writing)"
+  developed_in: "Developed in (writing develops concept)"
+  builds_on: "Builds on earlier work"
+  built_upon_by: "Built upon by later work"
+  responds_to: "Responds to or engages with"
+  responded_to_by: "Responded to by"
+  collaborates_with: "Collaborates with"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  taught: "Taught or trained"
+  taught_by: "Taught by"
+  adapted_by: "Adapted or modified by"
+  adapts: "Adapts or modifies"
+
+  # Standard relationships
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  employed_by: "Employed by"
+  consulted_for: "Consulted for"
+  member_of: "Member of"
+  published_in: "Published in"
+  published_by: "Published by"
+  presented_at: "Presented at"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

@@ -1,0 +1,448 @@
+name: devops
+description: >
+  The DevOps movement — applying lean principles to the entire software delivery
+  pipeline. From the Velocity 2009 "10+ Deploys Per Day" talk and the first
+  DevOpsDays (Ghent, 2009) through continuous delivery, infrastructure as code,
+  the Three Ways, DORA metrics, and site reliability engineering. A movement KB
+  tracking how the synthesis of Agile development with operations practice
+  reshaped software delivery, complementing the Agile KB (which covers the
+  development methodology) with the operations, delivery, and infrastructure
+  automation dimensions.
+
+kb_type: movement
+
+guidelines:
+  contributing: |
+    This KB covers the DevOps movement as a whole. The Agile KB covers Agile
+    development methodology in depth — this KB should reference Agile entries via
+    cross-KB links rather than duplicating them. Similarly, lean manufacturing
+    concepts (value stream, flow, pull) are covered in the TPS, Deming, and
+    Poppendiecks KBs.
+
+    Primary sources include the foundational texts (The Phoenix Project, Continuous
+    Delivery, The DevOps Handbook, Accelerate), conference talks (Velocity, DevOpsDays),
+    the DORA State of DevOps Reports, and blog posts by movement figures. The movement
+    is younger than Agile (~2009 vs ~2001) and more empirically grounded thanks to
+    the DORA research program.
+
+    Key pitfalls: (1) conflating DevOps with specific tools (Docker, Kubernetes,
+    Jenkins) — DevOps is a set of principles and practices, not a technology stack;
+    (2) treating DevOps as "Agile for Ops" when it is a synthesis that changes both
+    Dev and Ops; (3) ignoring the lean/TOC intellectual roots that distinguish DevOps
+    thinking from mere automation.
+  quality: |
+    Entries should distinguish between: (1) the intellectual foundations drawn from
+    lean, TOC, and Agile; (2) the specific DevOps practices (CI/CD, IaC, monitoring,
+    feature flags); (3) the organizational and cultural dimensions (blameless
+    postmortems, learning culture, shared ownership); (4) the empirical evidence
+    base from DORA/Accelerate; and (5) the institutional ecosystem (DevOpsDays,
+    tooling vendors, cloud platforms).
+
+    The KB should trace the lean lineage clearly — Kim's Three Ways descend from
+    lean principles, The Phoenix Project is explicitly a Goal for IT, and Accelerate
+    provides empirical validation in the Coding War Games tradition.
+  voice: |
+    Analytical and historically grounded. The DevOps movement is well-documented
+    and relatively recent, so entries should be precise about dates, attributions,
+    and intellectual lineage. Write for practitioners who want to understand not just
+    what DevOps practices are but where they came from and why they work.
+
+goals:
+  primary: |
+    Build a connected intellectual history of the DevOps movement that traces its
+    roots in lean manufacturing (Deming, Goldratt, Ohno), Agile development, and
+    systems administration; documents the key texts, figures, and events; maps the
+    practices and their evidence base; and links to every relevant KB (Agile, Deming,
+    Goldratt, Poppendiecks, Reinertsen, Weinberg, Flow, DeMarco).
+  success_criteria: |
+    A reader can: (1) trace DevOps practices to their lean/Agile/TOC roots,
+    (2) understand the Three Ways and how they organize DevOps thinking,
+    (3) explain the DORA metrics and their empirical basis, (4) follow the
+    Phoenix Project → DevOps Handbook → Accelerate intellectual arc,
+    (5) navigate cross-KB links to Agile, Deming, Goldratt, and other connected
+    traditions with understanding of the actual relationships.
+
+evaluation_rubric:
+  - "Entry traces intellectual roots to lean, Agile, TOC, or systems administration"
+  - "Practice entries explain the principle behind the practice, not just the technique"
+  - "Person entries explain specific intellectual contribution to the movement"
+  - "Writing entries explain significance and impact, not just contents"
+  - "DORA evidence base is referenced where relevant"
+  - "Connections to Agile, lean, and TOC traditions are explicit"
+
+types:
+  concept:
+    description: "A key idea, principle, or framework in the DevOps movement"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, concept_type, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing or event where this concept first appears"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      concept_type:
+        type: select
+        values: [principle, framework, metric, pattern, anti-pattern, practice-category]
+        description: "Category of concept"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea in the DevOps movement — the Three Ways, DORA metrics, continuous
+      delivery, infrastructure as code, value stream mapping for IT, deployment
+      pipeline, blameless postmortems, chaos engineering. Always identify where the
+      concept originated and trace its lean/Agile/TOC roots. Distinguish between
+      concepts original to DevOps and concepts adapted from other traditions.
+    evaluation_rubric:
+      - "Concept identifies origin and first appearance"
+      - "Lean/Agile/TOC roots are traced where relevant"
+      - "Relationship to the Three Ways is explicit where applicable"
+    display:
+      icon: lightbulb
+      layout: document
+
+  practice:
+    description: "A specific technical or organizational practice in DevOps"
+    subdirectory: practices
+    required: [title, practice_type]
+    optional: [originated_in, evidence_base, related_practices, status, research_status]
+    fields:
+      practice_type:
+        type: select
+        values: [delivery, infrastructure, monitoring, testing, security, organizational, reliability]
+        description: "Category of practice"
+      originated_in:
+        type: string
+        description: "Where this practice originated (e.g., 'Continuous Delivery (Humble/Farley)')"
+      evidence_base:
+        type: string
+        description: "Summary of empirical evidence (DORA reports, Accelerate, etc.)"
+      related_practices:
+        type: list
+        description: "Related practices (entry IDs)"
+      status:
+        type: select
+        values: [active, evolved, deprecated, contested]
+        description: "Current status"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A specific DevOps practice — continuous integration, continuous delivery,
+      infrastructure as code, feature flags, blue-green deployments, canary releases,
+      blameless postmortems, chaos engineering, trunk-based development, monitoring
+      and observability. Always specify where the practice originated and whether
+      there is empirical evidence for its effectiveness (from DORA/Accelerate or
+      other research). Trace lean/Agile roots where they exist.
+    evaluation_rubric:
+      - "Practice identifies originating text or context"
+      - "Evidence base is noted where it exists"
+      - "Lean/Agile roots are traced where relevant"
+    display:
+      icon: tool
+      layout: document
+
+  writing:
+    description: "A foundational text, book, talk, or report in the DevOps movement"
+    subdirectory: writings
+    required: [title, writing_type, date, author]
+    optional: [coauthors, publisher, url, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, paper, talk, blog-post, report, article, thesis]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      author:
+        type: string
+        description: "Primary author (entry ID where possible)"
+      coauthors:
+        type: list
+        description: "Co-authors"
+      publisher:
+        type: string
+        description: "Publisher or venue"
+      url:
+        type: string
+        description: "URL if available"
+      key_concepts:
+        type: list
+        description: "Concepts developed or advanced (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A foundational or significant text in the DevOps movement — The Phoenix Project,
+      Continuous Delivery, The DevOps Handbook, Accelerate, Site Reliability Engineering,
+      the Velocity 2009 talks, State of DevOps Reports, and key blog posts. Always
+      explain what the work contributed to the movement's development, not just what
+      it says. Trace the lean/TOC lineage where present (especially for Kim's works).
+    evaluation_rubric:
+      - "Writing has author, date, and writing_type"
+      - "Body explains significance to the movement"
+      - "Key concepts are linked"
+    display:
+      icon: file-text
+      layout: document
+
+  person:
+    description: "A key figure in the DevOps movement"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, key_works, movement_role, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role"
+      affiliations:
+        type: list
+        description: "Institutional affiliations (entry IDs where possible)"
+      key_works:
+        type: list
+        description: "Major works (entry IDs)"
+      movement_role:
+        type: select
+        values: [founder, theorist, practitioner, researcher, evangelist, tool-builder, author, critic]
+        description: "Role in the DevOps movement"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in the DevOps movement. Always specify their movement_role and explain
+      their specific intellectual or practical contribution. For the core figures
+      (Kim, Humble, Forsgren, Debois, Allspaw), trace their intellectual roots —
+      who influenced them and what traditions they drew from. Note that many DevOps
+      figures come from operations/sysadmin backgrounds rather than development, which
+      distinguishes DevOps from Agile's developer-centric origins.
+    evaluation_rubric:
+      - "Person has role and movement_role"
+      - "Body explains specific intellectual contribution"
+      - "Intellectual influences are identified"
+    display:
+      icon: user
+      layout: record
+
+  era:
+    description: "A period in the DevOps movement's development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_figures, key_writings, key_concepts, key_events]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '2009-2013'"
+      key_figures:
+        type: list
+        description: "Central figures during this period (entry IDs)"
+      key_writings:
+        type: list
+        description: "Important writings from this period (entry IDs)"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period (entry IDs)"
+      key_events:
+        type: list
+        description: "Key events during this period (entry IDs)"
+    ai_instructions: >
+      A period in the DevOps movement's development. Suggested eras: pre-DevOps
+      convergence (2005-2009), founding and early adoption (2009-2013), mainstream
+      and enterprise adoption (2013-2018), platform engineering and maturity
+      (2018-present). Describe what characterized the period, what shifted, and
+      what the key intellectual and institutional developments were.
+    display:
+      icon: clock
+      layout: document
+
+  event:
+    description: "A significant moment in the DevOps movement"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, significance, research_status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved (entry IDs)"
+      significance:
+        type: text
+        description: "Why this event matters"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A specific event in the DevOps movement — the Velocity 2009 talks, first
+      DevOpsDays (Ghent 2009), publication of key books, founding of DORA, launch
+      of significant tools or platforms. Always explain significance to the
+      movement's intellectual trajectory.
+    display:
+      icon: calendar
+      layout: record
+
+  organization:
+    description: "An institution involved in the DevOps movement"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location, key_figures, url, research_status]
+    fields:
+      org_type:
+        type: select
+        values: [conference-series, research-org, company, community, platform-vendor, consultancy, standards-body]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+      key_figures:
+        type: list
+        description: "Key people (entry IDs)"
+      url:
+        type: string
+        description: "URL if available"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      An institution in the DevOps ecosystem — DevOpsDays, Velocity Conference,
+      DORA, IT Revolution Press, cloud platform vendors (AWS, Google Cloud, Azure),
+      tool companies (HashiCorp, Docker, Puppet, Chef). Explain the organization's
+      role in the movement — does it advance DevOps principles, provide tooling,
+      generate research, or build community?
+    display:
+      icon: building
+      layout: record
+
+  source:
+    description: "A secondary source about the DevOps movement"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication, about_subjects, research_status]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, paper, interview, report, blog-post, survey, podcast]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+      about_subjects:
+        type: list
+        description: "Subjects this source covers (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A secondary source ABOUT the DevOps movement — empirical studies, survey
+      reports (State of DevOps), academic papers on DevOps adoption, critiques.
+      For works BY movement figures that are themselves part of the movement's
+      intellectual history, use 'writing'. The DORA State of DevOps Reports are
+      a particularly important source category.
+    evaluation_rubric:
+      - "Source has author, date, and source_type"
+      - "Body explains what this source uniquely contributes"
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes, analysis, and editorial commentary"
+    subdirectory: notes
+    required: [title]
+    optional: [research_status]
+    fields:
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the note is"
+    ai_instructions: >
+      Research notes, analytical essays, and cross-KB connection observations. Use
+      for material that doesn't fit other types — e.g., "the lean → DevOps
+      translation," "DevOps vs. SRE as competing frameworks," "why the Three Ways
+      matter," "platform engineering as DevOps evolution."
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  develops: "Develops or elaborates"
+  builds_on: "Builds on earlier work"
+  critiques: "Critiques or argues against"
+  adapts: "Adapts from another tradition"
+  adapted_by: "Adapted by"
+  empirically_validates: "Provides empirical evidence for"
+
+  # Movement-specific
+  originated: "Originated (practice or framework)"
+  championed: "Championed or popularized"
+  measured: "Measured or researched empirically"
+  automated: "Automated (turned principle into tooling)"
+
+  # Standard
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  member_of: "Member of"
+  founded: "Founded"
+  founded_by: "Founded by"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true
+
+validation:
+  enforce: true
+  rules:
+  - field: writing_type
+    enum: [book, paper, talk, blog-post, report, article, thesis]
+  - field: source_type
+    enum: [book, article, paper, interview, report, blog-post, survey, podcast]
+  - field: org_type
+    enum: [conference-series, research-org, company, community, platform-vendor, consultancy, standards-body]
+  - field: practice_type
+    enum: [delivery, infrastructure, monitoring, testing, security, organizational, reliability]
+  - field: concept_type
+    enum: [principle, framework, metric, pattern, anti-pattern, practice-category]
+  - field: status
+    enum: [active, evolved, deprecated, contested]
+  - field: movement_role
+    enum: [founder, theorist, practitioner, researcher, evangelist, tool-builder, author, critic]
+  - field: research_status
+    enum: [stub, partial, draft, complete]

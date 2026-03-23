@@ -1,0 +1,229 @@
+# stallman → red-rock-eater
+
+- source: right-to-read
+  target: capture-model
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Stallman's 'Right to Read' and Agre's capture model independently identify the same structural threat: systems that mediate access to information necessarily impose grammars that make user activity trackable. Stallman's dystopia of monitored reading is a specific instance of Agre's capture."
+
+- source: digital-restrictions-management
+  target: capture-model
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "DRM systems are a concrete implementation of Agre's capture model: they impose grammars of action on media consumption by requiring authentication, tracking usage, and restructuring informal activity into discrete, server-mediated, recordable events."
+
+- source: four-freedoms
+  target: selective-amplification
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Agre's selective amplification argues that technology design is inherently political because it chooses which social forces to strengthen. Stallman's four freedoms are a normative answer to the same question: software design should amplify user autonomy rather than vendor control."
+
+- source: hacker-ethic-mit
+  target: agre-philip
+  target_kb: red-rock-eater
+  relation: related_to
+  note: "Both Stallman and Agre were shaped by the MIT AI Lab milieu. Both developed their mature projects as critical responses to that environment: Stallman universalized the hacker ethic into the four freedoms; Agre developed critical technical practice as a reflexive critique of AI's assumptions."
+
+# stallman → doctorow
+
+- source: digital-restrictions-management
+  target: digital-rights-management-critique
+  target_kb: doctorow
+  relation: related_to
+  note: "Stallman frames DRM as a violation of the four freedoms; Doctorow extends the analysis to security (DRM requires computers to hide operations from owners) and monopoly (DRM creates switching costs that enable enshittification). Doctorow's security argument is the most original extension of Stallman's ethical framework."
+
+- source: tivoization
+  target: right-to-repair
+  target_kb: doctorow
+  relation: related_to
+  note: "Tivoization and right-to-repair address the same structural problem from different legal traditions. Stallman identified that hardware cryptographic signing defeats software freedom; Doctorow addresses the same lock-in through consumer rights and antitrust frameworks."
+
+- source: saas-loophole
+  target: enshittification
+  target_kb: doctorow
+  relation: related_to
+  note: "Stallman's identification of the SaaS loophole anticipated the structural conditions that enable enshittification. When software runs on someone else's server, users have none of the four freedoms, which is precisely what allows platforms to degrade service quality without consequence."
+
+- source: copyleft
+  target: adversarial-interoperability
+  target_kb: doctorow
+  relation: related_to
+  note: "Copyleft and adversarial interoperability are complementary strategies against proprietary lock-in. Copyleft prevents code from being enclosed; adversarial interoperability breaks existing enclosures. Both use the existing legal system against its conventional operation."
+
+- source: larry-lessig
+  target: lawrence-lessig
+  target_kb: doctorow
+  relation: related_to
+  note: "Lessig is a direct bridge figure between the stallman and doctorow lineages. He took Stallman's copyleft framework and created Creative Commons, which Doctorow adopted for all his fiction. Lessig's 'code is law' extended Stallman's insight into Doctorow's territory of platform power."
+
+- source: right-to-read
+  target: platform-decay-cycle
+  target_kb: doctorow
+  relation: related_to
+  note: "Stallman's 1997 dystopia of software-mediated reading access that progressively restricts users is a specific instance of what Doctorow later generalized as the platform decay cycle: systems that begin as access mechanisms evolve into extraction mechanisms once users are locked in."
+
+- source: software-patents-opposition
+  target: chokepoint-capitalism
+  target_kb: doctorow
+  relation: related_to
+  note: "Software patents are a legal mechanism for creating chokepoints. Stallman's opposition to software patents identified the same structural problem Doctorow later analyzed as chokepoint capitalism: using legal monopolies over unavoidable intermediary functions to extract rent from all who must pass through."
+
+- source: four-freedoms
+  target: switching-costs
+  target_kb: doctorow
+  relation: related_to
+  note: "The four freedoms are structurally anti-lock-in: freedom to study, modify, and redistribute software ensures users can always switch. Doctorow's switching costs analysis shows that proprietary software's denial of these freedoms is the mechanism by which lock-in is engineered."
+
+- source: free-software-definition
+  target: self-help-ip
+  target_kb: doctorow
+  relation: related_to
+  note: "Stallman's free software definition identifies the ethical wrong of proprietary software as 'unjust power' over users. Doctorow's self-help IP framework provides the legal-economic mechanism: proprietary software enables continuous, automated, unilateral enforcement of IP claims without judicial process, replacing legal rights with technical compulsion."
+
+- source: can-you-trust-your-computer
+  target: digital-rights-management-critique
+  target_kb: doctorow
+  relation: related_to
+  note: "Stallman's 2002 analysis of trusted computing — 'trusted by whom?' — is a direct precursor to Doctorow's DRM security argument. Both identify that systems designed so content owners can trust hardware to enforce restrictions are systems users cannot trust to act in their interests."
+
+- source: who-does-that-server-really-serve
+  target: enshittification
+  target_kb: doctorow
+  relation: related_to
+  note: "Stallman's 2010 essay asks exactly the question that enshittification answers. When users depend on software running on someone else's server, the server operator can progressively degrade service quality. Stallman diagnosed the freedom deficit; Doctorow named the economic dynamic that exploits it."
+
+- source: did-you-say-intellectual-property
+  target: information-doesnt-want-to-be-free
+  target_kb: doctorow
+  relation: related_to
+  note: "Both dismantle the rhetorical framing of 'intellectual property.' Stallman argues the term conflates distinct legal regimes to shut down debate; Doctorow extends this by showing that IP maximalism serves intermediaries rather than creators, and that the interests of creators and the copyright industry are often opposed."
+
+- source: electronic-frontier-foundation
+  target: electronic-frontier-foundation
+  target_kb: doctorow
+  relation: related_to
+  note: "The EFF is the primary institutional bridge between the stallman and doctorow lineages. It fights for digital rights that both care about — DRM reform, surveillance resistance, patent reform — while standing between Stallman's ethical absolutism and Doctorow's political-economic pragmatism."
+
+- source: misinterpreting-copyright
+  target: chokepoint-capitalism
+  target_kb: doctorow
+  relation: related_to
+  note: "Stallman argues that copyright has been systematically misinterpreted from a public-interest bargain into a natural property right, enabling its indefinite expansion. Doctorow extends this analysis to show that expanded copyright serves not creators but the intermediaries who control distribution chokepoints and extract rent from both creators and audiences."
+
+- source: free-software-influence-on-creative-commons
+  target: creative-commons-licensing
+  target_kb: doctorow
+  relation: related_to
+  note: "Creative Commons licensing is a direct adaptation of Stallman's copyleft mechanism for cultural works. CC ShareAlike is copyleft applied outside software. Doctorow publishes all his fiction under CC licenses, making him the most visible practitioner of the licensing approach Stallman's framework inspired."
+
+- source: android-and-users-freedom
+  target: right-to-repair
+  target_kb: doctorow
+  relation: related_to
+  note: "Stallman's analysis of Android — nominally open source but locked by manufacturers against user modification — is the software freedom version of Doctorow's right-to-repair argument. Both identify hardware locks that defeat the nominal openness of the underlying software as the critical mechanism of control."
+
+- source: surveillance-vs-democracy
+  target: how-to-destroy-surveillance-capitalism
+  target_kb: doctorow
+  relation: related_to
+  note: "Both argue that mass surveillance threatens democratic governance, but locate the mechanism differently. Stallman emphasizes that proprietary software enables surveillance by denying users the ability to inspect what their software does. Doctorow argues monopoly power, not surveillance per se, is the root problem — surveillance is a symptom of unchecked platform dominance."
+
+- source: gpl-copyleft-mechanism
+  target: interoperability-mandates
+  target_kb: doctorow
+  relation: related_to
+  note: "The GPL's copyleft mechanism and interoperability mandates are structurally parallel regulatory strategies: both impose conditions on distribution that prevent enclosure. Copyleft conditions copyright permission on keeping code open; interoperability mandates condition market access on keeping interfaces open. Both are legal hacks that use existing frameworks against their conventional operation."
+
+# stallman → schneier
+
+- source: four-freedoms
+  target: security-mindset
+  target_kb: schneier
+  relation: related_to
+  note: "Freedom 1 (the right to study how a program works) is a prerequisite for Schneier's security mindset — you cannot evaluate whether software is secure if you cannot read its source. Schneier's DRM security critique is essentially the security-mindset argument for Freedom 1."
+
+- source: copyleft
+  target: hacking-as-systems-subversion
+  target_kb: schneier
+  relation: related_to
+  note: "Copyleft is a paradigmatic example of what Schneier calls hacking as systems subversion — using copyright law's own mechanisms against its conventional purpose. Both Stallman and Moglen have described copyleft as a 'legal hack.' Schneier's framework generalizes exactly this kind of rule-following intent-subversion."
+
+- source: digital-restrictions-management
+  target: security-theater
+  target_kb: schneier
+  relation: related_to
+  note: "DRM does not prevent determined copying but restricts legitimate users, making it analogous to security theater — visible measures that provide the appearance of protection without meaningful effectiveness, while imposing real costs on users and real security vulnerabilities through code opacity."
+
+- source: john-gilmore
+  target: john-gilmore
+  target_kb: schneier
+  relation: related_to
+  note: "John Gilmore is a direct personal and institutional bridge: a GNU contributor and FSF board member in Stallman's orbit, while simultaneously co-founding the EFF and the Cypherpunks mailing list in Schneier's orbit."
+
+- source: gplv3-drafting-process
+  target: crypto-wars-export-controls
+  target_kb: schneier
+  relation: related_to
+  note: "The GPLv3 drafting process and the Crypto Wars represent parallel struggles over whether governments and corporations can restrict users' control over software on their own machines. Both turned on the principle that user control over their own computing is a right."
+
+- source: surveillance-vs-democracy
+  target: data-and-goliath
+  target_kb: schneier
+  relation: related_to
+  note: "Both argue that mass surveillance is structurally incompatible with democratic governance. Written in the same post-Snowden context, they arrive at the same conclusion from different starting points: Stallman from software freedom (proprietary software enables covert surveillance), Schneier from security economics (surveillance creates power asymmetries that corrode trust infrastructure)."
+
+- source: can-you-trust-your-computer
+  target: trust-framework
+  target_kb: schneier
+  relation: related_to
+  note: "Both make the definitional move 'trusted by whom?' Stallman asks whether users can trust computers running trusted-computing hardware that serves content owners. Schneier's trust framework systematizes this: trust relationships are not symmetric, and systems described as 'trusted' often serve the interests of the more powerful party rather than the user."
+
+- source: free-software-even-more-important
+  target: click-here-to-kill-everybody
+  target_kb: schneier
+  relation: related_to
+  note: "Both argue that the stakes of software control have increased, not decreased, as computing pervades more domains. Stallman emphasizes that cloud, mobile, and IoT computing make the four freedoms more urgent. Schneier argues that networked devices in physical infrastructure make security failures potentially lethal. Both reject the view that ubiquitous computing makes individual user control less important."
+
+- source: software-patents-opposition
+  target: security-economics
+  target_kb: schneier
+  relation: related_to
+  note: "Stallman's opposition to software patents and Schneier's security economics both identify legal structures that create perverse incentives. Software patents impose costs on developers disproportionate to any innovation benefit; insecure software imposes costs on users that vendors do not bear. Both argue that the legal framework must be reformed to align incentives with the public interest."
+
+- source: hacker-ethic-mit
+  target: a-hackers-mind
+  target_kb: schneier
+  relation: related_to
+  note: "Stallman's hacker ethic celebrated hacking as constructive systems understanding — studying, modifying, improving systems through deep engagement. Schneier's A Hacker's Mind generalizes hacking to all rule-system exploitation, including by the powerful against the powerless. Together they define the full moral arc of hacking: from the MIT AI Lab's cooperative ideal to the weaponization of systems knowledge as a tool of power."
+
+- source: electronic-frontier-foundation
+  target: electronic-frontier-foundation
+  target_kb: schneier
+  relation: related_to
+  note: "The EFF is the primary institutional bridge between the stallman and schneier lineages. It fights for encryption rights (Schneier's territory), software freedom (Stallman's territory), and digital civil liberties broadly. Both Stallman and Schneier have worked with and endorsed the EFF while maintaining distinct intellectual frameworks."
+
+- source: free-software-definition
+  target: threat-modeling
+  target_kb: schneier
+  relation: related_to
+  note: "The free software definition implicitly threat-models the user-vendor relationship: proprietary software creates an attack surface where the vendor can surveil, restrict, and control users without accountability. Schneier's threat modeling framework makes this explicit — the question 'who are the adversaries?' must include the software vendor when the software is proprietary."
+
+# stallman → wardley
+
+- source: software-freedom-vs-open-source
+  target: open-source-as-gameplay
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley's 'open source as gameplay' treats open-sourcing as a strategic move to accelerate commoditization — precisely the instrumental, pragmatic framing that Stallman argues is the fundamental error of the open source movement."
+
+- source: copyleft
+  target: oscon-resignation
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley's OSCON resignation was triggered by Canon's refusal to open-source Zimki under GPLv3 — the very license Stallman's copyleft philosophy produced. A concrete intersection of Wardley's strategic framework with Stallman's legal mechanism."
+
+- source: four-freedoms
+  target: evolution
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley's evolution framework predicts that components move toward commodity and that openness accelerates this. Stallman's four freedoms provide the normative framework for what openness means. Wardley sees openness as an evolutionary force; Stallman insists it is an ethical requirement."

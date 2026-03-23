@@ -1,0 +1,343 @@
+name: meadows
+description: >
+  Intellectual biography of Donella H. Meadows (1941-2001) — environmental scientist,
+  systems thinker, lead author of "The Limits to Growth" (1972), and author of the
+  posthumous "Thinking in Systems: A Primer" (2008). Covers system dynamics methodology
+  (stocks, flows, feedback loops, delays), the 12 leverage points hierarchy, the Limits
+  to Growth world modeling project and its updates, her journalism and teaching at
+  Dartmouth, and her influence on sustainability science, systems thinking pedagogy,
+  and organizational theory through her lineage from Jay Forrester at MIT.
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Meadows's career spans three distinct modes: MIT system dynamics researcher (1970s),
+    Dartmouth professor and sustainability advocate (1980s-2001), and posthumous influence
+    through "Thinking in Systems" (2008-present). The Limits to Growth is a collaborative
+    work — Meadows was lead author but Dennis Meadows, Jorgen Randers, and William Behrens III
+    are co-authors. Track co-authorship precisely. Many concepts in this KB originate with
+    Jay Forrester (system dynamics methodology, World models) — entries must distinguish what
+    Meadows originated (leverage points hierarchy, sustainability indicators, the Global
+    Citizen column), what she developed from Forrester's foundations (accessible stocks-and-flows
+    pedagogy, systems archetypes as teaching tools), and what she popularized. "Thinking in
+    Systems" was edited posthumously by Diana Wright from Meadows's draft — note this provenance.
+  quality: |
+    Entries should engage with Meadows as both a rigorous modeler and an exceptional communicator.
+    She was unusual in combining technical system dynamics expertise with journalistic clarity
+    and moral passion. The leverage points paper is her most cited contribution — treat it as a
+    structured analytical framework, not just a list. The Limits to Growth controversy (claims
+    of failed predictions vs. what the models actually said) requires careful, evidence-based
+    treatment. Meadows's sustainability indicators work (Balaton Group, Sustainability Institute)
+    is less well known but intellectually important. Her "Global Citizen" newspaper columns
+    demonstrate systems thinking applied to everyday issues and are a distinctive genre.
+  voice: |
+    Analytical and clear, matching Meadows's own writing voice — she combined technical precision
+    with accessibility and did not hide her values. Respect both the scientific rigor of the
+    system dynamics work and the moral urgency of her environmental advocacy without collapsing
+    them into each other.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of Donella Meadows covering system dynamics methodology,
+    the Limits to Growth project and its reception, the 12 leverage points framework, her teaching
+    and journalism at Dartmouth, her sustainability work (Balaton Group, Sustainability Institute),
+    her intellectual lineage from Jay Forrester, and her posthumous influence through "Thinking in
+    Systems." Cross-references to Senge (fellow Forrester student), Deming (systems thinking,
+    feedback), Wardley (leverage points in strategy), and Goldratt (constraints as leverage) are explicit.
+  success_criteria: |
+    A reader can understand how Meadows translated Forrester's system dynamics into accessible
+    frameworks for understanding complex systems; trace the intellectual and institutional lineage
+    from MIT system dynamics through Meadows to contemporary sustainability and systems thinking;
+    apply the 12 leverage points to organizational and technical systems; and evaluate the Limits
+    to Growth controversy with accurate knowledge of what the models actually projected.
+
+evaluation_rubric:
+  - "Entry cites a specific Meadows work or column where possible"
+  - "Claims about Meadows's views specify which work or period they come from"
+  - "Concepts distinguish Meadows's contribution from Forrester's foundation"
+  - "The Limits to Growth entries accurately represent the models' actual projections"
+  - "Cross-KB connections to Senge, Deming, Forrester, and sustainability science are noted"
+  - "Importance scores are calibrated — Limits to Growth, Thinking in Systems, and leverage points rate highest"
+
+types:
+  concept:
+    description: "A key idea, framework, or intellectual contribution from Meadows's work"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, source_tradition, key_writings, related_concepts, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing or approximate date where this concept first appears in Meadows's work"
+      source_tradition:
+        type: string
+        description: "Intellectual tradition this draws from (e.g., Forrester system dynamics, ecology, sustainability science)"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, framework, or intellectual contribution from Meadows's work or the system
+      dynamics tradition she represented. Core concepts include: stocks and flows, feedback loops
+      (reinforcing and balancing), delays, leverage points (the 12-level hierarchy), system
+      boundaries, resilience, self-organization, overshoot and collapse, exponential growth,
+      systems archetypes (as teaching tools), sustainability indicators, and the iceberg model
+      (events-patterns-structure-mental models). For each concept, trace whether it originates
+      with Meadows, with Forrester's system dynamics, or with the broader systems thinking tradition.
+      The body should explain why the concept matters for understanding complex systems.
+    evaluation_rubric:
+      - "Concept explains what it is and why it matters"
+      - "Origin or first_appeared is documented"
+      - "Source tradition is identified if applicable"
+      - "Links to related concepts within the KB"
+    display:
+      icon: lightbulb
+      layout: document
+
+  writing:
+    description: "A work by or substantially involving Donella Meadows"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publication, url, abstract, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, article, paper, column, talk, report, chapter, interview, video, teaching-material]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors or collaborators"
+      publication:
+        type: string
+        description: "Publisher or venue"
+      url:
+        type: string
+        description: "URL if available"
+      abstract:
+        type: text
+        description: "Brief description"
+      key_concepts:
+        type: list
+        description: "Concepts developed (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored or co-authored by Donella Meadows. Major works include "The Limits to
+      Growth" (1972, with D. Meadows, Randers, Behrens), "Groping in the Dark" (1982),
+      "Beyond the Limits" (1992, with D. Meadows, Randers), "Limits to Growth: The 30-Year
+      Update" (2004, with D. Meadows, Randers — published posthumously), "Thinking in Systems:
+      A Primer" (2008, posthumous, ed. Diana Wright), and the "Leverage Points" paper (1999).
+      Meadows also wrote the "Global Citizen" newspaper column (1985-2001), published in
+      system dynamics journals, and produced teaching materials. Use writing_type "column" for
+      her newspaper columns. Track co-authors carefully — the Limits series always involves
+      Dennis Meadows and Jorgen Randers.
+    evaluation_rubric:
+      - "Writing has a date"
+      - "Writing has a writing_type classification"
+      - "Body describes the work's significance, not just its contents"
+    display:
+      icon: file-text
+      layout: document
+
+  era:
+    description: "A period in Meadows's intellectual or professional development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations]
+    fields:
+      date_range:
+        type: string
+        description: "Time span"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+    ai_instructions: >
+      A period in Meadows's intellectual or professional development. Key eras include:
+      education and early career (1960s), MIT system dynamics and the Limits to Growth project
+      (1970-1972), Dartmouth teaching and the Global Citizen years (1972-2001), the Balaton
+      Group and sustainability indicators work (1980s-2001), and posthumous influence through
+      Thinking in Systems (2001-present). Each era represents a distinct intellectual phase.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Meadows's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_meadows, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_meadows:
+        type: string
+        description: "Nature of intellectual/professional relationship"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Meadows's professional and intellectual network. Key figures include Jay
+      Forrester (doctoral advisor, system dynamics founder), Dennis Meadows (ex-husband, Limits
+      co-author), Jorgen Randers (Limits co-author), William Behrens III (Limits co-author),
+      Diana Wright (posthumous editor of Thinking in Systems), Peter Senge (fellow Forrester
+      student), Aurelio Peccei (Club of Rome founder), Dana Meadows (note: she is often called
+      Dana informally), Balaton Group members, and Dartmouth colleagues. Describe both the
+      person's own contributions and their specific relationship to Meadows.
+    evaluation_rubric:
+      - "Person has a role described"
+      - "Relationship to Meadows is explicitly stated"
+      - "Person's own contributions are described"
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Meadows's career or influence"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location]
+    fields:
+      org_type:
+        type: select
+        values: [university, research-center, nonprofit, publisher, conference, professional-society, think-tank, government-agency]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+    ai_instructions: >
+      An institution relevant to Meadows's career, including MIT (doctoral work), Dartmouth
+      College (teaching career), the Club of Rome (commissioned Limits to Growth), the
+      Sustainability Institute (later Donella Meadows Institute), the Balaton Group (international
+      sustainability network), Chelsea Green Publishing, and the International System Dynamics
+      Society. Include organizations that demonstrate her institutional influence.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A biographical or intellectual milestone"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in Meadows's career or intellectual context — publication milestones,
+      conference presentations, organizational foundings, and key biographical moments. The
+      Limits to Growth publication (1972), the leverage points paper (1999), founding of the
+      Sustainability Institute, and Meadows's death (2001) are high-priority events.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Meadows or her work"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, profile, review, podcast, blog-post, academic-paper, documentary, obituary]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about Meadows or her work. For works BY Meadows, use the 'writing'
+      type. Sources include academic analyses of the Limits to Growth, reviews of Thinking in
+      Systems, profiles, obituaries, and comparative studies placing her in the systems thinking
+      tradition. The Limits to Growth generated extensive secondary literature including both
+      critiques and vindications — represent the full range.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, or commentary about Meadows's work, intellectual connections,
+      or influence. Good topics include the leverage points applied to software/organizational
+      systems, the Limits to Growth prediction controversy, Meadows vs. Senge on systems thinking
+      pedagogy, and connections to Deming's appreciation for a system.
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  develops: "Develops or elaborates (concept in writing)"
+  builds_on: "Builds on earlier work"
+  critiques: "Critiques or argues against"
+  popularizes: "Popularizes or makes accessible"
+  applies: "Applies concepts from another domain"
+  applied_by: "Concepts applied by"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  collaborates_with: "Collaborates with"
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  employed_by: "Employed by"
+  member_of: "Member of"
+  published_by: "Published by"
+  presented_at: "Presented at"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

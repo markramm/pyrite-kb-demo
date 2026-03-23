@@ -1,0 +1,311 @@
+name: boyd
+description: >
+  Intellectual biography of Colonel John R. Boyd (1927-1997) — USAF fighter pilot,
+  military strategist, and Pentagon reformer. Covers his briefings and writings,
+  key concepts (OODA loop, Energy-Maneuverability, Destruction and Creation),
+  the Fighter Mafia, the Military Reform Movement, and his enduring influence on
+  strategy, business, and systems thinking.
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Every factual claim must cite a source — preferably a primary source (Boyd's own briefings,
+    official records, published interviews) over secondary accounts (Coram biography, Hammond book).
+    When sources conflict (which they do frequently with Boyd), document the conflict explicitly
+    rather than choosing a side silently.
+  quality: |
+    Entries should be defensible biographical scholarship. Distinguish between what Boyd wrote/said
+    (primary), what close associates reported (secondary), and what later interpreters claimed
+    (tertiary). Boyd's ideas evolved significantly over decades — date-stamp claims where possible.
+    The OODA loop in particular is frequently misrepresented as a simple cycle; entries should
+    reflect Boyd's actual complexity.
+  voice: |
+    Analytical, precise, respectful but not hagiographic. Boyd was brilliant and difficult —
+    the KB should capture both without either hero-worship or dismissal.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of John Boyd covering his writings, key concepts,
+    professional network, career eras, and enduring influence on military strategy, business,
+    and systems thinking.
+  success_criteria: |
+    A reader unfamiliar with Boyd can navigate from any entry to a coherent understanding
+    of his ideas, their development, and their significance. Cross-references to other KBs
+    (Wardley, Blank, Richards) make intellectual connections explicit.
+
+evaluation_rubric:
+  - "Entry cites at least one source (primary preferred)"
+  - "Factual claims about Boyd's career include approximate dates"
+  - "Concepts distinguish between Boyd's original formulation and later interpretations"
+  - "People entries describe the specific relationship to Boyd"
+  - "Cross-KB connections are noted where frameworks intersect"
+
+types:
+  writing:
+    description: "A work by or substantially involving John Boyd — briefing, paper, essay, manual, or presentation"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publication, url, abstract, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [briefing, paper, essay, manual, presentation, letter, report, slide-deck]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors or co-developers (entry IDs or names)"
+      publication:
+        type: string
+        description: "Venue, institution, or publication context"
+      url:
+        type: string
+        description: "URL to full text if available"
+      abstract:
+        type: text
+        description: "Abstract or brief description of the work"
+      key_concepts:
+        type: list
+        description: "Concepts developed or discussed (entry IDs from concepts/)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored by or substantially involving John Boyd. Boyd never published
+      a book; his output consists of briefings (multi-day slide presentations),
+      a single formal essay ("Destruction and Creation"), tactical manuals, and
+      engineering papers. Many works evolved over years of revision and re-presentation.
+      Use writing_type to classify. Always include the date of earliest known version.
+      Link key_concepts to concept entries. The built-in importance field (1-10) indicates
+      how central the work is to understanding Boyd's intellectual trajectory.
+    display:
+      icon: file-text
+      layout: document
+
+  concept:
+    description: "A key idea, framework, or intellectual contribution"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing or approximate date where this concept first appears"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, theoretical framework, or intellectual contribution from Boyd's work.
+      Use for concepts like 'OODA loop', 'Energy-Maneuverability theory', 'Schwerpunkt',
+      'Fingerspitzengefuehl', 'destruction and creation', 'orientation', etc. Link to
+      the writings where the concept is developed and to related concepts. The body should
+      explain the concept, its development over time, and its significance. Boyd drew
+      heavily on German military tradition, thermodynamics, Godel, Heisenberg, Sun Tzu,
+      and Toyota Production System — trace these influences where relevant.
+    display:
+      icon: lightbulb
+      layout: document
+
+  era:
+    description: "A period in Boyd's intellectual or biographical development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '1951-1960'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations during this period"
+    ai_instructions: >
+      A period in John Boyd's intellectual or biographical development. Use to
+      organize the narrative arc of his career and thinking. Link to key writings
+      and concepts from the period. The body should describe what characterized
+      this period intellectually, professionally, and biographically.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Boyd's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_boyd, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_boyd:
+        type: string
+        description: "Nature of professional/intellectual relationship to Boyd"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in John Boyd's professional and intellectual network — acolyte, mentor,
+      collaborator, adversary, student, or influence. Boyd's network is unusually
+      important because his ideas spread primarily through personal briefings and
+      mentorship rather than publication. Describe their relationship to Boyd and
+      their own contributions where relevant.
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Boyd's career or thought"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location]
+    fields:
+      org_type:
+        type: select
+        values: [military-branch, base, school, office, think-tank, defense-contractor, government, publisher, conference, program]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+    ai_instructions: >
+      An institution relevant to Boyd's career, thought, or context. Includes
+      military bases, schools, Pentagon offices, defense contractors, think tanks,
+      reform organizations, etc.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A biographical or intellectual event"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in Boyd's life, career, or intellectual context.
+      Includes briefings, career moves, aircraft program milestones, reform
+      movement events, and biographical events. Use status to indicate certainty
+      level, especially for less documented periods.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Boyd or his work"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, obituary, profile, review, dissertation, blog-post, archive, documentary, film]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about John Boyd or his work — biographies, profiles,
+      analyses, retrospectives, etc. These are references ABOUT Boyd, not BY him.
+      For works by Boyd, use the 'writing' type instead. Robert Coram's biography
+      "Boyd: The Fighter Pilot Who Changed the Art of War" is the primary biographical
+      source.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, observations, or commentary. Use for your own
+      thinking about Boyd's work, connections between ideas, research questions,
+      and editorial notes for the biography.
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual relationships
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  develops: "Develops or elaborates (concept in writing)"
+  developed_in: "Developed in (writing develops concept)"
+  builds_on: "Builds on earlier work"
+  built_upon_by: "Built upon by later work"
+  responds_to: "Responds to or engages with"
+  responded_to_by: "Responded to by"
+  collaborates_with: "Collaborates with"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  opposed_by: "Opposed or resisted by"
+  opposed: "Opposed or resisted"
+
+  # Standard relationships
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  advised: "Advised (mentor relationship)"
+  advised_by: "Advised by"
+  employed_by: "Employed by"
+  employs: "Employs"
+  member_of: "Member of"
+  has_member: "Has member"
+  affiliated_with: "Affiliated with"
+  published_in: "Published in"
+  published_by: "Published by"
+  presented_at: "Presented at"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

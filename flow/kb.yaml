@@ -1,0 +1,376 @@
+name: flow
+description: >
+  The psychology and science of flow — from Mihaly Csikszentmihalyi's foundational
+  research (1975/1990) through its application in software development (DeMarco/Lister),
+  knowledge work (Newport), neuroscience and performance (Kotler), group creativity
+  (Sawyer), and product design. A multi-figure intellectual lineage that provides the
+  psychological mechanism underlying lean, Agile, and systems thinking practices.
+
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    This KB covers a lineage, not a single thinker. Primary sources vary by figure:
+    Csikszentmihalyi's academic papers and books, DeMarco/Lister's Coding War Games data
+    and Peopleware, Sawyer's group creativity research, Kotler's Flow Research Collective
+    publications, Newport's deep work arguments. When a concept appears in multiple figures'
+    work (e.g., "flow triggers"), attribute precisely — who originated it, who adapted it,
+    how did it change in translation? The flow concept is heavily popularized and frequently
+    oversimplified; entries should reflect the research complexity, not the pop-science version.
+  quality: |
+    Entries should distinguish between: (1) Csikszentmihalyi's empirical research program
+    and its actual findings, (2) the legitimate extensions by researchers like Sawyer, Kotler,
+    Nakamura, and van Hoof, (3) the software/organizational applications (DeMarco/Lister,
+    Newport), and (4) the pop-psychology and self-help layer that often distorts the research.
+    Flow is one of the most misrepresented concepts in productivity literature — this KB
+    should be a corrective, not a contributor to that problem. Date-stamp claims; cite
+    specific studies where possible; distinguish empirical findings from theoretical claims.
+  voice: |
+    Analytical and evidence-grounded. Respectful of the research tradition but willing to
+    note where claims outrun evidence (e.g., some neurochemistry claims in popular flow
+    literature). The KB bridges psychology, neuroscience, software engineering, and
+    organizational design — write for a technically literate audience that wants to understand
+    the science, not just the motivational takeaways.
+
+goals:
+  primary: |
+    Build a connected intellectual history of flow research and its applications, from
+    Csikszentmihalyi's foundational work through group flow, deep work, flow neuroscience,
+    and the specific bridges into software development and product design. Show how flow
+    provides the psychological mechanism behind practices the lean/Agile tradition advocates
+    on process grounds.
+  success_criteria: |
+    A reader can: (1) understand what flow actually is (and isn't) based on the research,
+    (2) trace the transmission of the concept from psychology into software/organizational
+    practice, (3) distinguish individual flow from group flow and understand the conditions
+    for each, (4) connect flow to lean/Agile practices (WIP limits, stable teams, autonomy)
+    with mechanistic understanding, (5) navigate cross-KB links to DeMarco/Lister, Boyd,
+    Weinberg, Senge, and lean KBs.
+
+evaluation_rubric:
+  - "Entry distinguishes between empirical findings and theoretical/popular claims"
+  - "Concept entries trace origin, evolution, and common misrepresentations"
+  - "Writing entries explain significance and reception, not just contents"
+  - "Person entries describe the specific intellectual contribution and relationship to the flow lineage"
+  - "Cross-KB connections to lean, Agile, and systems thinking traditions are explicit"
+  - "Entries include dates for time-dependent claims"
+
+types:
+  writing:
+    description: "A published work in the flow research lineage — book, paper, thesis, talk, or article"
+    subdirectory: writings
+    required: [title, writing_type, date, author]
+    optional: [coauthors, publication, url, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, paper, thesis, talk, article, chapter, workbook, interview, documentary]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      author:
+        type: string
+        description: "Primary author (entry ID or name)"
+      coauthors:
+        type: list
+        description: "Co-authors (entry IDs or names)"
+      publication:
+        type: string
+        description: "Journal, publisher, or venue"
+      url:
+        type: string
+        description: "URL to full text if available"
+      key_concepts:
+        type: list
+        description: "Concepts developed or discussed (entry IDs from concepts/)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work by a figure in the flow research lineage. This KB covers multiple authors
+      (Csikszentmihalyi, Sawyer, Kotler, Newport, DeMarco, Nakamura, etc.) so always
+      specify the author field. Distinguish between: foundational research (Csikszentmihalyi's
+      academic work), applied research (Sawyer's group flow, Kotler's triggers), bridge
+      works (DeMarco/Lister bringing flow into software), and popular treatments. Explain
+      WHY the work matters to the lineage, not just what it says. Note how the work was
+      received and what it influenced.
+    evaluation_rubric:
+      - "Writing has author, date, and writing_type"
+      - "Body explains significance to the flow lineage, not just contents"
+      - "Key concepts are linked via key_concepts field or wikilinks"
+    display:
+      icon: file-text
+      layout: document
+
+  concept:
+    description: "A key idea, framework, or research finding in flow science"
+    subdirectory: concepts
+    required: [title, originator]
+    optional: [first_appeared, key_writings, related_concepts, concept_type, research_status]
+    fields:
+      originator:
+        type: string
+        description: "Who originated or named this concept (entry ID or name)"
+      first_appeared:
+        type: string
+        description: "Writing or approximate date where this concept first appears"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      concept_type:
+        type: select
+        values: [psychological-state, research-method, condition, trigger, neuroscience, application, framework, critique]
+        description: "Category of concept"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, state, condition, method, or finding from flow research. Examples:
+      flow state, flow channel, experience sampling method, group flow, transient
+      hypofrontality, deep work, flow triggers, challenge-skill balance. Always identify
+      the originator and trace how the concept evolved across researchers. Distinguish
+      between well-established findings (flow state characteristics), extensions (group
+      flow conditions), and more speculative claims (some neurochemistry). Link to the
+      writings where the concept is developed and to related concepts. The body should
+      define, contextualize, and trace the concept's influence.
+    evaluation_rubric:
+      - "Concept identifies originator and first appearance"
+      - "Body distinguishes empirical findings from theoretical claims"
+      - "Common misrepresentations are noted where relevant"
+    display:
+      icon: lightbulb
+      layout: document
+
+  era:
+    description: "A period in the development of flow research and its applications"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_figures, key_writings, key_concepts]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '1975-1990'"
+      key_figures:
+        type: list
+        description: "Central figures during this period (entry IDs)"
+      key_writings:
+        type: list
+        description: "Important writings from this period (entry IDs)"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period (entry IDs)"
+    ai_instructions: >
+      A period in the development of flow research. This is a multi-figure lineage,
+      so eras should capture shifts in the research program, not just one person's
+      career. Examples: Csikszentmihalyi's foundational period, the software bridge
+      (DeMarco/Lister era), the neuroscience turn, the group flow extension, the
+      popular/applied period. Describe what characterized the period intellectually,
+      what the key advances were, and what shifted between eras.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "A researcher, author, or practitioner in the flow research lineage"
+    subdirectory: people
+    required: [title, role]
+    optional: [domain, dates, affiliations, key_works, relationship_to_lineage, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role (e.g., 'psychologist', 'software consultant', 'neuroscientist')"
+      domain:
+        type: select
+        values: [psychology, neuroscience, software, organizational-design, education, game-design, sports-science, knowledge-work, creativity-research, motivation-research]
+        description: "Primary domain of contribution"
+      dates:
+        type: string
+        description: "Birth-death or active years"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      key_works:
+        type: list
+        description: "Major works (entry IDs)"
+      relationship_to_lineage:
+        type: string
+        description: "How this person connects to the flow research tradition"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in the flow research lineage. This KB covers multiple generations
+      and domains: foundational researchers (Csikszentmihalyi, Nakamura), group flow
+      researchers (Sawyer, van Hoof), neuroscientists (Dietrich), software bridge
+      figures (DeMarco, Lister), knowledge work (Newport), performance science (Kotler),
+      motivation (Pink, Deci, Ryan), deliberate practice (Ericsson), game design (Chen).
+      Always specify domain and explain their specific contribution to flow research
+      and its applications. Person entries should explain what this figure added to the
+      lineage, not just their biography.
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to flow research or its application"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location, key_figures, url]
+    fields:
+      org_type:
+        type: select
+        values: [university, research-center, lab, consultancy, publisher, conference, professional-body, company]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+      key_figures:
+        type: list
+        description: "Key people (entry IDs)"
+      url:
+        type: string
+        description: "URL if available"
+    ai_instructions: >
+      An institution relevant to the flow research lineage — university departments,
+      research centers, the Flow Research Collective, the Atlantic Systems Guild, etc.
+      Explain the organization's role in advancing or applying flow research.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A significant moment in the development of flow research or its application"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, significance]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved (entry IDs)"
+      significance:
+        type: text
+        description: "Why this event matters to the lineage"
+    ai_instructions: >
+      A specific event in the history of flow research — publication of a landmark
+      work, founding of a research center, a key conference presentation, or a
+      bridge moment where flow concepts entered a new domain. Always explain significance
+      to the broader lineage.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about flow research or its figures"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication, about_figures]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, review, dissertation, blog-post, documentary, meta-analysis, textbook]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+      about_figures:
+        type: list
+        description: "Which figures in the lineage this source covers (entry IDs)"
+    ai_instructions: >
+      A secondary source ABOUT flow research or its figures — reviews, critiques,
+      meta-analyses, textbook treatments, profiles. For works BY flow researchers,
+      use the 'writing' type. Sources are especially valuable when they provide
+      critical assessment, meta-analytic synthesis, or historical perspective on
+      how flow research has been received and applied.
+    evaluation_rubric:
+      - "Source has author, date, and source_type"
+      - "Body explains what this source uniquely contributes"
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes, analysis, and editorial commentary"
+    subdirectory: notes
+    required: [title]
+    optional: [tags, research_status]
+    fields:
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the note is"
+    ai_instructions: >
+      Research notes, analysis, cross-KB connection observations, or editorial
+      commentary. Use for observations about the flow lineage that don't fit
+      other types — e.g., "how flow connects to lean WIP limits," "gaps in the
+      neuroscience evidence," "Sawyer vs. Kotler on group flow conditions."
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  develops: "Develops or elaborates (concept in writing)"
+  developed_in: "Developed in (writing develops concept)"
+  builds_on: "Builds on earlier work"
+  built_upon_by: "Built upon by later work"
+  extends: "Extends into a new domain"
+  extended_by: "Extended by"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  validates: "Provides empirical validation for"
+  validated_by: "Empirically validated by"
+  popularizes: "Popularizes for a broader audience"
+  popularized_by: "Popularized by"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  collaborates_with: "Collaborates with"
+
+  # Bridge relationships (key for this multi-domain KB)
+  translates_to: "Translates concept into a new domain"
+  translated_from: "Translated from another domain"
+  applies_to: "Applies concept to practice"
+  applied_from: "Applied from research"
+
+  # Standard
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  member_of: "Member of"
+  published_in: "Published in"
+  presented_at: "Presented at"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

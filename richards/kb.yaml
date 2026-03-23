@@ -1,0 +1,345 @@
+name: richards
+description: >
+  Intellectual biography of Chet Richards — Boyd acolyte, management consultant,
+  and author who became the primary translator of Boyd's military strategy concepts
+  into business and software development contexts. Covers his books (Certain to Win,
+  A Swift Elusive Sword), key concepts (organizational climate for business, the
+  Boyd-Agile bridge, OODA-based competition), his network spanning military strategy
+  and software development communities, and his role as the critical link between
+  Boyd's thinking and the Agile/lean software traditions.
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Richards' primary output consists of two books, a long-running blog (fast-transients.net,
+    later d-n-i.net/richards), conference talks, and articles in journals like Defense and
+    the National Interest. His books are the authoritative primary sources; blog posts and
+    talks provide supplementary development and application of ideas. Boyd's own briefings
+    (accessible through the Boyd KB) are the upstream sources Richards interprets. When
+    documenting Richards' translations of Boyd's concepts, always distinguish between
+    Boyd's original formulation and Richards' business/software adaptation — the
+    translation is Richards' contribution, not a restatement.
+  quality: |
+    Richards is fundamentally a bridge figure — his intellectual contribution is the
+    translation of Boyd's military strategy into business and software contexts. Entries
+    should capture this bridging function: what was the military concept, how did Richards
+    translate it, and what audience did the translation serve? Avoid treating Richards as
+    merely a Boyd summarizer — he made original contributions in applying organizational
+    climate concepts to software teams and connecting OODA-loop thinking to Agile methods.
+  voice: |
+    Direct, practitioner-oriented, respectful. Richards writes as a practitioner and
+    consultant, not an academic — the KB should reflect this applied orientation without
+    dismissing the theoretical depth underneath.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of Chet Richards covering his writings, key
+    translations of Boyd's concepts for business audiences, professional network spanning
+    military and software communities, and his pivotal role as the bridge between Boyd's
+    strategy world and the Agile/lean software movement.
+  success_criteria: |
+    A reader can trace how each of Boyd's key concepts was translated by Richards for
+    business and software audiences. Cross-references to the Boyd KB show the upstream
+    source; cross-references to Agile, Lean, and Rao KBs show the downstream influence.
+    The KB makes the Boyd-to-Agile intellectual lineage explicit and documented.
+
+evaluation_rubric:
+  - "Entry distinguishes between Boyd's original concept and Richards' business/software translation"
+  - "Concepts trace their Boyd-KB upstream source explicitly"
+  - "Writing entries explain the translation move — what military concept becomes what business/software insight"
+  - "People entries describe the specific role in the Boyd-to-business translation chain"
+  - "Cross-KB connections to Boyd, Agile, and Rao are noted where frameworks intersect"
+  - "Practical applications and examples are included where Richards provides them"
+
+types:
+  writing:
+    description: "A work by Chet Richards — book, article, blog post, presentation, or paper"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [publication, url, abstract, key_concepts, coauthors, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, article, blog-post, presentation, paper, chapter, foreword, interview, slide-deck]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      publication:
+        type: string
+        description: "Publication venue or publisher"
+      url:
+        type: string
+        description: "URL to the work if available"
+      abstract:
+        type: text
+        description: "Brief description of the work"
+      key_concepts:
+        type: list
+        description: "Concepts developed or discussed (entry IDs from concepts/)"
+      coauthors:
+        type: list
+        description: "Co-authors if any"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored by Chet Richards. His output consists of two major books
+      (Certain to Win, A Swift Elusive Sword), blog posts (fast-transients.net),
+      articles in defense and strategy journals, conference presentations at Agile
+      and strategy events, and contributions to Defense and the National Interest.
+      Many works are translations of Boyd's concepts for new audiences — always note
+      what Boyd concept is being translated and for whom. Use writing_type to classify.
+      Link key_concepts to concept entries.
+    evaluation_rubric:
+      - "Identifies the Boyd concept being translated or applied"
+      - "Notes the target audience (business, software, military)"
+      - "Explains what original contribution Richards makes beyond Boyd summary"
+    display:
+      icon: file-text
+      layout: document
+
+  concept:
+    description: "A key idea, framework, or translation contributed by Richards"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, boyd_source, application_domain, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing or approximate date where this concept first appears in Richards' work"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      boyd_source:
+        type: string
+        description: "The Boyd concept this translates or extends (Boyd KB entry ID or description)"
+      application_domain:
+        type: select
+        values: [business-strategy, software-development, agile, organizational-design, military, general]
+        description: "Primary domain where Richards applies this concept"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, framework, or translation from Richards' work. Richards' primary
+      intellectual contribution is translating Boyd's military concepts for business
+      and software audiences. For each concept, document: (1) what Boyd concept it
+      draws from (use boyd_source field), (2) how Richards translates or extends it,
+      (3) what domain it targets (use application_domain field). Richards' original
+      contributions include the explicit Boyd-Agile connection, the organizational
+      climate translation (Einheit→trust, Fingerspitzengefuehl→expertise,
+      Schwerpunkt→focus), and the argument that Toyota implements Boyd's principles.
+    evaluation_rubric:
+      - "Identifies the upstream Boyd concept via boyd_source"
+      - "Explains the translation move — what changes between military and business contexts"
+      - "Notes the application domain accurately"
+    display:
+      icon: lightbulb
+      layout: document
+
+  era:
+    description: "A period in Richards' intellectual or professional development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations, primary_focus]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '2000-2010'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations during this period"
+      primary_focus:
+        type: string
+        description: "Primary intellectual focus during this era"
+    ai_instructions: >
+      A period in Richards' intellectual or professional development. Richards'
+      career spans military service, defense analysis, management consulting, and
+      Agile community engagement. Each era should capture what audience he was
+      addressing, what translations he was making, and how his interpretation of
+      Boyd evolved.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Richards' intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_richards, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_richards:
+        type: string
+        description: "Nature of intellectual/professional relationship to Richards"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Richards' intellectual and professional network. This spans two
+      communities: the Boyd/military strategy world (Boyd himself, Chuck Spinney,
+      Pierre Sprey, Franklin Spinney, the Reform Movement figures) and the business/
+      software world (Jeff Sutherland, Agile practitioners, management consultants).
+      Richards' unique position bridges these communities — describe which community
+      each person belongs to and how they connect through Richards.
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Richards' career or intellectual context"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location, url]
+    fields:
+      org_type:
+        type: select
+        values: [military-branch, defense-organization, consulting-firm, publisher, conference, university, think-tank, blog-platform, professional-community, software-company]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+      url:
+        type: string
+        description: "URL"
+    ai_instructions: >
+      An institution relevant to Richards' career, thinking, or context. Includes
+      military branches, defense analysis organizations, consulting firms, publishers,
+      Agile conferences, and the Defense and the National Interest project. The
+      org_type values reflect the dual military/business context of Richards' work.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A biographical or intellectual milestone"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in Richards' career or intellectual trajectory. Includes
+      book publications, conference presentations, career transitions, Boyd community
+      gatherings, and Agile conference appearances. Richards' events often mark
+      moments where Boyd's ideas crossed from one community to another.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Richards or his work"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, profile, interview, podcast, review, blog-post, academic-paper, chapter]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about Chet Richards or his work — reviews, interviews,
+      references in other works, profiles. These are references ABOUT Richards,
+      not BY him (use 'writing' type for Richards' own work). Include sources that
+      document the Boyd-to-Agile translation chain where Richards is cited.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes, analysis, and editorial observations"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, observations, or commentary about Richards' work
+      and its connections. Use for cross-KB analysis (the Boyd-Richards-Agile
+      translation chain), research questions, and editorial observations.
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  translates: "Translates concept from one domain to another"
+  translated_by: "Translated by"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  develops: "Develops or elaborates (concept in writing)"
+  developed_in: "Developed in (writing develops concept)"
+  builds_on: "Builds on earlier work"
+  built_upon_by: "Built upon by later work"
+  extends: "Extends a framework or concept"
+  extended_by: "Extended by"
+  responds_to: "Responds to or engages with"
+  responded_to_by: "Responded to by"
+  collaborates_with: "Collaborates with"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  bridges_to: "Bridges concept to a new domain/community"
+  bridged_by: "Bridged to this domain by"
+
+  # Standard
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  employed_by: "Employed by"
+  member_of: "Member of"
+  published_in: "Published in"
+  presented_at: "Presented at"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

@@ -1,0 +1,233 @@
+# Cross-KB links from wardley to other KBs
+
+# === boyd (PRIMARY connection — Wardley's deepest intellectual debt) ===
+
+- source: strategy-cycle
+  target: ooda-loop
+  target_kb: boyd
+  relation: derived_from
+  note: "Wardley's Strategy Cycle (Purpose, Landscape, Climate, Doctrine, Leadership) is explicitly modeled on Boyd's OODA loop. Observe maps to surveying the landscape, Orient to understanding climate patterns, Decide to applying doctrine and choosing gameplay, Act to execution. Wardley credits this as the 'outer cycle' of his entire framework."
+
+- source: situational-awareness
+  target: orientation
+  target_kb: boyd
+  relation: derived_from
+  note: "Wardley's insistence that strategy requires understanding the landscape before deciding what to do derives directly from Boyd's emphasis on orientation as the critical OODA element. Both argue that most failures stem from bad understanding, not bad decisions — orientation shapes observation."
+
+- source: doctrine
+  target: schwerpunkt
+  target_kb: boyd
+  relation: influenced_by
+  note: "Wardley borrows 'doctrine' from military usage, where shared principles enable decentralized action toward a common focus. Boyd's Schwerpunkt — the focal point that gives coherence to distributed forces — provides the same function: universal principles that align autonomous actors without centralized control."
+
+- source: doctrine
+  target: implicit-guidance-and-control
+  target_kb: boyd
+  relation: influenced_by
+  note: "Wardley's doctrine as internalized organizational principles that enable faster, more effective action parallels Boyd's implicit guidance and control — bypassing conscious deliberation through cultivated organizational intuition. Both replace explicit command with shared understanding."
+
+- source: pioneer-settler-town-planner
+  target: auftragstaktik
+  target_kb: boyd
+  relation: influenced_by
+  note: "Wardley's Pioneer-Settler-Town Planner model shares the core logic of Boyd's Auftragstaktik (mission-type orders): decentralized execution enabled by shared intent. Different organizational cultures operate autonomously but coherently because they share purpose and doctrine."
+
+- source: inertia
+  target: orientation
+  target_kb: boyd
+  relation: parallels
+  note: "Wardley's inertia — organizational resistance to evolutionary change caused by past success — is the organizational equivalent of Boyd's failed orientation. Both describe mental models that no longer match reality but cannot be updated because of accumulated investment in the old view."
+
+- source: gameplay
+  target: maneuver-warfare
+  target_kb: boyd
+  relation: influenced_by
+  note: "Wardley's 61 forms of gameplay — context-dependent strategic moves — reflect Boyd's maneuver warfare doctrine: creating and exploiting advantages through position, tempo, and mismatch rather than through attrition. Both emphasize that strategic moves are contextual, not universal."
+
+- source: gameplay
+  target: tempo
+  target_kb: boyd
+  relation: influenced_by
+  note: "Wardley's argument that organizations with better maps can anticipate and adapt faster than those without maps directly reflects Boyd's tempo concept — operating inside the adversary's OODA loop. Superior situational awareness enables faster strategic cycling."
+
+- source: boyd-wardley-comparison-parallel-frameworks
+  target: discourse-on-winning-and-losing
+  target_kb: boyd
+  relation: analyzes
+  note: "Wardley's comparison note explicitly traces the structural parallels between his framework and Boyd's Discourse — situational awareness as foundation, tempo as competitive mechanism, decentralization as organizational design, and practitioner orientation as epistemology."
+
+- source: john-boyd
+  target: john-boyd
+  target_kb: boyd
+  relation: same_person
+  note: "Cross-reference between the Wardley KB's account of Boyd as intellectual influence and the Boyd KB's comprehensive treatment. The Wardley KB emphasizes Boyd's influence on mapping; the Boyd KB provides the full intellectual biography."
+
+- source: anchoring-to-user-needs
+  target: grand-ideal
+  target_kb: boyd
+  relation: parallels
+  note: "Wardley's insistence that every map must start from the user need — grounding strategy in external value rather than internal capability — parallels Boyd's emphasis on purpose as the foundation of strategy. Both argue that organizations that lose sight of their purpose become internally focused and vulnerable."
+
+# === senge ===
+
+- source: wardley-map
+  target: mental-models
+  target_kb: senge
+  relation: related_to
+  note: "Wardley Maps provide a concrete, visual mechanism for surfacing and challenging mental models — which Senge identifies as one of the five disciplines. Maps make assumptions about landscape position, evolution, and dependencies explicit and debatable, addressing Senge's concern that unexplored mental models drive strategy invisibly."
+
+- source: doctrine
+  target: shared-vision
+  target_kb: senge
+  relation: parallels
+  note: "Wardley's doctrine — universal organizational principles that provide coherence across decentralized teams — serves a similar alignment function to Senge's shared vision discipline. Both enable autonomous action toward common purpose without centralized control."
+
+- source: pioneer-settler-town-planner
+  target: team-learning
+  target_kb: senge
+  relation: related_to
+  note: "Wardley's PST model recognizes that different evolutionary stages require different team cultures and learning modes. This connects to Senge's team learning discipline: the recognition that teams must develop collective learning capacity appropriate to their work, not apply a single learning mode universally."
+
+- source: climate-patterns
+  target: systems-thinking-fifth-discipline
+  target_kb: senge
+  relation: related_to
+  note: "Wardley's climate patterns — external forces that affect all players regardless of their choices — embody systems thinking applied to competitive strategy. Patterns like 'everything evolves through supply and demand competition' and 'past success breeds inertia' are systemic forces, not individual choices."
+
+- source: inertia
+  target: shifting-the-burden
+  target_kb: senge
+  relation: parallels
+  note: "Wardley's inertia — organizations clinging to past-success practices as components evolve — echoes Senge's shifting-the-burden archetype, where symptomatic solutions (doubling down on the current approach) undermine the fundamental solution (adapting to evolution)."
+
+# === meadows ===
+
+- source: climate-patterns
+  target: leverage-points
+  target_kb: meadows
+  relation: related_to
+  note: "Wardley's climate patterns identify systemic forces acting on competitive landscapes; Meadows' leverage points identify where to intervene in systems for maximum effect. Both frameworks argue that understanding systemic structure — not individual events — determines strategic effectiveness."
+
+- source: evolution
+  target: stocks-and-flows
+  target_kb: meadows
+  relation: parallels
+  note: "Wardley's evolution axis — components moving from genesis through commodity as supply and demand competition acts on them — parallels Meadows' stocks-and-flows thinking. The evolutionary movement of components is driven by accumulated knowledge, investment, and competition flowing through the system."
+
+- source: inertia
+  target: resilience
+  target_kb: meadows
+  relation: contrasts
+  note: "Wardley's inertia (resistance to evolutionary change that causes organizational failure) is a form of maladaptive rigidity — the opposite of what Meadows calls resilience. Organizations with inertia have lost the capacity to adapt their internal structure when external conditions change."
+
+- source: ilc-innovate-leverage-commoditize
+  target: reinforcing-feedback-loops
+  target_kb: meadows
+  relation: related_to
+  note: "Wardley's ILC pattern — commoditize infrastructure to create a platform that generates demand for more innovation — is a reinforcing feedback loop in Meadows' terms. AWS commoditizes compute, attracting startups, which generate demand for more compute, accelerating commoditization further."
+
+# === deming ===
+
+- source: situational-awareness
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: parallels
+  note: "Wardley's insistence that strategy requires understanding the landscape before deciding what to do parallels Deming's first element of the System of Profound Knowledge: appreciation for a system. Both argue that effective action requires understanding the whole system, not just isolated parts."
+
+- source: doctrine
+  target: the-14-points-for-management
+  target_kb: deming
+  relation: parallels
+  note: "Wardley's ~40 doctrine principles — universal organizational competencies that apply regardless of specific strategy — serve the same function as Deming's 14 Points: foundational management principles that must be in place before specific strategic choices can be effective."
+
+- source: evolution
+  target: theory-of-knowledge
+  target_kb: deming
+  relation: related_to
+  note: "Wardley's evolution theory — that components change in predictable directions though not on predictable timelines — reflects Deming's theory of knowledge: prediction requires theory, and theory tells you the direction of change without requiring precise forecasting."
+
+- source: appropriate-methods
+  target: common-cause-vs-special-cause-variation
+  target_kb: deming
+  relation: parallels
+  note: "Wardley's doctrine principle that different evolutionary stages require different methods parallels Deming's insistence on distinguishing common-cause from special-cause variation. Both argue that applying the wrong framework to a situation causes more harm than no framework at all."
+
+# === goldratt ===
+
+- source: value-chain
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "Wardley's value chain — the dependency structure of components needed to serve a user need — creates a system where constraints matter. Goldratt's Theory of Constraints provides the analytical framework for identifying where in a value chain the binding constraint lies."
+
+- source: inertia
+  target: policy-constraints
+  target_kb: goldratt
+  relation: parallels
+  note: "Wardley's inertia often manifests as organizational policies optimized for a previous evolutionary stage. Goldratt's policy constraints — rules and measurements that no longer serve the system's goal — describe the same phenomenon: past-success policies becoming current-state bottlenecks."
+
+- source: evolution
+  target: throughput-world-vs-cost-world
+  target_kb: goldratt
+  relation: related_to
+  note: "Wardley's evolution from genesis (exploration, high uncertainty) to commodity (efficiency, volume) mirrors the tension Goldratt identifies between throughput-world and cost-world thinking. Genesis-stage work demands throughput thinking; commodity-stage work demands cost optimization."
+
+# === blank ===
+
+- source: anchoring-to-user-needs
+  target: customer-development
+  target_kb: blank
+  relation: parallels
+  note: "Wardley's doctrine principle that every map must start from user needs — grounding strategy in external value — parallels Blank's customer development methodology. Both insist that understanding what users actually need precedes building anything, and both reject the assumption that organizations already know what users want."
+
+- source: anchoring-to-user-needs
+  target: get-out-of-the-building
+  target_kb: blank
+  relation: parallels
+  note: "Wardley's emphasis on grounding maps in real user needs connects to Blank's 'get out of the building' maxim. Both are injunctions against strategy-from-the-desk: understanding the landscape requires direct engagement with users and the competitive environment."
+
+- source: evolution
+  target: market-types
+  target_kb: blank
+  relation: related_to
+  note: "Wardley's evolution stages (genesis through commodity) map onto Blank's market types (new market, existing market, resegmented market). Both frameworks recognize that the maturity of the market context determines which strategies and methods are appropriate."
+
+# === reinertsen ===
+
+- source: appropriate-methods
+  target: managing-variability
+  target_kb: reinertsen
+  relation: related_to
+  note: "Wardley's doctrine that different evolutionary stages require different methods connects to Reinertsen's core argument about managing variability. Genesis-stage work has high variability (requiring exploration); commodity-stage work has low variability (requiring efficiency). Applying efficiency methods to high-variability work is Reinertsen's cardinal sin."
+
+- source: pioneer-settler-town-planner
+  target: decentralized-control
+  target_kb: reinertsen
+  relation: parallels
+  note: "Wardley's PST model — autonomous teams with different cultures for different evolutionary stages — parallels Reinertsen's argument for decentralized control in product development. Both argue that centralized control fails when work varies in uncertainty and requires different decision-making speeds."
+
+- source: evolution
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: related_to
+  note: "Wardley's evolution theory implies that the cost of delay varies by evolutionary stage — delaying genesis-stage exploration risks missing the opportunity; delaying commodity-stage optimization risks competitive disadvantage. Reinertsen's cost-of-delay framework provides the economic quantification of this evolutionary urgency."
+
+# === tps ===
+
+- source: doctrine
+  target: kaizen
+  target_kb: tps
+  relation: parallels
+  note: "Wardley's doctrine principle of continuous improvement — one of his universal organizational competencies — derives from the same lean tradition as TPS kaizen. Both treat improvement as an ongoing organizational discipline, not a periodic initiative."
+
+- source: value-chain
+  target: value-stream
+  target_kb: tps
+  relation: related_to
+  note: "Wardley's value chain (the dependency structure of components serving a user need) extends the TPS value stream concept. Both start from user value and trace dependencies backward, but Wardley adds the evolution axis — showing not just what is needed but how mature each component is."
+
+- source: appropriate-methods
+  target: standard-work
+  target_kb: tps
+  relation: related_to
+  note: "Wardley's doctrine principle that commodity-stage components should use standardized, optimized methods connects directly to TPS standard work. Standard work is appropriate for well-understood, repeatable processes — precisely the commodity end of Wardley's evolution axis."

@@ -1,0 +1,215 @@
+# === goldratt ===
+# The Phoenix Project is explicitly "The Goal for IT" — Kim studied Goldratt's TOC
+
+- source: the-phoenix-project
+  target: the-goal
+  target_kb: goldratt
+  relation: adaptation
+  note: "The Phoenix Project is explicitly modeled on The Goal — same business novel form, same Socratic mentor structure"
+
+- source: three-ways
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: adapts
+  note: "The Three Ways adapt TOC's constraint-focused systems thinking to software delivery"
+
+- source: three-ways
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: adapts
+  note: "First Way (Flow) adapts the Five Focusing Steps to the software value stream"
+
+- source: gene-kim
+  target: the-goal
+  target_kb: goldratt
+  relation: influenced_by
+  note: "Kim explicitly credits Goldratt's The Goal as the model for The Phoenix Project"
+
+- source: value-stream-mapping-for-it
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: adapts
+  note: "Value stream mapping for IT applies TOC's constraint identification to the software delivery pipeline"
+
+# === deming ===
+# The Second Way traces to Deming's feedback/quality tradition; Willis is the Deming scholar of DevOps
+
+- source: three-ways
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: adapts
+  note: "Second Way (Feedback) adapts Deming's PDSA cycle to software delivery feedback loops"
+
+- source: three-ways
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: influenced_by
+  note: "Third Way (Learning) draws on Deming's system of profound knowledge — especially the theory of knowledge dimension"
+
+- source: blameless-postmortems
+  target: the-14-points-for-management
+  target_kb: deming
+  relation: adapts
+  note: "Blameless postmortems implement Deming's Point 8: 'Drive out fear' — blame inhibits learning"
+
+- source: john-willis
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: develops
+  note: "Willis's Deming's Journey to Profound Knowledge traces the Deming-to-DevOps intellectual lineage"
+
+- source: dora-four-key-metrics
+  target: statistical-process-control-and-variation-theory
+  target_kb: deming
+  relation: adapts
+  note: "DORA metrics apply statistical rigor to software delivery measurement, in Deming's SPC tradition"
+
+- source: demings-journey-to-profound-knowledge
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: develops
+  note: "Willis's book is a full intellectual biography of Deming tracing the connection to DevOps"
+
+# === poppendiecks ===
+# Lean software development as the bridge between manufacturing lean and DevOps
+
+- source: three-ways
+  target: eliminate-waste
+  target_kb: poppendiecks
+  relation: adapts
+  note: "First Way (Flow) applies the Poppendiecks' eliminate-waste principle to the full delivery pipeline"
+
+- source: three-ways
+  target: build-integrity-in
+  target_kb: poppendiecks
+  relation: adapts
+  note: "Second Way (Feedback) extends build-integrity-in to operations — build quality through fast feedback, not end-of-line inspection"
+
+- source: value-stream-mapping-for-it
+  target: value-stream-mapping-for-software
+  target_kb: poppendiecks
+  relation: builds_on
+  note: "DevOps extends the Poppendiecks' software value stream mapping to include operations and deployment"
+
+- source: continuous-delivery
+  target: eliminate-waste
+  target_kb: poppendiecks
+  relation: adapts
+  note: "CD eliminates waste in the delivery pipeline — handoffs, waiting, manual deployment steps"
+
+# === agile ===
+# DevOps extends Agile from development to the full delivery lifecycle
+
+- source: continuous-integration
+  target: continuous-integration
+  target_kb: agile
+  relation: same-subject
+  note: "CI originated in XP/Agile; DevOps extends it through the full deployment pipeline"
+
+- source: continuous-integration
+  target: extreme-programming
+  target_kb: agile
+  relation: influenced_by
+  note: "CI practice originated in Kent Beck's Extreme Programming"
+
+- source: dev-ops-cooperation
+  target: self-organizing-teams
+  target_kb: agile
+  relation: builds_on
+  note: "DevOps cooperation extends Agile's self-organizing teams across the dev-ops boundary"
+
+- source: three-ways
+  target: working-software
+  target_kb: agile
+  relation: builds_on
+  note: "The Three Ways extend Agile's 'working software' principle to working software IN PRODUCTION"
+
+- source: trunk-based-development
+  target: extreme-programming
+  target_kb: agile
+  relation: influenced_by
+  note: "Trunk-based development traces to XP's continuous integration practice"
+
+# === reinertsen ===
+# Reinertsen's product development flow theory provides the mathematical foundation for DevOps flow
+
+- source: deployment-pipeline
+  target: queueing-theory-applied
+  target_kb: reinertsen
+  relation: influenced_by
+  note: "The deployment pipeline makes queues visible — Reinertsen's queueing theory explains why this matters"
+
+- source: trunk-based-development
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: influenced_by
+  note: "Trunk-based development is the application of Reinertsen's small batch size principle to branching"
+
+- source: dora-four-key-metrics
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: related_to
+  note: "DORA's lead time metric captures what Reinertsen frames as cost of delay — time in queue is economic waste"
+
+- source: continuous-delivery
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: influenced_by
+  note: "CD implements Reinertsen's batch size reduction across the entire delivery pipeline"
+
+# === weinberg ===
+# Weinberg's quality and culture work influenced DevOps organizational thinking
+
+- source: blameless-postmortems
+  target: egoless-programming
+  target_kb: weinberg
+  relation: builds_on
+  note: "Blameless postmortems extend Weinberg's egoless programming from code review to incident review"
+
+# === demarco ===
+# Accelerate is the Coding War Games of the DevOps era
+
+- source: accelerate-book
+  target: coding-war-games
+  target_kb: demarco
+  relation: builds_on
+  note: "Accelerate positions itself as the Coding War Games of DevOps — empirical proof that practices and environment matter"
+
+- source: dora-four-key-metrics
+  target: coding-war-games
+  target_kb: demarco
+  relation: builds_on
+  note: "DORA metrics prove for delivery systems what Coding War Games proved for developers: variance is enormous and explainable"
+
+- source: accelerate-book
+  target: peopleware
+  target_kb: demarco
+  relation: builds_on
+  note: "Both prove empirically that organizational factors outweigh individual talent in software outcomes"
+
+# === flow ===
+# The Five Ideals explicitly reference flow theory and psychological safety
+
+- source: five-ideals
+  target: flow-state
+  target_kb: flow
+  relation: related_to
+  note: "Second Ideal (Focus, Flow, and Joy) explicitly references Csikszentmihalyi's flow state as a goal for developer experience"
+
+- source: five-ideals
+  target: psychological-safety
+  target_kb: flow
+  relation: related_to
+  note: "Fourth Ideal (Psychological Safety) draws on Edmondson's research, covered in the flow KB"
+
+- source: five-ideals
+  target: challenge-skill-balance
+  target_kb: flow
+  relation: related_to
+  note: "Developer experience in flow requires challenge-skill balance — too much complexity without support destroys flow"
+
+- source: blameless-postmortems
+  target: psychological-safety
+  target_kb: flow
+  relation: related_to
+  note: "Blameless postmortems require psychological safety as a prerequisite — blame cultures cannot learn from failure"

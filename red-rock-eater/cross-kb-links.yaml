@@ -1,0 +1,98 @@
+links:
+  # Agre → Doctorow: the capture-to-enshittification intellectual lineage
+  - source: capture-model
+    target: enshittification
+    target_kb: doctorow
+    relation: extended-by
+    note: "Agre's 1994 capture model (monitoring through activity restructuring) is the theoretical precursor to Doctorow's 2023 enshittification (platforms extract value through the same mechanism)"
+
+  - source: grammars-of-action
+    target: platform-decay-cycle
+    target_kb: doctorow
+    relation: extended-by
+    note: "Agre's grammars of action — formal representations that decompose activities into trackable steps — describe the mechanism enabling platform lock-in and decay"
+
+  - source: institutional-analysis
+    target: chokepoint-capitalism
+    target_kb: doctorow
+    relation: parallel-development
+    note: "Both analyze concentrated intermediary power and extraction through institutional structure"
+
+  - source: technology-as-inscription
+    target: adversarial-interoperability
+    target_kb: doctorow
+    relation: contrasts
+    note: "Agre shows how social assumptions are inscribed in technical design; Doctorow's adversarial interoperability is the practice of breaking those inscriptions"
+
+  # Agre → Schneier: surveillance, security, and institutional failure
+  - source: capture-model
+    target: threat-modeling
+    target_kb: schneier
+    relation: parallel-development
+    note: "Capture describes what data systems extract; threat modeling analyzes what adversaries can do with captured data — complementary analytical frameworks"
+
+  - source: institutional-analysis
+    target: security-economics
+    target_kb: schneier
+    relation: parallel-development
+    note: "Both analyze how institutional structures systematically misalign incentives — Agre for governance, Schneier for security"
+
+  # Agre → Stallman: technology encodes control
+  - source: capture-model
+    target: saas-loophole
+    target_kb: stallman
+    relation: parallel-development
+    note: "Stallman's SaaS loophole identifies the structural conditions enabling Agre-style capture: server-side software removes user freedoms"
+
+  - source: technology-as-inscription
+    target: tivoization
+    target_kb: stallman
+    relation: parallel-development
+    note: "Both analyze how technical design inscribes control — Agre theoretically, Stallman practically through hardware signing that prevents user modification"
+
+  # Agre → Boyd: epistemology and orientation
+  - source: critical-technical-practice
+    target: destruction-and-creation-concept
+    target_kb: boyd
+    relation: parallel-development
+    note: "Both are epistemological frameworks: Agre maintains critical reflection within technical work; Boyd rebuilds mental models through dialectic synthesis"
+
+  - source: institutional-analysis
+    target: orientation
+    target_kb: boyd
+    relation: parallel-development
+    note: "Both analyze how institutional context shapes observation — Agre through grammars, Boyd through the orientation component of OODA"
+
+  # Agre → Meadows: systems structure and intervention
+  - source: institutional-analysis
+    target: leverage-points
+    target_kb: meadows
+    relation: parallel-development
+    note: "Both identify intervention points in complex systems — Agre through institutional capture analysis, Meadows through leverage point hierarchy"
+
+  # Agre → Deming: epistemology as foundation
+  - source: institutional-analysis
+    target: theory-of-knowledge
+    target_kb: deming
+    relation: parallel-development
+    note: "Both are epistemological: Agre insists on examining institutional assumptions; Deming insists there is no knowledge without theory"
+
+  - source: institutional-analysis
+    target: appreciation-for-a-system
+    target_kb: deming
+    relation: parallel-development
+    note: "Both emphasize understanding wholes before optimizing parts — Agre for institutions, Deming for production systems"
+
+  # Agre → Senge: mental models and institutional assumptions
+  - source: institutional-analysis
+    target: mental-models
+    target_kb: senge
+    relation: parallel-development
+    note: "Both examine how shared assumptions shape behavior — Agre through institutional inscription in technical systems, Senge through organizational mental models"
+
+  # Agre → Wardley: mapping institutional landscapes
+  - source: institutional-analysis
+    target: situational-awareness
+    target_kb: wardley
+    relation: parallel-development
+    note: "Both argue that understanding landscape structure precedes effective intervention — Agre for institutional landscapes, Wardley for competitive ones"

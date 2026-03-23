@@ -1,0 +1,23 @@
+---
+id: secrets-of-consulting-1985
+title: "The Secrets of Consulting"
+type: writing
+importance: 9
+tags: [consulting, change-management, humor, human-systems, satir]
+writing_type: book
+date: 1985-01-01
+coauthors: []
+publication: "Dorset House"
+key_concepts: [law-of-raspberry-jam, helpful-model-of-consulting, rudy-block-rule]
+research_status: draft
+---
+
+Published by [[dorset-house-publishing]] in 1985 with a foreword by [[virginia-satir]], _The Secrets of Consulting_ is among the most widely read and frequently cited of [[gerald-weinberg]]'s books — unusual in that its readership extends well beyond software. Management consultants, therapists, organizational developers, and coaches have all drawn on it, making it perhaps the clearest illustration of Weinberg's conviction that the human dynamics of technical work are not technical at all. The book grew out of years of consulting practice and the teaching Weinberg did with Satir and through [[weinberg-and-weinberg]], and it crystallizes observations that had been accumulating since the [[ibm-and-project-mercury-1956-1969]] era into a portable, teachable form.
+
+The book's central argument, elaborated through the [[helpful-model-of-consulting]], is that consulting is a helping relationship rather than an expertise transaction. The dominant model in professional services treats the consultant as the holder of answers: the client presents a problem, the consultant diagnoses and prescribes, the client implements. Weinberg rejects this model not because expertise is unimportant — he had formidable technical expertise — but because it systematically misreads what organizational problems actually are. In his experience, most problems that brought consultants in were human and organizational problems expressing themselves as technical symptoms. A consultant who addressed the symptom without engaging the underlying dynamic would see the problem return, in a different guise, within months.
+
+The book's format is deliberately oblique. Rather than a systematic argument, it proceeds through named laws, paradoxes, and compressed stories. The [[law-of-raspberry-jam]] — "the wider you spread it, the thinner it gets" — articulates the attention constraint on consulting influence. The Orange Juice Test asks whether a client can hear bad news: if you ask for honest feedback and react badly to it, you have answered the question. Prescott's Pickle Principle observes that cucumbers get more firmly pickled the longer they sit in brine — clients, that is, become more resistant to change the longer they remain in a dysfunctional environment. These heuristics are not formal frameworks; they are pattern names that help practitioners recognize situations they have seen before. The [[rudy-block-rule]] and several related observations address the paradox that people resist change whether their situation is comfortable or uncomfortable, which implies that the consultant's challenge is not to overcome resistance but to understand what the resistance is protecting.
+
+The influence of [[virginia-satir]] runs through every chapter. Weinberg had been working with Satir for years before the book appeared, and her approach — attending to the human systems beneath the presenting problem, watching for incongruent communication, respecting the client's own wisdom — shapes the entire consulting model. The foreword she wrote is not merely an endorsement; it frames the book as an extension of her own work into a new domain. This cross-disciplinary origin is part of what gave the book its unusual reach: readers from therapy, organizational development, and management recognized themselves in Weinberg's descriptions of consulting dynamics even when the specific examples came from software.
+
+The book also established Weinberg's voice as a public writer. [[psychology-of-computer-programming-1971]] had been influential but was a professional text; _Secrets of Consulting_ was accessible to anyone who worked with people in organizations. Its combination of genuine depth, self-deprecating humor, and earned wisdom — Weinberg was always the consultant who had made the mistakes he was warning against — gave it a staying power unusual for a business book. A sequel, [[more-secrets-of-consulting-2001]], extended the work sixteen years later, when Weinberg had accumulated another decade and a half of practice and reflection. Together the two books constitute the fullest expression of Weinberg's consulting philosophy, grounded in the same conviction that runs through everything he wrote: that the human dimension of technical work is not a complication to be managed but the essential phenomenon to be understood.

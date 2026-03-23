@@ -1,0 +1,316 @@
+# Cross-KB links from tps to other KBs
+# Generated during Phase 5 of KB lifecycle
+
+# === Deming ===
+- source: jidoka
+  target: statistical-process-control-and-variation-theory
+  target_kb: deming
+  relation: builds_on
+  note: "Jidoka's stop-and-fix discipline operationalizes Deming's SPC thinking — detecting abnormal variation and preventing it from propagating downstream."
+
+- source: kaizen
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: builds_on
+  note: "Kaizen's continuous improvement rhythm is built on Deming's PDSA cycle introduced at the 1950 JUSE lectures — the operational form of plan-do-study-act at the shop floor level."
+
+- source: standard-work
+  target: common-cause-vs-special-cause-variation
+  target_kb: deming
+  relation: builds_on
+  note: "Standard work requires a stable process before improvement is possible — directly reflecting Deming's teaching that a process must be in statistical control before it can be meaningfully improved."
+
+- source: toyota-wins-deming-prize-1965
+  target: toyota-wins-the-deming-prize
+  target_kb: deming
+  relation: same-subject
+  note: "Same event covered from both perspectives: TPS KB focuses on validation of the production system; Deming KB focuses on the prize as evidence of Deming's Japanese influence."
+
+- source: w-edwards-deming
+  target: management-responsibility-for-quality
+  target_kb: deming
+  relation: related_to
+  note: "Deming's insistence that quality is management's responsibility, not workers', is embedded in TPS culture — Ohno built on this foundation but extended it into flow and waste elimination."
+
+- source: tps-deming-connection
+  target: toyota-production-system
+  target_kb: deming
+  relation: same-subject
+  note: "Both entries analyze the Deming-TPS intellectual relationship from opposite directions: TPS KB traces what Ohno built on Deming's foundation; Deming KB traces how Toyota operationalized Deming's teaching."
+
+- source: andon
+  target: the-14-points-for-management
+  target_kb: deming
+  relation: builds_on
+  note: "The andon system requires a culture where workers feel safe reporting problems — a direct operationalization of Deming's Point 8, 'drive out fear.'"
+
+- source: juse
+  target: juse-union-of-japanese-scientists-and-engineers
+  target_kb: deming
+  relation: same-subject
+  note: "Same organization covered in both KBs: the institutional channel through which Deming's quality teaching reached Toyota and shaped TPS foundations."
+
+# === Womack-Jones ===
+- source: the-machine-that-changed-the-world
+  target: machine-that-changed-the-world
+  target_kb: womack-jones
+  relation: same-subject
+  note: "Same book covered in both KBs: TPS KB treats it as the moment TPS was named 'lean' for Western audiences; Womack-Jones KB treats it as the founding text of the lean movement."
+
+- source: lean-thinking
+  target: lean-thinking
+  target_kb: womack-jones
+  relation: same-subject
+  note: "Same book covered in both KBs: TPS KB treats it as the codification of TPS into five portable principles; Womack-Jones KB analyzes it as the intellectual framework of the lean movement."
+
+- source: just-in-time
+  target: flow-principle
+  target_kb: womack-jones
+  relation: extended-by
+  note: "Womack and Jones abstracted Ohno's JIT production into the third lean principle (Flow) — extending it from physical production to any value-creating process."
+
+- source: pull-production
+  target: pull-principle
+  target_kb: womack-jones
+  relation: extended-by
+  note: "Womack and Jones abstracted TPS pull production into the fourth lean principle (Pull) — generalizing kanban-driven demand signaling into a universal management principle."
+
+- source: value-stream
+  target: value-stream-mapping
+  target_kb: womack-jones
+  relation: extended-by
+  note: "Ohno's implicit value-stream thinking was formalized by Rother and Shook under Womack/Jones's sponsorship into value stream mapping — the lean movement's most widely adopted diagnostic tool."
+
+- source: seven-wastes-muda
+  target: five-lean-principles
+  target_kb: womack-jones
+  relation: extended-by
+  note: "Ohno's seven wastes taxonomy was reorganized by Womack and Jones into the five lean principles framework, shifting from waste categories to a sequential improvement methodology."
+
+- source: western-discovery-and-lean-1980-present
+  target: tps-to-lean-translation
+  target_kb: womack-jones
+  relation: related_to
+  note: "Both entries analyze the same phenomenon — TPS's global transmission — from complementary angles: TPS KB covers the historical arc; Womack-Jones KB analyzes what was gained and lost in translation."
+
+- source: kaizen
+  target: perfection-principle
+  target_kb: womack-jones
+  relation: extended-by
+  note: "Ohno's kaizen culture became Womack and Jones's fifth lean principle (Perfection) — continuous improvement abstracted from daily shop-floor practice to a strategic aspiration."
+
+- source: lean-enterprise-institute
+  target: lean-enterprise-institute
+  target_kb: womack-jones
+  relation: same-subject
+  note: "Same organization covered in both KBs: the institutional vehicle Womack created to disseminate lean thinking globally."
+
+- source: james-womack
+  target: james-p-womack
+  target_kb: womack-jones
+  relation: same-subject
+  note: "Same person covered in both KBs: TPS KB treats Womack as the researcher who named lean; Womack-Jones KB provides his full intellectual biography."
+
+- source: tps-to-lean-software-transmission
+  target: lean-transmission-chain
+  target_kb: womack-jones
+  relation: related_to
+  note: "Both entries trace TPS's downstream influence through lean into software and startups — the multi-stage translation chain from Ohno's shop floor to Silicon Valley."
+
+- source: mit-imvp-study-begins-1985
+  target: imvp-launch
+  target_kb: womack-jones
+  relation: same-subject
+  note: "Same event — the launch of MIT's International Motor Vehicle Program that produced The Machine That Changed the World."
+
+# === Poppendiecks ===
+- source: seven-wastes-muda
+  target: seven-wastes-of-software
+  target_kb: poppendiecks
+  relation: extended-by
+  note: "Ohno's seven manufacturing wastes are the direct template for the Poppendiecks' seven wastes of software development — the most literal TPS-to-software translation."
+
+- source: pull-production
+  target: pull-systems-in-software
+  target_kb: poppendiecks
+  relation: extended-by
+  note: "TPS pull production — producing only what downstream demand requires — is directly adapted by the Poppendiecks as pull systems for software development."
+
+- source: value-stream
+  target: eliminate-waste
+  target_kb: poppendiecks
+  relation: extended-by
+  note: "TPS value-stream thinking — mapping all steps and identifying which add value — is the direct origin of the Poppendiecks' waste elimination principle."
+
+- source: kaizen
+  target: amplify-learning
+  target_kb: poppendiecks
+  relation: extended-by
+  note: "Kaizen's emphasis on continuous learning-through-doing is the manufacturing antecedent to the Poppendiecks' 'amplify learning' lean software principle."
+
+- source: one-piece-flow
+  target: deliver-as-fast-as-possible
+  target_kb: poppendiecks
+  relation: extended-by
+  note: "TPS one-piece flow — minimizing batch size to reduce cycle time — is the manufacturing basis for the Poppendiecks' 'deliver as fast as possible' principle."
+
+- source: jidoka
+  target: build-integrity-in
+  target_kb: poppendiecks
+  relation: extended-by
+  note: "Jidoka's principle of building quality into the process rather than inspecting afterward is translated by the Poppendiecks into 'build integrity in' for software."
+
+- source: poka-yoke
+  target: build-integrity-in
+  target_kb: poppendiecks
+  relation: extended-by
+  note: "Shingo's poka-yoke (mistake-proofing) is the TPS ancestor of test-driven development and continuous integration — error prevention by design rather than detection after the fact."
+
+- source: value-stream
+  target: value-stream-mapping-for-software
+  target_kb: poppendiecks
+  relation: extended-by
+  note: "Toyota's value-stream analysis was adapted by the Poppendiecks into software value stream mapping — tracing feature flow from idea to deployment."
+
+# === Anderson ===
+- source: kanban
+  target: kanban-method
+  target_kb: anderson
+  relation: extended-by
+  note: "Anderson adapted Toyota's kanban production signaling system into a change management method for knowledge work — same pull-system logic, fundamentally different application domain."
+
+- source: kanban
+  target: wip-limits
+  target_kb: anderson
+  relation: extended-by
+  note: "TPS kanban cards physically constrained WIP on the factory floor; Anderson abstracted this into explicit WIP limits on workflow columns for knowledge work."
+
+- source: pull-production
+  target: wip-limits
+  target_kb: anderson
+  relation: extended-by
+  note: "WIP limits implement TPS pull production in knowledge work: work is pulled into a stage only when capacity is available, not pushed by upstream demand."
+
+- source: andon
+  target: visualize-workflow
+  target_kb: anderson
+  relation: extended-by
+  note: "TPS andon boards made production status visible in real time; Anderson's visualize-workflow practice extends this visual management principle to knowledge work through kanban boards."
+
+- source: just-in-time
+  target: manage-flow
+  target_kb: anderson
+  relation: extended-by
+  note: "Anderson's manage-flow practice applies JIT's core insight — that smooth flow matters more than local efficiency — to knowledge work service delivery."
+
+# === Reinertsen ===
+- source: kanban
+  target: wip-constraints
+  target_kb: reinertsen
+  relation: extended-by
+  note: "TPS kanban cards are the physical instantiation of WIP constraints — Reinertsen abstracts this into a general queueing principle and provides the mathematical justification."
+
+- source: one-piece-flow
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: extended-by
+  note: "TPS one-piece flow is the canonical demonstration that batch size reduction improves cycle time and quality — Reinertsen provides the economic theory (U-curve optimization) explaining why."
+
+- source: pull-production
+  target: flow-control
+  target_kb: reinertsen
+  relation: extended-by
+  note: "TPS pull production is the manufacturing origin of Reinertsen's flow-control framework — he extends it with queueing theory to explain why pull works in product development."
+
+- source: standard-work
+  target: queueing-theory-applied
+  target_kb: reinertsen
+  relation: related_to
+  note: "TPS standard work reduces process variability, which Reinertsen's queueing theory shows directly reduces queue buildup and cycle time variance."
+
+- source: heijunka
+  target: managing-variability
+  target_kb: reinertsen
+  relation: related_to
+  note: "Heijunka (production leveling) is TPS's primary tool for managing demand variability — the manufacturing practice that Reinertsen extends into a general variability management framework."
+
+- source: smed
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: related_to
+  note: "SMED reduces changeover costs, shifting the U-curve optimum toward smaller batches — the manufacturing technique that validates Reinertsen's economic theory of batch size."
+
+- source: takt-time
+  target: cadence-and-synchronization
+  target_kb: reinertsen
+  relation: related_to
+  note: "Takt time is TPS's production rhythm mechanism; Reinertsen generalizes cadence as a coordination tool for product development that provides synchronization without central scheduling."
+
+# === Goldratt ===
+- source: kanban
+  target: drum-buffer-rope
+  target_kb: goldratt
+  relation: parallel-development
+  note: "Kanban and DBR are parallel WIP-constraining flow mechanisms developed independently — kanban uses card-based pull signals; DBR paces the system to the constraint's throughput rate."
+
+- source: seven-wastes-muda
+  target: throughput-world-vs-cost-world
+  target_kb: goldratt
+  relation: related_to
+  note: "Ohno's waste taxonomy and Goldratt's throughput-world critique converge: both reject cost-accounting logic that treats local efficiency as the goal, arguing instead for system-level flow optimization."
+
+- source: just-in-time
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: parallel-development
+  note: "JIT and the five focusing steps are parallel approaches to system optimization — JIT eliminates inventory to expose problems; TOC identifies and exploits the constraint to maximize throughput."
+
+- source: pull-production
+  target: drum-buffer-rope
+  target_kb: goldratt
+  relation: parallel-development
+  note: "TPS pull production and DBR are independent solutions to the same problem: preventing overproduction by pacing work to actual system capacity rather than local efficiency targets."
+
+- source: one-piece-flow
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: parallel-development
+  note: "One-piece flow and TOC both reject batch-and-queue as the default — TPS eliminates batching through flow; TOC subordinates non-constraints to prevent WIP accumulation."
+
+# === DeMarco ===
+- source: muri-and-mura
+  target: slack-concept
+  target_kb: demarco
+  relation: related_to
+  note: "TPS's muri (overburden) diagnosis parallels DeMarco's slack argument: both recognize that eliminating all spare capacity creates brittle systems that cannot adapt or sustain performance."
+
+- source: just-in-time
+  target: slack-concept
+  target_kb: demarco
+  relation: related_to
+  note: "DeMarco argues that JIT's zero-slack approach works in manufacturing (where variation is controllable) but is dangerous in knowledge work (where variation is irreducible) — a substantive critique of naive TPS-to-software transfer."
+
+# === Flow ===
+- source: one-piece-flow
+  target: flow-as-mechanism-behind-lean-agile
+  target_kb: flow
+  relation: related_to
+  note: "TPS one-piece flow and Csikszentmihalyi's flow state share more than a name — one-piece flow eliminates the switching costs and attention fragmentation that destroy cognitive flow."
+
+- source: gemba
+  target: flow-state
+  target_kb: flow
+  relation: related_to
+  note: "Ohno's gemba practice — standing in the chalk circle observing for hours — requires and instantiates the same present-moment absorption that Csikszentmihalyi's flow state describes."
+
+- source: kaizen
+  target: challenge-skill-balance
+  target_kb: flow
+  relation: related_to
+  note: "Kaizen's expectation of continuous incremental improvement maps onto the dynamic recalibration that challenge-skill balance requires — standard work is never permanent, maintaining the growth edge."
+
+- source: standard-work
+  target: deliberate-practice
+  target_kb: flow
+  relation: related_to
+  note: "Standard work parallels deliberate practice: clear specification of current skill level, systematic feedback on deviation, and planned incremental improvement through kaizen."

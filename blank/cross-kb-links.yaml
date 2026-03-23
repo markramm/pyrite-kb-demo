@@ -1,0 +1,207 @@
+# Cross-KB links from blank to other KBs
+# Generated during Phase 5 of KB lifecycle
+
+# === boyd ===
+- source: customer-development
+  target: ooda-loop
+  target_kb: boyd
+  relation: parallel-development
+  note: "Customer Development's iterative hypothesis-testing cycle structurally parallels the OODA loop. Customer Discovery maps to Observe/Orient, Customer Validation to Orient/Decide, Customer Creation to Act. Blank later incorporated OODA diagrams into his Stanford/Columbia teaching materials."
+
+- source: get-out-of-the-building
+  target: orientation
+  target_kb: boyd
+  relation: related_to
+  note: "Get-out-of-the-building is the startup equivalent of Boyd's reorientation — forcing founders to destroy incorrect mental models and rebuild them against customer reality, preventing orientation lock."
+
+- source: pivot
+  target: destruction-and-creation-concept
+  target_kb: boyd
+  relation: related_to
+  note: "The pivot is Customer Development's destruction-and-creation cycle — destroying a failed business model hypothesis and creating a new one based on evidence from customer contact."
+
+- source: boyd-blank-comparison-convergent-discovery
+  target: blank-steve
+  target_kb: boyd
+  relation: related_to
+  note: "The blank KB's convergent discovery analysis and the boyd KB's Blank entry provide complementary perspectives on the OODA-Customer Development structural parallel."
+
+- source: lean-startup
+  target: tempo
+  target_kb: boyd
+  relation: related_to
+  note: "Lean Startup's emphasis on rapid iteration — faster Build-Measure-Learn cycles — parallels Boyd's tempo concept. Both argue that the rate of learning-and-adaptation cycles is a critical competitive variable."
+
+- source: military-service
+  target: early-life-and-korea
+  target_kb: boyd
+  relation: related_to
+  note: "Both Blank and Boyd were shaped by military service. Blank's USAF experience (1972-1976) with electronic warfare systems gave him discipline and technical exposure; the shared military background may explain structural similarities in their frameworks."
+
+
+# === deming ===
+- source: customer-development
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: builds_on
+  note: "Customer Development is PDSA applied to market discovery. Plan (hypothesize a business model), Do (get out of the building to test), Study (analyze customer feedback), Act (pivot or persevere). The lineage runs through lean manufacturing to Lean Startup."
+
+- source: lean-startup
+  target: theory-of-knowledge
+  target_kb: deming
+  relation: builds_on
+  note: "Deming's insistence that there is no knowledge without theory underpins the Lean Startup's hypothesis-driven approach. Business model assumptions are theories; customer contact is the experiment; validated learning is the knowledge produced."
+
+- source: lean-manufacturing-lineage
+  target: toyota-production-system
+  target_kb: deming
+  relation: builds_on
+  note: "The lean manufacturing lineage note traces the 'Lean' in Lean Startup back through Toyota Production System. Deming's influence on Toyota is the deep ancestor of the entire chain."
+
+- source: the-lean-startup-eric-ries
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: builds_on
+  note: "Ries's Lean Startup draws on Deming's SoPK through multiple channels — PDSA iteration, waste elimination, and systems thinking. Ries explicitly acknowledges the lean manufacturing tradition as foundational."
+
+- source: product-development-death-spiral
+  target: management-by-objectives-deming-s-critique
+  target_kb: deming
+  relation: related_to
+  note: "Blank's death spiral — executing a plan without validating it — parallels Deming's critique of management by objectives. Both identify the pathology of managing by targets disconnected from systemic understanding."
+
+
+# === poppendiecks ===
+- source: lean-startup
+  target: amplify-learning
+  target_kb: poppendiecks
+  relation: builds_on
+  note: "The Poppendiecks' insight that software development is fundamentally a learning activity — not a production activity — is the conceptual bridge that made Lean Startup possible. If building software is learning, then building a startup is also learning."
+
+- source: customer-development
+  target: learning-not-results
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Blank's validated learning and the Poppendiecks' 'results are not the point' thesis arrive at the same conclusion from different domains: the purpose of the activity is learning, not output."
+
+- source: lean-manufacturing-lineage
+  target: eliminate-waste
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Both Lean Startup and Lean Software Development trace waste elimination back to Toyota. Ries translated muda as 'building features nobody wants'; the Poppendiecks translated it as the seven wastes of software."
+
+- source: eric-ries
+  target: eric-ries
+  target_kb: poppendiecks
+  relation: same-subject
+  note: "Eric Ries appears in both KBs — in blank as Blank's student who created Lean Startup; in poppendiecks as a downstream practitioner who extended the learning-as-value thesis to startup methodology."
+
+- source: agile-development-and-customer-development
+  target: lean-software-development-agile-toolkit-2003
+  target_kb: poppendiecks
+  relation: related_to
+  note: "The Poppendiecks' 2003 book and Blank's agile-CD integration address the same question from different angles: how lean principles apply to iterative software and product development."
+
+- source: lean-startup
+  target: set-based-design
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Set-based design — maintaining multiple options until sufficient information exists to choose — is structurally similar to Customer Development's hypothesis testing, where multiple business model hypotheses are explored before commitment."
+
+
+# === reinertsen ===
+- source: lean-startup
+  target: fast-feedback
+  target_kb: reinertsen
+  relation: adapts
+  note: "Build-Measure-Learn is a startup-specific instantiation of Reinertsen's fast feedback principle. Reinertsen provides the economic argument — delayed error correction compounds — that justifies rapid iteration."
+
+- source: lean-startup
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: adapts
+  note: "MVP is batch-size reduction applied to market validation. Ship the smallest possible product increment to test a hypothesis, rather than building the full product before learning. Ries explicitly cited lean small-batch principles."
+
+- source: pivot
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: related_to
+  note: "The cost of not pivoting — continuing to invest in a broken business model — is a form of cost of delay. Each week spent executing an unvalidated model is a week of compounding rework on a flawed foundation."
+
+- source: customer-development
+  target: fuzzy-front-end
+  target_kb: reinertsen
+  relation: related_to
+  note: "Customer Discovery operates in what Reinertsen calls the fuzzy front end — the high-uncertainty phase before requirements are clear. Both frameworks argue this phase requires economic decision-making under uncertainty, not detailed planning."
+
+- source: the-lean-startup-eric-ries
+  target: eric-ries
+  target_kb: reinertsen
+  relation: related_to
+  note: "Ries called Reinertsen's Principles of Product Development Flow 'the most advanced product development book you can buy.' The intellectual lineage runs Ohno -> Reinertsen -> Ries, translating flow economics from manufacturing to product development to startup business model validation."
+
+
+# === senge ===
+- source: customer-development
+  target: learning-organization
+  target_kb: senge
+  relation: related_to
+  note: "A startup doing Customer Development is a learning organization — its primary output is validated learning about customers, markets, and business models. Blank's framework operationalizes organizational learning for the startup context."
+
+- source: get-out-of-the-building
+  target: mental-models
+  target_kb: senge
+  relation: related_to
+  note: "Blank's dictum to get out of the building is a practice for surfacing and testing mental models. Founders' assumptions about customers are mental models that must be examined against reality — the same discipline Senge prescribes for organizations."
+
+- source: a-startup-is-not-a-small-version-of-a-large-company
+  target: systems-thinking-fifth-discipline
+  target_kb: senge
+  relation: related_to
+  note: "Blank's foundational distinction requires systems thinking — understanding that a startup is a different kind of system (search) from a company (execution), not merely a smaller version of the same system."
+
+- source: lean-launchpad-course
+  target: team-learning
+  target_kb: senge
+  relation: adapts
+  note: "Lean LaunchPad's weekly cadence — teams test hypotheses, present findings, iterate collectively — is a structured team learning practice. The class format builds collective inquiry discipline around business model validation."
+
+
+# === wardley ===
+- source: market-types
+  target: evolution
+  target_kb: wardley
+  relation: related_to
+  note: "Blank's four market types describe the competitive landscape a startup enters; Wardley's evolution stages describe how components mature within that landscape. Both frameworks argue that strategy must be adapted to the current state of market/component maturity."
+
+- source: customer-development
+  target: situational-awareness
+  target_kb: wardley
+  relation: related_to
+  note: "Customer Development builds situational awareness about the market — understanding customer needs, competitive dynamics, and channel viability through direct observation. Wardley Maps provide the strategic landscape view that complements Blank's customer-level view."
+
+- source: a-startup-is-not-a-small-version-of-a-large-company
+  target: pioneer-settler-town-planner
+  target_kb: wardley
+  relation: related_to
+  note: "Blank's startup-vs-company distinction maps to Wardley's pioneer-settler-town-planner model. Startups are pioneer organizations (exploring genesis-stage opportunities); companies are settler/town-planner organizations (productizing and commoditizing). Different evolutionary stages require different management approaches."
+
+
+# === goldratt ===
+- source: product-development-death-spiral
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: related_to
+  note: "The death spiral occurs when startups fail to identify the real constraint — an unvalidated business model — and instead optimize non-constraints (sales execution, marketing spend, cost-cutting). Goldratt's subordination principle applies: all startup activity should subordinate to the constraint of business model validation."
+
+- source: customer-development
+  target: thinking-processes
+  target_kb: goldratt
+  relation: parallel-development
+  note: "Customer Development's systematic hypothesis testing parallels Goldratt's Thinking Processes. Both are structured problem-solving frameworks: identify what's wrong (CRT / Customer Discovery), determine what to change to (EC/FRT / Customer Validation), and implement the change (TT / Customer Creation)."
+
+- source: pivot
+  target: current-reality-tree
+  target_kb: goldratt
+  relation: related_to
+  note: "The pivot decision — recognizing that the current business model is broken — parallels the CRT's function of tracing undesirable effects back to root causes. Both require honest diagnosis before proposing solutions."

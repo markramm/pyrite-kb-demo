@@ -1,0 +1,343 @@
+name: stallman
+description: >
+  Intellectual biography of Richard Stallman (b. 1953) — programmer, activist, founder
+  of the GNU Project and the Free Software Foundation, author of the GPL, and originator
+  of the copyleft concept. Covers his writings, the four freedoms framework, the GPL
+  family of licenses, the free software vs. open source schism, his broader political
+  philosophy on digital rights and surveillance, and the movement's influence on
+  Creative Commons, open access, and software freedom organizations.
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Primary sources are Stallman's own essays, speeches, and the GNU website (gnu.org).
+    Stallman is extremely precise about terminology — "free software" vs. "open source,"
+    "GNU/Linux" vs. "Linux," "freedom" vs. "convenience" — and any entry that collapses
+    these distinctions introduces error. When citing Stallman's positions, use his own
+    words or cite the specific essay. Secondary sources (Sam Williams biography, Steven
+    Levy's Hackers) provide historical context but should not be used to characterize
+    Stallman's positions when his own writings are available.
+  quality: |
+    Entries should distinguish between Stallman's specific philosophical claims and the
+    broader free software/open source ecosystem that grew around them. The KB covers
+    Stallman's intellectual biography, not the entire history of open source. Entries
+    should trace ideas to their first appearance, document how Stallman's positions
+    evolved (or didn't), and identify where his arguments have been adopted, modified,
+    or rejected. The GPL is a legal instrument with specific mechanics — entries about
+    licenses should be technically precise, not just philosophical.
+  voice: |
+    Analytical and precise. Stallman is a polarizing figure — the KB should present his
+    arguments faithfully without either hagiography or dismissal. Document controversies
+    factually, including personal controversies that affected the movement. Distinguish
+    between Stallman's philosophical positions (which are internally consistent and
+    carefully argued) and the strategic and personal disputes that surrounded them.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of Richard Stallman covering his writings,
+    the concepts and legal frameworks he created, the free software movement he founded,
+    his professional and intellectual network, and the broader influence of his ideas on
+    digital rights, licensing, and the relationship between software and freedom.
+  success_criteria: |
+    A reader can trace the development of the free software philosophy from Stallman's
+    MIT AI Lab experience through the GNU Manifesto, the GPL, the four freedoms, and
+    the free software vs. open source schism. Cross-references to other KBs make
+    connections to digital rights, enshittification, and surveillance explicit.
+
+evaluation_rubric:
+  - "Entry distinguishes Stallman's own position from later interpretations or the broader open source movement"
+  - "Writing entries include date and writing_type"
+  - "Concept entries trace the idea to its first appearance in Stallman's work"
+  - "License entries are technically precise about legal mechanisms, not just philosophical"
+  - "Person entries describe the specific intellectual or professional relationship to Stallman"
+  - "Controversies are documented factually with context"
+
+types:
+  writing:
+    description: "A work by Richard Stallman — essay, manifesto, speech, manual, or software release announcement"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publication, url, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [essay, manifesto, speech, manual, article, interview, book, letter, announcement, license-text]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors or co-developers"
+      publication:
+        type: string
+        description: "Publication venue or context"
+      url:
+        type: string
+        description: "URL to full text if available"
+      key_concepts:
+        type: list
+        description: "Concepts developed or discussed (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored by Richard Stallman. Stallman's output is unusual: no traditional
+      academic papers, but a large body of essays on gnu.org, the GNU Manifesto, GPL
+      license texts (which are themselves arguments), speeches, interviews, and technical
+      manuals. Many essays were revised repeatedly over decades — note the date of the
+      version being described. Stallman is extremely deliberate about language; entries
+      should reflect his precise terminology. The importance field indicates how central
+      the work is to understanding Stallman's intellectual trajectory.
+    evaluation_rubric:
+      - "Writing has a date and writing_type"
+      - "Body explains significance, not just content"
+      - "Terminology matches Stallman's own usage"
+
+  concept:
+    description: "A key idea, framework, legal innovation, or philosophical argument"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, concept_type, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing or approximate date where this concept first appears"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      concept_type:
+        type: select
+        values: [philosophical, legal, technical, strategic, rhetorical]
+        description: "Category of concept"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea from Stallman's work — the four freedoms, copyleft, the free software
+      definition, the distinction between free and open source, tivoization, etc. Many of
+      Stallman's concepts are legal innovations (copyleft, GPL) that use copyright law to
+      guarantee freedom — entries should explain both the philosophical argument and the
+      legal mechanism. Trace the concept to its first appearance and document how it has
+      been adopted, modified, or contested. Stallman's positions are often more nuanced
+      than popular accounts suggest.
+    evaluation_rubric:
+      - "Concept traces to its first appearance"
+      - "Legal concepts explain the mechanism, not just the philosophy"
+      - "Distinguishes Stallman's position from popular simplifications"
+
+  era:
+    description: "A period in Stallman's intellectual or biographical development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, key_figures, research_status]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '1971-1984'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      key_figures:
+        type: list
+        description: "Key people during this period"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A period in Stallman's intellectual or biographical development. The major eras
+      are: the MIT AI Lab hacker culture, the founding of GNU and FSF, the development
+      of GPL versions, the free software vs. open source schism, the expansion into
+      broader digital rights, and the late-career controversies. Each era should describe
+      the intellectual and strategic context, not just chronological events.
+
+  person:
+    description: "An individual in Stallman's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [dates, affiliations, key_works, relationship_to_stallman, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      dates:
+        type: string
+        description: "Life dates or active dates"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      key_works:
+        type: list
+        description: "Key works or contributions"
+      relationship_to_stallman:
+        type: string
+        description: "Nature of relationship to Stallman and the free software movement"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Stallman's intellectual and professional network — collaborator, ally,
+      critic, adversary, or influence. The free software movement has a complex social
+      history with strong personalities and bitter schisms. Person entries should describe
+      the specific intellectual or strategic relationship to Stallman and the free software
+      movement, not just biographical facts. Key figures include Eben Moglen (legal
+      architect), Eric Raymond (philosophical adversary), Linus Torvalds (complicated
+      ally), Larry Lessig (intellectual inheritor in adjacent domain).
+
+  organization:
+    description: "An institution relevant to Stallman's career or the free software movement"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location, url, research_status]
+    fields:
+      org_type:
+        type: select
+        values: [foundation, project, company, university, legal-organization, standards-body, advocacy-group, conference]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+      url:
+        type: string
+        description: "Website"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      An institution relevant to Stallman's career, the GNU Project, or the free software
+      movement. Includes the FSF, GNU Project, MIT AI Lab, SFLC, SFC, as well as
+      organizations Stallman defined himself against (OSI, companies enforcing proprietary
+      models). Explain the organization's role in the free software ecosystem and its
+      relationship to Stallman's philosophy.
+
+  event:
+    description: "A biographical, legal, or movement event"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, significance, research_status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      significance:
+        type: text
+        description: "Why this event matters"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A specific event in Stallman's life, the free software movement, or the legal
+      history of the GPL. Includes the founding of GNU, release of GPL versions, key
+      lawsuits, the open source schism, FSF board controversies, and legal milestones.
+      Always include the date and explain significance to the broader narrative.
+
+  source:
+    description: "A secondary source about Stallman or the free software movement"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication, research_status]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, documentary, profile, review, dissertation, blog-post, legal-filing]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A secondary source about Richard Stallman or the free software movement — biographies,
+      profiles, legal analyses, documentaries, etc. These are references ABOUT Stallman
+      and the movement, not BY Stallman (use 'writing' for his own works). Sam Williams's
+      "Free as in Freedom" is the primary biographical source (notably published under a
+      free license, which Stallman later revised). Steven Levy's "Hackers" provides the
+      MIT AI Lab context.
+
+  note:
+    description: "Research notes and analytical observations"
+    subdirectory: notes
+    required: [title]
+    optional: [tags, research_status]
+    fields:
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this note has been developed"
+    ai_instructions: >
+      Research notes, analysis, observations, or commentary. Use for synthesizing
+      connections across entries, documenting open research questions, and editorial
+      observations about the free software movement's intellectual trajectory. Good
+      notes connect multiple entries and identify patterns not visible in individual entries.
+
+relationship_types:
+  # Intellectual
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  develops: "Develops or elaborates (concept in writing)"
+  builds_on: "Builds on earlier work"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  collaborates_with: "Collaborates with"
+
+  # Legal/strategic
+  supersedes: "Legally or strategically supersedes"
+  superseded_by: "Superseded by"
+  implements: "Implements or embodies (concept in license/tool)"
+  derived_from: "Derived from (license fork, project fork)"
+  opposes: "Philosophically or strategically opposes"
+  opposed_by: "Opposed by"
+
+  # Institutional
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  member_of: "Member of"
+  employed_by: "Employed by"
+  founded: "Founded"
+  founded_by: "Founded by"
+
+  # Structural
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

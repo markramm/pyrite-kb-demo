@@ -1,0 +1,427 @@
+name: agile
+description: >
+  The Agile software movement — from its pre-history in lightweight methods (Scrum, XP,
+  Crystal, DSDM) through the Snowbird Manifesto (2001) to modern frameworks and the
+  post-Agile discourse. A movement KB tracking how multiple independent intellectual
+  streams converged into a unified set of principles that reshaped software development,
+  and the subsequent divergence into competing frameworks and critiques.
+
+kb_type: movement
+
+guidelines:
+  contributing: |
+    This KB covers a movement, not a single thinker. The Agile Manifesto was signed by
+    17 people, and its intellectual roots extend through lean manufacturing (Deming, Ohno),
+    empirical process control (Scrum), software craft (XP, Cunningham), and organizational
+    theory (Nonaka, Takeuchi). Primary sources are the signatories' own books and talks;
+    secondary sources include the extensive literature of Agile adoption, critique, and
+    evolution. Be precise about who originated what — Agile is a convergence, and
+    misattribution is common. The movement is heavily commercialized (certifications,
+    consultancies, enterprise frameworks), so distinguish between the original intellectual
+    contributions and the commercial ecosystem built on top of them.
+  quality: |
+    Entries should distinguish between: (1) the original lightweight methods that preceded
+    the manifesto and their specific intellectual contributions, (2) the manifesto itself
+    and its four values / twelve principles, (3) the major frameworks (Scrum, XP, Kanban,
+    SAFe) with their distinct emphases and trade-offs, (4) the technical practices (TDD,
+    CI, pair programming) and their evidence base, and (5) the critiques and post-Agile
+    discourse. The KB should capture both the genuine intellectual achievement of the
+    convergence and the valid criticisms of how Agile was institutionalized. Avoid both
+    uncritical advocacy and dismissive cynicism.
+  voice: |
+    Analytical and historically grounded. Respectful of the intellectual achievement but
+    clear-eyed about the commercialization and dilution. Write for practitioners and
+    students of software development methodology who want to understand why Agile emerged,
+    what its intellectual roots are, and how its various strands relate to each other and
+    to the broader lean/systems thinking tradition.
+
+goals:
+  primary: |
+    Build a connected intellectual history of the Agile movement that traces its roots
+    in lean manufacturing, empirical process control, and software craft; documents the
+    convergence at Snowbird and the subsequent divergence into frameworks; connects to
+    every relevant KB in the network (Deming, Boyd, Poppendiecks, Blank, Goldratt,
+    Reinertsen, Anderson, DeMarco, Weinberg, Flow); and provides analytical depth on
+    both the technical practices and the organizational dynamics.
+  success_criteria: |
+    A reader can: (1) trace any major Agile practice to its intellectual roots,
+    (2) understand the differences between Scrum, XP, Kanban, and their respective
+    emphases, (3) follow the lean → Agile → Lean Startup → DevOps lineage,
+    (4) evaluate the critiques of Agile (commodification, SAFe, dark Agile) with
+    historical context, (5) navigate cross-KB links to every connected intellectual
+    tradition with understanding of the actual relationships.
+
+evaluation_rubric:
+  - "Entry traces intellectual roots to specific predecessors and their contributions"
+  - "Framework entries explain distinctive contributions, not just features"
+  - "Person entries explain the specific intellectual contribution to the movement"
+  - "Writing entries explain significance and reception, not just contents"
+  - "Connections to lean, systems thinking, and software craft traditions are explicit"
+  - "Entries distinguish between original ideas and commercial adaptations"
+
+types:
+  concept:
+    description: "A key idea, principle, or framework in the Agile movement"
+    subdirectory: concepts
+    required: [title, originator]
+    optional: [first_appeared, key_writings, related_concepts, concept_type, research_status]
+    fields:
+      originator:
+        type: string
+        description: "Who originated or named this concept"
+      first_appeared:
+        type: string
+        description: "Writing or event where this concept first appeared"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      concept_type:
+        type: select
+        values: [principle, practice, framework, methodology, pattern, anti-pattern, critique]
+        description: "Category of concept"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea in the Agile movement — values, principles, practices, frameworks,
+      patterns, or critiques. Examples: empirical process control, inspect and adapt,
+      sustainable pace, working software as primary measure of progress, emergent design,
+      the iron triangle inversion, technical debt, definition of done. Always identify
+      the originator and trace how the concept relates to Agile's intellectual roots
+      (lean, TPS, empirical process control, software craft). Distinguish between concepts
+      original to Agile and concepts adapted from other traditions.
+    evaluation_rubric:
+      - "Concept identifies originator and first appearance"
+      - "Body traces intellectual roots"
+      - "Relationship to the four values or twelve principles is explicit where relevant"
+    display:
+      icon: lightbulb
+      layout: document
+
+  practice:
+    description: "A technical or organizational practice advocated by the Agile movement"
+    subdirectory: practices
+    required: [title, practice_type, originated_in]
+    optional: [key_proponents, evidence_base, related_practices, status, research_status]
+    fields:
+      practice_type:
+        type: select
+        values: [technical, organizational, planning, quality, collaboration, deployment]
+        description: "Category of practice"
+      originated_in:
+        type: string
+        description: "Framework or tradition where this practice originated (e.g., XP, Scrum, Kanban, TPS)"
+      key_proponents:
+        type: list
+        description: "People who championed this practice (entry IDs)"
+      evidence_base:
+        type: string
+        description: "Summary of empirical evidence for the practice"
+      related_practices:
+        type: list
+        description: "Related practices (entry IDs)"
+      status:
+        type: select
+        values: [active, evolved, deprecated, contested]
+        description: "Current status in the movement"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A specific practice advocated by one or more Agile traditions. Examples: test-driven
+      development, continuous integration, pair programming, daily standup, sprint planning,
+      retrospectives, refactoring, collective code ownership, user stories, story points,
+      WIP limits. Always specify which framework(s) originated the practice and whether
+      it has an evidence base. Distinguish between practices that are core to Agile principles
+      and practices that are specific to particular frameworks (e.g., sprint planning is
+      Scrum-specific; TDD is XP-specific; WIP limits are Kanban-specific).
+    evaluation_rubric:
+      - "Practice identifies originating framework"
+      - "Evidence base or lack thereof is noted"
+      - "Current status (active, evolved, contested) is specified"
+    display:
+      icon: tool
+      layout: document
+
+  writing:
+    description: "A published work by a figure in the Agile movement"
+    subdirectory: writings
+    required: [title, writing_type, date, author]
+    optional: [coauthors, publisher, url, key_concepts, edition_notes, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, paper, talk, blog-post, manifesto, article, chapter, report]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      author:
+        type: string
+        description: "Primary author"
+      coauthors:
+        type: list
+        description: "Co-authors"
+      publisher:
+        type: string
+        description: "Publisher or venue"
+      url:
+        type: string
+        description: "URL if available"
+      key_concepts:
+        type: list
+        description: "Concepts developed (entry IDs)"
+      edition_notes:
+        type: string
+        description: "Notes on editions (many Agile books have revised editions)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work by a figure in the Agile movement — the manifesto itself, the foundational
+      books (Beck's XP Explained, Schwaber's Scrum books, Cockburn's Crystal, Cohn's
+      User Stories), talks, blog posts, and the critique literature. Many Agile books
+      have multiple editions with significant changes (e.g., XP Explained 2nd ed dropped
+      several practices) — note edition differences where relevant. Always explain what
+      the work contributed to the movement, not just what it says.
+    evaluation_rubric:
+      - "Writing has author, date, and writing_type"
+      - "Body explains significance to the movement"
+      - "Key concepts are linked"
+    display:
+      icon: file-text
+      layout: document
+
+  person:
+    description: "A key figure in the Agile movement"
+    subdirectory: people
+    required: [title, role]
+    optional: [dates, affiliations, key_works, movement_role, domain, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role (e.g., 'software developer', 'consultant', 'author')"
+      dates:
+        type: string
+        description: "Birth-death or active years"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      key_works:
+        type: list
+        description: "Major works (entry IDs)"
+      movement_role:
+        type: select
+        values: [manifesto-signatory, framework-creator, practice-originator, theorist, critic, popularizer, enterprise-adapter]
+        description: "Role in the Agile movement"
+      domain:
+        type: select
+        values: [software-development, consulting, management, research, education, enterprise]
+        description: "Primary domain"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in the Agile movement. The 17 manifesto signatories are central, but the KB
+      also covers pre-Agile predecessors (Takeuchi, Nonaka, Humphrey), framework creators
+      (Schwaber, Beck, Anderson), practice champions (Fowler, Martin, Cohn), enterprise
+      adapters (Leffingwell), and critics. Always specify their movement_role and explain
+      their specific intellectual contribution. For manifesto signatories, note what
+      tradition they brought to Snowbird (XP, Scrum, Crystal, DSDM, FDD, ASD, Pragmatic).
+    evaluation_rubric:
+      - "Person has role and movement_role"
+      - "Body explains specific intellectual contribution"
+      - "Tradition brought to the movement is identified"
+    display:
+      icon: user
+      layout: record
+
+  era:
+    description: "A period in the Agile movement's development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_figures, key_writings, key_concepts, key_events]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '1995-2001'"
+      key_figures:
+        type: list
+        description: "Central figures during this period (entry IDs)"
+      key_writings:
+        type: list
+        description: "Important writings from this period (entry IDs)"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period (entry IDs)"
+      key_events:
+        type: list
+        description: "Key events during this period (entry IDs)"
+    ai_instructions: >
+      A period in the Agile movement's development. Suggested eras: Pre-Agile lightweight
+      methods (1986-2000), the Snowbird convergence and early adoption (2001-2005),
+      mainstream adoption and Scrum dominance (2005-2010), enterprise Agile and
+      scaling frameworks (2010-2018), post-Agile and continuous delivery era
+      (2018-present). Describe what characterized the period, what shifted between eras,
+      and what the key intellectual and institutional developments were.
+    display:
+      icon: clock
+      layout: document
+
+  event:
+    description: "A significant moment in the Agile movement"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, significance]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved (entry IDs)"
+      significance:
+        type: text
+        description: "Why this event matters to the movement"
+    ai_instructions: >
+      A specific event in the Agile movement — the Snowbird meeting, publication
+      of landmark works, founding of organizations, key conference talks, framework
+      launches, and significant controversies. Always explain significance to the
+      movement's intellectual trajectory.
+    display:
+      icon: calendar
+      layout: record
+
+  organization:
+    description: "An institution involved in the Agile movement"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location, key_figures, url]
+    fields:
+      org_type:
+        type: select
+        values: [professional-body, certification-body, conference, consultancy, publisher, company, community, standards-body]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+      key_figures:
+        type: list
+        description: "Key people (entry IDs)"
+      url:
+        type: string
+        description: "URL if available"
+    ai_instructions: >
+      An institution in the Agile ecosystem — the Agile Alliance, Scrum Alliance,
+      Scrum.org, conference series (XP, Agile20XX), key consultancies, certification
+      bodies. Note the organization's role in the movement, whether it advances
+      intellectual development or primarily serves the commercial ecosystem.
+    display:
+      icon: building
+      layout: record
+
+  source:
+    description: "A secondary source about the Agile movement"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication, about_subjects]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, paper, interview, review, blog-post, documentary, meta-analysis, report, survey]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+      about_subjects:
+        type: list
+        description: "Subjects this source covers (entry IDs)"
+    ai_instructions: >
+      A secondary source ABOUT the Agile movement — histories, critiques, empirical
+      studies of Agile adoption, state-of-Agile reports, meta-analyses. For works BY
+      Agile practitioners that are themselves part of the movement, use 'writing'. Sources
+      are valuable when they provide historical perspective, empirical evidence, or
+      critical assessment that the movement literature itself lacks.
+    evaluation_rubric:
+      - "Source has author, date, and source_type"
+      - "Body explains what this source uniquely contributes"
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes, analysis, and editorial commentary"
+    subdirectory: notes
+    required: [title]
+    optional: [tags, research_status]
+    fields:
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the note is"
+    ai_instructions: >
+      Research notes, analytical essays, and cross-KB connection observations. Use for
+      material that doesn't fit other types — e.g., "the lean → Agile translation and
+      what was lost," "why Scrum won the framework war," "the SAFe controversy as
+      movement politics," "Agile and the craft movement in software."
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  develops: "Develops or elaborates"
+  builds_on: "Builds on earlier work"
+  critiques: "Critiques or argues against"
+  adapts: "Adapts from another tradition"
+  adapted_by: "Adapted by"
+  converges_with: "Converges with (independent development leading to shared principles)"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  collaborates_with: "Collaborates with"
+
+  # Movement-specific
+  signed: "Signed (manifesto)"
+  originated: "Originated (practice or framework)"
+  championed: "Championed or popularized"
+  commercialized: "Commercialized or institutionalized"
+  scaled: "Scaled to enterprise context"
+
+  # Standard
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  member_of: "Member of"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

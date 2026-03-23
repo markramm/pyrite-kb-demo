@@ -1,0 +1,183 @@
+# Cross-KB links from womack-jones to other KBs
+# Generated during Phase 5 of KB lifecycle
+
+# === tps ===
+- source: lean-production
+  target: just-in-time
+  target_kb: tps
+  relation: adapts
+  note: "Womack/Jones's lean production framework codifies JIT as one of the core TPS practices that makes lean 'lean'"
+
+- source: lean-production
+  target: jidoka
+  target_kb: tps
+  relation: adapts
+  note: "Jidoka (autonomation) is the quality pillar of TPS that Womack/Jones translated as 'built-in quality' for Western audiences"
+
+- source: five-lean-principles
+  target: kaizen
+  target_kb: tps
+  relation: adapts
+  note: "The fifth principle (Perfection) abstracts Toyota's kaizen culture into a management aspiration"
+
+- source: five-lean-principles
+  target: seven-wastes-muda
+  target_kb: tps
+  relation: adapts
+  note: "Ohno's seven wastes taxonomy underpins Womack/Jones's Value and Value Stream principles"
+
+- source: pull-principle
+  target: kanban
+  target_kb: tps
+  relation: adapts
+  note: "The Pull principle abstracts Toyota's kanban card system into a domain-independent demand-driven principle"
+
+- source: pull-principle
+  target: pull-production
+  target_kb: tps
+  relation: adapts
+  note: "Pull principle is the direct Womack/Jones codification of TPS pull production"
+
+- source: flow-principle
+  target: one-piece-flow
+  target_kb: tps
+  relation: adapts
+  note: "The Flow principle abstracts TPS one-piece-flow into a general principle of continuous work movement"
+
+- source: value-stream-mapping
+  target: value-stream
+  target_kb: tps
+  relation: adapts
+  note: "VSM formalizes Toyota's material/information flow analysis into a standardized diagnostic methodology"
+
+- source: taiichi-ohno
+  target: taiichi-ohno
+  target_kb: tps
+  relation: same-subject
+  note: "Same person — TPS KB covers Ohno as practitioner; womack-jones KB covers him as the upstream source Womack/Jones studied"
+
+- source: shigeo-shingo
+  target: shigeo-shingo
+  target_kb: tps
+  relation: same-subject
+  note: "Same person — TPS KB covers Shingo's innovations; womack-jones KB covers his role as upstream TPS source"
+
+- source: machine-that-changed-the-world
+  target: mit-imvp-study-begins-1985
+  target_kb: tps
+  relation: developed_in
+  note: "The Machine was the primary output of the IMVP study documented in the TPS KB"
+
+- source: learning-to-see
+  target: learning-to-see
+  target_kb: tps
+  relation: same-subject
+  note: "Same work — TPS KB treats it as a source about TPS practices; womack-jones KB covers it as an LEI-published operationalization of the value stream principle"
+
+
+# === poppendiecks ===
+- source: five-lean-principles
+  target: seven-lean-principles
+  target_kb: poppendiecks
+  relation: adapted_by
+  note: "Poppendiecks adapted Womack/Jones's five lean principles into seven principles for software development"
+
+- source: lean-thinking
+  target: lean-software-development-book-publication-2003
+  target_kb: poppendiecks
+  relation: influenced
+  note: "Lean Thinking is the primary source the Poppendiecks cite as foundation for their lean software framework"
+
+- source: five-lean-principles
+  target: eliminate-waste
+  target_kb: poppendiecks
+  relation: adapted_by
+  note: "Poppendiecks' Eliminate Waste principle descends directly from Womack/Jones's waste-elimination focus"
+
+- source: five-lean-principles
+  target: optimize-the-whole
+  target_kb: poppendiecks
+  relation: adapted_by
+  note: "Poppendiecks' Optimize the Whole extends Womack/Jones's value-stream thinking to software systems"
+
+- source: value-stream-mapping
+  target: seven-wastes-of-software
+  target_kb: poppendiecks
+  relation: influenced
+  note: "Poppendiecks' software waste categories are a domain translation of the waste identification that VSM makes visible"
+
+- source: pull-principle
+  target: pull-systems-in-software
+  target_kb: poppendiecks
+  relation: adapted_by
+  note: "Software pull systems (kanban boards, backlog prioritization) descend from Womack/Jones's Pull principle"
+
+- source: james-p-womack
+  target: james-womack
+  target_kb: poppendiecks
+  relation: same-subject
+  note: "Same person — poppendiecks KB documents Womack as intellectual ancestor of lean software"
+
+
+# === deming ===
+- source: five-lean-principles
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: builds_on
+  note: "Deming's systems thinking and customer focus philosophically underpin the five lean principles, especially Value and Perfection"
+
+- source: perfection-principle
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: builds_on
+  note: "The Perfection principle's continuous improvement aspiration traces through kaizen back to Deming's PDSA cycle"
+
+- source: value-principle
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: builds_on
+  note: "Defining value from the customer's perspective reflects Deming's systems thinking — the customer is part of the system"
+
+- source: lean-production
+  target: lean-manufacturing
+  target_kb: deming
+  relation: same-subject
+  note: "Same concept — Deming KB documents lean manufacturing in context of the quality revolution; womack-jones KB covers its codification"
+
+- source: lean-production
+  target: toyota-production-system
+  target_kb: deming
+  relation: adapts
+  note: "Lean production is Womack/Jones's name for TPS; Deming KB documents TPS in context of Deming's quality influence on Toyota"
+
+- source: taiichi-ohno
+  target: taiichi-ohno
+  target_kb: deming
+  relation: same-subject
+  note: "Same person — Deming KB covers Ohno as Deming student; womack-jones KB covers him as the TPS practitioner Womack/Jones documented"
+
+
+# === goldratt ===
+- source: flow-principle
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: related_to
+  note: "Both address system flow optimization — Lean through waste elimination, TOC through constraint management. Complementary approaches."
+
+- source: five-lean-principles
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "Lean and TOC are parallel systems-thinking traditions that emerged in the same era from manufacturing contexts"
+
+- source: value-stream-mapping
+  target: current-reality-tree
+  target_kb: goldratt
+  relation: related_to
+  note: "Both are diagnostic tools for system analysis — VSM maps material/information flow; CRT maps cause-effect logic"
+
+- source: machine-that-changed-the-world
+  target: publication-of-the-goal
+  target_kb: goldratt
+  relation: related_to
+  note: "Both published in the same decade (Goal 1984, Machine 1990), both revolutionized manufacturing thinking through different lenses"

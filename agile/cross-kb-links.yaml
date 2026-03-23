@@ -1,0 +1,424 @@
+# Cross-KB links from agile to other KBs
+
+# === deming ===
+- source: inspect-and-adapt
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: same-subject
+  note: "Agile's inspect-and-adapt loop is PDCA/PDSA applied to software: sprint review and retrospective map directly onto Study and Act phases"
+
+- source: retrospective
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: adapts
+  note: "The retrospective is the organizational PDSA cycle applied to team process — plan the sprint, do the work, study what happened, act by changing practice"
+
+- source: empirical-process-control
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: builds_on
+  note: "Empirical process control draws on Deming's system of profound knowledge: transparency maps to theory of knowledge; inspection to statistical thinking; adaptation to appreciation for a system"
+
+- source: self-organizing-teams
+  target: the-14-points-for-management
+  target_kb: deming
+  relation: builds_on
+  note: "Deming's points 8 (drive out fear) and 12 (remove barriers to pride of workmanship) are prerequisites for self-organization; agile teams operationalize what Deming prescribed for management"
+
+- source: agile-manifesto-four-values
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: related_to
+  note: "Valuing individuals and interactions over processes reflects Deming's argument that management must understand workers as part of a system, not interchangeable parts to be controlled"
+
+- source: velocity
+  target: common-cause-vs-special-cause-variation
+  target_kb: deming
+  relation: related_to
+  note: "Velocity charts exhibit common-cause variation that teams misread as meaningful signal; Deming's variation theory explains why teams should use velocity ranges rather than point estimates"
+
+# === boyd ===
+- source: scrum
+  target: ooda-loop
+  target_kb: boyd
+  relation: builds_on
+  note: "Jeff Sutherland explicitly cites Boyd as an influence on Scrum; sprints are designed as compressed OODA cycles that allow teams to out-iterate competitors"
+
+- source: responding-to-change
+  target: ooda-loop
+  target_kb: boyd
+  relation: same-subject
+  note: "The Agile Manifesto's fourth value — responding to change over following a plan — is the organizational imperative to cycle OODA faster than the environment changes"
+
+- source: self-organizing-teams
+  target: auftragstaktik
+  target_kb: boyd
+  relation: parallel-development
+  note: "Mission-type orders (Auftragstaktik) and self-organizing teams solve the same problem: how to enable decentralized execution without centralized micro-management"
+
+- source: empirical-process-control
+  target: orientation
+  target_kb: boyd
+  relation: related_to
+  note: "The orientation phase of OODA — filtering experience through mental models — is what empirical process control does at the team level: sense environment, update model, act"
+
+- source: inspect-and-adapt
+  target: ooda-loop
+  target_kb: boyd
+  relation: same-subject
+  note: "Inspect maps to observe+orient; adapt maps to decide+act; the sprint cycle is a bounded OODA loop with built-in cadence"
+
+- source: timeboxing
+  target: tempo
+  target_kb: boyd
+  relation: related_to
+  note: "Fixed-length iterations set organizational tempo, which Boyd argues is a competitive weapon; teams with faster cadence can reorient before slower competitors can act"
+
+# === poppendiecks ===
+- source: agile-manifesto-four-values
+  target: seven-lean-principles
+  target_kb: poppendiecks
+  relation: parallel-development
+  note: "The Poppendiecks' seven lean principles and the Agile Manifesto represent parallel codifications of overlapping ideas; lean software development made the Toyota connection explicit"
+
+- source: extreme-programming
+  target: build-integrity-in
+  target_kb: poppendiecks
+  relation: related_to
+  note: "XP's technical practices — TDD, continuous integration, refactoring, pair programming — are the concrete mechanisms for building integrity in rather than inspecting it in afterward"
+
+- source: self-organizing-teams
+  target: empower-the-team
+  target_kb: poppendiecks
+  relation: same-subject
+  note: "Empower the team and self-organizing teams are the same prescription: decisions should be made by those closest to the work, not delegated upward to managers"
+
+- source: retrospective
+  target: amplify-learning
+  target_kb: poppendiecks
+  relation: adapts
+  note: "The retrospective is the primary agile mechanism for amplifying learning — creating structured time to reflect on process and encode lessons into future behavior"
+
+- source: sustainable-pace
+  target: optimize-the-whole
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Sustainable pace is optimize-the-whole applied to people: overworking individuals may maximize local output but degrades system-wide throughput over time"
+
+- source: continuous-integration
+  target: deliver-as-fast-as-possible
+  target_kb: poppendiecks
+  relation: adapts
+  note: "Continuous integration is the technical implementation of deliver fast — integrating and validating code continuously reduces the batch size of delivery to near-zero"
+
+- source: technical-debt
+  target: eliminate-waste
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Technical debt is the accumulation of waste in code — deferred refactoring, workarounds, and shortcuts that compound interest in the form of slower future delivery"
+
+# === goldratt ===
+- source: timeboxing
+  target: drum-buffer-rope
+  target_kb: goldratt
+  relation: related_to
+  note: "Sprints function as flow control mechanisms analogous to drum-buffer-rope: the sprint cadence (drum) sets pace, the sprint backlog (buffer) absorbs variability, WIP limits (rope) prevent overloading"
+
+- source: velocity
+  target: throughput-accounting
+  target_kb: goldratt
+  relation: adapts
+  note: "Velocity is throughput accounting applied to software: measuring story points delivered per sprint is an attempt to track throughput, though it suffers from the proxy problem of points vs. value"
+
+- source: iron-triangle
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "Agile reframes the iron triangle by making scope the variable — this is identifying the real constraint; fixed time and cost expose scope as the only meaningful lever"
+
+- source: sprint-planning
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: related_to
+  note: "Sprint planning implicitly applies the five focusing steps: identify the constraint (team capacity), exploit it (choose high-value stories), subordinate everything else (commit to scope)"
+
+# === reinertsen ===
+- source: sprint-planning
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: adapts
+  note: "Sprints are the primary mechanism of batch size reduction in software delivery — moving from quarterly releases to two-week cycles cuts batch size by an order of magnitude, transforming economics"
+
+- source: daily-standup
+  target: fast-feedback
+  target_kb: reinertsen
+  relation: adapts
+  note: "The daily standup is a fast-feedback mechanism: daily synchronization surfaces blockers and coordination failures within 24 hours rather than letting them compound for weeks"
+
+- source: self-organizing-teams
+  target: decentralized-control
+  target_kb: reinertsen
+  relation: same-subject
+  note: "Reinertsen's decentralized control and agile self-organization are the same principle: push decision authority to the point of maximum information, which is the team doing the work"
+
+- source: story-points
+  target: economic-framework-for-prioritization
+  target_kb: reinertsen
+  relation: critique
+  note: "Story points are a weak proxy for Reinertsen's economic prioritization framework; sizing by complexity rather than cost-of-delay leads to queues optimized by the wrong metric"
+
+- source: timeboxing
+  target: wip-constraints
+  target_kb: reinertsen
+  relation: related_to
+  note: "Time-boxing is implicit WIP limiting: by committing to fixed iterations, teams cap work-in-progress for the sprint duration, controlling queues and reducing variability"
+
+- source: velocity
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: critique
+  note: "Velocity measures output speed but ignores cost-of-delay; Reinertsen argues that teams optimizing velocity may be delivering the wrong things fastest, missing the economic purpose of prioritization"
+
+# === anderson ===
+- source: scrum
+  target: kanban-method
+  target_kb: anderson
+  relation: related_to
+  note: "Scrum and Kanban represent two schools of agile delivery: Scrum uses time-boxed iterations with commitment; Kanban uses continuous flow with WIP limits; many teams blend both"
+
+- source: story-points
+  target: manage-flow
+  target_kb: anderson
+  relation: critique
+  note: "Anderson's Kanban method replaces story-point estimation with flow metrics (lead time, throughput, cycle time), arguing that measuring actual flow outperforms predicting effort"
+
+- source: timeboxing
+  target: wip-limits
+  target_kb: anderson
+  relation: related_to
+  note: "Sprint WIP is bounded implicitly by iteration length; Anderson's explicit WIP limits make the constraint visible and adjustable without requiring fixed cadence"
+
+- source: safe-scaled-agile-framework
+  target: evolutionary-change
+  target_kb: anderson
+  relation: critique
+  note: "SAFe imposes large-scale transformation top-down; Anderson's evolutionary change principle argues that sustainable adoption requires starting with current state and evolving incrementally"
+
+# === blank ===
+- source: agile-manifesto-four-values
+  target: customer-development
+  target_kb: blank
+  relation: parallel-development
+  note: "Customer collaboration over contract negotiation (Agile Manifesto) and the customer development model (Blank) are parallel prescriptions: validate with customers continuously rather than building to spec"
+
+- source: responding-to-change
+  target: pivot
+  target_kb: blank
+  relation: related_to
+  note: "The Agile Manifesto's responding-to-change value and Blank's pivot concept share the same insight: rigid adherence to a plan in the face of new information is organizational dysfunction"
+
+- source: working-software
+  target: lean-startup
+  target_kb: blank
+  relation: related_to
+  note: "Working software as the primary measure of progress aligns with Lean Startup's build-measure-learn cycle; both insist that actual software in users' hands generates more knowledge than any document"
+
+- source: extreme-programming
+  target: agile-development-and-customer-development
+  target_kb: blank
+  relation: related_to
+  note: "XP's customer on-site practice and short release cycles are the agile half of Blank's integrated picture: XP + Customer Development = the Lean Startup synthesis"
+
+# === demarco ===
+- source: sustainable-pace
+  target: slack-concept
+  target_kb: demarco
+  relation: same-subject
+  note: "Agile's sustainable-pace principle and DeMarco's slack concept are the same insight: teams require unscheduled capacity to learn, innovate, and absorb variability; 100% utilization is a trap"
+
+- source: self-organizing-teams
+  target: team-jell
+  target_kb: demarco
+  relation: builds_on
+  note: "DeMarco's jelled team is the precondition for agile self-organization; teams that have achieved unity of purpose and mutual trust can self-organize; pre-jell teams cannot"
+
+- source: individuals-and-interactions
+  target: coding-war-games
+  target_kb: demarco
+  relation: builds_on
+  note: "The Agile Manifesto's first value is empirically grounded in the Coding War Games findings: environment and team culture predict performance better than individual talent or process methodology"
+
+- source: agile-industrial-complex
+  target: organizational-learning-disability
+  target_kb: demarco
+  relation: related_to
+  note: "The agile industrial complex exhibits DeMarco's organizational learning disability: companies adopt agile certification as ritual compliance rather than genuine change, repeating the same patterns"
+
+# === weinberg ===
+- source: pair-programming
+  target: egoless-programming
+  target_kb: weinberg
+  relation: builds_on
+  note: "Pair programming operationalizes egoless programming: sitting together at one machine forces the ego-detachment from code that Weinberg prescribed; criticism becomes immediate and impersonal by design"
+
+- source: individuals-and-interactions
+  target: programming-as-human-activity
+  target_kb: weinberg
+  relation: builds_on
+  note: "Weinberg's foundational insight that programming is a human activity, not a mechanical process, is the intellectual ground from which the Agile Manifesto's first value grows"
+
+- source: retrospective
+  target: quality-software-management-framework
+  target_kb: weinberg
+  relation: related_to
+  note: "Weinberg's quality software management framework describes organizational capability levels; retrospectives are the primary mechanism for moving up the maturity ladder by surfacing and changing patterns"
+
+- source: definition-of-done
+  target: technical-reviews-and-walkthroughs
+  target_kb: weinberg
+  relation: related_to
+  note: "Weinberg's technical reviews and walkthroughs anticipated the agile definition of done: both establish shared quality standards and make completion a social agreement rather than an individual claim"
+
+# === senge ===
+- source: retrospective
+  target: team-learning
+  target_kb: senge
+  relation: same-subject
+  note: "The retrospective is the primary institutional practice for team learning: it creates structured time for the reflection and dialogue that Senge identifies as essential to organizational learning"
+
+- source: self-organizing-teams
+  target: shared-vision
+  target_kb: senge
+  relation: builds_on
+  note: "Senge's shared vision discipline is what enables self-organizing teams to coordinate without command: when everyone aligns on purpose, decentralized action becomes coherent"
+
+- source: inspect-and-adapt
+  target: mental-models
+  target_kb: senge
+  relation: related_to
+  note: "Inspect-and-adapt surfaces and updates mental models: sprint reviews challenge assumptions about what customers need; retrospectives challenge assumptions about how teams work"
+
+- source: agile-industrial-complex
+  target: shifting-the-burden
+  target_kb: senge
+  relation: related_to
+  note: "Agile certification and framework adoption as a symptomatic solution: organizations apply SAFe or Scrum-by-the-book (symptomatic fix) instead of addressing the underlying management dysfunction (fundamental solution)"
+
+- source: empirical-process-control
+  target: systems-thinking-fifth-discipline
+  target_kb: senge
+  relation: related_to
+  note: "Empirical process control and systems thinking share the same epistemology: knowledge comes from observing system behavior over time, not from decomposing it into parts"
+
+# === flow ===
+- source: sustainable-pace
+  target: flow-state
+  target_kb: flow
+  relation: related_to
+  note: "Sustainable pace creates the conditions for flow: chronic overwork destroys the challenge-skill balance and psychological safety that Csikszentmihalyi identifies as prerequisites for flow experience"
+
+- source: self-organizing-teams
+  target: autonomy-mastery-purpose
+  target_kb: flow
+  relation: builds_on
+  note: "Self-organizing teams are the organizational structure that enables Pink's autonomy-mastery-purpose triad: autonomy to decide how, mastery through craft, purpose through product ownership"
+
+- source: pair-programming
+  target: group-flow
+  target_kb: flow
+  relation: related_to
+  note: "Pair programming is a structured environment for small-scale group flow: shared focus on a single problem, real-time feedback, complementary skills, and the challenge-skill balance that flow requires"
+
+- source: extreme-programming
+  target: psychological-safety
+  target_kb: flow
+  relation: builds_on
+  note: "XP practices — pair programming, collective code ownership, test-first — build psychological safety by making failure cheap and visible, reducing the fear that blocks both flow and learning"
+
+# === tps ===
+- source: scrum
+  target: kanban
+  target_kb: tps
+  relation: builds_on
+  note: "Scrum's sprint backlog is a pull system: work is pulled into the sprint from the product backlog just as kanban cards signal work being pulled from upstream stations in TPS"
+
+- source: retrospective
+  target: kaizen
+  target_kb: tps
+  relation: same-subject
+  note: "The retrospective is kaizen applied to software process: a regular, structured practice of continuous improvement where the team identifies small changes and commits to them immediately"
+
+- source: working-software
+  target: gemba
+  target_kb: tps
+  relation: related_to
+  note: "Agile's insistence on working software as the measure of progress is the software equivalent of genchi genbutsu / gemba: go to the actual place (running software) to understand actual conditions"
+
+- source: individuals-and-interactions
+  target: standard-work
+  target_kb: tps
+  relation: related_to
+  note: "Standard work in TPS documents the current best practice to create a baseline for improvement; agile's team agreements and definition of done serve the same function without Toyota's formalism"
+
+- source: continuous-integration
+  target: jidoka
+  target_kb: tps
+  relation: parallel-development
+  note: "Continuous integration and jidoka solve the same problem: detect defects immediately at the point of introduction and stop to fix them, rather than letting defects flow downstream to compound"
+
+- source: technical-debt
+  target: seven-wastes-muda
+  target_kb: tps
+  relation: related_to
+  note: "Technical debt is muda (waste) in code form: defects, over-engineering, and deferred refactoring are software equivalents of the seven wastes Toyota identified in manufacturing"
+
+# === richards ===
+- source: scrum
+  target: certain-to-win
+  target_kb: richards
+  relation: related_to
+  note: "Richards' civilian translation of Boyd in Certain to Win maps directly to Scrum: fast OODA cycles, mission-type orders, and organizational climate of trust are the business form of Sutherland's design"
+
+- source: agile-manifesto-four-values
+  target: boyd-and-agile-talk
+  target_kb: richards
+  relation: related_to
+  note: "Richards' Boyd-and-Agile talk makes the intellectual lineage explicit: the Agile Manifesto's four values can each be mapped to Boyd's principles of organizational effectiveness"
+
+# === wardley ===
+- source: agile-industrial-complex
+  target: inertia
+  target_kb: wardley
+  relation: related_to
+  note: "Agile consultancies and framework vendors exhibit Wardley's inertia: as Scrum and SAFe have become commoditized, the institutions built around them resist the evolution toward simpler, more contextual approaches"
+
+- source: scrum
+  target: doctrine
+  target_kb: wardley
+  relation: related_to
+  note: "Scrum practices function as organizational doctrine in Wardley's sense: universal good practices (small iterations, feedback loops) that apply regardless of map position, distinct from context-specific strategy"
+
+- source: safe-scaled-agile-framework
+  target: appropriate-methods
+  target_kb: wardley
+  relation: critique
+  note: "SAFe applies a uniform methodology regardless of organizational context; Wardley's appropriate-methods principle argues that method choice must depend on the evolutionary stage of the work being done"
+
+# === womack-jones ===
+- source: agile-manifesto-four-values
+  target: five-lean-principles
+  target_kb: womack-jones
+  relation: parallel-development
+  note: "The Agile Manifesto and Womack-Jones' five lean principles were codified simultaneously and independently; both articulate the shift from push-and-predict to pull-and-adapt without cross-referencing"
+
+- source: continuous-integration
+  target: flow-principle
+  target_kb: womack-jones
+  relation: adapts
+  note: "Continuous integration implements the flow principle in software: work flows through build-test-integrate without batching or queuing, eliminating the stop-start waste of periodic integration"
+
+- source: sprint-planning
+  target: pull-principle
+  target_kb: womack-jones
+  relation: adapts
+  note: "Sprint planning implements pull: the team pulls work from the product backlog into the sprint based on actual capacity, rather than having work pushed onto them by project managers"

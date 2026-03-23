@@ -1,0 +1,28 @@
+---
+id: total-quality-management-tqm
+title: "Total Quality Management (TQM)"
+type: concept
+importance: 5
+concept_type: movement
+tags:
+- tqm
+- quality-movement
+- distortion
+- american-revival
+---
+
+Total Quality Management (TQM) was the dominant management movement of the late 1980s and early 1990s, emerging from the [[american-revival-and-legacy-1980-1993]] period and claiming Deming's work — along with that of [[joseph-m-juran]] and [[kaoru-ishikawa]] — as its intellectual foundation. TQM's rise and fall is one of the most instructive episodes in the history of management ideas: it demonstrates what happens when an integrated philosophy is decomposed into discrete techniques and adopted selectively, without understanding the systemic logic that makes those techniques work.
+
+TQM adopted several genuine elements of Deming's thought: a commitment to continuous improvement (often labeled with the Japanese term kaizen), statistical methods for process control, a customer-focus orientation, and the idea that quality is a management responsibility rather than a quality-department problem. These were real improvements over the prevailing American management culture of the 1970s, which had treated quality as a downstream inspection function rather than an upstream design imperative.
+
+But TQM systematically ignored the elements of Deming's philosophy that were most disruptive to established management practice. [[the-14-points-for-management]] Point 10 (eliminate slogans and exhortations) was inverted — TQM programs frequently centered on motivational campaigns and quality slogans. Point 11 (eliminate numerical quotas) was ignored — most TQM implementations were organized around measurable targets and management-by-objectives frameworks. Point 12 (remove barriers to pride of workmanship) was nominally embraced but undermined by the retention of annual performance appraisals, forced rankings, and merit pay — the very practices Deming identified in [[seven-deadly-diseases]] as destroying quality culture. The [[psychology-of-management]] pillar of the [[system-of-profound-knowledge]], with its critique of extrinsic motivation, was almost entirely absent from mainstream TQM implementation.
+
+Deming was explicitly critical of TQM, arguing that it cherry-picked his methods without understanding their interdependence. A continuous improvement program built on top of a fear-based culture, he argued, would either fail outright or produce superficial metrics improvement while leaving the underlying dysfunction intact. The tools require the philosophy; the philosophy cannot be separated from its most challenging implications. Organizations that adopted quality circles and control charts while retaining management-by-fear, annual performance reviews, and internally competitive ranking systems were not practicing quality management — they were practicing quality theater.
+
+The Malcolm Baldrige National Quality Award, established by Congress in 1987 and modeled on the [[founding-of-the-deming-prize]], became the institutional vehicle for TQM in American industry. Deming was notably skeptical of Baldrige as well, arguing that its criteria encouraged compliance performance rather than genuine transformation, and that companies would optimize for the award criteria rather than for the underlying purpose.
+
+Six Sigma represents TQM's most durable successor and most sophisticated heir to Deming's statistical heritage. Developed at Motorola in 1986 and popularized by GE under Jack Welch in the 1990s, Six Sigma adopted rigorous statistical thinking — including many tools derived from [[statistical-process-control-and-variation-theory]] — and embedded them in structured project frameworks (DMAIC: Define, Measure, Analyze, Improve, Control). Six Sigma's statistical rigor surpassed most TQM implementations. But it retained the hierarchical, target-driven management culture that Deming criticized: Six Sigma projects are typically organized around specific numerical targets, managed through performance metrics, and evaluated through ROI calculations. The [[psychology-of-management]] critique applies with equal force. Six Sigma improved many processes while leaving the management philosophy Deming considered foundational — appreciation for a system, elimination of extrinsic motivation, driving out fear — largely untouched.
+
+The collapse of TQM's reputation in the mid-1990s — when major business publications declared the movement a fad — was partly the result of this incompleteness. Organizations that had adopted TQM vocabulary without TQM substance saw no lasting improvement and moved on to the next management fashion. But this narrative obscures the genuine improvements achieved by organizations that implemented quality methods seriously, and it was used to discredit Deming's ideas by association with their most superficial imitations. The lesson Deming himself would have drawn is that the [[system-of-profound-knowledge]] cannot be decomposed: the four pillars are interdependent, and selectively adopting some while ignoring others produces a system that cannot sustain the improvement it initially generates.
+
+The relationship between TQM and [[lean-manufacturing]] is complex. Lean, emerging from Toyota's production system, is more philosophically coherent than TQM in its integration of methods and management culture. But even lean implementations frequently become tool-focused and lose the underlying respect-for-people philosophy that made the Toyota Production System effective. The pattern repeats: an integrated philosophy is extracted from its context, decomposed into teachable techniques, and adopted without the systemic understanding that gives the techniques their power.

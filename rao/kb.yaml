@@ -1,0 +1,370 @@
+name: rao
+description: >
+  Intellectual biography of Venkatesh Rao — writer, consultant, and independent
+  intellectual. Covers his writings (Ribbonfarm, Tempo, Breaking Smart, The Clockless
+  Clock), key concepts (Gervais Principle, premium mediocre, cozyweb, protocol thinking),
+  intellectual network, career eras from aerospace PhD through 17 years of Ribbonfarm,
+  and his role as a civilian interpreter of Boyd's OODA loop within narrative theory
+  and temporal philosophy.
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Rao's primary output is his own writing — blog posts, books, essays, newsletters —
+    which are almost entirely publicly available. Ribbonfarm archives (2007-2024) are the
+    primary source for most concepts and their development. Treat Rao's own published
+    writing as the authoritative source; secondary commentary (podcast interviews, profiles,
+    reader interpretations) is useful for context but should not override Rao's stated
+    positions. Note that Rao frequently revises and extends his thinking — a concept
+    introduced in 2009 may have been substantially reworked by 2015. Date-stamp claims
+    and track evolution.
+  quality: |
+    Entries should capture Rao's distinctive style of thinking: concepts that name emergent
+    phenomena, frameworks that reframe existing ideas through unusual lenses, and the
+    serial/blogchain format where ideas develop across many posts over years. Distinguish
+    between Rao's original contribution and the sources he synthesizes (Boyd, organizational
+    sociology, narrative theory, protocol design). Many of his concepts entered wider
+    cultural usage — document both the original formulation and the popular interpretation
+    where they diverge.
+  voice: |
+    Analytical, intellectually engaged, neither reverential nor dismissive. Rao's work is
+    deliberately playful and provocative — the KB should take the ideas seriously without
+    mimicking his style. Capture the substance behind the provocation.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of Venkatesh Rao covering his writings, key
+    concepts, professional network, career eras, and influence on technology culture,
+    organizational thinking, and strategy. Special emphasis on his extension of Boyd's
+    OODA loop into narrative-driven decision-making and his role as an exemplar of the
+    independent intellectual operating outside institutional frameworks.
+  success_criteria: |
+    A reader can trace the development of Rao's major ideas from their first appearance
+    through their evolution and cultural adoption. Cross-references to the Boyd KB make
+    the OODA-to-Tempo intellectual lineage explicit. The KB captures both the published
+    works and the conceptual frameworks they develop.
+
+evaluation_rubric:
+  - "Entry distinguishes Rao's original contribution from his sources (Boyd, organizational sociology, narrative theory)"
+  - "Concepts trace their first appearance and evolution across writings"
+  - "Writing entries explain significance and context, not just content summary"
+  - "People entries describe the specific intellectual relationship to Rao"
+  - "Cross-KB connections to Boyd (and other KBs) are noted where frameworks intersect"
+  - "Eras capture the shift in Rao's medium, audience, and intellectual focus"
+
+types:
+  writing:
+    description: "A work by Venkatesh Rao — book, blog post, essay, newsletter, blogchain, talk, or report"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [publication, url, abstract, key_concepts, series, coauthors, commissioned_by, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, blog-post, essay, blogchain, newsletter-post, talk, report, series, foreword, interview]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication date (earliest version)"
+      publication:
+        type: string
+        description: "Publication venue (Ribbonfarm, Breaking Smart, Noema, etc.)"
+      url:
+        type: string
+        description: "URL to the work"
+      abstract:
+        type: text
+        description: "Brief description of the work"
+      key_concepts:
+        type: list
+        description: "Concepts developed or discussed (entry IDs from concepts/)"
+      series:
+        type: string
+        description: "Series or blogchain this belongs to, if applicable (entry ID)"
+      coauthors:
+        type: list
+        description: "Co-authors if any"
+      commissioned_by:
+        type: string
+        description: "Commissioning organization if applicable (e.g., Andreessen Horowitz for Breaking Smart)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored by Venkatesh Rao. His output spans books (Tempo), blog posts
+      (Ribbonfarm, 2007-2024), blogchains (serialized multi-post sequences), essays
+      for external publications (Noema, Aeon), newsletters (Breaking Smart, Contraptions),
+      commissioned reports (a16z), and talks. Many concepts first appear in blog posts,
+      then develop across a blogchain, then crystallize in a book or essay. Use writing_type
+      to classify. For blogchains, create an entry for the blogchain itself and optionally
+      for landmark individual posts. Link key_concepts to concept entries. Note the
+      publication venue — Ribbonfarm vs. external publications signals different audience
+      and register.
+    evaluation_rubric:
+      - "Has a specific date, not just a year"
+      - "Explains significance — why this work matters in Rao's intellectual trajectory"
+      - "Links to concepts developed in this work"
+      - "Notes the publication context (venue, audience, commissioning)"
+    display:
+      icon: file-text
+      layout: document
+
+  concept:
+    description: "A key idea, framework, or coined term from Rao's work"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, coined_term, cultural_adoption, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing or approximate date where this concept first appears"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      coined_term:
+        type: boolean
+        description: "Whether Rao coined this specific term (vs. developing an existing idea)"
+      cultural_adoption:
+        type: select
+        values: [niche, moderate, widespread, mainstream]
+        description: "How widely the concept has been adopted beyond Rao's immediate readership"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, framework, coined term, or intellectual contribution from Rao's work.
+      Rao is distinctive for concept coinage — naming emergent phenomena that people
+      recognize but couldn't articulate (premium mediocre, cozyweb, internet of beefs).
+      He also develops sustained analytical frameworks (Gervais Principle, tempo/narrative
+      decision-making, protocol thinking). For coined terms, trace the coinage moment,
+      the original definition, and how usage spread. For frameworks, trace intellectual
+      lineage (what Rao drew on), the original formulation, and how it evolved. Many
+      concepts build on Boyd's OODA loop, organizational sociology, or narrative theory —
+      make these debts explicit. Distinguish between Rao's original contribution and
+      the source material he synthesizes.
+    evaluation_rubric:
+      - "Traces the concept to its first appearance in Rao's writing"
+      - "Distinguishes Rao's original contribution from source material"
+      - "Notes cultural adoption level accurately"
+      - "Links to the writings where the concept is developed"
+    display:
+      icon: lightbulb
+      layout: document
+
+  era:
+    description: "A period in Rao's intellectual or professional development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations, primary_medium]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '2011-2017'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations during this period"
+      primary_medium:
+        type: string
+        description: "Primary writing/thinking medium during this era (blog, book, newsletter, etc.)"
+    ai_instructions: >
+      A period in Venkatesh Rao's intellectual or professional development. Rao's career
+      has distinct phases marked by shifts in medium (academia → corporate → blog →
+      newsletter), institutional affiliation (Michigan → Xerox → independent → a16z →
+      Ethereum Foundation), and intellectual focus. Each era should capture what he was
+      reading, thinking about, and producing — and what changed between eras. The
+      primary_medium field is important because Rao's thinking is shaped by his medium
+      (the blogchain format produced different thinking than the book format).
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Rao's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_rao, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_rao:
+        type: string
+        description: "Nature of intellectual/professional relationship to Rao"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Venkatesh Rao's intellectual and professional network — collaborator,
+      influence, fellow Ribbonfarm contributor, consulting client contact, or intellectual
+      interlocutor. Rao's network includes fellow bloggers (Sarah Perry, Sarah Constantin),
+      Ribbonfarm guest writers, a16z partners, Summer of Protocols researchers, and the
+      broader "indie intellectual" community. For intellectual influences (Boyd, James C.
+      Scott, Christopher Alexander), describe what Rao drew from their work specifically.
+      For collaborators, describe what they worked on together.
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Rao's career or intellectual context"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location, url]
+    fields:
+      org_type:
+        type: select
+        values: [university, corporation, venture-firm, foundation, publication, conference, research-program, blog-network, consulting-firm]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+      url:
+        type: string
+        description: "URL"
+    ai_instructions: >
+      An institution relevant to Rao's career, thinking, or context. Includes universities
+      (Michigan, Cornell), corporations (Xerox), venture firms (Andreessen Horowitz),
+      foundations (Ethereum Foundation, Berggruen Institute), publications (Noema, Aeon),
+      and research programs (Summer of Protocols). The org_type values reflect the kinds
+      of institutions Rao has engaged with — notably including blog-network and
+      research-program as distinct types.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A biographical or intellectual milestone"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in Rao's career or intellectual trajectory. Includes career moves
+      (leaving Xerox, going independent), publication milestones (Ribbonfarm launch,
+      Tempo publication), institutional engagements (a16z residency, Berggruen fellowship,
+      Summer of Protocols launch), conference appearances (Boyd and Beyond 2012), and
+      significant intellectual turning points.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Rao or his work"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, profile, interview, podcast, review, blog-post, academic-paper, documentary, dissertation]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about Venkatesh Rao or his work — profiles, interviews,
+      reviews, academic citations, podcast appearances. These are references ABOUT Rao
+      or that discuss his work, not works BY him (use 'writing' type for Rao's own work).
+      Podcast interviews are a significant source for Rao — he has given many long-form
+      interviews that expand on his written work. Note what unique information or
+      perspective each source provides.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes, analysis, and editorial observations"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, observations, or commentary about Rao's work and its
+      connections. Use for cross-KB analysis (Rao-Boyd intellectual lineage), research
+      questions, editorial notes, and observations about patterns in Rao's thinking
+      that span multiple entries.
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  develops: "Develops or elaborates (concept in writing)"
+  developed_in: "Developed in (writing develops concept)"
+  builds_on: "Builds on earlier work"
+  built_upon_by: "Built upon by later work"
+  responds_to: "Responds to or engages with"
+  responded_to_by: "Responded to by"
+  collaborates_with: "Collaborates with"
+  extends: "Extends a framework or concept from another thinker"
+  extended_by: "Extended by another thinker"
+  coined_in: "Term coined in (writing coins concept)"
+  coins: "Coins a term (concept coined in writing)"
+
+  # Structural
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  employed_by: "Employed by"
+  employs: "Employs"
+  member_of: "Member of"
+  has_member: "Has member"
+  commissioned_by: "Commissioned by"
+  commissions: "Commissions"
+  published_in: "Published in"
+  published_by: "Published by"
+  presented_at: "Presented at"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  series_entry: "Entry in a series or blogchain"
+  has_series_entry: "Has series entry"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

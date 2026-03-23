@@ -1,0 +1,335 @@
+name: anderson
+description: >
+  Intellectual biography of David J. Anderson — creator of the Kanban method for
+  knowledge work and software development. Covers his synthesis of Toyota's Kanban
+  system (Ohno), queueing theory (Reinertsen), Theory of Constraints (Goldratt),
+  and quality management (Deming) into an evolutionary change management approach
+  for software teams, the Kanban community's growth, and the relationship between
+  Kanban and the broader Agile/Lean movements.
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Anderson's work is highly synthetic — he explicitly draws on Ohno, Reinertsen,
+    Goldratt, and Deming, and entries should trace these intellectual debts precisely.
+    Distinguish between Anderson's original contributions (the Kanban Method as a
+    change management approach, the evolutionary overlay model) and the source ideas
+    he adapted. The Kanban community has its own terminology and certification
+    ecosystem (Lean Kanban University) — document these as institutional facts without
+    promotional tone. The Kanban-vs-Scrum debates are historically significant but
+    entries should present them analytically, not as advocacy for either side.
+  quality: |
+    Entries should distinguish between three layers: (1) Toyota's original kanban
+    system (a production scheduling tool), (2) Anderson's Kanban Method (a change
+    management approach for knowledge work), and (3) the broader "kanban" concept
+    (visual workflow management). These are frequently conflated. Anderson's specific
+    contribution is layer 2 — the method for evolutionary organizational change that
+    uses WIP limits and flow visualization as its core mechanisms. Entries should also
+    track the evolution of Anderson's thinking from his early Microsoft/Corbis work
+    through the mature Kanban Method and into the Kanban Maturity Model.
+  voice: |
+    Analytical and precise. Anderson writes in a practitioner-consultant style that
+    mixes case studies with theoretical frameworks. The KB should respect his synthesis
+    achievement while noting where critics (particularly from the Scrum community)
+    challenged his claims. Avoid both Kanban advocacy and dismissiveness.
+
+goals:
+  primary: |
+    Build a complete intellectual biography covering Anderson's writings, key concepts
+    (Kanban Method, evolutionary change, WIP limits, flow management, classes of
+    service, Kanban Maturity Model), his professional network, and his influence on
+    Agile/Lean software development practices.
+  success_criteria: |
+    A reader can trace Anderson's synthesis — understanding how ideas from Toyota,
+    Reinertsen, Goldratt, and Deming were adapted for knowledge work — and can
+    distinguish the Kanban Method from both Toyota's kanban system and generic
+    visual management.
+
+evaluation_rubric:
+  - "Writing entries include date, writing_type, and correct attribution"
+  - "Concept entries trace intellectual origins to specific source traditions (TPS, TOC, Reinertsen, Deming)"
+  - "The three layers of kanban (Toyota tool, Anderson Method, generic concept) are clearly distinguished"
+  - "People entries describe specific intellectual relationships, not just biographical facts"
+  - "The evolution of Anderson's thinking from early case studies to mature method is documented"
+  - "Connections to Reinertsen, Goldratt, Deming, and TPS traditions are documented where they exist"
+
+types:
+  writing:
+    description: "A work by David Anderson — book, paper, blog post, talk, or article"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publisher, url, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, paper, essay, blog-post, talk, presentation, article, foreword, interview, report]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors (entry IDs or names)"
+      publisher:
+        type: string
+        description: "Publisher or venue"
+      url:
+        type: string
+        description: "URL to full text if available"
+      key_concepts:
+        type: list
+        description: "Concepts developed or discussed (entry IDs from concepts/)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work by David Anderson. His bibliography centers on the Kanban book (2010)
+      and the Kanban Maturity Model (2018), supplemented by conference talks, blog
+      posts, and articles. Anderson's earlier work at Microsoft on Feature-Driven
+      Development and agile methods is also relevant. Importance: 10=Kanban book;
+      8-9=major works (KMM, Agile Management); 6-7=significant supporting works;
+      4-5=articles and talks; 1-3=minor works.
+    evaluation_rubric:
+      - "Writing has date and writing_type"
+      - "Body explains significance in Anderson's intellectual arc, not just contents"
+      - "Intellectual sources are credited where applicable"
+    display:
+      icon: file-text
+      layout: document
+
+  concept:
+    description: "A key idea, framework, or practice from Anderson's Kanban Method"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, key_writings, related_concepts, source_tradition, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Writing or approximate date where this concept first appears in Anderson's work"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      source_tradition:
+        type: string
+        description: "Intellectual tradition this concept draws from (e.g., TPS, TOC, Reinertsen, Deming)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea or practice from Anderson's Kanban Method or its intellectual sources.
+      Major concepts include: the six core practices (visualize, limit WIP, manage flow,
+      make policies explicit, implement feedback loops, improve collaboratively),
+      evolutionary change management, classes of service, the Kanban Maturity Model,
+      STATIK (Systems Thinking Approach to Introducing Kanban), and fitness criteria.
+      For each concept, trace the intellectual source — which ideas come from Toyota,
+      Reinertsen, Goldratt, or Deming — and show what Anderson added. Distinguish
+      Anderson's specific formulation from the source tradition.
+    evaluation_rubric:
+      - "Concept traces origin to specific work or date"
+      - "Intellectual source tradition is identified"
+      - "Anderson's specific contribution vs. source material is distinguished"
+    display:
+      icon: lightbulb
+      layout: document
+
+  era:
+    description: "A period in Anderson's intellectual or professional development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations]
+    fields:
+      date_range:
+        type: string
+        description: "Time span, e.g. '2004-2010'"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations during this period"
+    ai_instructions: >
+      A period in Anderson's intellectual development. Key eras include: the pre-Kanban
+      period (Microsoft, Feature-Driven Development, early agile work), the Corbis/early
+      Kanban period (2004-2007, where the method was first developed), the Kanban Method
+      codification period (2007-2010, culminating in the book), the community-building
+      period (2010-2015, Lean Kanban conferences, LKU), and the maturity model period
+      (2015-present, Kanban Maturity Model, enterprise Kanban).
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Anderson's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_subject, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role or position"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_subject:
+        type: string
+        description: "Nature of relationship to Anderson"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Anderson's professional and intellectual network. Include intellectual
+      predecessors (Ohno, Reinertsen, Goldratt, Deming), collaborators in the Kanban
+      community (Carmichael, Burrows, Leopold, Maassen), figures from the broader Agile
+      world who engaged with Kanban (Schwaber, Sutherland, Cohn), and practitioners
+      who extended or critiqued the method. Describe specific intellectual relationships.
+    evaluation_rubric:
+      - "Role field accurately describes the person's function"
+      - "Relationship to Anderson is specific, not generic"
+      - "Body includes the person's own contributions"
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Anderson's career or the Kanban community"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location, url]
+    fields:
+      org_type:
+        type: select
+        values: [consultancy, training-org, conference, company, professional-society, publisher, community]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+      url:
+        type: string
+        description: "URL"
+    ai_instructions: >
+      An institution relevant to Anderson's career or the Kanban community. Key
+      organizations include Lean Kanban Inc./University (Anderson's training and
+      certification body), Microsoft (early career), Corbis (where Kanban was first
+      applied), and the Lean Kanban conference series. Also include publishers and
+      companies that adopted Kanban early.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A significant event in Anderson's career or in the Kanban movement's history"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event relevant to Anderson's intellectual biography or the Kanban
+      movement. Includes the Corbis experiment, publication milestones, founding of
+      Lean Kanban University, key conference talks, and significant community events.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Anderson, the Kanban Method, or its reception"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, profile, review, blog-post, podcast, academic-paper, talk]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about Anderson, the Kanban Method, or its reception. Includes
+      practitioner books that build on or extend Kanban (Leopold, Burrows), academic
+      studies of Kanban adoption, reviews, interviews, and comparative analyses of
+      Kanban vs. Scrum.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, or commentary about Anderson's work, the Kanban Method,
+      or its relationship to other intellectual traditions.
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  # Intellectual
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  develops: "Develops or elaborates (concept in writing)"
+  developed_in: "Developed in (writing develops concept)"
+  builds_on: "Builds on earlier work"
+  built_upon_by: "Built upon by later work"
+  critiques: "Critiques or argues against"
+  critiqued_by: "Critiqued by"
+  responds_to: "Responds to or engages with"
+  collaborates_with: "Collaborates with"
+  extends: "Extends or develops further"
+  adapts: "Adapts from another domain"
+  adapted_by: "Adapted by for a different context"
+
+  # Institutional
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  member_of: "Member of"
+  employed_by: "Employed by"
+  founded: "Founded"
+  published_by: "Published by"
+
+  # Structural
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true

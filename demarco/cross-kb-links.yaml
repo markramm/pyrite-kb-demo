@@ -1,0 +1,226 @@
+# Cross-KB links from demarco to other KBs
+# Generated during Phase 5 of KB lifecycle
+
+# === Weinberg ===
+- source: peopleware-thesis
+  target: programming-as-human-activity
+  target_kb: weinberg
+  relation: builds_on
+  note: "Weinberg opened 'programming is a human activity'; DeMarco and Lister provided the organizational and environmental evidence through the Coding War Games"
+
+- source: peopleware-thesis
+  target: egoless-programming
+  target_kb: weinberg
+  relation: builds_on
+  note: "Weinberg's egoless programming challenged individual heroics; DeMarco/Lister's team-jell concept extended this to the team level"
+
+- source: team-jell
+  target: cultural-patterns-of-software-organizations
+  target_kb: weinberg
+  relation: related_to
+  note: "Weinberg's cultural patterns (variable, routine, steering, anticipating, congruent) provide a taxonomy for the organizational cultures that enable or prevent team jell"
+
+- source: organizational-learning-disability
+  target: congruent-behavior
+  target_kb: weinberg
+  relation: related_to
+  note: "Organizations that cannot learn from failure exhibit Weinberg's incongruent behavior patterns — stated values diverge from actual practice"
+
+- source: gerald-weinberg
+  target: programming-as-human-activity
+  target_kb: weinberg
+  relation: related_to
+  note: "DeMarco KB's Weinberg entry connects to the core concept that defines Weinberg's contribution"
+
+# === Flow ===
+- source: flow-and-interruption-cost
+  target: slack-demarco
+  target_kb: flow
+  relation: related_to
+  note: "The flow KB's slack-demarco entry documents DeMarco's organizational argument; this link connects the psychological mechanism (flow/interruption) to the organizational prescription (slack)"
+
+- source: peopleware
+  target: peopleware-publication-1987
+  target_kb: flow
+  relation: related_to
+  note: "The flow KB documents Peopleware's publication as a milestone in applying flow theory to workplace design"
+
+# === Goldratt ===
+- source: slack-concept
+  target: buffer-management
+  target_kb: goldratt
+  relation: related_to
+  note: "TOC's buffer management is the operational implementation of DeMarco's slack principle: both argue that reserved capacity is not waste but protection against variability"
+
+- source: slack-concept
+  target: throughput-world-vs-cost-world
+  target_kb: goldratt
+  relation: related_to
+  note: "DeMarco's Spanish Theory (extract value) vs. slack (create conditions for value) parallels Goldratt's cost-world vs. throughput-world distinction"
+
+- source: the-deadline
+  target: socratic-novel-pedagogy
+  target_kb: goldratt
+  relation: related_to
+  note: "DeMarco's The Deadline adopts Goldratt's business novel format — using narrative fiction to present management theory, following The Goal's model"
+
+- source: risk-management-as-risk-embracement
+  target: critical-chain-project-management
+  target_kb: goldratt
+  relation: related_to
+  note: "Both address project uncertainty: Goldratt through aggregated project buffers and critical chain scheduling; DeMarco through probabilistic risk management and organizational risk culture"
+
+- source: spanish-theory-of-management
+  target: throughput-world-vs-cost-world
+  target_kb: goldratt
+  relation: related_to
+  note: "The Spanish Theory is the cost-world mindset applied to human labor: extracting maximum hours rather than creating conditions for maximum throughput"
+
+# === Deming ===
+- source: peopleware-thesis
+  target: management-responsibility-for-quality
+  target_kb: deming
+  relation: related_to
+  note: "Both argue the same structural claim: system performance is management's responsibility. Deming: 94% of quality failures are system-caused. DeMarco: productivity is determined by environment and organization, not individual talent"
+
+- source: peopleware-thesis
+  target: psychology-of-management
+  target_kb: deming
+  relation: related_to
+  note: "Both argue human factors — intrinsic motivation, dignity, psychological safety — trump optimization. DeMarco's Coding War Games data provides empirical support for Deming's psychology-of-management principles"
+
+- source: coding-war-games
+  target: common-cause-vs-special-cause-variation
+  target_kb: deming
+  relation: related_to
+  note: "The Coding War Games found 10:1 productivity variation. Deming's framework distinguishes common-cause (system) from special-cause (individual) variation — DeMarco's finding is that workplace environment is a common cause, not individual talent"
+
+- source: organizational-learning-disability
+  target: seven-deadly-diseases
+  target_kb: deming
+  relation: related_to
+  note: "DeMarco's organizational learning disability — repeating failures because post-mortems are ignored — maps onto several of Deming's deadly diseases, especially lack of constancy of purpose and management by visible figures alone"
+
+- source: spanish-theory-of-management
+  target: institutional-incentives
+  target_kb: deming
+  relation: related_to
+  note: "Both diagnose the same management pathology: institutions that optimize for measurable extraction (hours worked, cost reduced) rather than systemic conditions that produce value"
+
+- source: slack-concept
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: related_to
+  note: "Slack is a system-level property: eliminating it optimizes individual components at the expense of the whole system's capacity to adapt — the classic sub-optimization Deming warned against"
+
+# === Reinertsen ===
+- source: slack-concept
+  target: u-curve-optimization
+  target_kb: reinertsen
+  relation: related_to
+  note: "Both argue extreme utilization is suboptimal. DeMarco: organizational slack enables adaptation. Reinertsen: U-curve shows queueing costs explode at high utilization, making the optimum well below 100%"
+
+- source: slack-concept
+  target: wip-constraints
+  target_kb: reinertsen
+  relation: related_to
+  note: "WIP constraints are the operational mechanism for maintaining slack: by limiting work-in-progress, organizations preserve the uncommitted capacity DeMarco argues is essential"
+
+- source: flow-and-interruption-cost
+  target: queueing-theory-applied
+  target_kb: reinertsen
+  relation: related_to
+  note: "Context-switching cost (DeMarco's interruption cost) is a queueing phenomenon: Reinertsen's queueing theory provides the mathematical framework for the productivity loss DeMarco documented empirically"
+
+- source: flow-and-interruption-cost
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: related_to
+  note: "Both address the cost of task switching. Reinertsen argues smaller batches reduce transaction costs; DeMarco argues uninterrupted blocks preserve flow. Complementary perspectives on the same cognitive bottleneck"
+
+- source: risk-management-as-risk-embracement
+  target: managing-variability
+  target_kb: reinertsen
+  relation: related_to
+  note: "Managing variability (not eliminating it) is Reinertsen's formulation of DeMarco's risk embracement: both distinguish beneficial from harmful uncertainty and argue for capacity to absorb it"
+
+- source: risk-management-as-risk-embracement
+  target: cost-of-delay
+  target_kb: reinertsen
+  relation: related_to
+  note: "DeMarco's probabilistic scheduling in Waltzing with Bears aligns with Reinertsen's cost-of-delay framework: both make the economic cost of uncertainty explicit rather than hiding it behind single-point estimates"
+
+# === Boyd ===
+- source: slack-concept
+  target: tempo
+  target_kb: boyd
+  relation: related_to
+  note: "Slack provides the organizational capacity for tempo variation. Boyd: tempo is not constant speed but the ability to change pace. DeMarco: slack is the capacity to respond. Both argue reserved capacity enables maneuver"
+
+- source: slack-concept
+  target: maneuver-warfare
+  target_kb: boyd
+  relation: related_to
+  note: "Maneuver requires freedom of action; organizational slack is the knowledge-work equivalent. A fully utilized organization cannot maneuver any more than a fully committed force can"
+
+- source: spanish-theory-of-management
+  target: auftragstaktik
+  target_kb: boyd
+  relation: related_to
+  note: "Both contrast extractive command-and-control (Spanish Theory) with trust-based delegation (Auftragstaktik). DeMarco's team-jell requires the autonomy that Auftragstaktik provides"
+
+- source: organizational-learning-disability
+  target: orientation
+  target_kb: boyd
+  relation: related_to
+  note: "Organizations that cannot learn have frozen orientations in Boyd's framework — unable to update their mental models from experience. DeMarco's post-mortem failures are orientation failures"
+
+# === Wardley ===
+- source: slack-concept
+  target: inertia
+  target_kb: wardley
+  relation: related_to
+  note: "Slack provides the organizational capacity to overcome inertia. Wardley's inertia describes resistance to change; DeMarco's slack argument is that without uncommitted capacity, organizations cannot invest in overcoming that resistance"
+
+- source: slack-concept
+  target: doctrine
+  target_kb: wardley
+  relation: related_to
+  note: "DeMarco's slack principle maps onto Wardley's doctrine: a universal organizational practice (maintaining slack) that applies regardless of strategic position or evolutionary stage"
+
+- source: software-engineering-an-idea-whose-time-has-come-and-gone
+  target: evolution
+  target_kb: wardley
+  relation: related_to
+  note: "DeMarco's recantation can be read through Wardley's evolution lens: structured methods were appropriate for their evolutionary stage but became inertia as the landscape evolved past them"
+
+# === Poppendiecks ===
+- source: slack-concept
+  target: amplify-learning
+  target_kb: poppendiecks
+  relation: related_to
+  note: "The Poppendiecks resolve the slack-vs-waste tension by reframing slack as learning time: amplify-learning requires the organizational breathing room DeMarco calls slack"
+
+- source: slack-concept
+  target: eliminate-waste
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Direct tension: lean's eliminate-waste principle appears to oppose DeMarco's slack argument. The resolution is that DeMarco's slack is not waste but a necessary system property — consistent with the Poppendiecks' nuanced treatment of waste in knowledge work"
+
+- source: team-jell
+  target: empower-the-team
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Team jell (DeMarco/Lister) and empower-the-team (Poppendiecks) describe the same organizational goal from different traditions — Peopleware's sociological observation and lean's management principle"
+
+- source: spanish-theory-of-management
+  target: seven-wastes-of-software
+  target_kb: poppendiecks
+  relation: related_to
+  note: "The Spanish Theory — extracting value through longer hours — produces several of the Poppendiecks' seven wastes: task switching, extra processes, and the waste of underutilized human potential"
+
+# === TPS ===
+# (TPS KB may have limited entries; link through the lean tension)
+
+# === Blank ===
+# No direct connections identified

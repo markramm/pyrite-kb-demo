@@ -1,0 +1,260 @@
+# Cross-KB links from rao to other KBs
+
+# === deming ===
+- source: tempo
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: related_to
+  note: "Rao's Tempo framework generalizes the iterative learning cycle that Deming operationalized as PDSA. Both identify rhythm and timing of learning as the critical competitive variable — Deming in quality management, Rao across all decision domains."
+
+- source: legibility
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: related_to
+  note: "Both warn that simplified top-down representations destroy the system properties they seek to manage. Rao's legibility (via Scott) and Deming's appreciation for a system converge on the same diagnostic: the map is not the territory, and managing by the map damages the territory."
+
+- source: fat-thinking-and-lean-thinking
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: related_to
+  note: "Rao's fat-thinking essay engages the lean tradition descended from Deming, arguing that lean optimization eliminates the slack and redundancy that Deming's systems thinking would recognize as essential to system health. The essay implicitly invokes Deming's warning against suboptimizing parts at the expense of the whole."
+
+# === richards ===
+- source: chet-richards
+  target: certain-to-win
+  target_kb: richards
+  relation: related_to
+  note: "Rao's entry on Richards should connect to Richards' primary work. Certain to Win is the book-length translation of Boyd's ideas into business strategy that Richards is best known for, and represents the practitioner path that runs parallel to Rao's philosophical path."
+
+- source: tempo-book
+  target: certain-to-win
+  target_kb: richards
+  relation: related_to
+  note: "The two main civilian translations of Boyd for non-military audiences. Tempo applies Boyd to narrative structure and temporal reasoning; Certain to Win applies Boyd to business strategy and organizational climate. Together they bracket the range of Boyd's civilian influence."
+
+- source: the-boydian-dialectic
+  target: boyds-real-ooda-loop
+  target_kb: richards
+  relation: related_to
+  note: "Both are essays that correct popular misconceptions about what Boyd's OODA loop actually says. Richards' piece argues the loop is primarily about orientation, not decision speed; Rao's dialectic reframes it as a narrative-tempo tool. Both push back against the shallow 'fast decision cycle' reading."
+
+- source: john-boyd
+  target: john-boyd
+  target_kb: richards
+  relation: related_to
+  note: "Cross-reference between the two KBs' accounts of Boyd. Richards and Rao each constructed an independent intellectual biography of Boyd; comparing them reveals what each translator emphasized — Richards the maneuver-warfare practitioner, Rao the narrative theorist."
+
+- source: boyd-and-beyond-2012
+  target: boyd-and-beyond-conference
+  target_kb: richards
+  relation: same-subject
+  note: "Rao's 2012 presentation at Boyd and Beyond is documented in the rao KB as an event; the conference itself is documented in the richards KB. The event represents the moment Rao's narrative-OODA synthesis was tested against the military community that maintains Boyd's legacy."
+
+- source: chet-richards
+  target: venkatesh-rao
+  target_kb: richards
+  relation: same-subject
+  note: "Richards KB has an entry on Rao as a Boyd interpreter; Rao KB has an entry on Richards. The two entries represent parallel accounts of the same intellectual relationship from opposite perspectives."
+
+# === boyd ===
+- source: tempo-book
+  target: ooda-loop
+  target_kb: boyd
+  relation: adapts
+  note: "Tempo is the most sustained civilian book-length adaptation of the OODA loop, extending Boyd's military decision cycle into a general narrative theory of decision-making. Rao treats the OODA loop not as a tactical procedure but as a theory of narrative time."
+
+- source: tempo-book
+  target: orientation
+  target_kb: boyd
+  relation: builds_on
+  note: "Tempo's central argument — that orientation is the decisive phase and that human orientation is narrative in structure — directly builds on Boyd's emphasis on orientation as the OODA loop's schwerpunkt. Rao's original contribution is developing orientation as a concrete narrative mechanism."
+
+- source: tempo-book
+  target: patterns-of-conflict
+  target_kb: boyd
+  relation: builds_on
+  note: "Tempo engages Boyd's Patterns of Conflict as the primary source for the OODA loop framework Rao extends. Rao reads Patterns not as a military briefing but as a theory of how narrative coherence determines competitive outcomes."
+
+- source: tempo-book
+  target: essence-of-winning-and-losing
+  target_kb: boyd
+  relation: builds_on
+  note: "Rao's Tempo engages the mature OODA loop diagram from Essence of Winning and Losing, treating it as the definitive statement of Boyd's framework — particularly the implicit guidance and control channels that bypass conscious decision."
+
+- source: the-boydian-dialectic
+  target: ooda-loop
+  target_kb: boyd
+  relation: adapts
+  note: "The Boydian Dialectic systematizes what happens when two OODA-cycling actors interact — a dialectical structure latent in Boyd's model but not fully developed by Boyd himself. Rao extends Boyd's single-actor loop into a two-player game-theoretic framework."
+
+- source: the-boydian-dialectic
+  target: discourse-on-winning-and-losing
+  target_kb: boyd
+  relation: builds_on
+  note: "The Boydian Dialectic is Rao's most sustained post-Tempo engagement with Boyd's collected briefings, developing the dialectical implications of the Discourse that Boyd left implicit in the transition between Patterns of Conflict and the Strategic Game."
+
+- source: tempo
+  target: tempo
+  target_kb: boyd
+  relation: adapts
+  note: "Rao's tempo concept directly extends Boyd's concept of tempo — transforming it from a military-strategic rate-of-OODA-cycling measure into a general framework for narrative timing in decision-making across any domain."
+
+- source: narrative-driven-decision-making
+  target: orientation
+  target_kb: boyd
+  relation: adapts
+  note: "Rao develops Boyd's orientation phase into a concrete narrative mechanism, arguing that orientation is structured by story — by narrative arcs with beginnings, turning points, and anticipated ends. This is the central original move in Rao's Boyd interpretation."
+
+- source: refactored-perception
+  target: destruction-and-creation-concept
+  target_kb: boyd
+  relation: builds_on
+  note: "Refactored perception is the individual cognitive analogue of Boyd's destruction-and-creation epistemology — the moment when existing mental models are destroyed and new ones synthesized. Rao provides the phenomenology that Boyd's abstract framework leaves implicit."
+
+- source: refactored-perception
+  target: orientation
+  target_kb: boyd
+  relation: adapts
+  note: "Refactored perception is Rao's development of the dynamics of Boyd's orientation phase — describing the specific cognitive mechanism by which orientation updates discontinuously, which Boyd left largely implicit in the OODA loop diagram."
+
+- source: protocol-thinking
+  target: auftragstaktik
+  target_kb: boyd
+  relation: related_to
+  note: "Rao's protocol thinking (shared frameworks enabling decentralized action) maps closely to Boyd's auftragstaktik — implicit coordination through shared doctrine rather than explicit orders. Both describe how distributed actors achieve coherence without central command."
+
+- source: protocol-thinking
+  target: implicit-guidance-and-control
+  target_kb: boyd
+  relation: related_to
+  note: "Protocol-governed systems achieve coordination through implicit guidance and control — exactly the mechanism Boyd identified as the mature OODA loop's secret weapon. Protocols are the technological instantiation of what Boyd described as organizational Einheit enabling distributed action."
+
+- source: internet-of-beefs
+  target: moral-isolation
+  target_kb: boyd
+  relation: related_to
+  note: "Rao's internet-of-beefs describes perpetual conflict without resolution that degrades all participants' coherence — a dynamic Boyd would recognize as moral isolation at scale. Social media platforms create the conditions for Boyd's uncertainty-to-chaos progression to run across entire populations."
+
+- source: the-calculus-of-grit
+  target: to-be-or-to-do
+  target_kb: boyd
+  relation: related_to
+  note: "Rao's calculus of grit and Boyd's 'to be or to do' both demand that individuals subordinate identity-maintenance to genuine mastery and action. Boyd framed it as an ethical choice for military officers; Rao frames it as a career-strategy calculus for independent intellectuals."
+
+- source: future-nauseous
+  target: the-progression-uncertainty-to-chaos
+  target_kb: boyd
+  relation: related_to
+  note: "Rao's future-nauseous (the present always feels normal because perception lags behind change) and Boyd's progression from uncertainty to chaos both grapple with how perception lags behind systemic change — one at the cultural scale, the other at the strategic scale."
+
+- source: john-boyd
+  target: john-boyd
+  target_kb: boyd
+  relation: same-subject
+  note: "Cross-reference between the rao KB's account of Boyd (as Rao's primary intellectual influence, emphasizing the narrative-temporal reading) and the boyd KB's authoritative biography (emphasizing the military-reform trajectory). Comparing them reveals what Rao selected from Boyd."
+
+- source: boyd-and-beyond-2012
+  target: ooda-loop
+  target_kb: boyd
+  relation: related_to
+  note: "Rao's Boyd and Beyond conference presentation tested his narrative-OODA synthesis against the military community that takes Boyd's OODA loop most seriously. The event represents institutional validation of Rao's civilian reading of Boyd."
+
+- source: gervais-principle
+  target: implicit-guidance-and-control
+  target_kb: boyd
+  relation: related_to
+  note: "The Gervais Principle's 'Sociopaths' operate through implicit guidance and control — reading situations with unscripted orientation rather than following the 'Clueless' layer's explicit procedures. Rao's organizational typology maps onto Boyd's distinction between organizations that rely on implicit versus explicit coordination."
+
+- source: breaking-smart-season-1
+  target: ooda-loop
+  target_kb: boyd
+  relation: related_to
+  note: "Breaking Smart's analysis of agile software development as superior to waterfall planning is legible as a Boydian argument: tight iteration cycles as OODA loop tempo, open-source as distributed orientation, startups operating inside incumbents' decision loops."
+
+# === goldratt ===
+- source: fat-thinking-and-lean-thinking
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "Rao's fat-thinking essay engages the broader lean/constraint tradition that includes TOC. His argument that lean optimization eliminates necessary slack resonates with Goldratt's insight that local efficiency gains outside the constraint actually harm throughput — both identify the pathology of optimizing the wrong thing."
+
+- source: fat-thinking-and-lean-thinking
+  target: the-goal
+  target_kb: goldratt
+  relation: related_to
+  note: "Rao's essay on fat vs. lean thinking engages the tradition The Goal helped establish. The Goal's core lesson — that local efficiency is not global throughput — is precisely the diagnostic Rao applies to lean thinking's tendency to optimize away productive slack."
+
+- source: academic-period
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "Rao's academic formation in control theory and systems engineering gave him natural affinity for constraint-based thinking. TOC's emphasis on identifying the binding constraint in a system parallels the engineering mindset Rao brought to organizational analysis."
+
+# === wardley ===
+- source: breaking-smart-season-1
+  target: evolution
+  target_kb: wardley
+  relation: related_to
+  note: "Breaking Smart's pastoral-to-agoral framework describes at the civilizational level what Wardley's evolution axis describes at the component level: the predictable maturation from novel-and-uncertain to standardized-and-commoditized. Both identify the structural pattern by which disruption unfolds."
+
+- source: legibility
+  target: situational-awareness
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley's situational awareness is, in Rao's vocabulary, a form of anti-legibility practice: it insists on understanding the actual landscape rather than managing by simplified frameworks (SWOT, Porter) that impose false legibility. Both thinkers diagnose the pathology of strategy-without-adequate-maps."
+
+- source: protocol-thinking
+  target: doctrine
+  target_kb: wardley
+  relation: related_to
+  note: "Rao's protocol thinking and Wardley's doctrine concept both describe universally applicable coordination principles that operate independently of specific strategy. Protocols are to internet coordination what doctrine is to organizational effectiveness — the baseline competencies that must be in place before context-specific moves can succeed."
+
+# === senge ===
+- source: legibility
+  target: mental-models
+  target_kb: senge
+  relation: related_to
+  note: "Rao's legibility critique (institutions simplify reality to make it administrable, destroying embedded knowledge) diagnoses the same pathology Senge addresses with mental models: organizations act on simplified representations that diverge from reality. Senge's discipline of surfacing and testing mental models is a practice for resisting the legibility trap."
+
+- source: refactored-perception
+  target: mental-models
+  target_kb: senge
+  relation: related_to
+  note: "Refactored perception — the discontinuous revision of one's interpretive frame — is the individual-cognitive operation that Senge's mental models discipline aims to cultivate at the organizational level. Senge wants organizations to routinely surface and revise mental models; Rao describes the cognitive phenomenology of what happens when they do."
+
+- source: gervais-principle
+  target: learning-organization
+  target_kb: senge
+  relation: critique
+  note: "The Gervais Principle's tripartite model implicitly critiques the learning organization ideal. In Rao's analysis, real organizations are not unified learning systems but stratified ecosystems where Sociopaths learn and adapt, the Clueless internalize ideology, and Losers opt out. Senge's learning organization requires conditions that the Gervais Principle says rarely obtain."
+
+- source: breaking-smart-season-1
+  target: systems-thinking-fifth-discipline
+  target_kb: senge
+  relation: related_to
+  note: "Breaking Smart's analysis of software eating the world applies systems thinking to technological disruption — tracing feedback loops between software commoditization, institutional disruption, and cultural change. The analytical method is recognizably in the systems-thinking tradition Senge popularized, applied to a domain Senge did not address."
+
+# === meadows ===
+- source: legibility
+  target: leverage-points
+  target_kb: meadows
+  relation: related_to
+  note: "Meadows' highest-leverage intervention points — changing paradigms, the goals of the system, the mindset out of which the system arises — are precisely what Rao's legibility analysis identifies as most vulnerable to destruction by simplification. Legibility interventions operate at low leverage (changing parameters, buffers) while destroying the conditions for high-leverage change."
+
+- source: protocol-thinking
+  target: self-organization
+  target_kb: meadows
+  relation: related_to
+  note: "Rao's protocols enable self-organization — shared rules that allow distributed actors to coordinate without central control, producing emergent order. Meadows identifies self-organization as one of the highest leverage points in systems; protocol design is the engineering practice of creating the conditions for it."
+
+- source: tempo
+  target: feedback-loops
+  target_kb: meadows
+  relation: related_to
+  note: "Rao's tempo framework describes decision-making rhythm relative to environmental change rates — which is fundamentally about matching one's action cycle to the feedback loops operating in the system. Meadows' formal analysis of feedback loop dynamics provides the systems-theoretic foundation for what Rao describes phenomenologically as tempo."
+
+- source: breaking-smart-season-1
+  target: leverage-points
+  target_kb: meadows
+  relation: related_to
+  note: "Breaking Smart's thesis that software disruption is structural rather than incremental implicitly invokes Meadows' leverage points hierarchy. Software does not merely change parameters within existing systems — it changes the rules, the information flows, and sometimes the goals of the system, operating at the high-leverage points Meadows identified."

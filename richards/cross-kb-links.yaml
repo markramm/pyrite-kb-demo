@@ -1,0 +1,226 @@
+# richards → boyd
+# Richards is Boyd's primary intellectual executor. These are the dominant connections.
+
+- source: certain-to-win
+  target: patterns-of-conflict
+  target_kb: boyd
+  relation: translates
+  note: "Certain to Win translates Boyd's Patterns of Conflict — the analysis of maneuver warfare, organizational climate, and OODA-based competitive advantage — into business strategy. Richards draws most heavily on the organizational climate sections and the contrast between maneuver and attrition approaches."
+
+- source: certain-to-win
+  target: organic-design-command-control
+  target_kb: boyd
+  relation: translates
+  note: "Certain to Win's organizational climate framework — Einheit, Fingerspitzengefuehl, Schwerpunkt — translates Boyd's Organic Design for Command and Control, where these three German concepts are most fully developed as prerequisites for decentralized, fast-cycling organizations."
+
+- source: john-boyd
+  target: john-boyd
+  target_kb: boyd
+  relation: same_as
+  note: "Cross-reference between the two KBs' entries on Boyd. The richards KB frames Boyd through the mentor-disciple relationship and Richards' role in the inner circle; the boyd KB provides the comprehensive intellectual biography."
+
+- source: john-boyd
+  target: richards-chet
+  target_kb: boyd
+  relation: related_to
+  note: "Richards' entry on Boyd and Boyd KB's entry on Richards are the two sides of the mentor-disciple relationship. Richards was one of Boyd's closest acolytes, asked to review the mathematics of Destruction and Creation, and later became Boyd's primary interpreter for business audiences."
+
+- source: ooda-based-competition
+  target: ooda-loop
+  target_kb: boyd
+  relation: extends
+  note: "Richards' OODA-based competition extends Boyd's OODA loop into a general theory of business competition. Boyd developed the loop from fighter combat; Richards argues the same tempo-based competitive mechanism operates in markets, where faster reorientation makes competitors' strategies chronically stale."
+
+- source: operating-inside-the-loop
+  target: tempo
+  target_kb: boyd
+  relation: extends
+  note: "Richards' 'operating inside the loop' extends Boyd's tempo concept into business: when a firm cycles faster than competitors can reorient, the competitors are perpetually responding to a situation that has already changed. The compounding orientation gap eventually produces organizational collapse."
+
+- source: boyds-real-ooda-loop
+  target: essence-of-winning-and-losing
+  target_kb: boyd
+  relation: responds_to
+  note: "Richards' 'Boyd's Real OODA Loop' works through the complex diagram from Boyd's Essence of Winning and Losing to recover what the popular simplification loses — the centrality of orientation, implicit guidance and control, and the role of previous experience. This is Richards' primary contribution to preserving Boyd's analytical framework against its own popularity."
+
+- source: einheit-as-trust
+  target: einheit
+  target_kb: boyd
+  relation: translates
+  note: "Richards translates Boyd's Einheit — the German military tradition of mutual trust enabling Auftragstaktik — into organizational psychological safety and the trust that allows business teams to act without approval overhead. The translation preserves Boyd's insight that trust is a structural accelerant of OODA cycling, not merely a cultural nicety."
+
+- source: fingerspitzengefuehl-as-expertise
+  target: fingerspitzengefuehl
+  target_kb: boyd
+  relation: translates
+  note: "Richards translates Boyd's Fingerspitzengefuehl — the intuitive fingertip feel of the expert practitioner — into the tacit domain knowledge that enables implicit judgment in business and software contexts. The translation argues that organizations substituting process compliance for practitioner expertise are destroying the very capacity that makes fast OODA cycling possible."
+
+- source: schwerpunkt-as-focus
+  target: schwerpunkt
+  target_kb: boyd
+  relation: translates
+  note: "Richards translates Boyd's Schwerpunkt — the focus of effort that keeps decentralized actions coherent — into sprint goals, product vision, and organizational mission statements specific enough to guide autonomous local decisions without central direction."
+
+- source: agile-as-maneuver-warfare
+  target: maneuver-warfare
+  target_kb: boyd
+  relation: extends
+  note: "Richards argues that Agile software development is structurally parallel to maneuver warfare: both substitute tempo, initiative, and adaptive reorientation for the attrition logic of resource superiority and upfront planning. Waterfall is to Agile as attrition warfare is to maneuver warfare — not because the metaphor is clever but because the same structural problem (acting effectively under uncertainty) demands the same structural solution."
+
+- source: boyd-agile-bridge
+  target: auftragstaktik
+  target_kb: boyd
+  relation: extends
+  note: "Richards' Boyd-Agile bridge extends Auftragstaktik (mission-type orders) into Agile team dynamics. Cross-functional Agile teams with clear sprint goals operate like units under Auftragstaktik: given intent, they execute autonomously using local judgment. The bridge shows this is not metaphor but shared organizational logic."
+
+- source: a-swift-elusive-sword
+  target: discourse-on-winning-and-losing
+  target_kb: boyd
+  relation: responds_to
+  note: "A Swift, Elusive Sword applies Boyd's Discourse on Winning and Losing — the full briefing series covering Patterns of Conflict, Organic Design, Strategic Game, and Destruction and Creation — to national defense policy. It is Richards' most direct application of Boyd's military framework in its home domain."
+
+# richards → rao
+
+- source: venkatesh-rao
+  target: tempo-book
+  target_kb: rao
+  relation: related_to
+  note: "Richards' entry on Rao connects to Rao's primary work. Tempo is the book-length elaboration of the narrative-driven decision-making framework that Richards recognized as a parallel civilian translation of Boyd."
+
+- source: ooda-based-competition
+  target: narrative-driven-decision-making
+  target_kb: rao
+  relation: related_to
+  note: "Two different framings of OODA-based competitive advantage. Richards defines competition as operating inside the opponent's OODA loop; Rao reframes the same dynamic as the ability to impose your narrative tempo on the competitive environment. Both derive from Boyd's observe-orient loop but emphasize different mechanisms."
+
+- source: certain-to-win
+  target: tempo-book
+  target_kb: rao
+  relation: related_to
+  note: "The two main civilian translations of Boyd for non-military audiences. Certain to Win applies Boyd to business strategy and organizational climate; Tempo applies Boyd to narrative structure and temporal reasoning. Together they bracket the range of Boyd's civilian influence."
+
+- source: boyds-real-ooda-loop
+  target: the-boydian-dialectic
+  target_kb: rao
+  relation: related_to
+  note: "Both are corrective essays on what Boyd's OODA loop actually contains. Richards' piece recovers orientation as the schwerpunkt of the loop and implicit guidance and control as its most powerful mode; Rao's Boydian Dialectic reframes the loop as a dialectical structure that emerges when two OODA-cycling actors interact. Both push back against the shallow 'fast decision cycle' reading."
+
+# richards → deming
+
+- source: boyd-toyota-connection
+  target: toyota-production-system
+  target_kb: deming
+  relation: related_to
+  note: "Richards' analysis of Toyota through Boyd's framework connects back to Deming's foundational role in creating TPS. Richards argues Toyota's competitive advantage is OODA-loop learning rate; Deming's quality philosophy is what built the organizational climate that enabled that learning rate."
+
+- source: ooda-based-competition
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: related_to
+  note: "Richards' formulation of OODA-based competition as operating inside competitors' decision cycles is the strategic framing of what Deming operationalized as faster, better-calibrated PDSA learning cycles. Both describe competitive advantage through superior adaptation rate."
+
+- source: organizational-climate-for-business
+  target: the-14-points-for-management
+  target_kb: deming
+  relation: related_to
+  note: "Richards' translation of Boyd's organizational climate for Agile contexts parallels Deming's 14 Points — both prescribe trust, elimination of fear, cross-functional collaboration, and intrinsic motivation as prerequisites for organizational effectiveness."
+
+- source: einheit-as-trust
+  target: psychology-of-management
+  target_kb: deming
+  relation: related_to
+  note: "Richards' Einheit-as-trust — the organizational trust that eliminates coordination overhead and enables decentralized initiative — parallels Deming's psychology of management, which argues that fear and extrinsic motivation destroy the intrinsic drive that makes organizations adaptive. Both identify the same dysfunction: low-trust environments that substitute oversight for judgment."
+
+# richards → wardley
+
+- source: ooda-based-competition
+  target: strategy-cycle
+  target_kb: wardley
+  relation: related_to
+  note: "Richards' OODA-based competition and Wardley's Strategy Cycle both derive from Boyd's OODA loop but apply it differently. Richards emphasizes tempo and competitive disorientation; Wardley embeds the loop in a five-element strategic framework (Purpose, Landscape, Climate, Doctrine, Leadership) that adds situational awareness through mapping."
+
+- source: certain-to-win-framework
+  target: situational-awareness
+  target_kb: wardley
+  relation: related_to
+  note: "Richards' Certain to Win framework and Wardley's situational awareness concept both apply Boyd to business strategy but emphasize different elements. Richards focuses on organizational climate as the enabler of fast OODA cycling; Wardley focuses on landscape understanding as the prerequisite for good orientation. Together they address complementary strategic gaps."
+
+- source: organizational-climate-for-business
+  target: doctrine
+  target_kb: wardley
+  relation: related_to
+  note: "Richards' organizational climate (Einheit, Fingerspitzengefuehl, Schwerpunkt) and Wardley's doctrine (universally applicable organizational principles) are parallel frameworks for the organizational prerequisites of effective strategy. Both argue that strategy fails without the right organizational foundation, regardless of how clever the strategy is."
+
+# richards → blank
+
+- source: ooda-based-competition
+  target: customer-development
+  target_kb: blank
+  relation: related_to
+  note: "Richards' OODA-based competition and Blank's Customer Development are parallel iterative frameworks from different traditions. Both argue that competitive advantage comes from faster cycling through observe-orient-decide-act loops — Richards in general business strategy, Blank in startup product-market fit. Blank later incorporated OODA loop diagrams into his teaching after a student pointed out the structural parallel."
+
+- source: agile-as-maneuver-warfare
+  target: pivot
+  target_kb: blank
+  relation: related_to
+  note: "Richards' agile-as-maneuver-warfare argument and Blank's concept of the pivot both treat rapid reorientation as a competitive advantage rather than a failure. In Richards' framing, the sprint-cycle reorientation is maneuver warfare tempo; in Blank's framing, the pivot is the startup's structured reorientation when validation fails. Both reject the attrition logic of sticking to the original plan."
+
+- source: certain-to-win-framework
+  target: boyd-blank-comparison-convergent-discovery
+  target_kb: blank
+  relation: related_to
+  note: "Richards' Certain to Win framework and the Blank KB's Boyd-Blank comparison note document the convergent discovery of OODA-loop principles in different domains. Richards carried Boyd's framework deliberately into business; Blank rediscovered the same iterative logic independently from startup experience. The comparison validates both as instances of a general pattern."
+
+# richards → poppendiecks
+
+- source: agile-as-maneuver-warfare
+  target: empower-the-team
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Richards' argument that Agile implements Boyd's organizational climate — particularly Einheit (trust) enabling decentralized initiative — directly parallels the Poppendiecks' 'empower the team' principle translated from TPS worker authority (andon cord, jidoka). Both argue that team autonomy is not a cultural preference but a structural requirement for fast-cycling adaptive systems."
+
+- source: boyd-toyota-connection
+  target: amplify-learning
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Richards' Boyd-Toyota connection argues Toyota won through faster OODA-loop learning rate. The Poppendiecks' 'amplify learning' principle translates the same Toyota insight into software development: kaizen cycles, rapid feedback, and iterative improvement are mechanisms for amplifying organizational learning rate — the same competitive variable Richards identifies through Boyd's lens."
+
+- source: operating-inside-the-loop
+  target: deliver-as-fast-as-possible
+  target_kb: poppendiecks
+  relation: related_to
+  note: "Richards' operating-inside-the-loop concept and the Poppendiecks' deliver-as-fast-as-possible principle both argue that speed of cycling creates compounding competitive advantage. Richards frames it as tempo-based OODA competition; the Poppendiecks frame it as lean flow optimization. The mechanism differs but the strategic logic converges: faster cycles compound learning faster."
+
+# richards → anderson
+
+- source: organizational-climate-for-business
+  target: evolutionary-change
+  target_kb: anderson
+  relation: related_to
+  note: "Richards' organizational climate framework and Anderson's evolutionary change principle share a common insight: effective organizational adaptation cannot be imposed top-down through process mandates. Richards argues climate (trust, expertise, focus) must be cultivated through sustained practice; Anderson argues change must emerge through evolutionary improvement of existing process. Both reject the 'install a new framework' model of organizational transformation."
+
+- source: ooda-based-competition
+  target: implement-feedback-loops
+  target_kb: anderson
+  relation: related_to
+  note: "Richards' OODA-based competition requires rapid feedback to drive reorientation. Anderson's Kanban principle of implementing feedback loops — through standup meetings, service delivery reviews, and operations reviews — operationalizes the same requirement at the team and organizational level. Both treat feedback frequency as a determinant of adaptation rate."
+
+# richards → reinertsen
+
+- source: operating-inside-the-loop
+  target: fast-feedback
+  target_kb: reinertsen
+  relation: related_to
+  note: "Richards' operating-inside-the-loop concept and Reinertsen's fast-feedback principle both argue that the rate of cycling through observe-decide-act loops is the critical competitive variable. Richards frames it through Boyd's tempo concept; Reinertsen provides the economic theory (cost of delay, batch size reduction) that quantifies why faster feedback cycles create value."
+
+- source: agile-as-maneuver-warfare
+  target: decentralized-control
+  target_kb: reinertsen
+  relation: related_to
+  note: "Richards' agile-as-maneuver-warfare and Reinertsen's decentralized-control principle both draw on Boyd's Auftragstaktik. Richards translates mission-type orders into Agile team autonomy; Reinertsen provides the economic argument for why local decision-making outperforms centralized optimization when information is local and perishable. Both cite Boyd as the source of the decentralization insight."
+
+- source: operating-inside-the-loop
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: related_to
+  note: "Richards' tempo-based competitive advantage through faster OODA cycling and Reinertsen's batch-size reduction principle address the same phenomenon from different angles. Richards argues strategically that faster cycles degrade competitors' orientations; Reinertsen argues economically that smaller batches reduce feedback delay and cycle time. Reinertsen provides the quantitative foundation for the tempo advantage Richards describes qualitatively."

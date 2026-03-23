@@ -1,0 +1,223 @@
+# === stallman ===
+# The stallman KB covers Stallman's individual philosophy and works in depth.
+# These links connect FOSS movement entries to their stallman KB counterparts.
+
+# People
+- source: richard-stallman
+  target: stallman
+  target_kb: stallman
+  relation: same-subject
+  note: "FOSS movement entry for Stallman; full intellectual biography in stallman KB"
+
+- source: bruce-perens
+  target: bruce-perens
+  target_kb: stallman
+  relation: same-subject
+  note: "FOSS movement entry for Perens; stallman KB covers his role in the free software community"
+
+- source: eric-raymond
+  target: eric-raymond
+  target_kb: stallman
+  relation: same-subject
+  note: "FOSS movement entry for Raymond; stallman KB covers him as Stallman's intellectual adversary"
+
+- source: christine-peterson
+  target: christine-peterson
+  target_kb: stallman
+  relation: same-subject
+  note: "FOSS entry focused on coining 'open source'; stallman KB covers role in schism"
+
+# Concepts
+- source: copyleft
+  target: copyleft
+  target_kb: stallman
+  relation: same-subject
+  note: "FOSS entry on copyleft's movement role; stallman KB covers the concept in depth"
+
+- source: four-freedoms
+  target: four-freedoms
+  target_kb: stallman
+  relation: same-subject
+  note: "FOSS entry on freedoms as movement foundation; stallman KB has full treatment"
+
+- source: software-freedom-vs-open-source
+  target: software-freedom-vs-open-source
+  target_kb: stallman
+  relation: same-subject
+  note: "FOSS entry on the schism; stallman KB covers from Stallman's perspective"
+
+- source: open-source-definition
+  target: open-source-definition-schism
+  target_kb: stallman
+  relation: related_to
+  note: "FOSS concept entry for OSD; stallman KB covers the schism event"
+
+# Licenses
+- source: gpl-v2
+  target: release-of-gpl-v2
+  target_kb: stallman
+  relation: same-subject
+  note: "FOSS license entry; stallman KB covers the GPL v2 release event and mechanism"
+
+- source: gpl-v3
+  target: release-of-gpl-v3
+  target_kb: stallman
+  relation: same-subject
+  note: "FOSS license entry; stallman KB covers the GPL v3 release and drafting process"
+
+- source: gpl-v3
+  target: gplv3-drafting-process
+  target_kb: stallman
+  relation: related_to
+  note: "FOSS license entry; stallman KB covers the multi-year public drafting process"
+
+- source: agpl
+  target: saas-loophole
+  target_kb: stallman
+  relation: related_to
+  note: "AGPL closes the SaaS loophole that the stallman KB documents"
+
+# Events
+- source: netscape-source-release-1998
+  target: netscape-mozilla-open-source-1998
+  target_kb: stallman
+  relation: same-subject
+  note: "Same event covered from movement (FOSS) and individual (stallman) perspectives"
+
+- source: osi-founding-1998
+  target: open-source-definition-schism
+  target_kb: stallman
+  relation: same-subject
+  note: "OSI founding as movement event (FOSS) and as schism event (stallman)"
+
+- source: gpl-v3-release-2007
+  target: release-of-gpl-v3
+  target_kb: stallman
+  relation: same-subject
+  note: "GPL v3 release from movement (FOSS) and Stallman (stallman) perspectives"
+
+# Organizations
+- source: free-software-foundation
+  target: free-software-foundation
+  target_kb: stallman
+  relation: same-subject
+  note: "Brief FOSS entry; full coverage in stallman KB"
+
+- source: open-source-initiative
+  target: open-source-definition-schism
+  target_kb: stallman
+  relation: related_to
+  note: "OSI as institution (FOSS) relates to the schism event (stallman)"
+
+- source: software-freedom-conservancy
+  target: bradley-kuhn
+  target_kb: stallman
+  relation: related_to
+  note: "SFC's mission connects to Kuhn's GPL enforcement work documented in stallman KB"
+
+# Sources
+- source: rebel-code-moody-2001
+  target: rebel-code-moody
+  target_kb: stallman
+  relation: same-subject
+  note: "Same secondary source covered in both KBs"
+
+- source: revolution-os-2001
+  target: revolution-os-documentary
+  target_kb: stallman
+  relation: same-subject
+  note: "Same documentary covered in both KBs"
+
+- source: free-as-in-freedom-williams
+  target: free-as-in-freedom-williams
+  target_kb: stallman
+  relation: same-subject
+  note: "Same biography covered in both KBs"
+
+# Writings
+- source: gnu-manifesto-1983
+  target: gnu-manifesto-concept
+  target_kb: stallman
+  relation: same-subject
+  note: "Brief FOSS writing entry; stallman KB has concept-level treatment"
+
+- source: free-software-free-society-2002
+  target: free-software-free-society
+  target_kb: stallman
+  relation: same-subject
+  note: "Brief FOSS entry; stallman KB has full writing entry"
+
+# === doctorow ===
+- source: creative-commons
+  target: creative-commons-licensing
+  target_kb: doctorow
+  relation: related_to
+  note: "CC licenses extend copyleft principles beyond software; doctorow KB covers CC in digital rights context"
+
+- source: maintainer-sustainability-crisis
+  target: adversarial-interoperability
+  target_kb: doctorow
+  relation: related_to
+  note: "Platform lock-in that adversarial interop addresses contributes to the FOSS sustainability problem"
+
+- source: open-core-business-model
+  target: switching-costs
+  target_kb: doctorow
+  relation: related_to
+  note: "Open core uses open source to reduce switching costs; doctorow KB analyzes switching costs as platform strategy"
+
+- source: sspl-bsl
+  target: right-to-repair
+  target_kb: doctorow
+  relation: parallel-development
+  note: "SSPL restricts cloud reuse; right-to-repair asserts user control — parallel struggles over who controls software"
+
+# === agile ===
+- source: release-early-release-often
+  target: working-software
+  target_kb: agile
+  relation: influenced
+  note: "FOSS 'release early, release often' influenced Agile's emphasis on working software over documentation"
+
+- source: bazaar-model
+  target: self-organizing-teams
+  target_kb: agile
+  relation: influenced
+  note: "The bazaar's emergent coordination model influenced Agile's concept of self-organizing teams"
+
+- source: code-review-in-foss
+  target: pair-programming
+  target_kb: agile
+  relation: parallel-development
+  note: "FOSS code review and Agile pair programming are parallel approaches to collaborative quality"
+
+- source: patch-based-development
+  target: continuous-integration
+  target_kb: agile
+  relation: influenced
+  note: "FOSS patch-based workflows evolved into CI/CD practices that Agile adopted"
+
+- source: forking-as-governance
+  target: collective-code-ownership
+  target_kb: agile
+  relation: related_to
+  note: "Both address the question of who controls the code — forking as exit right, collective ownership as shared responsibility"
+
+# === wardley ===
+- source: open-core-business-model
+  target: open-source-as-gameplay
+  target_kb: wardley
+  relation: related_to
+  note: "Open core is a commercial expression of what Wardley calls 'open source as gameplay' in evolution strategy"
+
+- source: copyleft
+  target: evolution
+  target_kb: wardley
+  relation: related_to
+  note: "Copyleft licenses shape how software components evolve from genesis to commodity in Wardley's framework"
+
+- source: maintainer-sustainability-crisis
+  target: ilc-innovate-leverage-commoditize
+  target_kb: wardley
+  relation: related_to
+  note: "The sustainability crisis arises when FOSS becomes commodity infrastructure but is maintained like a genesis project"

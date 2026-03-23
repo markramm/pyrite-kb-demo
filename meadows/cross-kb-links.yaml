@@ -1,0 +1,256 @@
+# Cross-KB links from meadows to other KBs
+# Generated during Phase 5 of KB lifecycle
+
+# === Senge ===
+
+- source: leverage-points
+  target: leverage-points
+  target_kb: senge
+  relation: same-subject
+  note: "Both derive leverage points from Forrester's system dynamics; Meadows provided the definitive 12-level taxonomy, Senge applied them to organizational learning"
+
+- source: systems-archetypes
+  target: systems-archetypes
+  target_kb: senge
+  relation: same-subject
+  note: "Same concept in both KBs; Meadows taught archetypes as system dynamics patterns, Senge made them central to organizational learning pedagogy"
+
+- source: feedback-loops
+  target: systems-thinking-fifth-discipline
+  target_kb: senge
+  relation: related_to
+  note: "Feedback loops are the core mechanism in both Meadows's system dynamics and Senge's Fifth Discipline; shared Forrester inheritance applied to different domains"
+
+- source: bounded-rationality-in-systems
+  target: mental-models
+  target_kb: senge
+  relation: related_to
+  note: "Meadows's bounded rationality explains why mental models are necessarily incomplete; both emphasize that actors operate from limited structural views"
+
+- source: thinking-in-systems-2008
+  target: fifth-discipline-1990
+  target_kb: senge
+  relation: related_to
+  note: "Two complementary systems thinking primers from the same Forrester lineage: Meadows for policy and global systems, Senge for organizational learning"
+
+- source: peter-senge
+  target: peter-senge
+  target_kb: senge
+  relation: same-subject
+  note: "Fellow Forrester student; Senge took system dynamics into organizational learning, Meadows into environmental science and public communication"
+
+- source: jay-forrester
+  target: jay-forrester
+  target_kb: senge
+  relation: same-subject
+  note: "Shared mentor who supervised both Meadows (Limits to Growth) and Senge (PhD) at MIT System Dynamics Group"
+
+- source: mit-system-dynamics-group
+  target: mit-system-dynamics-group
+  target_kb: senge
+  relation: same-subject
+  note: "The institutional home of both lineages; Meadows's global modeling and Senge's organizational learning both grew from Forrester's group"
+
+- source: overshoot-and-collapse
+  target: limits-to-growth
+  target_kb: senge
+  relation: related_to
+  note: "Senge's limits-to-growth archetype is the organizational-scale version of Meadows's global overshoot-and-collapse dynamics"
+
+# === Deming ===
+
+- source: leverage-points
+  target: system-of-profound-knowledge
+  target_kb: deming
+  relation: related_to
+  note: "Deming's SoPK is itself a leverage point framework: understanding the system enables high-leverage interventions rather than parametric tinkering"
+
+- source: leverage-points
+  target: the-14-points-for-management
+  target_kb: deming
+  relation: related_to
+  note: "Deming's 14 Points are leverage points for management transformation — structural interventions at Meadows's levels 5-7, not event-level fixes"
+
+- source: feedback-loops
+  target: pdsa-cycle-plan-do-study-act
+  target_kb: deming
+  relation: related_to
+  note: "PDSA is a deliberate feedback loop for learning; Meadows would recognize it as a balancing loop seeking system improvement through iterative correction"
+
+- source: feedback-loops
+  target: appreciation-for-a-system
+  target_kb: deming
+  relation: related_to
+  note: "Deming's appreciation for a system requires understanding feedback relationships between components — the same structural insight Meadows placed at the heart of systems thinking"
+
+- source: delays-in-systems
+  target: the-funnel-experiment
+  target_kb: deming
+  relation: related_to
+  note: "Deming's funnel experiment shows how reacting to noise without understanding delays makes systems worse — illustrates Meadows's insight that delayed feedback produces oscillation and tampering"
+
+- source: bounded-rationality-in-systems
+  target: common-cause-vs-special-cause-variation
+  target_kb: deming
+  relation: related_to
+  note: "Bounded rationality leads managers to misattribute common-cause variation to special causes — tampering with stable systems, exactly Meadows's point about event-level thinking"
+
+# === Goldratt ===
+
+- source: leverage-points
+  target: theory-of-constraints
+  target_kb: goldratt
+  relation: related_to
+  note: "TOC's constraint is a leverage point at Meadows levels 6-7 (information flows and rules); both seek maximum effect from focused intervention on the binding limit"
+
+- source: leverage-points
+  target: five-focusing-steps
+  target_kb: goldratt
+  relation: related_to
+  note: "Five focusing steps operationalize leverage point identification: find the constraint, exploit it, subordinate everything else — a systematic leverage-seeking cycle"
+
+- source: leverage-points
+  target: throughput-world-vs-cost-world
+  target_kb: goldratt
+  relation: related_to
+  note: "Switching from cost-world to throughput-world is a paradigm shift — Meadows's leverage point #2 (mindset change that restructures the entire system)"
+
+- source: stocks-and-flows
+  target: throughput-accounting
+  target_kb: goldratt
+  relation: related_to
+  note: "Throughput, inventory, and operating expense map directly to flows and stocks; Goldratt's three core metrics are stock-and-flow measures of system health"
+
+- source: feedback-loops
+  target: drum-buffer-rope
+  target_kb: goldratt
+  relation: related_to
+  note: "DBR is a feedback control mechanism that regulates flow through the constraint; the rope provides upstream feedback signal, a designed balancing loop"
+
+- source: delays-in-systems
+  target: critical-chain-project-management
+  target_kb: goldratt
+  relation: related_to
+  note: "Critical chain addresses delays in project systems through feeding and project buffers — managing the delay dynamics Meadows identified as causes of overshoot"
+
+# === Boyd ===
+
+- source: leverage-points
+  target: destruction-and-creation-concept
+  target_kb: boyd
+  relation: related_to
+  note: "Boyd's destruction and creation of mental models directly parallels Meadows's leverage point #2: the power to transcend paradigms by breaking and rebuilding worldviews"
+
+- source: feedback-loops
+  target: ooda-loop
+  target_kb: boyd
+  relation: related_to
+  note: "OODA is fundamentally a feedback loop: observe-orient-decide-act feeds results back into observation. Faster feedback loops create competitive advantage in both frameworks"
+
+- source: bounded-rationality-in-systems
+  target: orientation
+  target_kb: boyd
+  relation: related_to
+  note: "Bounded rationality constrains orientation; both Meadows and Boyd emphasize that actors operate from incomplete mental models that determine what they can see and do"
+
+- source: self-organization
+  target: implicit-guidance-and-control
+  target_kb: boyd
+  relation: related_to
+  note: "Implicit guidance creates self-organizing coherence without centralized commands; Meadows's self-organization as high leverage parallels Boyd's organizational design for adaptive action"
+
+# === Wardley ===
+
+- source: leverage-points
+  target: gameplay
+  target_kb: wardley
+  relation: related_to
+  note: "Wardley's gameplay patterns are leverage points in competitive systems: structural interventions that shift market dynamics at the rules and information-flow levels"
+
+- source: iceberg-model
+  target: evolution
+  target_kb: wardley
+  relation: related_to
+  note: "Evolution patterns operate below visible market events; understanding which evolutionary stage a component occupies is seeing beneath the iceberg surface to structural drivers"
+
+- source: system-boundaries
+  target: wardley-map
+  target_kb: wardley
+  relation: related_to
+  note: "Both address boundary definition as a consequential analytical choice: Meadows warns boundaries are mental constructs; Wardley maps make value chain boundaries explicit"
+
+- source: resilience
+  target: inertia
+  target_kb: wardley
+  relation: related_to
+  note: "Inertia in organizations resists evolutionary change; Meadows's resilience-efficiency tradeoff explains why organizations optimized for current stage resist adaptation to the next"
+
+# === Doctorow ===
+
+- source: reinforcing-feedback-loops
+  target: enshittification
+  target_kb: doctorow
+  relation: related_to
+  note: "Enshittification is a reinforcing feedback loop: lock-in enables extraction, extraction funds more lock-in mechanisms, user exit becomes harder at each cycle"
+
+- source: reinforcing-feedback-loops
+  target: platform-decay-cycle
+  target_kb: doctorow
+  relation: related_to
+  note: "Platform decay follows Meadows's reinforcing loop dynamics: network effects compound lock-in, which enables extraction, which funds further lock-in engineering"
+
+- source: leverage-points
+  target: adversarial-interoperability
+  target_kb: doctorow
+  relation: related_to
+  note: "Adversarial interoperability is a structural leverage intervention at Meadows's level 6-7: changing information flows and rules to restore competitive feedback loops"
+
+- source: leverage-points
+  target: switching-costs
+  target_kb: doctorow
+  relation: related_to
+  note: "Engineered switching costs are a leverage point at Meadows level 5 (rules of the system): they change the structural rules that govern user behavior and market discipline"
+
+# === Reinertsen ===
+
+- source: stocks-and-flows
+  target: queueing-theory-applied
+  target_kb: reinertsen
+  relation: related_to
+  note: "Queues are stocks; arrival and service rates are flows. Reinertsen's queueing theory is stock-and-flow dynamics applied to product development with mathematical precision"
+
+- source: delays-in-systems
+  target: batch-size-reduction
+  target_kb: reinertsen
+  relation: related_to
+  note: "Large batches create delays through queue accumulation; reducing batch size reduces delays and feedback latency — Meadows's delay dynamics operationalized for development flow"
+
+- source: delays-in-systems
+  target: batch-size-death-spiral
+  target_kb: reinertsen
+  relation: related_to
+  note: "Death spiral is a reinforcing feedback loop where delays cause larger batches which cause more delays — a classic Meadows positive feedback trap in product development"
+
+- source: feedback-loops
+  target: fast-feedback
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen's emphasis on fast feedback directly parallels Meadows: shorter feedback loops enable faster learning and correction, a moderately high-leverage intervention"
+
+- source: leverage-points
+  target: economic-framework-for-prioritization
+  target_kb: reinertsen
+  relation: related_to
+  note: "Economic framework changes decision rules (Meadows leverage level 5): shifting from proxy metrics to direct economic optimization restructures how the system allocates effort"
+
+- source: self-organization
+  target: decentralized-control
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen's decentralized control enables self-organization in development teams; Meadows ranks self-organization as leverage point #4 because it generates new adaptive structures"
+
+- source: resilience
+  target: managing-variability
+  target_kb: reinertsen
+  relation: related_to
+  note: "Reinertsen's insight that beneficial variability should be preserved, not eliminated, parallels Meadows's resilience argument: systems optimized for efficiency lose the adaptive capacity that variability provides"

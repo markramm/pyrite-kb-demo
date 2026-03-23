@@ -1,0 +1,328 @@
+name: weinberg
+description: >
+  Intellectual biography of Gerald M. Weinberg (1933–2018) — computer scientist,
+  psychologist, author, and consultant who pioneered the study of the human dimensions
+  of software development. Covers his 40+ books from "The Psychology of Computer
+  Programming" (1971) through "Quality Software Management" (1992–1997), his systems
+  thinking contributions, consulting methodology, the Satir change model, the MOI
+  leadership model, and his influence on Agile, XP, open source, and software quality.
+kb_type: intellectual-biography
+
+guidelines:
+  contributing: |
+    Weinberg's career spans six decades (1956–2018) and over 40 books across multiple
+    domains: programming psychology, systems thinking, consulting, leadership, quality
+    management, writing, and testing. Date-stamp claims carefully — the young IBM
+    programmer, the 1970s systems thinker, the 1980s consultant, and the 1990s quality
+    theorist are recognizably different phases. Weinberg drew heavily on Virginia Satir's
+    family therapy models — distinguish his original contributions from his applications
+    of Satir's work. Many of his books were self-published or published through Dorset
+    House; track publishers as they indicate different phases and audiences.
+  quality: |
+    Entries should trace Weinberg's intellectual lineage with precision. He was not just
+    an early advocate for "soft skills" — he built rigorous frameworks (the MOI model,
+    congruent behavior patterns, the Satir change model for organizations) that bridged
+    psychology and engineering. Entries should engage with these frameworks analytically,
+    not just describe them. His influence on later movements (Agile, XP, FOSS) is often
+    indirect — trace the transmission chains rather than asserting influence without
+    evidence. His "Quality Software Management" series is his most systematic work and
+    deserves detailed treatment.
+  voice: |
+    Warm but analytical. Weinberg wrote with humor and accessibility — entries should
+    reflect this without losing rigor. He was both a rigorous systems thinker and a
+    deeply humanistic observer of how people work together. Respect both dimensions.
+
+goals:
+  primary: |
+    Build a complete intellectual biography of Gerald Weinberg covering his major works,
+    key concepts (egoless programming, systems thinking, consulting models, congruent
+    behavior, MOI model, quality software management), professional network (Virginia
+    Satir, Donald Gause, Esther Derby, Johanna Rothman), organizational affiliations,
+    and his foundational influence on how software development understands itself as a
+    human activity.
+  success_criteria: |
+    A reader can trace Weinberg's intellectual arc from IBM programmer through systems
+    thinker through consultant through quality theorist, understand how each phase built
+    on the previous ones, and see the connections to Agile, XP, open source, DevOps,
+    and the broader human-centered software tradition. Cross-references to Deming
+    (quality/systems), Poppendiecks (lean software), and the Agile movement are explicit.
+
+evaluation_rubric:
+  - "Entry cites a specific Weinberg book or article where possible"
+  - "Claims about Weinberg's views specify which era or work they come from"
+  - "Concepts trace both Weinberg's formulation and any Satir/systems theory origins"
+  - "People entries describe the specific intellectual relationship and influence direction"
+  - "Cross-KB connections to Deming, Poppendiecks, Agile, and systems thinking are noted"
+  - "Importance scores are calibrated — founding texts and core concepts rate highest"
+
+types:
+  concept:
+    description: "A key idea, framework, or intellectual contribution from Weinberg's work"
+    subdirectory: concepts
+    required: [title]
+    optional: [first_appeared, source_tradition, key_writings, related_concepts, research_status]
+    fields:
+      first_appeared:
+        type: string
+        description: "Book or approximate date where this concept first appears"
+      source_tradition:
+        type: string
+        description: "Intellectual tradition this draws from (e.g., Satir, general systems theory, cybernetics)"
+      key_writings:
+        type: list
+        description: "Writings where this concept is developed (entry IDs)"
+      related_concepts:
+        type: list
+        description: "Related concepts (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A key idea, framework, or intellectual contribution from Weinberg's work.
+      Includes egoless programming, the Law of Raspberry Jam, congruent behavior,
+      the MOI model (Motivation-Organization-Innovation), the Satir change model,
+      general systems thinking concepts, quality software management frameworks,
+      and consulting models. For each concept, trace both Weinberg's formulation
+      and any upstream sources (Satir, general systems theory, cybernetics). The
+      body should explain why the concept matters for software, not just define it.
+    evaluation_rubric:
+      - "Concept explains what it is and why it matters"
+      - "Origin or first_appeared is documented"
+      - "Source tradition is identified if applicable"
+      - "Links to related concepts within the KB"
+    display:
+      icon: lightbulb
+      layout: document
+
+  writing:
+    description: "A work by or substantially involving Gerald Weinberg"
+    subdirectory: writings
+    required: [title, writing_type, date]
+    optional: [coauthors, publication, url, abstract, key_concepts, research_status]
+    fields:
+      writing_type:
+        type: select
+        values: [book, article, paper, talk, column, blog-post, foreword, interview, self-published, edited-volume]
+        description: "Type of writing"
+      date:
+        type: date
+        description: "Publication or presentation date"
+      coauthors:
+        type: list
+        description: "Co-authors"
+      publication:
+        type: string
+        description: "Publisher or venue"
+      url:
+        type: string
+        description: "URL if available"
+      abstract:
+        type: text
+        description: "Brief description"
+      key_concepts:
+        type: list
+        description: "Concepts developed (entry IDs)"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How thoroughly this entry has been researched"
+    ai_instructions: >
+      A work authored by Gerald Weinberg. He published over 40 books across his career,
+      through publishers including Van Nostrand Reinhold, Dorset House, Wiley, and
+      self-published via Leanpub. Major works include "The Psychology of Computer
+      Programming" (1971), "An Introduction to General Systems Thinking" (1975),
+      "Are Your Lights On?" (1982), "The Secrets of Consulting" (1985), "Becoming a
+      Technical Leader" (1986), the "Quality Software Management" series (4 vols,
+      1992-1997), "Weinberg on Writing" (2006), and "Perfect Software" (2008).
+      He also wrote extensively for software magazines and maintained a blog.
+    evaluation_rubric:
+      - "Writing has a date"
+      - "Writing has a writing_type classification"
+      - "Body describes the work's significance, not just its contents"
+    display:
+      icon: file-text
+      layout: document
+
+  era:
+    description: "A period in Weinberg's intellectual or professional development"
+    subdirectory: eras
+    required: [title, date_range]
+    optional: [key_writings, key_concepts, affiliations]
+    fields:
+      date_range:
+        type: string
+        description: "Time span"
+      key_writings:
+        type: list
+        description: "Important writings from this period"
+      key_concepts:
+        type: list
+        description: "Concepts developed during this period"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+    ai_instructions: >
+      A period in Weinberg's intellectual or professional development. Key eras include:
+      early career at IBM (1956–late 1960s), the Psychology of Computer Programming
+      period (1970s), the systems thinking and consulting period (1980s), the Quality
+      Software Management period (1990s), and the late career teaching/self-publishing
+      period (2000s–2018). Each era represents a distinct intellectual phase.
+    display:
+      icon: clock
+      layout: document
+
+  person:
+    description: "An individual in Weinberg's intellectual and professional network"
+    subdirectory: people
+    required: [title, role]
+    optional: [affiliations, relationship_to_weinberg, research_status]
+    fields:
+      role:
+        type: string
+        description: "Primary role"
+      affiliations:
+        type: list
+        description: "Institutional affiliations"
+      relationship_to_weinberg:
+        type: string
+        description: "Nature of intellectual/professional relationship"
+      research_status:
+        type: select
+        values: [stub, partial, draft, complete]
+        description: "How complete the profile is"
+    ai_instructions: >
+      A person in Weinberg's professional and intellectual network. Key figures include
+      Virginia Satir (family systems therapy influence), Donald Gause (co-author),
+      Esther Derby (student, AYE co-founder), Johanna Rothman (student, AYE co-founder),
+      Tom DeMarco (peer in software management), Timothy Lister (peer), Ken Orr (early
+      collaborator), Daniel Freedman (co-author on reviews/inspections), and various
+      students and mentees in the software consulting community.
+    evaluation_rubric:
+      - "Person has a role described"
+      - "Relationship to Weinberg is explicitly stated"
+      - "Person's own contributions are described"
+    display:
+      icon: user
+      layout: record
+
+  organization:
+    description: "An institution relevant to Weinberg's career or influence"
+    subdirectory: organizations
+    required: [title, org_type]
+    optional: [founded, location]
+    fields:
+      org_type:
+        type: select
+        values: [company, university, publisher, conference, professional-society, nonprofit, consulting]
+        description: "Type of organization"
+      founded:
+        type: string
+        description: "Year founded"
+      location:
+        type: string
+        description: "Location"
+    ai_instructions: >
+      An institution relevant to Weinberg's career, including IBM (early career),
+      various universities (teaching), Dorset House (publisher), the AYE Conference,
+      and consulting organizations.
+    display:
+      icon: building
+      layout: record
+
+  event:
+    description: "A biographical or intellectual milestone"
+    subdirectory: events
+    required: [title, date]
+    optional: [location, participants, status]
+    fields:
+      date:
+        type: date
+        description: "When the event occurred"
+      location:
+        type: string
+        description: "Where it took place"
+      participants:
+        type: list
+        description: "People or organizations involved"
+      status:
+        type: select
+        values: [confirmed, approximate, disputed, unknown]
+        description: "How certain the details are"
+    ai_instructions: >
+      A specific event in Weinberg's career or intellectual context — publication
+      milestones, conference presentations, organizational foundings, and key
+      biographical moments.
+    display:
+      icon: calendar
+      layout: record
+
+  source:
+    description: "A secondary source about Weinberg or his work"
+    subdirectory: sources
+    required: [title, source_type, date]
+    optional: [author, url, publication]
+    fields:
+      source_type:
+        type: select
+        values: [book, article, chapter, interview, profile, review, obituary, tribute, podcast, blog-post]
+        description: "Type of secondary source"
+      date:
+        type: date
+        description: "Publication date"
+      author:
+        type: string
+        description: "Author"
+      url:
+        type: string
+        description: "URL if available"
+      publication:
+        type: string
+        description: "Publication venue"
+    ai_instructions: >
+      A secondary source about Weinberg or his work. For works BY Weinberg, use the
+      'writing' type. Sources include obituaries, tributes, reviews, interviews about
+      his work, and scholarly analyses.
+    display:
+      icon: bookmark
+      layout: document
+
+  note:
+    description: "Research notes and analysis"
+    subdirectory: notes
+    required: [title]
+    optional: [tags]
+    ai_instructions: >
+      Research notes, analysis, or commentary about Weinberg's work, intellectual
+      connections, or influence on later movements.
+    display:
+      icon: edit
+      layout: document
+
+relationship_types:
+  influenced_by: "Intellectually influenced by"
+  influenced: "Intellectually influenced"
+  develops: "Develops or elaborates (concept in writing)"
+  builds_on: "Builds on earlier work"
+  critiques: "Critiques or argues against"
+  applies: "Applies concepts from another domain"
+  applied_by: "Concepts applied by"
+  mentored: "Mentored"
+  mentored_by: "Mentored by"
+  collaborates_with: "Collaborates with"
+  authored: "Authored"
+  authored_by: "Authored by"
+  coauthored: "Co-authored with"
+  affiliated_with: "Affiliated with"
+  employed_by: "Employed by"
+  member_of: "Member of"
+  published_by: "Published by"
+  presented_at: "Presented at"
+  is_part_of: "Part of a larger whole"
+  contains_part: "Contains a part"
+  related_to: "Generally related"
+  wikilink: "Inline wikilink reference"
+  wikilinked_by: "Referenced by inline wikilink"
+
+policies:
+  qa_on_write: true
