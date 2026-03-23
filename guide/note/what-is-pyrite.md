@@ -28,9 +28,25 @@ Your AI agents have no memory. Your knowledge is trapped in platform silos. Ever
 - **Plugin system** — custom entry types, MCP tools, CLI commands, validators, lifecycle hooks.
 - **Zero running cost locally** — markdown files + SQLite on your disk. No cloud dependency.
 
-## Next steps
+## Get started
 
+- [[local-install]] — install Pyrite on your machine
+- [[getting-started]] — create a KB and add entries
 - [[connecting-via-mcp]] — connect your AI to Pyrite
-- [[search-modes]] — learn how to find things
+
+## Use with AI
+
+- [[using-with-claude-code]] — Pyrite as a knowledge layer for Claude Code
+- [[using-with-claude-desktop]] — persistent memory for Claude Desktop and Cowork
+- [[mcp-server-setup]] — MCP server tiers, tools, and remote access
+- [[ai-features-and-api-keys]] — configure AI for summarize, auto-tag, and chat
+
+## Learn more
+
+- [[design-principles]] — architecture and design philosophy
 - [[understanding-entry-types]] — how knowledge is structured
+- [[search-modes]] — keyword, semantic, and hybrid search
+- [[knowledge-graph]] — connections and backlinks
+- [[plugins-and-extensions]] — extend Pyrite for your domain
+- [[use-cases]] — journalism, software teams, research, PKM
 - [[self-hosting]] — run your own instance
