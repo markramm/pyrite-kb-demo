@@ -16,7 +16,8 @@ type: writing
 writing_type: rre-post
 url: http://commons.somewhere.com:80/rre/2000/RRE.pointers.html
 importance: 5
-research_status: partial---
+research_status: partial
+---
 
 
 

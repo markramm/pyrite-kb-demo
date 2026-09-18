@@ -1,5 +1,5 @@
 ---
-id: the-network-observer
+id: the-network-observer-writing
 title: The Network Observer
 type: writing
 writing_type: paper

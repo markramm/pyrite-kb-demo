@@ -17,7 +17,8 @@ url: "http://commons.somewhere.com/rre/1999/RRE.Students.Frustration.html"
 coauthors: []
 key_concepts: []
 importance: 5
-research_status: partial---
+research_status: partial
+---
 
 
 

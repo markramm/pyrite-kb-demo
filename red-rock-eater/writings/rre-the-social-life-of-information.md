@@ -21,7 +21,8 @@ url: "http://commons.somewhere.com/rre/2000/RRE.The.Social.Life.of.I.html"
 coauthors: []
 key_concepts: []
 importance: 5
-research_status: partial---
+research_status: partial
+---
 
 
 ## Source

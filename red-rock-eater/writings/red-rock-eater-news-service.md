@@ -1,5 +1,5 @@
 ---
-id: red-rock-eater-news-service
+id: red-rock-eater-news-service-writing
 title: Red Rock Eater News Service
 type: writing
 writing_type: rre-post

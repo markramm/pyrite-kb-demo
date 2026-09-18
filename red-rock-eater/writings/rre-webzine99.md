@@ -17,7 +17,8 @@ writing_type: rre-post
 date: 1999-07-04
 url: http://commons.somewhere.com:80/rre/1999/RRE.WEBZINE99.html
 importance: 6
-research_status: partial---
+research_status: partial
+---
 
 
 

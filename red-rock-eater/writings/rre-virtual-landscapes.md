@@ -23,7 +23,8 @@ url: "http://commons.somewhere.com/rre/1999/RRE.Virtual.Landscapes.html"
 coauthors: []
 key_concepts: []
 importance: 5
-research_status: partial---
+research_status: partial
+---
 
 
 ## Source

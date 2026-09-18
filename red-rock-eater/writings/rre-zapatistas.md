@@ -15,7 +15,8 @@ writing_type: rre-post
 date: 1999-02-06
 url: http://commons.somewhere.com:80/rre/1999/RRE.Zapatistas.html
 importance: 6
-research_status: partial---
+research_status: partial
+---
 
 
 

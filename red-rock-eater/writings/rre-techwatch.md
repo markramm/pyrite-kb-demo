@@ -16,7 +16,8 @@ type: writing
 writing_type: rre-post
 url: http://commons.somewhere.com:80/rre/1999/RRE.Techwatch.html
 importance: 6
-research_status: partial---
+research_status: partial
+---
 
 
 

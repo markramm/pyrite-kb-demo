@@ -15,7 +15,8 @@ url: "http://commons.somewhere.com/rre/2000/RRE.Paul.Hawken.s.essay..html"
 coauthors: []
 key_concepts: []
 importance: 6
-research_status: partial---
+research_status: partial
+---
 
 
 
